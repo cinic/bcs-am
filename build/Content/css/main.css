@@ -77,6 +77,36 @@ body {
         list-style: none; }
         .header .top-panel .top-nav li:last-child {
           margin-right: 0; }
+        .header .top-panel .top-nav li a {
+          position: relative;
+          display: inline-block; }
+          .header .top-panel .top-nav li a .icon {
+            position: absolute;
+            left: -32px;
+            top: -4px;
+            width: 27px;
+            height: 24px;
+            background: url('../img/top-panel-menu-icons.png') no-repeat 0 0; }
+            .header .top-panel .top-nav li a .icon.home {
+              background-position: 0 0; }
+            .header .top-panel .top-nav li a .icon.cabinet {
+              background-position: 0 -24px; }
+            .header .top-panel .top-nav li a .icon.offices {
+              background-position: 0 -48px; }
+          .header .top-panel .top-nav li a.pseudo-link i {
+            font-style: normal;
+            border-bottom: 1px dashed; }
+          .header .top-panel .top-nav li a.pseudo-link:after {
+            position: relative;
+            top: 2px;
+            left: 4px;
+            display: inline-block;
+            content: " ";
+            border: 4px solid;
+            border-color: transparent;
+            border-top-color: #002665;
+            line-height: 0;
+            font-size: 0; }
     .header .top-panel .meta {
       width: 272px; }
       .header .top-panel .meta .search, .header .top-panel .meta .phone {
@@ -131,8 +161,99 @@ body {
         border-radius: 18px; }
 
 .footer {
-  padding: 30px 0;
-  color: white; }
+  padding: 0 0 88px;
+  color: #002a61;
+  background: #e7e8ea;
+  font-family: 'Futura New Medium', sans-serif; }
+  .footer .footer-menu, .footer .social {
+    margin: 50px 0 40px;
+    font-size: 14px;
+    line-height: 18px; }
+  .footer .footer-menu {
+    float: left;
+    margin-left: -20px;
+    padding-left: 0;
+    list-style: none; }
+    .footer .footer-menu li {
+      float: left;
+      margin-right: 62px; }
+      .footer .footer-menu li:last-child {
+        margin-right: 0; }
+      .footer .footer-menu li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #002a61; }
+  .footer .social {
+    float: right;
+    margin-right: 20px;
+    text-transform: uppercase; }
+    .footer .social .label, .footer .social .item {
+      float: left; }
+    .footer .social .label {
+      margin-right: 32px; }
+    .footer .social .item {
+      margin-left: 16px;
+      margin-top: -18px;
+      width: 47px;
+      height: 47px;
+      background: url('../img/social-icons.png') no-repeat 0 0; }
+      .footer .social .item.tw {
+        background-position: 0 0; }
+      .footer .social .item.tw {
+        background-position: 0 -47px; }
+      .footer .social .item.fb {
+        background-position: 0 -94px; }
+  .footer .copy-and-address {
+    margin: 0 -20px;
+    padding-top: 36px;
+    border-top: 1px solid #002a61; }
+    .footer .copy-and-address .address {
+      float: left;
+      width: 22.72727%; }
+      .footer .copy-and-address .address .phone-num {
+        margin-left: 4px;
+        margin-bottom: 8px;
+        font-size: 30px; }
+      .footer .copy-and-address .address .phone-descr {
+        margin-bottom: 20px;
+        font-size: 14px;
+        text-transform: uppercase; }
+      .footer .copy-and-address .address .city-select {
+        margin-bottom: 20px;
+        font-size: 24px; }
+        .footer .copy-and-address .address .city-select:after {
+          position: relative;
+          top: 2px;
+          left: 4px;
+          display: inline-block;
+          content: " ";
+          border: 4px solid;
+          border-color: transparent;
+          border-top-color: #002665;
+          line-height: 0;
+          font-size: 0; }
+        .footer .copy-and-address .address .city-select span {
+          border-bottom: 1px dashed; }
+      .footer .copy-and-address .address .addr, .footer .copy-and-address .address .tel {
+        position: relative;
+        padding-left: 26px;
+        font-size: 18px; }
+        .footer .copy-and-address .address .addr .icon, .footer .copy-and-address .address .tel .icon {
+          position: absolute;
+          left: 0;
+          width: 19px;
+          height: 23px;
+          background: url('../img/footer-addr-icons.png') no-repeat 0 0; }
+      .footer .copy-and-address .address .addr {
+        margin-bottom: 20px; }
+      .footer .copy-and-address .address .tel .icon {
+        background-position: 0 -23px; }
+    .footer .copy-and-address .copy {
+      float: right;
+      width: 73.45454%;
+      font-size: 12px; }
+      .footer .copy-and-address .copy p {
+        margin-top: 0; }
 
 .section-title {
   margin: 0;

@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="Content/css/main.css">
     <link rel="stylesheet" href="Content/css/bonds.css">
     <link rel="stylesheet" href="Content/css/vendor/selectize.default.css">
+    <link rel="stylesheet" href="Content/css/vendor/nouislider.css">
+    <link rel="shortcut icon" href="Content/img/favicon.ico">
   </head>
   <body class="bonds">
     <header class="header">
@@ -20,9 +22,9 @@
           <div class="row">
             <div class="col-sm-18 col-sm-offset-1"><a href="http://broker.ru" target="_blank" class="brand"><img src="Content/img/logo.png" alt="БКС Брокер"></a>
               <ul role="nav" class="top-nav pull-left">
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">Личный кабинет</a></li>
-                <li><a href="/contacts" class="pseudo-link offices">Офисы в москве</a></li>
+                <li><a href="#"><span class="icon home"></span>О компании</a></li>
+                <li><a href="#"><span class="icon cabinet"></span>Личный кабинет</a></li>
+                <li><a href="/contacts" class="pseudo-link offices"><span class="icon offices"></span><i>Офисы в москве</i></a></li>
               </ul>
               <div class="meta pull-right">
                 <div class="search"><a href="#" class="search-icon text-hide">Поиск</a></div>
@@ -89,21 +91,53 @@
                 <div class="calc-row">
                   <label>Выберите инвестиционный фонд</label>
                   <div class="opt-group">
-                    <label>
-                      <input type="radio" name="fund"><span>Технологии</span>
-                    </label>
-                    <label>
-                      <input type="radio" name="fund"><span>Зарубежные рынки</span>
-                    </label>
-                    <label>
-                      <input type="radio" name="fund"><span>Глобальные рынки</span>
-                    </label>
+                    <label><span class="custom-radio">
+                        <input type="radio" name="fund"></span><span>Технологии</span></label>
+                    <label><span class="custom-radio">
+                        <input type="radio" name="fund"></span><span>Зарубежные рынки</span></label>
+                    <label><span class="custom-radio">
+                        <input type="radio" name="fund"></span><span>Глобальные рынки</span></label>
                   </div>
                 </div>
-                <div class="calc-row"></div>
-                <div class="calc-row"></div>
+                <div class="calc-row">
+                  <label>Сумма для инвестирования</label>
+                  <input id="calc-range-input" class="calc-range">
+                  <div id="range-slider" class="no-ui-slider">
+                    <div id="calc-range" class="slider"></div>
+                    <ul class="slider-columns five-columns">
+                      <li>50&nbsp;т.</li>
+                      <li>100&nbsp;т.</li>
+                      <li>500&nbsp;т.</li>
+                      <li>1000&nbsp;т.</li>
+                      <li>2000&nbsp;т.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="calc-row">
+                  <label class="double-margin">Сумма для инвестирования</label>
+                  <input type="hidden" name="interval" id="bond-interval">
+                  <div class="opt-group"><span data-value="3" class="time">3 мес.</span><span data-value="6" class="time">6 мес.</span><span data-value="12" class="time">1 год</span><span data-value="24" class="time">2 года</span><span data-value="36" class="time">3 года</span></div>
+                </div>
               </div>
-              <div class="calc-col-2"></div>
+              <div class="calc-col-2">
+                <div class="income-values clearfix">
+                  <div class="in">
+                    <div class="wrap"><b>Вклад</b>
+                      <div id="range-value">100 000 Р</div>
+                      <div class="value-bg"></div>
+                    </div>
+                  </div>
+                  <div class="out">
+                    <div class="wrap"><b>Доход</b>
+                      <div id="income-value">58 000 Р</div>
+                      <div style="height:32px;" class="income-bg"></div>
+                      <div class="value-bg"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="income-percent"><span>Доход в процентах <b>23%</b></span></div>
+                <div class="income-result"><b>Вы получите</b><span id="income-result">58 000 ₽</span><span class="btn btn-yellow">получить</span></div>
+              </div>
             </form>
           </div>
         </div>
@@ -338,24 +372,40 @@
     </section>
     <footer class="footer clearfix">
       <div class="container">
-        <div class="panel clearfix"><a href="http://broker.ru" target="_blank" class="brand"><img src="Content/img/logo.png" alt="БКС Брокер"></a>
-          <div class="phone pull-right">
-            <div class="clearfix"><a href="tel:88005005545" class="cpc-tel num">8 800 500 55 45</a></div>
-            <div class="clearfix"><span class="description">бесплатный звонок по России</span></div><span class="get-call pull-right btn btn-mini btn-yellow">Заказать звонок</span>
+        <div class="row">
+          <div class="col-sm-18 col-sm-offset-1">
+            <ul class="footer-menu">
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Руководство</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Офисы и агенты</a></li>
+            </ul>
+            <div class="social"><span class="label">Мы в соц. сетях</span><a href="#" class="item tw"></a><a href="#" class="item vk"></a><a href="#" class="item fb"></a></div>
           </div>
         </div>
-        <ol class="copy">
-          <li>ООО «Компания БКС» лидер в рейтинге ведущих операторов в режиме основных торгов Т+ по акциям по итогам марта 2015 года по данным ОАО Московская Биржа.</li>
-          <li>Дистанционное открытие ИИС (Индивидуального инвестиционного счета) доступно только клиентам заключившим Генеральное соглашение о комплексном обслуживании на рынке ценных бумаг и Соглашение об организации корпоративной системы электронного документооборота «BCS» с ООО «Компания БКС».</li>
-          <li>Доходность по цене последней сделки ОФЗ выпуска 25081 (облигация федерального займа, номер государственной регистрации 25081RMFS, эмитент Министерство Финансов РФ) по состоянию на 03.03.2015 г. 14,26%. Результат инвестирования в прошлом не определяет доходности в будущем. Стоимость ценных бумаг может увеличиваться и уменьшаться. Более подробно с рисками связанными с осуществлением операций на рынке ценных бумаг вы можете ознакомиться в Приложении № 14 к Регламенту оказания услуг на рынке Не является рекламой ценных бумаг.</li>
-          <li>Доходность виртуального портфеля «Meister(Мейстер)», смоделирована экспертами ООО «Компания БКС» с учетом комиссии в 4 рубля за один срочный фьючерсный контракт по данным торгов на ЗАО «ФБ ММВБ» (ОАО Московская Биржа) с 01.02.2014 по 01.02.2015, не учитывает расходы на оплату услуги, брокерских и депозитарных услуг, подачи поручений по телефону и иных расходов, подлежащих оплате клиентом. Полный список тарифов ООО «Компания БКС» приведен в приложении № 11 к Регламенту оказания услуг на рынке ценных бумаг ООО «Компания БКС». Результат инвестирования в прошлом не определяет дохода в будущем. ООО «Компания БКС» не несет ответственности за результаты деятельности по данным рекомендациям. Торговые рекомендации «Биржевой Гуру», предоставляются исключительно в информационных целях и не могут рассматриваться как, или быть использованы в качестве, предложения или побуждения сделать заявку на покупку или продажу, или вложение в ценные бумаги, или другие финансовые инструменты. ООО «Компания БКС» не предпринимает каких-либо шагов к тому, чтобы убедить кого-либо в том, что ценные бумаги, указанные в торговых рекомендациях, являются подходящими для того или иного инвестора.</li>
-          <li>Доходность виртуального портфеля «Лира», смоделирована экспертами ООО «Компания БКС» с учетом комиссии в размере 0,06% от объема сделки по данным торгов на ЗАО «ФБ ММВБ» (ОАО Московская Биржа) с 01.04.2014 по 01.04.2015, не учитывает расходы на оплату услуги, брокерских и депозитарных услуг, подачи поручений по телефону и иных расходов, подлежащих оплате клиентом. Полный список тарифов ООО «Компания БКС» приведен в приложении № 11 к Регламенту оказания услуг на рынке ценных бумаг ООО «Компания БКС». Результат инвестирования в прошлом не определяет дохода в будущем. ООО «Компания БКС» не несет ответственности за результаты деятельности по данным рекомендациям. Торговые рекомендации «Биржевой Гуру», предоставляются исключительно в информационных целях и не могут рассматриваться как, или быть использованы в качестве, предложения или побуждения сделать заявку на покупку или продажу, или вложение в ценные бумаги, или другие финансовые инструменты. ООО «Компания БКС» не предпринимает каких-либо шагов к тому, чтобы убедить кого-либо в том, что ценные бумаги, указанные в торговых рекомендациях, являются подходящими для того или иного инвестора.</li>
-          <li>При внесении на ИИС максимальной суммы в год 400 000 рублей. Налоговый вычет предоставляется только физическим лицам налоговым резидентам РФ, получающим доход облагаемых НДФЛ. (ст.219.1 Налогового кодекса РФ).</li>
-        </ol>
+        <div class="row">
+          <div class="col-sm-18 col-sm-offset-1">
+            <div class="copy-and-address clearfix">
+              <div class="address">
+                <div class="phone-num">8 800 100 73 70</div>
+                <div class="phone-descr">бесплатный звонок по россии</div>
+                <div class="city-select"><span>Москва</span></div>
+                <div class="addr"><span class="icon"></span>Проспект мира, д.69, стр. 1</div>
+                <div class="tel"><span class="icon"></span>+7 (495) 785 19 99</div>
+              </div>
+              <div class="copy">
+                <p>1. Под доходностью имеется в виду прирост стоимости пая. Указана доходность ОПИФ фондов «БКС — Зарубежные Фонды», ОПИФ смешанных инвестиций «БКС — Технологии» и ОПИФ смешанных инвестиций «БКС — Глобальные рынки» за 2014 год.</p>
+                <p>ООО «Компания БКС» является агентом ЗАО УК «БКС» по выдаче, погашению и обмену паев.</p>
+                <p>ЗАО УК «БКС». Лицензия № 21-000-1-00071 от 25.06.2002 г. на осуществление деятельности по управлению инвестиционными фондами, паевыми инвестиционными фондами и негосударственными пенсионными фондами. Выдана ФСФР РФ. Подробную информацию об осуществлении ЗАО УК «БКС» а также об агентах, в том числе о полном, сокращенном фирменном названии, местонахождении, лицензии агентов, деятельности по управлению паевыми инвестиционными фондами Вы можете найти в информационном бюллетене «Приложение к Вестнику ФСФР», на сайте www.bcs.ru/am, в ленте ЗАО «Интерфакс», в ЗАО УК «БКС» по адресу: Российская Федерация, 630099, г. Новосибирск, ул. Советская, д. 37, тел.: (383) 210-50-20. Стоимость инвестиционных паёв может увеличиваться и уменьшаться, результаты инвестирования в прошлом не определяют доходы в будущем. ЗАО УК «БКС», государство не гарантируют доходность инвестиций в инвестиционные фонды. Прежде чем приобрести инвестиционный пай, следует внимательно ознакомиться с правилами доверительного управления паевым фондом.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
     <script src="Content/js/vendor/jquery-2.1.4.min.js"></script>
     <script src="Content/js/vendor/selectize.js"></script>
+    <script src="Content/js/vendor/nouislider.js"></script>
     <script src="Content/js/main.js"></script>
   </body>
 </html>

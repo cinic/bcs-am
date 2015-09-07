@@ -47,8 +47,130 @@
     margin: 0 -10px;
     border: 1px solid #9ea9b8;
     color: #002a61; }
+    .bonds .calculator .calculator-form .calc-col-1, .bonds .calculator .calculator-form .calc-col-2 {
+      float: left;
+      width: 392px; }
+    .bonds .calculator .calculator-form .calc-col-1 {
+      width: 565px;
+      background: #eceff4;
+      border-right: 1px solid #ccd4df; }
+    .bonds .calculator .calculator-form .calc-col-2 {
+      padding: 10px 38px 60px 24px; }
     .bonds .calculator .calculator-form .calc-row {
+      position: relative;
       padding: 36px 24px 62px; }
+      .bonds .calculator .calculator-form .calc-row > label {
+        display: inline-block;
+        margin-bottom: 36px; }
+        .bonds .calculator .calculator-form .calc-row > label.double-margin {
+          margin-top: 26px; }
+      .bonds .calculator .calculator-form .calc-row:nth-child(2) {
+        background: rgba(204, 209, 218, 0.5);
+        border-top: 1px solid #9ea9b8;
+        border-bottom: 1px solid #9ea9b8; }
+      .bonds .calculator .calculator-form .calc-row:nth-child(3) {
+        padding-bottom: 90px; }
+    .bonds .calculator .calculator-form .opt-group label {
+      position: relative;
+      display: inline-block;
+      margin-right: 30px;
+      padding-left: 28px;
+      width: 146px;
+      vertical-align: top; }
+      .bonds .calculator .calculator-form .opt-group label:last-child {
+        margin: 0; }
+      .bonds .calculator .calculator-form .opt-group label .custom-radio {
+        position: absolute;
+        left: 0;
+        top: 4px; }
+    .bonds .calculator .calculator-form .opt-group .time {
+      display: inline-block;
+      margin-right: 12px;
+      width: 84px;
+      line-height: 28px;
+      font-size: 16px;
+      border: 1px solid #9ea9b9;
+      text-align: center;
+      background: white;
+      border-radius: 14px;
+      cursor: pointer; }
+      .bonds .calculator .calculator-form .opt-group .time.active {
+        background: #4992ff;
+        border-color: #4992ff;
+        color: white;
+        cursor: default; }
+    .bonds .calculator .calculator-form .custom-radio {
+      display: inline-block;
+      height: 16px;
+      width: 16px;
+      background: url('../img/custom-radio.png') no-repeat 0 0; }
+      .bonds .calculator .calculator-form .custom-radio.checked {
+        background-position: 0 -16px; }
+      .bonds .calculator .calculator-form .custom-radio input {
+        visibility: hidden; }
+    .bonds .calculator .calculator-form .calc-range {
+      display: inline-block;
+      float: right;
+      margin-top: -10px;
+      border-radius: 22px;
+      padding: 0 38px;
+      width: 238px;
+      line-height: 44px;
+      font-size: 30px;
+      border: 1px solid #9ea9b9;
+      text-align: center; }
+    .bonds .calculator .calculator-form .income-values .in, .bonds .calculator .calculator-form .income-values .out {
+      position: relative;
+      width: 150px;
+      height: 224px;
+      font-family: 'Futura New Light', sans-serif;
+      text-align: center; }
+      .bonds .calculator .calculator-form .income-values .in .wrap, .bonds .calculator .calculator-form .income-values .out .wrap {
+        position: absolute;
+        bottom: 0;
+        width: 100%; }
+    .bonds .calculator .calculator-form .income-values .in {
+      float: left; }
+    .bonds .calculator .calculator-form .income-values .out {
+      float: right; }
+    .bonds .calculator .calculator-form .income-values .value-bg {
+      width: 100%;
+      height: 90px;
+      background: #ccd1da; }
+    .bonds .calculator .calculator-form .income-values b {
+      line-height: 22px;
+      font-size: 21px;
+      font-weight: normal; }
+    .bonds .calculator .calculator-form .income-values #range-value, .bonds .calculator .calculator-form .income-values #income-value {
+      margin-bottom: 10px;
+      font-size: 30px;
+      line-height: 33px; }
+    .bonds .calculator .calculator-form .income-values .income-bg {
+      background: #4992ff; }
+    .bonds .calculator .calculator-form .income-percent {
+      margin: 38px 0 46px;
+      padding: 20px 0 30px;
+      text-align: center;
+      border-top: 1px solid #9ea9b9;
+      border-bottom: 1px solid #9ea9b9; }
+      .bonds .calculator .calculator-form .income-percent b {
+        font-size: 36px;
+        font-weight: normal; }
+    .bonds .calculator .calculator-form .income-result {
+      text-align: center; }
+      .bonds .calculator .calculator-form .income-result b, .bonds .calculator .calculator-form .income-result #income-result {
+        display: block; }
+      .bonds .calculator .calculator-form .income-result b {
+        line-height: 40px;
+        font-size: 30px;
+        font-weight: normal; }
+      .bonds .calculator .calculator-form .income-result #income-result {
+        line-height: 74px;
+        font-size: 62px; }
+      .bonds .calculator .calculator-form .income-result .btn {
+        margin-top: 26px;
+        width: 252px;
+        font-size: 18px; }
 .bonds .teaser.consultation {
   padding-bottom: 94px;
   background: #eceff4;
