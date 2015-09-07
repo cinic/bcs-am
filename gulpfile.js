@@ -20,12 +20,12 @@ var gulp = require('gulp'),
 var path = {
   build: {
     html: 'build/',
-    js: 'build/js/',
-    css: 'build/css/',
-    img: 'build/img/',
-    fonts: 'build/fonts/',
-    vendor_js: 'build/js/vendor/',
-    vendor_css: 'build/css/vendor/'
+    js: 'build/Content/js/',
+    css: 'build/Content/css/',
+    img: 'build/Content/img/',
+    fonts: 'build/Content/fonts/',
+    vendor_js: 'build/Content/js/vendor/',
+    vendor_css: 'build/Content/css/vendor/'
   },
   src: {
     html: ['source/template/*.jade', '!source/template/_*.jade'],
