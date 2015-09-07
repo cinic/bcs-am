@@ -1,0 +1,183 @@
+/*
+* Standards styles
+*/
+.btn {
+  padding: 14px 38px;
+  font-size: 18px;
+  line-height: 18px;
+  border-radius: 24px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  background-color: transparent;
+  white-space: nowrap;
+  color: #0f0f0f;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; }
+  .btn:active, .btn.active {
+    outline: 0;
+    background-image: none; }
+  .btn.btn-yellow {
+    background-color: #ffc300; }
+  .btn[type='submit'] {
+    border: 0; }
+  .btn.btn-mini {
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 14px; }
+
+body {
+  max-width: 1600px;
+  font-family: 'Futura New Book', sans-serif;
+  font-size: 20px;
+  line-height: 1.1;
+  color: #ccd7e6;
+  letter-spacing: .025em; }
+
+.header {
+  background: #f3f6ec; }
+  .header .brand {
+    float: left; }
+    .header .brand img {
+      display: block; }
+  .header a {
+    text-decoration: none; }
+  .header .top-panel {
+    padding: 18px 0 13px;
+    background: white;
+    border-bottom: 1px solid #dadce1;
+    color: #002665; }
+    .header .top-panel a {
+      color: #002665; }
+    .header .top-panel .top-nav {
+      margin: 0;
+      margin-left: 120px;
+      padding-left: 0;
+      font: normal normal 18px/18px 'Futura New Medium', sans-serif; }
+      .header .top-panel .top-nav li {
+        float: left;
+        margin-top: 18px;
+        margin-right: 70px;
+        list-style: none; }
+        .header .top-panel .top-nav li:last-child {
+          margin-right: 0; }
+    .header .top-panel .meta {
+      width: 272px; }
+      .header .top-panel .meta .search, .header .top-panel .meta .phone {
+        float: left; }
+      .header .top-panel .meta .search-icon, .header .top-panel .meta .phone-icon {
+        float: left;
+        margin-right: 10px;
+        width: 36px;
+        height: 36px;
+        border-radius: 18px;
+        background: #ffc300 url('../img/top-panel-icons.png') no-repeat 0 -36px; }
+      .header .top-panel .meta .search-icon {
+        background-color: #002a61;
+        background-position: 0 0; }
+      .header .top-panel .meta .phone {
+        width: 222px; }
+        .header .top-panel .meta .phone .num {
+          float: right;
+          font-size: 22px;
+          line-height: 20px;
+          letter-spacing: 1px; }
+        .header .top-panel .meta .phone .description {
+          float: right;
+          font-size: 10px;
+          line-height: 16px;
+          text-transform: uppercase; }
+  .header nav {
+    background: white; }
+  .header .main-nav {
+    margin: 10px 0;
+    padding: 0;
+    font-size: 14px;
+    text-transform: uppercase; }
+    .header .main-nav li {
+      float: left;
+      padding: 12px 30px 7px;
+      list-style: none;
+      border-left: 1px solid #dadce1; }
+      .header .main-nav li:first-child {
+        padding-left: 0;
+        border: 0; }
+      .header .main-nav li:last-child, .header .main-nav li .last {
+        padding: 0;
+        border: 0; }
+      .header .main-nav li a {
+        color: #445267;
+        letter-spacing: 0.025em; }
+      .header .main-nav li.open-account a {
+        display: inline-block;
+        padding: 12px 35px 7px;
+        background-color: #ffc300;
+        border-radius: 18px; }
+
+.footer {
+  padding: 30px 0;
+  color: white; }
+
+.section-title {
+  margin: 0;
+  font: normal 70px/70px 'Futura New Light', sans-serif;
+  text-align: center; }
+
+.section-label {
+  margin-top: 44px;
+  font-family: 'Futura New Medium', sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  color: #4992ff;
+  text-align: center;
+  text-transform: uppercase; }
+
+.pseudo-link {
+  color: #f1b900;
+  text-decoration: underline;
+  cursor: pointer; }
+
+.form-group {
+  margin-bottom: 30px; }
+  .form-group > input, .form-group .custom-select .selectize-input {
+    width: 100%;
+    color: #002a61;
+    font-size: 16px; }
+  .form-group > input {
+    padding: 10px;
+    height: 40px;
+    border: 2px solid #9ea9b8;
+    /* Webkit */
+    /* Firefox 19+ */
+    /* IE10+ */ }
+    .form-group > input::-webkit-input-placeholder {
+      color: #002a61; }
+    .form-group > input::-moz-placeholder {
+      color: #002a61; }
+    .form-group > input:-ms-input-placeholder {
+      color: #002a61; }
+    .form-group > input.error {
+      border-color: #e42a2a; }
+    .form-group > input:focus, .form-group > input.focus {
+      border-color: #9ea9b8;
+      outline: none; }
+  .form-group input[type="submit"] {
+    width: 100%; }
+  .form-group label {
+    display: none; }
