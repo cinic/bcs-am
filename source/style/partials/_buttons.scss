@@ -1,5 +1,5 @@
 .btn {
-  @include button-size($padding-base-vertical, $padding-base-horizontal, $btn-default-font-size, $line-height-base, 3px);
+  @include button-size($padding-base-vertical, $padding-base-horizontal, $btn-default-font-size, $btn-line-height-base, $border-radius-base);
   @include user-select(none);
   @include transition(all .2s ease-in-out);
   display: inline-block;
@@ -15,8 +15,7 @@
   white-space: nowrap;
   color: $btn-default-color;
   text-decoration: none;
-  line-height: 20px;
-  box-shadow: inset 0 -1px #e79600, inset 0 1px #fad869;
+  text-transform: uppercase;
 
   &,
   &:active,
@@ -30,18 +29,17 @@
   &:hover,
   &:focus,
   &.focus {
-    box-shadow: inset 0 -1px #e79600, inset 0 1px #fad869, 0 3px 8px 0px rgba(83,56,13,.48);
+    
   }
 
   &:active,
   &.active {
     outline: 0;
     background-image: none;
-    box-shadow: inset 0 0 9px 2px rgba(166,113,29,.60);
   }
 
   &.btn-yellow {
-    background-color: #f1b900;
+    background-color: #ffc300;
   }
 
   &[type='submit'] {

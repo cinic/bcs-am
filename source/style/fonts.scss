@@ -1,19 +1,28 @@
+/*
+Futura new Book
+Futura new Light
+Futura new Medium
+*/
 @font-face {
-  font-family: 'PT Sans';
+  font-family: 'Futura New Medium';
+  src: url('../fonts/FuturaNewMedium.eot');
+  src: local('☺'), url('../fonts/FuturaNewMedium.woff') format('woff'), url('../fonts/FuturaNewMedium.ttf') format('truetype'), url('../fonts/FuturaNewMedium.svg') format('svg');
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
-  src: local('PT Sans'), local('PTSans-Regular'), url(http://fonts.gstatic.com/s/ptsans/v8/peba9qoUFrLz1OT0H-PYjALUuEpTyoUstqEm5AMlJo4.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('PT Sans Bold'), local('PTSans-Bold'), url(http://fonts.gstatic.com/s/ptsans/v8/g46X4VH_KHOWAAa-HpnGPsDdSZkkecOE1hvV7ZHvhyU.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: 'Meta Pro';
-  font-style: normal;
-  font-weight: 700;
-  src: local('MetaPro Bold'), local('MetaPro-Bold'), url(../fonts/metapro-bold.otf) format('opentype');
+	font-family: 'Futura New Light';
+	src: url('../fonts/FuturaNewLight.eot');
+	src: local('☺'), url('../fonts/FuturaNewLight.woff') format('woff'), url('../fonts/FuturaNewLight.ttf') format('truetype'), url('../fonts/FuturaNewLight.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Futura New Book';
+	src: url('../fonts/FuturaNewBook.eot');
+	src: local('☺'), url('../fonts/FuturaNewBook.woff') format('woff'), url('../fonts/FuturaNewBook.ttf') format('truetype'), url('../fonts/FuturaNewBook.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
