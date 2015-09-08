@@ -1,0 +1,384 @@
+.mutual-funds .header .content {
+  height: 704px;
+  background: url(../img/pages/bonds/header.jpg) no-repeat top center;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header.jpg', sizingMethod='scale')"; }
+  .mutual-funds .header .content .page-title {
+    margin-top: 118px;
+    margin-bottom: 24px;
+    font: normal 26px/32px 'Futura New Book', sans-serif;
+    color: #4992ff; }
+  .mutual-funds .header .content .page-subtitle {
+    margin: 0;
+    margin-bottom: 78px;
+    font: normal 70px/70px 'Futura New Light', sans-serif;
+    color: #002665; }
+.mutual-funds .what-is {
+  min-height: 446px;
+  background: #4c535e url('../img/pages/bonds/what-is-bg.jpg') no-repeat 50% 50%;
+  letter-spacing: 0; }
+  .mutual-funds .what-is .section-title, .mutual-funds .what-is .description {
+    color: white; }
+  .mutual-funds .what-is .section-title {
+    margin-top: 34px;
+    margin-bottom: 20px; }
+  .mutual-funds .what-is .description {
+    margin: 0 0 80px;
+    line-height: 33px;
+    font-size: 30px; }
+    .mutual-funds .what-is .description:after {
+      position: relative;
+      top: 34px;
+      display: block;
+      margin: 0 auto;
+      content: " ";
+      width: 47px;
+      height: 3px;
+      background: #4992ff; }
+  .mutual-funds .what-is p {
+    margin: 0; }
+.mutual-funds .calculator {
+  padding-bottom: 120px; }
+  .mutual-funds .calculator .section-title {
+    margin-bottom: 60px;
+    color: #78849b; }
+  .mutual-funds .calculator .calculator-form {
+    margin: 0 -10px;
+    border: 1px solid #9ea9b8;
+    color: #002a61; }
+    .mutual-funds .calculator .calculator-form .calc-col-1, .mutual-funds .calculator .calculator-form .calc-col-2 {
+      float: left;
+      width: 392px; }
+    .mutual-funds .calculator .calculator-form .calc-col-1 {
+      width: 565px;
+      background: #eceff4;
+      border-right: 1px solid #ccd4df; }
+    .mutual-funds .calculator .calculator-form .calc-col-2 {
+      padding: 10px 38px 60px 24px; }
+    .mutual-funds .calculator .calculator-form .calc-row {
+      position: relative;
+      padding: 36px 24px 62px; }
+      .mutual-funds .calculator .calculator-form .calc-row > label {
+        display: inline-block;
+        margin-bottom: 36px; }
+        .mutual-funds .calculator .calculator-form .calc-row > label.double-margin {
+          margin-top: 26px; }
+      .mutual-funds .calculator .calculator-form .calc-row:nth-child(2) {
+        background: rgba(204, 209, 218, 0.5);
+        border-top: 1px solid #9ea9b8;
+        border-bottom: 1px solid #9ea9b8; }
+      .mutual-funds .calculator .calculator-form .calc-row:nth-child(3) {
+        padding-bottom: 90px; }
+    .mutual-funds .calculator .calculator-form .opt-group label {
+      position: relative;
+      display: inline-block;
+      margin-right: 30px;
+      padding-left: 28px;
+      width: 146px;
+      vertical-align: top; }
+      .mutual-funds .calculator .calculator-form .opt-group label:last-child {
+        margin: 0; }
+      .mutual-funds .calculator .calculator-form .opt-group label .custom-radio {
+        position: absolute;
+        left: 0;
+        top: 4px; }
+    .mutual-funds .calculator .calculator-form .opt-group .time {
+      display: inline-block;
+      margin-right: 12px;
+      width: 84px;
+      line-height: 28px;
+      font-size: 16px;
+      border: 1px solid #9ea9b9;
+      text-align: center;
+      background: white;
+      border-radius: 14px;
+      cursor: pointer; }
+      .mutual-funds .calculator .calculator-form .opt-group .time.active {
+        background: #4992ff;
+        border-color: #4992ff;
+        color: white;
+        cursor: default; }
+    .mutual-funds .calculator .calculator-form .custom-radio {
+      display: inline-block;
+      height: 16px;
+      width: 16px;
+      background: url('../img/custom-radio.png') no-repeat 0 0; }
+      .mutual-funds .calculator .calculator-form .custom-radio.checked {
+        background-position: 0 -16px; }
+      .mutual-funds .calculator .calculator-form .custom-radio input {
+        visibility: hidden; }
+    .mutual-funds .calculator .calculator-form .calc-range {
+      display: inline-block;
+      float: right;
+      margin-top: -10px;
+      border-radius: 22px;
+      padding: 0 38px;
+      width: 238px;
+      line-height: 44px;
+      font-size: 30px;
+      border: 1px solid #9ea9b9;
+      text-align: center; }
+    .mutual-funds .calculator .calculator-form .income-values .in, .mutual-funds .calculator .calculator-form .income-values .out {
+      position: relative;
+      width: 150px;
+      height: 224px;
+      font-family: 'Futura New Light', sans-serif;
+      text-align: center; }
+      .mutual-funds .calculator .calculator-form .income-values .in .wrap, .mutual-funds .calculator .calculator-form .income-values .out .wrap {
+        position: absolute;
+        bottom: 0;
+        width: 100%; }
+    .mutual-funds .calculator .calculator-form .income-values .in {
+      float: left; }
+    .mutual-funds .calculator .calculator-form .income-values .out {
+      float: right; }
+    .mutual-funds .calculator .calculator-form .income-values .value-bg {
+      width: 100%;
+      height: 90px;
+      background: #ccd1da; }
+    .mutual-funds .calculator .calculator-form .income-values b {
+      line-height: 22px;
+      font-size: 21px;
+      font-weight: normal; }
+    .mutual-funds .calculator .calculator-form .income-values #range-value, .mutual-funds .calculator .calculator-form .income-values #income-value {
+      margin-bottom: 10px;
+      font-size: 30px;
+      line-height: 33px; }
+    .mutual-funds .calculator .calculator-form .income-values .income-bg {
+      background: #4992ff; }
+    .mutual-funds .calculator .calculator-form .income-percent {
+      margin: 38px 0 46px;
+      padding: 20px 0 30px;
+      text-align: center;
+      border-top: 1px solid #9ea9b9;
+      border-bottom: 1px solid #9ea9b9; }
+      .mutual-funds .calculator .calculator-form .income-percent b {
+        font-size: 36px;
+        font-weight: normal; }
+    .mutual-funds .calculator .calculator-form .income-result {
+      text-align: center; }
+      .mutual-funds .calculator .calculator-form .income-result b, .mutual-funds .calculator .calculator-form .income-result #income-result {
+        display: block; }
+      .mutual-funds .calculator .calculator-form .income-result b {
+        line-height: 40px;
+        font-size: 30px;
+        font-weight: normal; }
+      .mutual-funds .calculator .calculator-form .income-result #income-result {
+        line-height: 74px;
+        font-size: 62px; }
+      .mutual-funds .calculator .calculator-form .income-result .btn {
+        margin-top: 26px;
+        width: 252px;
+        font-size: 18px; }
+.mutual-funds .teaser.consultation {
+  padding-bottom: 94px;
+  background: #eceff4;
+  border-top: 1px solid #9ea9b8;
+  color: #7c899b; }
+  .mutual-funds .teaser.consultation .section-title {
+    margin: 56px 0 42px;
+    font-size: 50px;
+    line-height: 60px;
+    color: #002a61; }
+  .mutual-funds .teaser.consultation .trader span.icon, .mutual-funds .teaser.consultation .time span.icon {
+    float: left;
+    margin-left: -120px;
+    width: 101px;
+    height: 101px; }
+  .mutual-funds .teaser.consultation .time span.icon {
+    background: url('../img/pages/bonds/consultation-time.png') no-repeat 0 0; }
+  .mutual-funds .teaser.consultation .trader span.icon {
+    margin-left: -110px;
+    width: 93px;
+    height: 93px;
+    background: url('../img/pages/bonds/consultation-trader.png') no-repeat 0 0; }
+  .mutual-funds .teaser.consultation .actions {
+    padding-top: 84px; }
+  .mutual-funds .teaser.consultation p {
+    margin: 0; }
+.mutual-funds .advantages {
+  min-height: 996px;
+  color: white;
+  background: url('../img/pages/bonds/advantages-bg.jpg') no-repeat 50% 50%; }
+  .mutual-funds .advantages .section-title {
+    margin: 62px 0 110px; }
+  .mutual-funds .advantages .item {
+    position: relative;
+    margin-bottom: 60px;
+    padding-top: 102px; }
+    .mutual-funds .advantages .item .icon {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -45px;
+      width: 90px;
+      height: 84px;
+      background: url('../img/pages/bonds/advantages-icons.png') no-repeat 0 0; }
+      .mutual-funds .advantages .item .icon.shield {
+        background-position: 0 0; }
+      .mutual-funds .advantages .item .icon.value {
+        background-position: 0 -84px; }
+      .mutual-funds .advantages .item .icon.immersion {
+        background-position: 0 -168px; }
+      .mutual-funds .advantages .item .icon.result {
+        height: 86px;
+        background-position: 0 -252px; }
+      .mutual-funds .advantages .item .icon.liquidity {
+        top: 4px;
+        height: 81px;
+        background-position: 0 -338px; }
+      .mutual-funds .advantages .item .icon.management {
+        background-position: 0 -419px; }
+  .mutual-funds .advantages h3 {
+    margin: 0 0 22px;
+    font-size: 30px;
+    font-weight: normal; }
+  .mutual-funds .advantages p {
+    font-size: 18px;
+    line-height: 22px;
+    color: #cacaca; }
+.mutual-funds .products {
+  background: #eceff4; }
+  .mutual-funds .products .section-label {
+    margin: 86px 0 28px; }
+  .mutual-funds .products .section-title {
+    margin-bottom: 80px;
+    color: #78849b; }
+  .mutual-funds .products .products-list {
+    margin: 0 0 34px 0;
+    padding: 0;
+    list-style: none; }
+    .mutual-funds .products .products-list li {
+      float: left;
+      margin: 0 32px 32px 0;
+      padding: 0 18px;
+      width: 350px;
+      height: 520px;
+      font-family: 'Futura New Medium', sans-serif;
+      border: 2px solid white;
+      background: white;
+      text-align: center;
+      color: #002a61; }
+      .mutual-funds .products .products-list li:hover {
+        border-color: #4992ff; }
+      .mutual-funds .products .products-list li h4 {
+        margin: 18px 0 22px;
+        font-size: 25px;
+        font-weight: normal;
+        line-height: 25px; }
+      .mutual-funds .products .products-list li span, .mutual-funds .products .products-list li b {
+        display: block;
+        line-height: 22px;
+        font-weight: normal; }
+      .mutual-funds .products .products-list li b {
+        font-size: 16px; }
+      .mutual-funds .products .products-list li .annual-return {
+        margin: 0 -18px;
+        padding: 10px 0 18px;
+        line-height: 34px;
+        color: white;
+        background: #002a61; }
+        .mutual-funds .products .products-list li .annual-return b {
+          font-size: 22px; }
+        .mutual-funds .products .products-list li .annual-return span {
+          font-size: 30px;
+          color: #ffc300; }
+      .mutual-funds .products .products-list li .asset-value-today, .mutual-funds .products .products-list li .min-investment-amount, .mutual-funds .products .products-list li .investment-portfolio {
+        padding: 8px 0 10px; }
+      .mutual-funds .products .products-list li .asset-value-today, .mutual-funds .products .products-list li .min-investment-amount {
+        border-bottom: 1px solid #b6c1d2; }
+      .mutual-funds .products .products-list li .investment-portfolio span {
+        font-size: 16px; }
+      .mutual-funds .products .products-list li .actions {
+        margin-top: 24px; }
+    .mutual-funds .products .products-list li:nth-child(3), .mutual-funds .products .products-list li:nth-child(6) {
+      margin-right: 0; }
+.mutual-funds .teaser.selection {
+  padding: 50px 0 72px;
+  background: #eceff4;
+  border-top: 1px solid #9ea9b8; }
+  .mutual-funds .teaser.selection .section-title {
+    margin: 0 0 28px;
+    font-size: 50px;
+    line-height: 60px;
+    color: #002a61; }
+  .mutual-funds .teaser.selection p {
+    margin: 0;
+    color: #7c899b; }
+  .mutual-funds .teaser.selection .actions {
+    margin: 70px 0 0;
+    text-align: center; }
+.mutual-funds .experience {
+  background: #4d5560 url(../img/pages/bonds/experience-bg.jpg) no-repeat 50% 50%;
+  color: white; }
+  .mutual-funds .experience .section-label {
+    color: white; }
+  .mutual-funds .experience .section-title {
+    margin-bottom: 64px; }
+  .mutual-funds .experience .item {
+    position: relative;
+    margin-bottom: 80px;
+    padding-top: 62px;
+    color: #ccd7e6; }
+    .mutual-funds .experience .item b {
+      display: block;
+      margin-bottom: 22px;
+      font-size: 30px;
+      line-height: 33px;
+      color: white;
+      font-weight: normal; }
+    .mutual-funds .experience .item.rate {
+      margin: 0 -14px; }
+    .mutual-funds .experience .item .icon {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -23px;
+      width: 46px;
+      height: 42px;
+      background: url('../img/pages/bonds/experience-icons.png') no-repeat 0 0; }
+      .mutual-funds .experience .item .icon.year {
+        background-position: 0 -84px; }
+      .mutual-funds .experience .item .icon.rate {
+        background-position: 0 -126px; }
+      .mutual-funds .experience .item .icon.offices {
+        background-position: 0 -168px; }
+      .mutual-funds .experience .item .icon.clients {
+        background-position: 0 -42px; }
+      .mutual-funds .experience .item .icon.value {
+        background-position: 0 0; }
+.mutual-funds .feedback {
+  color: #002a61; }
+  .mutual-funds .feedback .section-title {
+    margin: 46px 0 56px;
+    font-size: 48px;
+    line-height: 42px;
+    color: #002a61; }
+  .mutual-funds .feedback .steps {
+    display: inline-block; }
+    .mutual-funds .feedback .steps .step {
+      position: relative;
+      display: inline-block;
+      margin-right: 94px;
+      padding-left: 46px;
+      font-size: 16px;
+      text-align: left;
+      vertical-align: top; }
+      .mutual-funds .feedback .steps .step:last-child {
+        margin-right: 0; }
+      .mutual-funds .feedback .steps .step .icon {
+        position: absolute;
+        left: 0;
+        top: 2px;
+        width: 34px;
+        height: 34px;
+        background: url('../img/pages/bonds/feedback-icons.png') no-repeat 0 0; }
+        .mutual-funds .feedback .steps .step .icon.icon-1 {
+          background-position: 0 0; }
+        .mutual-funds .feedback .steps .step .icon.icon-2 {
+          background-position: 0 -34px; }
+        .mutual-funds .feedback .steps .step .icon.icon-3 {
+          background-position: 0 -68px; }
+  .mutual-funds .feedback .feedback-form {
+    margin: 40px -10px 0; }

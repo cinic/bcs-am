@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="Content/css/vendor/bootstrap.custom.css">
     <link rel="stylesheet" href="Content/css/main.css">
     <link rel="stylesheet" href="Content/css/mutual-funds.css">
+    <link rel="stylesheet" href="Content/css/bond.css">
+    <link rel="stylesheet" href="Content/css/bond-national.css">
     <link rel="stylesheet" href="Content/css/vendor/selectize.default.css">
     <link rel="stylesheet" href="Content/css/vendor/nouislider.css">
     <link rel="shortcut icon" href="Content/img/favicon.ico">
   </head>
-  <body class="mutual-funds bond-national-fund">
+  <body class="mutual-funds bond bond-national-fund">
     <header class="header">
       <div class="top-panel clearfix">
         <div class="container">
@@ -57,29 +59,14 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-11 text-center">
-              <h1 class="page-title">ПАЕВЫЕ<br>ИНВЕСТИЦИОННЫЕ ФОНДЫ</h1>
-              <h2 class="page-subtitle">Достойный вклад<br>в благополучное будущее</h2>
+              <h1 class="page-title">Фонд национальных<br>облигаций</h1>
+              <div class="page-title-description">Инвестируйте в высоконадежные государственные<br>ценные бумаги</div>
               <div class="advice text-center"><a href="#" title="Получить консультацию" class="btn btn-yellow">Узнать больше</a></div>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <div class="what-is text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-20">
-            <h2 class="section-title">Паевые инвестиционные фонды—это</h2>
-            <p class="description">Один из самых простых, доступных и прозрачных способов<br>вложения средств на фондовом рынке. </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 col-sm-offset-4">
-            <p>Паевые фонды позволяют начинающим инвесторам, располагающим небольшими суммами, пользоваться всеми преимуществами профессионального управления активами на фондовом рынке и получать доход от вложений.</p>
-          </div>
-        </div>
-      </div>
-    </div>
     <section class="calculator clearfix">
       <div class="container">
         <div class="section-label">Калькулятор</div>
@@ -88,17 +75,6 @@
           <div class="col-sm-16 col-sm-offset-2">
             <form class="calculator-form clearfix">
               <div class="calc-col-1">
-                <div class="calc-row">
-                  <label>Выберите инвестиционный фонд</label>
-                  <div class="opt-group">
-                    <label><span class="custom-radio">
-                        <input type="radio" name="fund"></span><span>Технологии</span></label>
-                    <label><span class="custom-radio">
-                        <input type="radio" name="fund"></span><span>Зарубежные рынки</span></label>
-                    <label><span class="custom-radio">
-                        <input type="radio" name="fund"></span><span>Глобальные рынки</span></label>
-                  </div>
-                </div>
                 <div class="calc-row">
                   <label>Сумма для инвестирования</label>
                   <input id="calc-range-input" class="calc-range">
@@ -143,24 +119,61 @@
         </div>
       </div>
     </section>
-    <div class="teaser consultation">
+    <section class="main-indicator">
       <div class="container">
-        <h3 class="section-title">Получите консультацию финансового советника</h3>
+        <div class="section-label">Основные показатели фонда</div>
+        <h2 class="section-title">Состав и график доходности</h2>
         <div class="row">
-          <div class="col-sm-5 col-sm-offset-5">
-            <div class="time"><span class="icon"></span>
-              <p>Инвестору не нужно обладать специальными знаниями и тратить время на управление своим инвестиционным портфелем.</p>
+          <div class="col-sm-18 col-sm-offset-1">
+            <div class="main-indicator-graph">
+              <div class="caption">Дата формирования фонда хх.хх.хххх г.</div>
+              <div class="clearfix">
+                <div class="col-left">
+                  <h3 class="title">Динамика стоимости пая и СЧА</h3>
+                  <div class="legend clearfix">
+                    <div class="item item-1"><span class="icon"></span>— стоимость пая</div>
+                    <div class="item item-2"><span class="icon"></span>— стоимость СЧА</div>
+                  </div>
+                </div>
+                <div class="col-right">
+                  <h3 class="title">Распределение активов</h3>
+                </div>
+              </div>
+              <div class="clearfix">
+                <div class="col-left">
+                  <div class="graph"><img src="Content/img/pages/bonds/graph-1.png"></div>
+                  <div class="timing"><span class="item">3 мес</span><span class="item">6 мес</span><span class="item">1 год</span><span class="item">2 года</span><span class="item">с момента формирования фонда</span></div>
+                </div>
+                <div class="col-right">
+                  <div class="graph"><img src="Content/img/pages/bonds/graph-1.png"></div>
+                  <div class="actions text-center"><a href="#" class="btn btn-yellow">Оставить заявку</a></div>
+                </div>
+              </div>
+              <div class="cost">
+                <h3 class="title">Стоимость пая и чистых активов на 18.08.2015</h3>
+                <table class="cost-table">
+                  <tr>
+                    <th>&nbsp;</th>
+                    <th>18.08.2015</th>
+                    <th>Изменения за 1 день</th>
+                  </tr>
+                  <tr>
+                    <td>Стоимость чистых активов, руб. коп</td>
+                    <td>261 551 258,90 руб.</td>
+                    <td class="red"><span class="red">- 0,04% / - 96 237,17 руб.</span></td>
+                  </tr>
+                  <tr>
+                    <td>Стоимость пая, руб. коп.</td>
+                    <td>3 472,84 руб.</td>
+                    <td class="green"><span class="green">0,00% / -0,05 руб.</span></td>
+                  </tr>
+                </table>
+              </div>
             </div>
           </div>
-          <div class="col-sm-5 col-sm-offset-3">
-            <div class="trader"><span class="icon"></span>
-              <p>Финансовый советник БКС подберёт паевой фонд исходя из ваших персональных целей и поможет вам на всех этапах работы.</p>
-            </div>
-          </div>
-          <div class="col-sm-20 text-center actions"><a href="#" title="Получить консультацию" class="btn btn-yellow">Бесплатная консультация эксперта</a></div>
         </div>
       </div>
-    </div>
+    </section>
     <section class="advantages text-center">
       <div class="container">
         <h2 class="section-title text-center">Ваши неоспоримые преимущества</h2>

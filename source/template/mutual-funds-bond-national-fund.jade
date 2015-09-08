@@ -12,10 +12,12 @@ html(lang="ru")
     link(rel="stylesheet" href="Content/css/vendor/bootstrap.custom.css")/
     link(rel="stylesheet" href="Content/css/main.css")/
     link(rel="stylesheet" href="Content/css/mutual-funds.css")/
+    link(rel="stylesheet" href="Content/css/bond.css")/
+    link(rel="stylesheet" href="Content/css/bond-national.css")/
     link(rel="stylesheet" href="Content/css/vendor/selectize.default.css")/
     link(rel="stylesheet" href="Content/css/vendor/nouislider.css")/
     link(rel="shortcut icon" href="Content/img/favicon.ico")/
-  body.mutual-funds.bond-national-fund
+  body.mutual-funds.bond.bond-national-fund
     header.header
       .top-panel.clearfix
         .container
@@ -67,26 +69,15 @@ html(lang="ru")
           .row
             .col-sm-11.text-center
               h1.page-title
-                |ПАЕВЫЕ
+                |Фонд национальных
                 br
-                |ИНВЕСТИЦИОННЫЕ ФОНДЫ
-              h2.page-subtitle
-                |Достойный вклад
+                |облигаций
+              .page-title-description
+                |Инвестируйте в высоконадежные государственные
                 br
-                |в благополучное будущее
+                |ценные бумаги
               .advice.text-center
                 a.btn.btn-yellow(href="#" title="Получить консультацию") Узнать больше
-    .what-is.text-center
-      .container
-        .row
-          .col-sm-20
-            h2.section-title Паевые инвестиционные фонды—это
-            p.description Один из самых простых, доступных и прозрачных способов
-              br
-              |вложения средств на фондовом рынке. 
-        .row
-          .col-sm-12.col-sm-offset-4
-            p Паевые фонды позволяют начинающим инвесторам, располагающим небольшими суммами, пользоваться всеми преимуществами профессионального управления активами на фондовом рынке и получать доход от вложений.
 
     section.calculator.clearfix
       .container
@@ -96,21 +87,6 @@ html(lang="ru")
           .col-sm-16.col-sm-offset-2
             form.calculator-form.clearfix
               .calc-col-1
-                .calc-row
-                  label Выберите инвестиционный фонд
-                  .opt-group
-                    label
-                      span.custom-radio
-                        input(type="radio" name="fund")
-                      span Технологии
-                    label
-                      span.custom-radio
-                        input(type="radio" name="fund")
-                      span Зарубежные рынки
-                    label
-                      span.custom-radio
-                        input(type="radio" name="fund")
-                      span Глобальные рынки
                 .calc-row
                   label Сумма для инвестирования
                   input.calc-range(id="calc-range-input")
@@ -153,21 +129,59 @@ html(lang="ru")
                   b Вы получите
                   span#income-result 58 000 ₽
                   span.btn.btn-yellow получить
-            
-    .teaser.consultation
+    section.main-indicator
       .container
-        h3.section-title Получите консультацию финансового советника
+        .section-label Основные показатели фонда
+        h2.section-title Состав и график доходности
         .row
-          .col-sm-5.col-sm-offset-5
-            .time
-              span.icon
-              p Инвестору не нужно обладать специальными знаниями и тратить время на управление своим инвестиционным портфелем.
-          .col-sm-5.col-sm-offset-3
-            .trader
-              span.icon
-              p Финансовый советник БКС подберёт паевой фонд исходя из ваших персональных целей и поможет вам на всех этапах работы.
-          .col-sm-20.text-center.actions
-            a.btn.btn-yellow(href="#" title="Получить консультацию") Бесплатная консультация эксперта
+          .col-sm-18.col-sm-offset-1
+            .main-indicator-graph
+              .caption Дата формирования фонда хх.хх.хххх г.
+              .clearfix
+                .col-left
+                  h3.title Динамика стоимости пая и СЧА
+                  .legend.clearfix
+                    .item.item-1
+                      span.icon
+                      |— стоимость пая
+                    .item.item-2
+                      span.icon
+                      |— стоимость СЧА
+                .col-right
+                  h3.title Распределение активов
+              .clearfix
+                .col-left
+                  .graph
+                    img(src="Content/img/pages/bonds/graph-1.png")
+                  .timing
+                    span.item 3 мес
+                    span.item 6 мес
+                    span.item 1 год
+                    span.item 2 года
+                    span.item с момента формирования фонда
+                .col-right
+                  .graph
+                    img(src="Content/img/pages/bonds/graph-1.png")
+                  .actions.text-center
+                    a.btn.btn-yellow(href="#") Оставить заявку
+              .cost
+                h3.title Стоимость пая и чистых активов на 18.08.2015
+                table.cost-table
+                  tr
+                    th &nbsp;
+                    th 18.08.2015
+                    th Изменения за 1 день
+                  tr
+                    td Стоимость чистых активов, руб. коп
+                    td 261 551 258,90 руб.
+                    td.red
+                      span.red - 0,04% / - 96 237,17 руб.
+                  tr
+                    td Стоимость пая, руб. коп.
+                    td 3 472,84 руб.
+                    td.green
+                      span.green 0,00% / -0,05 руб.
+        
     section.advantages.text-center
       .container
         h2.section-title.text-center Ваши неоспоримые преимущества

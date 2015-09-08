@@ -1,0 +1,87 @@
+.bond .section-label, .bond .section-title {
+  color: #002a61 !important; }
+.bond.bond-national-fund .header .content {
+  background: url('../img/pages/bonds/header-national.jpg') no-repeat top center;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-national.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-national.jpg', sizingMethod='scale')"; }
+  .bond.bond-national-fund .header .content .page-title {
+    margin-top: 180px;
+    margin-bottom: 34px;
+    font-size: 70px;
+    font-weight: normal;
+    line-height: 70px;
+    color: #002665; }
+  .bond.bond-national-fund .header .content .page-title-description {
+    margin-bottom: 80px;
+    line-height: 25px;
+    color: #002665; }
+.bond .calculator {
+  padding-bottom: 120px; }
+  .bond .calculator .section-title {
+    margin-bottom: 60px; }
+  .bond .calculator .calculator-form .calc-row {
+    background: #f7f7f7 !important; }
+  .bond .calculator .calculator-form .calc-row:nth-child(1) {
+    background: rgba(204, 209, 218, 0.5) !important;
+    border-top: 1px solid #9ea9b8;
+    border-bottom: 1px solid #9ea9b8; }
+  .bond .calculator .calculator-form .calc-row:nth-child(2) {
+    padding-bottom: 289px;
+    border-bottom: 0; }
+.bond .main-indicator {
+  color: #002a61;
+  background: #eceff4; }
+  .bond .main-indicator .main-indicator-graph {
+    margin: 60px 25px 156px;
+    border: 1px solid #9ea9b8; }
+    .bond .main-indicator .main-indicator-graph .caption {
+      padding: 0 56px;
+      line-height: 42px;
+      font-size: 14px;
+      border-bottom: 1px solid #9ea9b8; }
+    .bond .main-indicator .main-indicator-graph .legend .item {
+      float: left;
+      margin-right: 32px; }
+    .bond .main-indicator .main-indicator-graph .title {
+      font-size: 20px;
+      font-weight: normal; }
+    .bond .main-indicator .main-indicator-graph .col-left {
+      float: left;
+      padding-left: 56px;
+      width: 532px; }
+      .bond .main-indicator .main-indicator-graph .col-left .graph {
+        margin-left: -28px; }
+    .bond .main-indicator .main-indicator-graph .col-right {
+      float: right;
+      width: 476px; }
+    .bond .main-indicator .main-indicator-graph .timing {
+      margin: 16px 0 4px; }
+      .bond .main-indicator .main-indicator-graph .timing .item {
+        display: inline-block;
+        margin: 0 12px 10px 0;
+        padding: 0 20px;
+        line-height: 30px;
+        font-size: 16px;
+        background: white;
+        border: 1px solid #9ea9b9;
+        border-radius: 15px; }
+    .bond .main-indicator .main-indicator-graph .btn {
+      margin-top: 24px;
+      font-size: 14px; }
+    .bond .main-indicator .main-indicator-graph .cost {
+      padding: 0 56px 32px;
+      border-top: 1px solid #9ea9b8; }
+      .bond .main-indicator .main-indicator-graph .cost .cost-table {
+        width: 100%;
+        font-size: 16px;
+        background: white; }
+        .bond .main-indicator .main-indicator-graph .cost .cost-table tr {
+          border-bottom: 1px solid #f2f2f2; }
+          .bond .main-indicator .main-indicator-graph .cost .cost-table tr:last-child {
+            border: 0; }
+        .bond .main-indicator .main-indicator-graph .cost .cost-table th, .bond .main-indicator .main-indicator-graph .cost .cost-table td {
+          padding: 12px 18px; }
+        .bond .main-indicator .main-indicator-graph .cost .cost-table .red {
+          color: #ff0000; }
+        .bond .main-indicator .main-indicator-graph .cost .cost-table .green {
+          color: #3bb303; }
