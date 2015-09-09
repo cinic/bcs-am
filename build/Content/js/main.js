@@ -1,8 +1,20 @@
-var slider, valueInput;
+var nav, slider, valueInput;
 
 window.log = function(param) {
   return console.log(param);
 };
+
+nav = $('body > header > nav');
+
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 54) {
+    nav.addClass('fixed');
+    return $('body').addClass('nav-fixed');
+  } else {
+    nav.removeClass('fixed');
+    return $('body').removeClass('nav-fixed');
+  }
+});
 
 $(function() {
   return $('.custom-select').selectize();

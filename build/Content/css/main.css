@@ -49,12 +49,17 @@
 }
 
 body {
+  margin: 0 auto;
   max-width: 1600px;
-  font-family: 'Futura New Book', sans-serif;
+  font-family: 'FuturaNew', sans-serif;
+  font-weight: 400;
   font-size: 20px;
   line-height: 1.1;
   color: #ccd7e6;
   letter-spacing: .025em;
+}
+body.nav-fixed {
+  padding-top: 54px;
 }
 
 .header {
@@ -82,7 +87,7 @@ body {
   margin: 0;
   margin-left: 120px;
   padding-left: 0;
-  font: normal normal 18px/18px 'Futura New Medium', sans-serif;
+  font: 500 18px/18px 'FuturaNew', sans-serif;
 }
 .header .top-panel .top-nav li {
   float: left;
@@ -165,8 +170,13 @@ body {
   line-height: 16px;
   text-transform: uppercase;
 }
-.header nav {
+.header > nav {
   background: white;
+}
+.header > nav.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .header .main-nav {
   margin: 10px 0;
@@ -204,7 +214,8 @@ body {
   padding: 0 0 88px;
   color: #002a61;
   background: #e7e8ea;
-  font-family: 'Futura New Medium', sans-serif;
+  font-family: 'FuturaNew', sans-serif;
+  font-weight: 500;
 }
 .footer .footer-menu,
 .footer .social {
@@ -327,13 +338,14 @@ body {
 
 .section-title {
   margin: 0;
-  font: normal 70px/70px 'Futura New Light', sans-serif;
+  font: 300 70px/70px 'FuturaNew', sans-serif;
   text-align: center;
 }
 
 .section-label {
   margin-top: 44px;
-  font-family: 'Futura New Medium', sans-serif;
+  font-family: 'FuturaNew', sans-serif;
+  font-weight: 500;
   font-size: 18px;
   line-height: 25px;
   color: #4992ff;
