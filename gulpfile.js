@@ -5,7 +5,8 @@ var gulp = require('gulp'),
   watch = require('gulp-watch'),
   prefixer = require('gulp-autoprefixer'),
   uglify = require('gulp-uglify'),
-  sass = require('gulp-sass'),
+  sass = require('gulp-ruby-sass'),
+  //sass = require('gulp-sass'),
   coffee = require('gulp-coffee'),
   sourcemaps = require('gulp-sourcemaps'),
   rigger = require('gulp-rigger'),
@@ -30,13 +31,13 @@ var path = {
   src: {
     html: ['source/template/*.jade', '!source/template/_*.jade'],
     js: ['source/js/*.coffee', '!source/js/*/_*.coffee'],
-    style: 'source/style/*.scss',
+    style: 'source/style/',
     img: 'source/img/**/*.*',
     fonts: 'source/fonts/**/*.*'
   },
   vendor: {
     js: 'source/js/vendor/*.js',
-    css: 'source/style/vendor/*.scss'
+    css: 'source/style/vendor/'
   },
   watch: {
     html: 'source/**/*.jade',
@@ -95,6 +96,7 @@ gulp.task('vendor:js:build', function () {
     .pipe(reload({stream: true}));
 });
 
+/*
 gulp.task('style:build', function () {
   gulp.src(path.src.style)
     //.pipe(sourcemaps.init())
@@ -111,14 +113,29 @@ gulp.task('style:build', function () {
     .pipe(gulp.dest(path.build.css))
     .pipe(reload({stream: true}));
 });
-
+*/
+gulp.task('style:build', function () {
+  return sass(path.src.style, {
+      precision: 6,
+      style: 'expanded',
+      stopOnError: true,
+      loadPath: [ 'source/style' ]
+    })
+    .on('error', sass.logError)
+    .pipe(prefixer())
+    //.pipe(cssmin())
+    //.pipe(sourcemaps.write())
+    .pipe(gulp.dest(path.build.css))
+    .pipe(reload({stream: true}));
+});
 gulp.task('vendor:style:build', function () {
-  gulp.src(path.vendor.css)
-    .pipe(sass({
-      includePaths: ['source/style/'],
-      outputstyle: 'expanded',
-      errLogToConsole: true
-    }))
+  return sass(path.vendor.css, {
+      precision: 6,
+      style: 'expanded',
+      stopOnError: true,
+      loadPath: [ 'source/style' ]
+    })
+    .on('error', sass.logError)
     .pipe(prefixer())
     .pipe(gulp.dest(path.build.vendor_css))
     .pipe(reload({stream: true}));
