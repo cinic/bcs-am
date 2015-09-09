@@ -1,151 +1,200 @@
-.bond .section-label, .bond .section-title {
-  color: #002a61; }
+.bond .section-label,
+.bond .section-title {
+  color: #002a61;
+}
 .bond.bond-national-fund .header .content {
-  background: url('../img/pages/bonds/header-national.jpg') no-repeat top center;
+  background: url("../img/pages/bonds/header-national.jpg") no-repeat top center;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-national.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-national.jpg', sizingMethod='scale')"; }
-  .bond.bond-national-fund .header .content .page-title {
-    margin-top: 180px;
-    margin-bottom: 34px;
-    font-size: 70px;
-    font-weight: normal;
-    line-height: 70px;
-    color: #002665; }
-  .bond.bond-national-fund .header .content .page-title-description {
-    margin-bottom: 80px;
-    line-height: 25px;
-    color: #002665; }
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-national.jpg', sizingMethod='scale')";
+}
+.bond.bond-national-fund .header .content .page-title {
+  margin-top: 180px;
+  margin-bottom: 34px;
+  font-size: 70px;
+  font-weight: normal;
+  line-height: 70px;
+  color: #002665;
+}
+.bond.bond-national-fund .header .content .page-title-description {
+  margin-bottom: 80px;
+  line-height: 25px;
+  color: #002665;
+}
 .bond .calculator {
-  padding-bottom: 120px; }
-  .bond .calculator .section-title {
-    margin-bottom: 60px;
-    color: #002a61; }
-  .bond .calculator .calculator-form .calc-row {
-    background: #f7f7f7 !important; }
-  .bond .calculator .calculator-form .calc-row:nth-child(1) {
-    background: rgba(204, 209, 218, 0.5) !important;
-    border-top: 1px solid #9ea9b8;
-    border-bottom: 1px solid #9ea9b8; }
-  .bond .calculator .calculator-form .calc-row:nth-child(2) {
-    padding-bottom: 289px;
-    border-bottom: 0; }
+  padding-bottom: 120px;
+}
+.bond .calculator .section-title {
+  margin-bottom: 60px;
+  color: #002a61;
+}
+.bond .calculator .calculator-form .calc-row {
+  background: #f7f7f7 !important;
+}
+.bond .calculator .calculator-form .calc-row:nth-child(1) {
+  background: rgba(204, 209, 218, 0.5) !important;
+  border-top: 1px solid #9ea9b8;
+  border-bottom: 1px solid #9ea9b8;
+}
+.bond .calculator .calculator-form .calc-row:nth-child(2) {
+  padding-bottom: 289px;
+  border-bottom: 0;
+}
 .bond .main-indicator {
   color: #002a61;
-  background: #eceff4; }
-  .bond .main-indicator .main-indicator-graph {
-    margin: 60px 25px 156px;
-    border: 1px solid #9ea9b8; }
-    .bond .main-indicator .main-indicator-graph .caption {
-      padding: 0 56px;
-      line-height: 42px;
-      font-size: 14px;
-      border-bottom: 1px solid #9ea9b8; }
-    .bond .main-indicator .main-indicator-graph .legend .item {
-      float: left;
-      margin-right: 32px; }
-    .bond .main-indicator .main-indicator-graph .title {
-      font-size: 20px;
-      font-weight: normal; }
-    .bond .main-indicator .main-indicator-graph .col-left {
-      float: left;
-      padding-left: 56px;
-      width: 532px; }
-      .bond .main-indicator .main-indicator-graph .col-left .graph {
-        margin-left: -28px; }
-    .bond .main-indicator .main-indicator-graph .col-right {
-      float: right;
-      width: 476px; }
-    .bond .main-indicator .main-indicator-graph .timing {
-      margin: 16px 0 4px; }
-      .bond .main-indicator .main-indicator-graph .timing .item {
-        display: inline-block;
-        margin: 0 12px 10px 0;
-        padding: 0 20px;
-        line-height: 30px;
-        font-size: 16px;
-        background: white;
-        border: 1px solid #9ea9b9;
-        border-radius: 15px;
-        cursor: pointer; }
-    .bond .main-indicator .main-indicator-graph .btn {
-      margin-top: 24px;
-      font-size: 14px; }
-    .bond .main-indicator .main-indicator-graph .cost {
-      padding: 0 56px 32px;
-      border-top: 1px solid #9ea9b8; }
-      .bond .main-indicator .main-indicator-graph .cost .cost-table {
-        width: 100%;
-        font-size: 16px;
-        background: white; }
-        .bond .main-indicator .main-indicator-graph .cost .cost-table tr {
-          border-bottom: 1px solid #f2f2f2; }
-          .bond .main-indicator .main-indicator-graph .cost .cost-table tr:last-child {
-            border: 0; }
-        .bond .main-indicator .main-indicator-graph .cost .cost-table th, .bond .main-indicator .main-indicator-graph .cost .cost-table td {
-          padding: 12px 18px;
-          text-align: left; }
-        .bond .main-indicator .main-indicator-graph .cost .cost-table .red {
-          color: #ff0000; }
-        .bond .main-indicator .main-indicator-graph .cost .cost-table .green {
-          color: #3bb303; }
+  background: #eceff4;
+}
+.bond .main-indicator .main-indicator-graph {
+  margin: 60px 25px 156px;
+  border: 1px solid #9ea9b8;
+}
+.bond .main-indicator .main-indicator-graph .caption {
+  padding: 0 56px;
+  line-height: 42px;
+  font-size: 14px;
+  border-bottom: 1px solid #9ea9b8;
+}
+.bond .main-indicator .main-indicator-graph .legend .item {
+  float: left;
+  margin-right: 32px;
+}
+.bond .main-indicator .main-indicator-graph .title {
+  font-size: 20px;
+  font-weight: normal;
+}
+.bond .main-indicator .main-indicator-graph .col-left {
+  float: left;
+  padding-left: 56px;
+  width: 532px;
+}
+.bond .main-indicator .main-indicator-graph .col-left .graph {
+  margin-left: -28px;
+}
+.bond .main-indicator .main-indicator-graph .col-right {
+  float: right;
+  width: 476px;
+}
+.bond .main-indicator .main-indicator-graph .timing {
+  margin: 16px 0 4px;
+}
+.bond .main-indicator .main-indicator-graph .timing .item {
+  display: inline-block;
+  margin: 0 12px 10px 0;
+  padding: 0 20px;
+  line-height: 30px;
+  font-size: 16px;
+  background: white;
+  border: 1px solid #9ea9b9;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.bond .main-indicator .main-indicator-graph .btn {
+  margin-top: 24px;
+  font-size: 14px;
+}
+.bond .main-indicator .main-indicator-graph .cost {
+  padding: 0 56px 32px;
+  border-top: 1px solid #9ea9b8;
+}
+.bond .main-indicator .main-indicator-graph .cost .cost-table {
+  width: 100%;
+  font-size: 16px;
+  background: white;
+}
+.bond .main-indicator .main-indicator-graph .cost .cost-table tr {
+  border-bottom: 1px solid #f2f2f2;
+}
+.bond .main-indicator .main-indicator-graph .cost .cost-table tr:last-child {
+  border: 0;
+}
+.bond .main-indicator .main-indicator-graph .cost .cost-table th,
+.bond .main-indicator .main-indicator-graph .cost .cost-table td {
+  padding: 12px 18px;
+  text-align: left;
+}
+.bond .main-indicator .main-indicator-graph .cost .cost-table .red {
+  color: #ff0000;
+}
+.bond .main-indicator .main-indicator-graph .cost .cost-table .green {
+  color: #3bb303;
+}
 .bond .advantages.bond-national-fund {
   min-height: 757px !important;
   height: 757px !important;
-  background: url('../img/pages/bonds/advantages-bg-bond-national.jpg') no-repeat 50% 50%; }
-  .bond .advantages.bond-national-fund .item {
-    position: relative;
-    margin-bottom: 54px;
-    padding-top: 90px; }
-    .bond .advantages.bond-national-fund .item .icon {
-      margin-left: -30px;
-      width: 60px;
-      height: 60px;
-      background: url('../img/pages/bonds/advantages-icons-bond-national.png') no-repeat 0 0; }
-      .bond .advantages.bond-national-fund .item .icon.income {
-        background-position: 0 0; }
-      .bond .advantages.bond-national-fund .item .icon.investment {
-        background-position: 0 -60px; }
-      .bond .advantages.bond-national-fund .item .icon.management {
-        background-position: 0 -120px; }
-      .bond .advantages.bond-national-fund .item .icon.control {
-        background-position: 0 -180px; }
-      .bond .advantages.bond-national-fund .item .icon.sell-buy {
-        background-position: 0 -240px; }
-      .bond .advantages.bond-national-fund .item .icon.bonds {
-        background-position: 0 -300px; }
-    .bond .advantages.bond-national-fund .item p {
-      color: #ccd7e6; }
+  background: url("../img/pages/bonds/advantages-bg-bond-national.jpg") no-repeat 50% 50%;
+}
+.bond .advantages.bond-national-fund .item {
+  position: relative;
+  margin-bottom: 54px;
+  padding-top: 90px;
+}
+.bond .advantages.bond-national-fund .item .icon {
+  margin-left: -30px;
+  width: 60px;
+  height: 60px;
+  background: url("../img/pages/bonds/advantages-icons-bond-national.png") no-repeat 0 0;
+}
+.bond .advantages.bond-national-fund .item .icon.income {
+  background-position: 0 0;
+}
+.bond .advantages.bond-national-fund .item .icon.investment {
+  background-position: 0 -60px;
+}
+.bond .advantages.bond-national-fund .item .icon.management {
+  background-position: 0 -120px;
+}
+.bond .advantages.bond-national-fund .item .icon.control {
+  background-position: 0 -180px;
+}
+.bond .advantages.bond-national-fund .item .icon.sell-buy {
+  background-position: 0 -240px;
+}
+.bond .advantages.bond-national-fund .item .icon.bonds {
+  background-position: 0 -300px;
+}
+.bond .advantages.bond-national-fund .item p {
+  color: #ccd7e6;
+}
 .bond .advantages .section-title {
   margin: 60px 0 42px;
-  color: white; }
+  color: white;
+}
 .bond .documentation {
   padding-bottom: 90px;
   color: #002a61;
-  background: #eceff4; }
-  .bond .documentation .section-title {
-    margin: 62px 0 40px; }
-  .bond .documentation .dates {
-    margin-bottom: 40px;
-    font-size: 16px; }
-    .bond .documentation .dates .reg-num {
-      float: left; }
-    .bond .documentation .dates .reg-date {
-      float: right; }
-  .bond .documentation .docs-list {
-    margin: 0 -10px; }
-  .bond .documentation .item {
-    display: inline-block;
-    margin-right: 20px;
-    padding: 147px 0 22px;
-    width: 175px;
-    background: #002a61 url('../img/docs-arrow-down.png') no-repeat 147px 13px;
-    text-decoration: none;
-    vertical-align: top; }
-    .bond .documentation .item:last-child {
-      margin-right: 0; }
-    .bond .documentation .item .label {
-      padding: 10px;
-      height: 68px;
-      font-size: 14px;
-      background: #ffc300;
-      color: #002a61; }
+  background: #eceff4;
+}
+.bond .documentation .section-title {
+  margin: 62px 0 40px;
+}
+.bond .documentation .dates {
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+.bond .documentation .dates .reg-num {
+  float: left;
+}
+.bond .documentation .dates .reg-date {
+  float: right;
+}
+.bond .documentation .docs-list {
+  margin: 0 -10px;
+}
+.bond .documentation .item {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 147px 0 22px;
+  width: 175px;
+  background: #002a61 url("../img/docs-arrow-down.png") no-repeat 147px 13px;
+  text-decoration: none;
+  vertical-align: top;
+}
+.bond .documentation .item:last-child {
+  margin-right: 0;
+}
+.bond .documentation .item .label {
+  padding: 10px;
+  height: 68px;
+  font-size: 14px;
+  background: #ffc300;
+  color: #002a61;
+}

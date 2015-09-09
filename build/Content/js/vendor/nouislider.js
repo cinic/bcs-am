@@ -5,26 +5,26 @@
 
 (function (factory) {
 
-    if ( typeof define === 'function' && define.amd ) {
+		if ( typeof define === 'function' && define.amd ) {
 
-        // AMD. Register as an anonymous module.
-        define([], factory);
+				// AMD. Register as an anonymous module.
+				define([], factory);
 
-    } else if ( typeof exports === 'object' ) {
+		} else if ( typeof exports === 'object' ) {
 
-        var fs = require('fs');
+				var fs = require('fs');
 
-        // Node/CommonJS
-        module.exports = factory();
-        module.exports.css = function () {
-            return fs.readFileSync(__dirname + '/nouislider.min.css', 'utf8');
-        };
+				// Node/CommonJS
+				module.exports = factory();
+				module.exports.css = function () {
+						return fs.readFileSync(__dirname + '/nouislider.min.css', 'utf8');
+				};
 
-    } else {
+		} else {
 
-        // Browser globals
-        window.noUiSlider = factory();
-    }
+				// Browser globals
+				window.noUiSlider = factory();
+		}
 
 }(function( ){
 
@@ -537,13 +537,13 @@
 		// Set orientation to an a numerical value for easy
 		// array selection.
 		switch ( entry ){
-		  case 'horizontal':
+			case 'horizontal':
 			parsed.ort = 0;
 			break;
-		  case 'vertical':
+			case 'vertical':
 			parsed.ort = 1;
 			break;
-		  default:
+			default:
 			throw new Error("noUiSlider: 'orientation' option is invalid.");
 		}
 	}
@@ -580,14 +580,14 @@
 		// Invert connection for RTL sliders, so that the proper
 		// handles get the connect/background classes.
 		switch ( entry ) {
-		  case 'ltr':
+			case 'ltr':
 			parsed.dir = 0;
 			break;
-		  case 'rtl':
+			case 'rtl':
 			parsed.dir = 1;
 			parsed.connect = [0,2,1,3][parsed.connect];
 			break;
-		  default:
+			default:
 			throw new Error("noUiSlider: 'direction' option was not recognized.");
 		}
 	}

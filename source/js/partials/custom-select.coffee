@@ -1,2 +1,2 @@
 $ ->
-  $('.custom-select').selectize();
+	$('.custom-select').selectize();

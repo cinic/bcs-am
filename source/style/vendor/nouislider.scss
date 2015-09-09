@@ -36,7 +36,7 @@
 }
 .noUi-stacking .noUi-handle {
 /* This class is applied to the lower origin when
-   its values is > 50%. */
+	 its values is > 50%. */
 	z-index: 10;
 }
 .noUi-state-tap .noUi-origin {
@@ -83,7 +83,7 @@
 }
 .noUi-connect {
 	background: #0698ff;
-    -webkit-transition: background 450ms;
+		-webkit-transition: background 450ms;
 	transition: background 450ms;
 }
 .noUi-origin {
@@ -129,20 +129,20 @@
 
 /* Labels */
 .slider-columns {
-  margin: 20px 0 0;
-  padding: 0;
-  list-style: none;
-  li {
-    display: inline-block;
-    width:calc(100% / 5); 
-  }
-  li:nth-last-child(1) {
+	margin: 20px 0 0;
+	padding: 0;
+	list-style: none;
+	li {
+		display: inline-block;
+		width:calc(100% / 5); 
+	}
+	li:nth-last-child(1) {
 	position: absolute;
 	margin-left: 20px;
-    width: 90px;
-  }
+		width: 90px;
+	}
 }
 
 #range-slider {
-  padding-top: 12px;
+	padding-top: 12px;
 }
