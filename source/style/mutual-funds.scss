@@ -10,13 +10,15 @@
 			.page-title {
 				margin-top: 118px;
 				margin-bottom: 24px;
-				font: normal 26px/32px 'Futura New Book', sans-serif;
+				font: normal 26px/32px 'FuturaNew', sans-serif;
+        font-weight: 400;
 				color: #4992ff;
 			}
 			.page-subtitle {
 				margin: 0;
 				margin-bottom: 78px;
-				font: normal 70px/70px 'Futura New Light', sans-serif;
+				font: normal 70px/70px 'FuturaNew', sans-serif;
+        font-weight: 300;
 				color: #002665;
 			}
 		}
@@ -349,7 +351,8 @@
 				padding: 0 18px;
 				width: 350px;
 				height: 520px;
-				font-family: 'Futura New Medium', sans-serif;
+				font-family: 'FuturaNew', sans-serif;
+        font-weight: 500;
 				border: 2px solid white;
 				background: white;
 				text-align: center;
