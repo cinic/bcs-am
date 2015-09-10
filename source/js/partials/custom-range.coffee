@@ -12,12 +12,18 @@ Number::formatMoney = (c, d, t) ->
 slider = document.getElementById('calc-range')
 valueInput = document.getElementById('calc-range-input')
 noUiSlider.create slider,
-	start: 100000,
+	start: 125000,
 	connect: 'lower',
-	step: 5000,
+	step: 10000,
 	range:
 		'min': 50000,
+		'25%': 500000,
+		'50%': 1000000,
 		'max': 2000000
+	pips:
+		mode: 'range',
+		density: 3
+		# filter: filter500
 
 slider.noUiSlider.on 'update', ( values, handle ) ->
 	valueInput.value = (values[handle] * 1).formatMoney(0, '', ' ')

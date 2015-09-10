@@ -177,6 +177,7 @@ body.nav-fixed {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
 }
 .header .main-nav {
   margin: 10px 0;
