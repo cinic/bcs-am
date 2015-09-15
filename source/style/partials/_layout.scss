@@ -6,6 +6,8 @@ body {
 	line-height: $line-height-base;
 	color: #ccd7e6;
 	letter-spacing: .025em;
+
+	a { color: #4992ff; }
 }
 
 .top-panel,
@@ -244,73 +246,131 @@ nav.menu {
 }
 
 .footer {
-	padding: 0 0 88px;
-	color: #002a61;
-	background: #e7e8ea;
+	padding: 0 20px;
+	color: white;
+	background: #5a5d68;
 	font-family: 'FuturaNew', sans-serif;
   font-weight: 500;
-	
-	.footer-menu,
+  .footer-menu,
 	.social {
-		margin: 50px 0 40px;
 		font-size: 14px;
 		line-height: 18px;
+
+		@media (min-width: $screen-sm-max) {
+			margin: 50px 0 40px;
+		}
 	}
-	.footer-menu {
-		float: left;
-		margin-left: -20px;
-		padding-left: 0;
-		list-style: none;
-		li {
-			float: left;
-			margin-right: 62px;
-			&:last-child {
-				margin-right: 0;
-			}
-			a {
-				text-decoration: none;
+  .footer-menu {
+  	padding-left: 0;
+  	list-style: none;
+
+  	li {
+  		float: left;
+  		margin-right: 30px;
+  		margin-bottom: 18px;
+  		padding-top: 4px;
+
+  		&:last-child {
+  			margin-right: 0;
+  			margin-left: 30px;
+  		}
+
+  		a {
+  			text-decoration: none;
 				text-transform: uppercase;
-				color: #002a61;
+				color: white;
+  		}
+  	}
+
+  	@media (min-width: $screen-sm-max) {
+  		float: left;
+			margin-left: -20px;
+			li {
+				margin-right: 62px;
+				margin-bottom: 0;
+				padding-top: 0;
+				&:last-child {
+					margin-left: 0;
+				}
+				a {
+					color: #002a61;
+				}
 			}
+  	}
+  }
+
+  .social {
+  	padding-bottom: 12px;
+  	border-top: 1px solid #4992ff;
+		border-bottom: 1px solid #4992ff;
+		color: #4992ff;
+
+		.label {
+			display: block;
+			margin-top: 10px;
+			margin-bottom: 10px;
 		}
-	}
-	.social {
-		float: right;
-		margin-right: 20px;
-		text-transform: uppercase;
-		.label,
 		.item {
 			float: left;
-		}
-		.label {
-			margin-right: 32px;
-		}
-		.item {
-			margin-left: 16px;
-			margin-top: -18px;
-			width: 47px;
-			height: 47px;
-			background: url('../img/social-icons.png') no-repeat 0 0;
+			margin-right: 10px;
+			width: 30px;
+			height: 30px;
+			background: url('../img/mobile/social-icons.png') no-repeat 0 0;
 			&.tw {
 				background-position: 0 0;
 			}
 			&.tw {
-				background-position: 0 -47px;
+				background-position: 0 -30px;
 			}
 			&.fb {
-				background-position: 0 -94px;
+				background-position: 0 -60px;
+			}
+
+			@media (min-width: $screen-sm-max) {
+				margin-left: 16px;
+				margin-right: 0;
+				margin-top: -18px;
+				width: 47px;
+				height: 47px;
+				background: url('../img/social-icons.png') no-repeat 0 0;
+				&.tw {
+					background-position: 0 0;
+				}
+				&.tw {
+					background-position: 0 -47px;
+				}
+				&.fb {
+					background-position: 0 -94px;
+				}
 			}
 		}
-	}
-	
-	.copy-and-address {
-		margin: 0 -20px;
-		padding-top: 36px;
-		border-top: 1px solid #002a61;
-		
+
+		@media (min-width: $screen-sm-max) {
+			float: right;
+			margin-right: 20px;
+			padding-bottom: 12px;
+			text-transform: uppercase;
+			color: #002a61;
+			border: 0;
+
+			.label,
+			.item {
+				float: left;
+			}
+
+			.label {
+				margin: 0;
+				margin-right: 32px;
+			}
+		}
+  }
+
+  .copy-and-address {
 		.address {
-			float: left;
-			width: 22.727272%;
+			margin-bottom: 18px;
+			padding-top: 14px;
+			padding-bottom: 14px;
+			border-bottom: 1px solid #4992ff;
 			
 			.phone-num {
 				margin-left: 4px;
@@ -325,6 +385,7 @@ nav.menu {
 			.city-select {
 				margin-bottom: 20px;
 				font-size: 24px;
+				color: #4992ff;
 				&:after {
 					position: relative;
 					top: 2px;
@@ -333,12 +394,19 @@ nav.menu {
 					content: " ";
 					border: 4px solid;
 					border-color: transparent;
-					border-top-color: #002665;
+					border-top-color: #4992ff;
 					line-height: 0;
 					font-size: 0;
 				}
 				span {
 					border-bottom: 1px dashed;
+				}
+
+				@media (min-width: $screen-sm-max) {
+					color: #002a61;
+					&:after {
+						border-top-color: #002665;
+					}
 				}
 			}
 			.addr,
@@ -361,15 +429,38 @@ nav.menu {
 			.tel {
 				.icon { background-position: 0 -23px; }
 			}
+
+			@media (min-width: $screen-sm-max) {
+				float: left;
+				margin-bottom: 0;
+				padding: 0;
+				width: 22.727272%;
+				border-bottom: 0;
+			}
 		}
 		.copy {
-			float: right;
-			width: 73.454545%;
 			font-size: 12px;
 			p {
 				margin-top: 0;
 			}
+
+			@media (min-width: $screen-sm-max) {
+				float: right;
+				width: 73.454545%;
+			}
 		}
+
+		@media (min-width: $screen-sm-max) {
+			margin: 0 -20px;
+			padding-top: 36px;
+			border-top: 1px solid #002a61;
+		}
+	}
+
+	@media (min-width: $screen-sm-max) {
+		padding: 0 0 88px;
+		background-color: #e7e8ea;
+		color: #002a61;
 	}
 }
 
