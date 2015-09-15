@@ -1,0 +1,58 @@
+section.feedback
+	.container
+		h2.section-title.text-center Заполните заявку
+			br
+			|для получения консультации
+		.row
+			.col-sm-14.col-sm-offset-3.text-center
+				.steps
+					span.step.step-1
+						span.icon.icon-1
+						|Оставьте ваши
+						br
+						|контактные данные
+					span.step.step-2
+						span.icon.icon-2
+						|Дождитесь звонка,
+						br
+						|и получите консультацию
+						br
+						|финансового советника
+					span.step.step-3
+						span.icon.icon-3
+						|Присоединяйтесь 
+						br
+						|к компании БКС
+					
+		.row
+			.col-sm-6.col-sm-offset-7
+				form.feedback-form
+					.form-group.clearfix
+						label(for="city2") Ваш город
+						select.custom-select(id="city2" name="city")
+							option(selected="selected" value="0") Ваш город
+							option(value="108") Москва
+							option(value="134") Новосибирск
+							option(value="46") Абакан
+							option(value="36") Алматы
+							option(value="113") Альметьевск
+							option(value="115") Анапа
+							option(value="119") Армавир
+							option(value="71") Архангельск
+							option(value="105") Астрахань
+							option(value="175") Ачинск
+							option(value="79") Барнаул
+							option(value="139") Белгород
+							option(value="35") Биробиджан
+					.form-group.clearfix
+						label(for="name") Ваше имя
+						input(class="name" type="text" id="name" name="name" placeholder="Ваше имя")
+					.form-group.clearfix
+						label(for="mobile") Ваш телефон
+						input(class="error" type="text" id="mobile" name="phone" placeholder="Ваш телефон")
+					.form-group.clearfix
+						label(for="email") Ваша Электронная почта
+						input(type="text" id="email" name="email" placeholder="Ваша Электронная почта")
+					.form-group.label-offset.clearfix.actions
+						.advice
+							input.btn.btn-yellow(type="submit", value="Получить консультацию")

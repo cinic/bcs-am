@@ -19,11 +19,17 @@ noUiSlider.create slider,
 		'min': 50000,
 		'25%': 500000,
 		'50%': 1000000,
+		'75%': 1500000,
 		'max': 2000000
 	pips:
-		mode: 'range',
-		density: 3
-		# filter: filter500
+		mode: 'values',
+		values: [50000, 500000, 1000000, 1500000, 2000000],
+		density: 10000,
+		format: wNumb
+			density: 100,
+			postfix: '&nbsp;т.',
+			encoder: (value) ->
+				value / 1000
 
 slider.noUiSlider.on 'update', ( values, handle ) ->
 	valueInput.value = (values[handle] * 1).formatMoney(0, '', ' ')

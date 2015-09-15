@@ -149,7 +149,7 @@
 }
 
 #range-slider {
-  padding-top: 12px;
+  padding-top: 36px;
 }
 
 /* Pips styles
@@ -164,8 +164,6 @@
 
 .noUi-pips {
   position: absolute;
-  font: 400 12px Arial;
-  color: #999;
 }
 
 /* Values;
@@ -187,15 +185,12 @@
  */
 .noUi-marker {
   position: absolute;
-  background: #CCC;
+  background: #002a61;
 }
 
-.noUi-marker-sub {
-  background: #AAA;
-}
-
+.noUi-marker-sub,
 .noUi-marker-large {
-  background: #AAA;
+  background: #002a61;
 }
 
 /* Horizontal layout;
@@ -217,6 +212,9 @@
 .noUi-value-horizontal.noUi-value-large:last-child {
   margin-left: -40px;
 }
+.noUi-value-horizontal.noUi-value-large:nth-child(2) {
+  margin-left: -10px;
+}
 
 .noUi-value-horizontal.noUi-value-sub {
   padding-top: 15px;
@@ -224,7 +222,7 @@
 
 .noUi-marker-horizontal.noUi-marker {
   margin-left: -1px;
-  width: 2px;
+  width: 1px;
   height: 5px;
 }
 
@@ -233,7 +231,7 @@
 }
 
 .noUi-marker-horizontal.noUi-marker-large {
-  height: 15px;
+  height: 10px;
 }
 
 /* Vertical layout;

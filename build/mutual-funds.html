@@ -9,50 +9,49 @@
     <link rel="stylesheet" href="Content/css/fonts.css">
     <link rel="stylesheet" href="Content/css/vendor/normalize.css">
     <link rel="stylesheet" href="Content/css/vendor/bootstrap.custom.css">
-    <link rel="stylesheet" href="Content/css/main.css">
-    <link rel="stylesheet" href="Content/css/mutual-funds.css">
-    <link rel="stylesheet" href="Content/css/vendor/selectize.default.css">
     <link rel="stylesheet" href="Content/css/vendor/nouislider.css">
+    <link rel="stylesheet" href="Content/css/vendor/selectize.default.css">
+    <link rel="stylesheet" href="Content/css/main.css">
     <link rel="shortcut icon" href="Content/img/favicon.ico">
+    <link rel="stylesheet" href="Content/css/mutual-funds.css">
   </head>
   <body class="mutual-funds">
-    <header class="header">
-      <div class="top-panel clearfix">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-18 col-sm-offset-1"><a href="http://broker.ru" target="_blank" class="brand"><img src="Content/img/logo.png" alt="БКС Брокер"></a>
-              <ul role="nav" class="top-nav pull-left">
-                <li><a href="#"><span class="icon home"></span>О компании</a></li>
-                <li><a href="#"><span class="icon cabinet"></span>Личный кабинет</a></li>
-                <li><a href="/contacts" class="pseudo-link offices"><span class="icon offices"></span><i>Офисы в москве</i></a></li>
-              </ul>
-              <div class="meta pull-right">
-                <div class="search"><a href="#" class="search-icon text-hide">Поиск</a></div>
-                <div class="phone">
-                  <div class="phone-icon"></div><a href="tel:88005005545" class="cpc-tel num">8 800 500 55 45</a><span class="description">бесплатный звонок по России</span>
-                </div>
-              </div>
+    <div class="top-panel clearfix">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-18 col-sm-offset-1">
+            <div class="toggle-nav"></div><a href="http://broker.ru" target="_blank" class="brand"><img src="Content/img/logo.png" alt="БКС Брокер"></a>
+            <ul role="nav" class="top-nav pull-left">
+              <li><a href="#"><span class="icon home"></span>О компании</a></li>
+              <li><a href="#"><span class="icon cabinet"></span>Личный кабинет</a></li>
+              <li><a href="/contacts" class="pseudo-link offices"><span class="icon offices"></span><i>Офисы в москве</i></a></li>
+            </ul>
+            <div class="meta pull-right">
+              <div class="search"><a href="#" class="search-icon text-hide">Поиск</a></div>
+              <div class="phone"><a href="tel:88005005545" class="phone-icon"></a><a href="tel:88005005545" class="cpc-tel num">8 800 500 55 45</a><span class="description">бесплатный звонок по России</span></div>
             </div>
           </div>
         </div>
       </div>
-      <nav>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-18 col-sm-offset-1">
-              <ul class="main-nav clearfix">
-                <li><a href="#">Паевые фонды</a></li>
-                <li><a href="#">Доверительное управление</a></li>
-                <li><a href="#">ИСС</a></li>
-                <li><a href="#">Аналитика</a></li>
-                <li><a href="#">Тарифы</a></li>
-                <li><a href="#">Поддержка</a></li>
-                <li class="open-account last"><a href="#">Открыть счёт</a></li>
-              </ul>
-            </div>
+    </div>
+    <nav class="menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-18 col-sm-offset-1">
+            <ul class="main-nav clearfix">
+              <li><a href="#">Паевые фонды</a></li>
+              <li><a href="#">Доверительное управление</a></li>
+              <li><a href="#">ИСС</a></li>
+              <li><a href="#">Аналитика</a></li>
+              <li><a href="#">Тарифы</a></li>
+              <li><a href="#">Поддержка</a></li>
+              <li class="open-account last"><a href="#">Открыть счёт</a></li>
+            </ul>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
+    <header class="header">
       <div class="content clearfix">
         <div class="container">
           <div class="row">
@@ -90,31 +89,24 @@
               <div class="calc-col-1">
                 <div class="calc-row">
                   <label>Выберите инвестиционный фонд</label>
-                  <div class="opt-group">
+                  <div class="opt-group table-group">
                     <label><span class="custom-radio">
-                        <input type="radio" name="fund"></span><span>Технологии</span></label>
+                        <input type="radio" name="fund" value="0"></span><span>Технологии</span></label>
                     <label><span class="custom-radio">
-                        <input type="radio" name="fund"></span><span>Зарубежные рынки</span></label>
+                        <input type="radio" name="fund" value="1"></span><span>Зарубежные рынки</span></label>
                     <label><span class="custom-radio">
-                        <input type="radio" name="fund"></span><span>Глобальные рынки</span></label>
+                        <input type="radio" name="fund" value="2"></span><span>Глобальные рынки</span></label>
                   </div>
                 </div>
                 <div class="calc-row">
-                  <label>Сумма для инвестирования</label>
+                  <label>Сумма <span class="hidden-mobile">для инвестирования</span></label>
                   <input id="calc-range-input" class="calc-range">
                   <div id="range-slider" class="no-ui-slider">
                     <div id="calc-range" class="slider"></div>
-                    <ul class="slider-columns five-columns">
-                      <li>50&nbsp;т.</li>
-                      <li>100&nbsp;т.</li>
-                      <li>500&nbsp;т.</li>
-                      <li>1000&nbsp;т.</li>
-                      <li>2000&nbsp;т.</li>
-                    </ul>
                   </div>
                 </div>
                 <div class="calc-row">
-                  <label class="double-margin">Сумма для инвестирования</label>
+                  <label class="double-margin">Срок инвестирования</label>
                   <input type="hidden" name="interval" id="bond-interval">
                   <div class="opt-group"><span data-value="3" class="time">3 мес.</span><span data-value="6" class="time">6 мес.</span><span data-value="12" class="time">1 год</span><span data-value="24" class="time">2 года</span><span data-value="36" class="time">3 года</span></div>
                 </div>
@@ -122,21 +114,22 @@
               <div class="calc-col-2">
                 <div class="income-values clearfix">
                   <div class="in">
-                    <div class="wrap"><b>Вклад</b>
+                    <div class="wrap clearfix"><b>Вклад</b>
                       <div id="range-value">100 000 Р</div>
                       <div class="value-bg"></div>
                     </div>
                   </div>
                   <div class="out">
-                    <div class="wrap"><b>Доход</b>
+                    <div class="wrap clearfix"><b>Доход</b>
                       <div id="income-value">58 000 Р</div>
                       <div style="height:32px;" class="income-bg"></div>
                       <div class="value-bg"></div>
                     </div>
                   </div>
                 </div>
-                <div class="income-percent"><span>Доход в процентах <b>23%</b></span></div>
-                <div class="income-result"><b>Вы получите</b><span id="income-result">58 000 ₽</span><span class="btn btn-yellow">получить</span></div>
+                <div class="income-percent clearfix"><span>Доход в процентах </span><b>23%</b></div>
+                <div class="income-result"><b>Вы получите</b><span id="income-result">58 000 ₽</span></div>
+                <div class="actions text-center"><span class="btn btn-yellow">получить</span></div>
               </div>
             </form>
           </div>
@@ -406,6 +399,7 @@
     <script src="Content/js/vendor/jquery-2.1.4.min.js"></script>
     <script src="Content/js/vendor/selectize.js"></script>
     <script src="Content/js/vendor/nouislider.js"></script>
+    <script src="Content/js/vendor/wNumb.js"></script>
     <script src="Content/js/main.js"></script>
   </body>
 </html>

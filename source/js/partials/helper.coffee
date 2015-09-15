@@ -4,11 +4,9 @@ window.log = (param) ->
 
 # Navigation
 # Fix on scroll down
-nav = $('body > header > nav')
+nav = $('nav.menu')
 $(window).scroll ->
-	if ($(@).scrollTop() > 54)
+	if ($(@).scrollTop() > 75)
 		nav.addClass('fixed')
-		$('body').addClass('nav-fixed')
 	else
 		nav.removeClass('fixed')
-		$('body').removeClass('nav-fixed')

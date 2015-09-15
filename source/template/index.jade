@@ -1,0 +1,58 @@
+doctype html
+html(lang="ru")
+	head
+		include ./partials/_header.jade
+		link(rel="stylesheet" href="Content/css/index.css")/
+	body.index
+		include ./partials/_navigation.jade
+		header.header
+			.content.clearfix
+				.container
+					.row
+						.col-sm-11.text-center.clearfix
+							h1.page-title
+								|Достойный вклад
+								br
+								|в благополучное 
+								br
+								|будущее
+							.page-title-description
+								|Инвестируйте в перспективные финансовые инструменты.
+								br
+								|Доходность ПИФов в 2014 году — до 64% годовых
+							.advice.text-center
+								a.btn.btn-yellow(href="#" title="Получить консультацию") Узнать больше
+
+		include ./partials/_calculator.jade
+				
+		section.assets-management.text-center
+			.container
+				h2.section-title.white.text-center Управление активами в&nbsp;БКС
+				.row
+					.col-sm-3.col-xs-10
+						.item
+							.icon.year
+							h3 15 лет
+							p управляем активами ПИФов с 2000 года
+					.col-sm-3.col-xs-10.col-sm-offset-1
+						.item
+							.icon.shield
+							h3 AAA
+							p входит в группу «очень высокая надежность»
+					.col-sm-3.col-xs-10.col-sm-offset-1
+						.item
+							.icon.clients
+							h3 11 000
+							p клиентов уже инвестируют с нами
+					.col-sm-4.col-xs-10.col-sm-offset-1
+						.item
+							.icon.volume
+							h3 9.3 млрд. руб.
+							p общая стоимость активов в управлении
+					.col-sm-3.col-sm-offset-1
+						.item.offices
+							.icon.offices
+							h3 50 офисов
+							p широкая сеть по всей России
+		include ./partials/_footer.jade
+		include ./partials/_footer_scripts.jade

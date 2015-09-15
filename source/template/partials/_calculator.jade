@@ -1,0 +1,60 @@
+section.calculator.clearfix
+	.container
+		.section-label Калькулятор
+		h2.section-title.text-center Оцените потенциальный доход
+		.row
+			.col-sm-16.col-sm-offset-2
+				form.calculator-form.clearfix
+					.calc-col-1
+						.calc-row
+							label Выберите инвестиционный фонд
+							.opt-group.table-group
+								label
+									span.custom-radio
+										input(type="radio" name="fund" value="0")
+									span Технологии
+								label
+									span.custom-radio
+										input(type="radio" name="fund" value="1")
+									span Зарубежные рынки
+								label
+									span.custom-radio
+										input(type="radio" name="fund" value="2")
+									span Глобальные рынки
+						.calc-row
+							label Сумма 
+								span.hidden-mobile для инвестирования
+							input.calc-range(id="calc-range-input")
+							#range-slider.no-ui-slider
+								#calc-range.slider
+								
+						.calc-row
+							label.double-margin Срок инвестирования
+							input(type="hidden" name="interval" id="bond-interval")
+							.opt-group
+								span.time(data-value="3") 3 мес.
+								span.time(data-value="6") 6 мес.
+								span.time(data-value="12") 1 год
+								span.time(data-value="24") 2 года
+								span.time(data-value="36") 3 года
+					.calc-col-2
+						.income-values.clearfix
+							.in
+								.wrap.clearfix
+									b Вклад
+									#range-value 100 000 Р
+									.value-bg
+							.out
+								.wrap.clearfix
+									b Доход
+									#income-value 58 000 Р
+									.income-bg(style="height:32px;")
+									.value-bg
+						.income-percent.clearfix
+							span Доход в процентах 
+							b 23%
+						.income-result
+							b Вы получите
+							span#income-result 58 000 ₽
+						.actions.text-center
+							span.btn.btn-yellow получить

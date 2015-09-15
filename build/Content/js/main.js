@@ -4,15 +4,13 @@ window.log = function(param) {
   return console.log(param);
 };
 
-nav = $('body > header > nav');
+nav = $('nav.menu');
 
 $(window).scroll(function() {
-  if ($(this).scrollTop() > 54) {
-    nav.addClass('fixed');
-    return $('body').addClass('nav-fixed');
+  if ($(this).scrollTop() > 75) {
+    return nav.addClass('fixed');
   } else {
-    nav.removeClass('fixed');
-    return $('body').removeClass('nav-fixed');
+    return nav.removeClass('fixed');
   }
 });
 
@@ -22,11 +20,11 @@ $(function() {
 
 $(function() {
   return $('.custom-radio input').on('change', function() {
-    $('.custom-radio input').parent().removeClass('checked');
+    $('.custom-radio input').parent().removeClass('checked').parent().removeClass('checked');
     if ($(this).is(':checked')) {
-      return $(this).parent().addClass('checked');
+      return $(this).parent().addClass('checked').parent().addClass('checked');
     } else {
-      return $('.custom-radio input').parent().removeClass('checked');
+      return $('.custom-radio input').parent().removeClass('checked').parent().removeClass('checked');
     }
   });
 });
@@ -55,11 +53,20 @@ noUiSlider.create(slider, {
     'min': 50000,
     '25%': 500000,
     '50%': 1000000,
+    '75%': 1500000,
     'max': 2000000
   },
   pips: {
-    mode: 'range',
-    density: 3
+    mode: 'values',
+    values: [50000, 500000, 1000000, 1500000, 2000000],
+    density: 10000,
+    format: wNumb({
+      density: 100,
+      postfix: '&nbsp;т.',
+      encoder: function(value) {
+        return value / 1000;
+      }
+    })
   }
 });
 
