@@ -844,7 +844,7 @@ label { cursor: pointer; }
 			.value-bg {
 				display: none;
 				width: 100%;
-				height: 90px;
+				height: 10px;
 				background: #ccd1da;
 
 				@media (min-width: $screen-sm-max) {
@@ -880,6 +880,11 @@ label { cursor: pointer; }
 				@media (min-width: $screen-sm-max) {
 					display: block;
 				}
+			}
+
+			.income-bg,
+			.value-bg {
+				@include transition(all 0.5s linear);
 			}
 		}
 		.income-percent {

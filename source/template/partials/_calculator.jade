@@ -30,13 +30,13 @@ section.calculator.clearfix
 								
 						.calc-row
 							label.double-margin Срок инвестирования
-							input(type="hidden" name="interval" id="bond-interval")
+							input(type="hidden" name="interval" id="bond-interval" value="1")
 							.opt-group
-								span.time(data-value="3") 3 мес.
-								span.time(data-value="6") 6 мес.
-								span.time(data-value="12") 1 год
-								span.time(data-value="24") 2 года
-								span.time(data-value="36") 3 года
+								span.time(data-value="0.25") 3 мес.
+								span.time(data-value="0.5") 6 мес.
+								span.time.active(data-value="1") 1 год
+								span.time(data-value="2") 2 года
+								span.time(data-value="3") 3 года
 					.calc-col-2
 						.income-values.clearfix
 							.in
@@ -48,11 +48,11 @@ section.calculator.clearfix
 								.wrap.clearfix
 									b Доход
 									#income-value 58 000 Р
-									.income-bg(style="height:32px;")
+									.income-bg
 									.value-bg
 						.income-percent.clearfix
 							span Доход в процентах 
-							b 23%
+							b#income-percent(data-value="23") 23%
 						.income-result
 							b Вы получите
 							span#income-result 58 000 ₽

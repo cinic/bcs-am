@@ -9,10 +9,24 @@ Number::formatMoney = (c, d, t) ->
 	j = if (j = i.length) > 3 then j % 3 else 0
 	s + (if j then i.substr(0, j) + t else '') + i.substr(j).replace(/(\d{3})(?=\d)/g, '$1' + t) + (if c then d + Math.abs(n - i).toFixed(c).slice(2) else '') + ' ₽'
 
+calcValue = (v) ->
+	percent = $('#income-percent').data('value') * 1
+	interval = $('#bond-interval').val() * 1
+	r = v / 100 * percent * interval
+	(Math.floor(r,0)).formatMoney(0, '', ' ')
+
+calcValueHeight = (v) ->
+	opposite = v / 10000 < 10
+	res = if opposite then v / 10000 * -1 else v / 10000
+
+calcIncomeHeight = (v) ->
+	v.match(/([0-9\s]+)( ₽)/)[1].replace(/\s/g, "") * 1 / 10000
+
+
 slider = document.getElementById('calc-range')
 valueInput = document.getElementById('calc-range-input')
 noUiSlider.create slider,
-	start: 125000,
+	start: 100000,
 	connect: 'lower',
 	step: 10000,
 	range:
@@ -26,18 +40,33 @@ noUiSlider.create slider,
 		values: [50000, 500000, 1000000, 1500000, 2000000],
 		density: 10000,
 		format: wNumb
-			density: 100,
+			#density: 10000,
 			postfix: '&nbsp;т.',
 			encoder: (value) ->
 				value / 1000
 
 slider.noUiSlider.on 'update', ( values, handle ) ->
+	rawValue = values[handle] * 1
 	valueInput.value = (values[handle] * 1).formatMoney(0, '', ' ')
+	valueBg = $('.calculator .income-values .value-bg').height()
+	$('.calculator #range-value').text( valueInput.value )
+	$('.calculator #income-value, .calculator #income-result').text( calcValue(values[handle] * 1) )
+	$('.calculator .income-values .value-bg').css('height', calcValueHeight(rawValue))
+	$('.calculator .income-values .income-bg').css('height', calcIncomeHeight(calcValue(values[handle] * 1)))
 
 valueInput.addEventListener 'change', ->
 	slider.noUiSlider.set([null, this.value])
 	
 $ ->
-	$('#calc-range-input').on 'change', ->
-		val = ($(@).val() * 1)
-		$(@).val( val.formatMoney(0, '', ' ') )
+	$('.calculator #calc-range-input').on 'change', ->
+		val = ($(@).val().match(/([0-9\s]+)( ₽)/)[1].replace(/\s/g, "") * 1).formatMoney(0, '', ' ')
+		$(@).val( val )
+		$('.calculator #range-value').text( val )
+
+$ ->
+	$('.calculator-form span.time').on 'click', ->
+		value = $('.calculator #calc-range-input').val().match(/([0-9\s]+)( ₽)/)[1].replace(/\s/g, "") * 1 
+		$(@).siblings().removeClass('active').end().andSelf().addClass('active')
+		$('.calculator #bond-interval').val( $(@).data('value') )
+		$('.calculator #income-value, .calculator #income-result').text( calcValue( value) )
+		$('.calculator .income-values .income-bg').css('height', calcIncomeHeight(calcValue( value )))
