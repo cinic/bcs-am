@@ -94,8 +94,7 @@ html(lang="ru")
 									h3.title Распределение активов
 							.clearfix
 								.col-left
-									.graph
-										img(src="Content/img/pages/bonds/graph-1.png")
+									#line-graph.graph
 									.timing
 										span.item 3 мес
 										span.item 6 мес
@@ -103,8 +102,7 @@ html(lang="ru")
 										span.item 2 года
 										span.item с момента формирования фонда
 								.col-right
-									.graph
-										img(src="Content/img/pages/bonds/graph-2.png")
+									#pie-graph.graph
 									.actions.text-center
 										a.btn.btn-yellow(href="#") Оставить заявку
 							.cost
@@ -185,6 +183,159 @@ html(lang="ru")
 								.label Политика осуществления прав голоса по акциям
 							a.item(href="#")
 								.label Банковские реквизиты для&nbsp;перечисления&nbsp;средств в&nbsp;оплату&nbsp;паев&nbsp;ПИФ&nbsp;«БКС»					
+
 		include ./partials/_feedback.jade
 		include ./partials/_footer.jade
 		include ./partials/_footer_scripts.jade
+		script(src="Content/js/vendor/highcharts.js")
+		script.
+			$(function () {
+				$('#line-graph').highcharts({
+					chart: {
+						type: 'line'
+					},
+					credits: {
+						enabled: false
+					},
+					title: {
+						align: 'left',
+						text: '20 Мая 2014г. — 20 Марта 2015г.',
+						style: {
+							color: '#8198b6',
+							font: '16px FuturaNew',
+							fontWeight: '400'
+						}
+					},
+					subtitle: {
+						align: 'right',
+						text: '↑ 1380.56 руб.(64.19%)',
+						y: 12,
+						style: {
+							color: '#3bb303',
+							font: '16px FuturaNew',
+							fontWeight: '400'
+						}
+					},
+					xAxis: {
+						categories: ["Янв,<br>2015", 'Фев,<br>2015', 'Мар,<br>2015', 'Апр,<br>2015', 'Май,<br>2015', 'Июн,<br>2015'],
+						labels: {
+							rotation: 0,
+							style: {
+								color: '#002a61',
+								font: '12px FuturaNew',
+								fontWeight: '400'
+							},
+						},
+					},
+					yAxis: [{
+						labels: {
+							format: '{value} тыс.',
+							style: {
+								//color: Highcharts.getOptions().colors[1],
+								color: '##002a61',
+								font: '12px FuturaNew',
+								fontWeight: '400'
+							}
+						},
+						title: {
+							text: ''
+						}
+					}, {
+						title: {
+							text: '',
+							style: {
+								//color: Highcharts.getOptions().colors[0]
+							}
+						},
+						labels: {
+							format: '{value} млн.',
+							style: {
+								//color: Highcharts.getOptions().colors[0],
+								color: '#002a61',
+								font: '12px FuturaNew',
+								fontWeight: '400'
+							}
+						},
+						opposite: true
+					}],
+					plotOptions: {
+						line: {
+							dataLabels: {
+								//enabled: true
+							},
+							enableMouseTracking: false
+						}
+					},
+					series: [{
+						name: 'Стоимость пая',
+						data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5],
+						color: '#4992ff'
+					}, {
+						name: 'Стоимость СЧА',
+						yAxis: 1,
+						color: '#ffc300',
+						data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2]
+					}],
+					legend: {
+						enabled: false,
+						layout: 'horizontal',
+						align: 'left',
+						x: 0,
+						verticalAlign: 'top',
+						y: 0,
+						floating: true,
+						style: {
+							color: '#002a61',
+							font: '12px FuturaNew',
+							fontWeight: '400'
+						},
+						backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
+					},
+				});
+				
+				$('#pie-graph').highcharts({
+					chart: {
+						renderTo: 'container',
+						type: 'pie'
+					},
+					credits: {
+						enabled: false
+					},
+					title: {
+						text: ''
+					},
+					yAxis: {
+						title: {
+							text: 'Total percent market share'
+						}
+					},
+					plotOptions: {
+						pie: {
+							shadow: false
+						}
+					},
+					tooltip: {
+						formatter: function() {
+							return '<b>'+ this.point.name +'</b>: '+ this.y +' %';
+						}
+					},
+					legend: {
+						enabled: false,
+					},
+					series: [{
+						name: 'Browsers',
+						data: [["Сырьё",30],["Финансы",40],["Нефть и газ",40]],
+						size: '80%',
+						innerSize: '80%',
+						showInLegend:true,
+						dataLabels: {
+							enabled: true,
+							style: {
+								color: '#002a61',
+								font: '14px FuturaNew',
+								fontWeight: '400',
+							}
+						}
+					}]
+				});
+			});

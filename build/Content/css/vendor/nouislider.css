@@ -4,117 +4,117 @@
  */
 .noUi-target,
 .noUi-target * {
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-ms-touch-action: none;
-	-ms-user-select: none;
-	-moz-user-select: none;
-	box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -ms-touch-action: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  box-sizing: border-box;
 }
 
 .noUi-target {
-	position: relative;
-	direction: ltr;
+  position: relative;
+  direction: ltr;
 }
 
 .noUi-base {
-	width: 100%;
-	height: 100%;
-	position: relative;
-	z-index: 1;
-	/* Fix 401 */
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  /* Fix 401 */
 }
 
 .noUi-origin {
-	position: absolute;
-	right: 0;
-	top: 0;
-	left: 0;
-	bottom: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .noUi-handle {
-	position: relative;
-	z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .noUi-stacking .noUi-handle {
-	/* This class is applied to the lower origin when
-		 its values is > 50%. */
-	z-index: 10;
+  /* This class is applied to the lower origin when
+  	 its values is > 50%. */
+  z-index: 10;
 }
 
 .noUi-state-tap .noUi-origin {
-	-webkit-transition: left 0.3s, top 0.3s;
-	transition: left 0.3s, top 0.3s;
+  -webkit-transition: left 0.3s, top 0.3s;
+  transition: left 0.3s, top 0.3s;
 }
 
 .noUi-state-drag * {
-	cursor: inherit !important;
+  cursor: inherit !important;
 }
 
 /* Painting and performance;
  * Browsers can paint handles in their own layer.
  */
 .noUi-base {
-	-webkit-transform: translate3d(0, 0, 0);
-	transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 /* Slider size and handle placement;
  */
 .noUi-horizontal {
-	height: 3px;
+  height: 3px;
 }
 
 .noUi-horizontal .noUi-handle {
-	width: 30px;
-	height: 30px;
-	left: -17px;
-	top: -13px;
+  width: 30px;
+  height: 30px;
+  left: -17px;
+  top: -13px;
 }
 
 .noUi-vertical {
-	width: 18px;
+  width: 18px;
 }
 
 .noUi-vertical .noUi-handle {
-	width: 28px;
-	height: 34px;
-	left: -6px;
-	top: -17px;
+  width: 28px;
+  height: 34px;
+  left: -6px;
+  top: -17px;
 }
 
 /* Styling;
  */
 .noUi-background {
-	background: #727d91;
+  background: #727d91;
 }
 
 .noUi-connect {
-	background: #0698ff;
-	-webkit-transition: background 450ms;
-	transition: background 450ms;
+  background: #0698ff;
+  -webkit-transition: background 450ms;
+  transition: background 450ms;
 }
 
 /* Handles and cursors;
  */
 .noUi-dragable {
-	cursor: w-resize;
+  cursor: w-resize;
 }
 
 .noUi-vertical .noUi-dragable {
-	cursor: n-resize;
+  cursor: n-resize;
 }
 
 .noUi-handle {
-	border: 1px solid #9ea9b9;
-	border-radius: 15px;
-	background: #FFF;
-	cursor: default;
-	/*box-shadow: inset 0 0 1px #FFF,
-				inset 0 1px 7px #EBEBEB,
-				0 3px 6px -3px #BBB;*/
+  border: 1px solid #9ea9b9;
+  border-radius: 15px;
+  background: #FFF;
+  cursor: default;
+  /*box-shadow: inset 0 0 1px #FFF,
+  			inset 0 1px 7px #EBEBEB,
+  			0 3px 6px -3px #BBB;*/
 }
 
 /* Handle stripes;
@@ -123,33 +123,33 @@
  */
 [disabled].noUi-connect,
 [disabled] .noUi-connect {
-	background: #B8B8B8;
+  background: #B8B8B8;
 }
 
 [disabled].noUi-origin,
 [disabled] .noUi-handle {
-	cursor: not-allowed;
+  cursor: not-allowed;
 }
 
 /* Labels */
 .slider-columns {
-	display: none;
-	margin: 20px 0 0;
-	padding: 0;
-	list-style: none;
+  display: none;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
 }
 .slider-columns li {
-	display: inline-block;
-	width: calc(100% / 5);
+  display: inline-block;
+  width: calc(100% / 5);
 }
 .slider-columns li:nth-last-child(1) {
-	position: absolute;
-	margin-left: 20px;
-	width: 90px;
+  position: absolute;
+  margin-left: 20px;
+  width: 90px;
 }
 
 #range-slider {
-	padding-top: 36px;
+  padding-top: 36px;
 }
 
 /* Pips styles
@@ -159,107 +159,107 @@
  */
 .noUi-pips,
 .noUi-pips * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .noUi-pips {
-	position: absolute;
+  position: absolute;
 }
 
 /* Values;
  *
  */
 .noUi-value {
-	width: 40px;
-	position: absolute;
-	text-align: center;
+  width: 40px;
+  position: absolute;
+  text-align: center;
 }
 
 .noUi-value-sub {
-	color: #ccc;
-	font-size: 10px;
+  color: #ccc;
+  font-size: 10px;
 }
 
 /* Markings;
  *
  */
 .noUi-marker {
-	position: absolute;
-	background: #002a61;
+  position: absolute;
+  background: #002a61;
 }
 
 .noUi-marker-sub,
 .noUi-marker-large {
-	background: #002a61;
+  background: #002a61;
 }
 
 /* Horizontal layout;
  *
  */
 .noUi-pips-horizontal {
-	padding: 10px 0;
-	height: 50px;
-	top: 100%;
-	left: 0;
-	width: 100%;
+  padding: 10px 0;
+  height: 50px;
+  top: 100%;
+  left: 0;
+  width: 100%;
 }
 
 .noUi-value-horizontal {
-	margin-left: -20px;
-	padding-top: 20px;
-	/* custom */
+  margin-left: -20px;
+  padding-top: 20px;
+  /* custom */
 }
 .noUi-value-horizontal.noUi-value-large:last-child {
-	margin-left: -40px;
+  margin-left: -40px;
 }
 .noUi-value-horizontal.noUi-value-large:nth-child(2) {
-	margin-left: -10px;
+  margin-left: -10px;
 }
 
 .noUi-value-horizontal.noUi-value-sub {
-	padding-top: 15px;
+  padding-top: 15px;
 }
 
 .noUi-marker-horizontal.noUi-marker {
-	margin-left: -1px;
-	width: 1px;
-	height: 5px;
+  margin-left: -1px;
+  width: 1px;
+  height: 5px;
 }
 
 .noUi-marker-horizontal.noUi-marker-sub {
-	height: 10px;
+  height: 10px;
 }
 
 .noUi-marker-horizontal.noUi-marker-large {
-	height: 10px;
+  height: 10px;
 }
 
 /* Vertical layout;
  *
  */
 .noUi-pips-vertical {
-	padding: 0 10px;
-	height: 100%;
-	top: 0;
-	left: 100%;
+  padding: 0 10px;
+  height: 100%;
+  top: 0;
+  left: 100%;
 }
 
 .noUi-value-vertical {
-	width: 15px;
-	margin-left: 20px;
-	margin-top: -5px;
+  width: 15px;
+  margin-left: 20px;
+  margin-top: -5px;
 }
 
 .noUi-marker-vertical.noUi-marker {
-	width: 5px;
-	height: 2px;
-	margin-top: -1px;
+  width: 5px;
+  height: 2px;
+  margin-top: -1px;
 }
 
 .noUi-marker-vertical.noUi-marker-sub {
-	width: 10px;
+  width: 10px;
 }
 
 .noUi-marker-vertical.noUi-marker-large {
-	width: 15px;
+  width: 15px;
 }

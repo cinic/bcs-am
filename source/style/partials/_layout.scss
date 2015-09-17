@@ -968,3 +968,29 @@ label { cursor: pointer; }
 		}
 	}
 }
+
+.main-indicator-graph {
+	.legend {
+		margin-bottom: 12px;
+		.item {
+			line-height: 34px;
+			.icon {
+				display: inline-block;
+				margin-right: 4px;
+				width: 25px;
+				height: 25px;
+				border: 6px solid #eceff4;
+				background: #4992ff;
+				outline: 3px solid #4992ff;
+				vertical-align: middle;
+			}
+			&.item-2 {
+				.icon {
+					background: #ffc300;
+					border-color: #ffc300;
+					outline-color: #ffc300;
+				}
+			}
+		}
+	}
+}
