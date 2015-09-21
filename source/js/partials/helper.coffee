@@ -10,3 +10,14 @@ $(window).scroll ->
 		nav.addClass('fixed')
 	else
 		nav.removeClass('fixed')
+
+# owl carousel
+$ ->
+	$('.owl-carousel').owlCarousel
+		navigation : false,
+		slideSpeed : 300,
+		paginationSpeed : 400,
+		singleItem:true
+
+	$('.toggle-nav').on 'click', ->
+		$('nav.menu').toggleClass('active')

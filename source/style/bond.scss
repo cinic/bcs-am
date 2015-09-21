@@ -9,13 +9,11 @@
 				background: url('../img/pages/bonds/header-national.jpg') no-repeat top center;
 				filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-national.jpg', sizingMethod='scale');
 				-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-national.jpg', sizingMethod='scale')";
+				background-size: cover;
 				
 				.page-title {
 					margin-top: 180px;
 					margin-bottom: 34px;
-					font-size: 70px;
-					font-weight: normal;
-					line-height: 70px;
 					color: #002665;
 				}
 				.page-title-description {

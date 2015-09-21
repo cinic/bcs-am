@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="Content/css/vendor/bootstrap.custom.css">
     <link rel="stylesheet" href="Content/css/vendor/nouislider.css">
     <link rel="stylesheet" href="Content/css/vendor/selectize.default.css">
+    <link rel="stylesheet" href="Content/css/vendor/owl.carousel.css">
+    <link rel="stylesheet" href="Content/css/vendor/owl.theme.css">
     <link rel="stylesheet" href="Content/css/main.css">
     <link rel="shortcut icon" href="Content/img/favicon.ico">
     <link rel="stylesheet" href="Content/css/mutual-funds.css">
@@ -56,8 +58,8 @@
       <div class="content clearfix">
         <div class="container">
           <div class="row">
-            <div class="col-sm-11 text-center">
-              <h1 class="page-title">Фонд национальных<br>облигаций</h1>
+            <div class="col-sm-11 text-center clearfix">
+              <h1 class="page-subtitle">Фонд национальных<br>облигаций</h1>
               <div class="page-title-description">Инвестируйте в высоконадежные государственные<br>ценные бумаги</div>
               <div class="advice text-center"><a href="#" title="Получить консультацию" class="btn btn-yellow">Узнать больше</a></div>
             </div>
@@ -74,43 +76,48 @@
             <form class="calculator-form clearfix">
               <div class="calc-col-1">
                 <div class="calc-row">
-                  <label>Сумма для инвестирования</label>
-                  <input id="calc-range-input" class="calc-range">
-                  <div id="range-slider" class="no-ui-slider">
-                    <div id="calc-range" class="slider"></div>
-                    <ul class="slider-columns five-columns">
-                      <li>50&nbsp;т.</li>
-                      <li>100&nbsp;т.</li>
-                      <li>500&nbsp;т.</li>
-                      <li>1000&nbsp;т.</li>
-                      <li>2000&nbsp;т.</li>
-                    </ul>
+                  <label>Выберите инвестиционный фонд</label>
+                  <div class="opt-group table-group">
+                    <label><span class="custom-radio">
+                        <input type="radio" name="fund" value="0"></span><span>Технологии</span></label>
+                    <label><span class="custom-radio">
+                        <input type="radio" name="fund" value="1"></span><span>Зарубежные рынки</span></label>
+                    <label><span class="custom-radio">
+                        <input type="radio" name="fund" value="2"></span><span>Глобальные рынки</span></label>
                   </div>
                 </div>
                 <div class="calc-row">
-                  <label class="double-margin">Сумма для инвестирования</label>
-                  <input type="hidden" name="interval" id="bond-interval">
-                  <div class="opt-group"><span data-value="3" class="time">3 мес.</span><span data-value="6" class="time">6 мес.</span><span data-value="12" class="time">1 год</span><span data-value="24" class="time">2 года</span><span data-value="36" class="time">3 года</span></div>
+                  <label>Сумма <span class="hidden-mobile">для инвестирования</span></label>
+                  <input id="calc-range-input" class="calc-range">
+                  <div id="range-slider" class="no-ui-slider">
+                    <div id="calc-range" class="slider"></div>
+                  </div>
+                </div>
+                <div class="calc-row">
+                  <label class="double-margin">Срок инвестирования</label>
+                  <input type="hidden" name="interval" id="bond-interval" value="1">
+                  <div class="opt-group"><span data-value="0.25" class="time">3 мес.</span><span data-value="0.5" class="time">6 мес.</span><span data-value="1" class="time active">1 год</span><span data-value="2" class="time">2 года</span><span data-value="3" class="time">3 года</span></div>
                 </div>
               </div>
               <div class="calc-col-2">
                 <div class="income-values clearfix">
                   <div class="in">
-                    <div class="wrap"><b>Вклад</b>
+                    <div class="wrap clearfix"><b>Вклад</b>
                       <div id="range-value">100 000 Р</div>
                       <div class="value-bg"></div>
                     </div>
                   </div>
                   <div class="out">
-                    <div class="wrap"><b>Доход</b>
+                    <div class="wrap clearfix"><b>Доход</b>
                       <div id="income-value">58 000 Р</div>
-                      <div style="height:32px;" class="income-bg"></div>
+                      <div class="income-bg"></div>
                       <div class="value-bg"></div>
                     </div>
                   </div>
                 </div>
-                <div class="income-percent"><span>Доход в процентах <b>23%</b></span></div>
-                <div class="income-result"><b>Вы получите</b><span id="income-result">58 000 ₽</span><span class="btn btn-yellow">получить</span></div>
+                <div class="income-percent clearfix"><span>Доход в процентах </span><b id="income-percent" data-value="23">23%</b></div>
+                <div class="income-result"><b>Вы получите</b><span id="income-result">58 000 ₽</span></div>
+                <div class="actions text-center"><span class="btn btn-yellow">получить</span></div>
               </div>
             </form>
           </div>
@@ -331,6 +338,7 @@
     <script src="Content/js/vendor/selectize.js"></script>
     <script src="Content/js/vendor/nouislider.js"></script>
     <script src="Content/js/vendor/wNumb.js"></script>
+    <script src="Content/js/vendor/owl.carousel.min.js"></script>
     <script src="Content/js/main.js"></script>
     <script src="Content/js/vendor/highcharts.js"></script>
     <script>
