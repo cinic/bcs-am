@@ -5,29 +5,29 @@ Futura new Light
 Futura new Medium
 */
 @font-face {
-  font-family: 'FuturaNew';
-  src: url("../fonts/FuturaNewMedium.eot");
-  src: local("☺"), url("../fonts/FuturaNewMedium.woff") format("woff"), url("../fonts/FuturaNewMedium.ttf") format("truetype"), url("../fonts/FuturaNewMedium.svg") format("svg");
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+0020-25CA;
+	font-family: 'FuturaNew';
+	src: url("../fonts/FuturaNewMedium.eot");
+	src: local("☺"), url("../fonts/FuturaNewMedium.woff") format("woff"), url("../fonts/FuturaNewMedium.ttf") format("truetype"), url("../fonts/FuturaNewMedium.svg") format("svg");
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
 }
 @font-face {
-  font-family: 'FuturaNew';
-  src: url("../fonts/FuturaNewLight.eot");
-  src: local("☺"), url("../fonts/FuturaNewLight.woff") format("woff"), url("../fonts/FuturaNewLight.ttf") format("truetype"), url("../fonts/FuturaNewLight.svg") format("svg");
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+0020-25CA;
+	font-family: 'FuturaNew';
+	src: url("../fonts/FuturaNewLight.eot");
+	src: local("☺"), url("../fonts/FuturaNewLight.woff") format("woff"), url("../fonts/FuturaNewLight.ttf") format("truetype"), url("../fonts/FuturaNewLight.svg") format("svg");
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
 }
 @font-face {
-  font-family: 'FuturaNew';
-  src: url("../fonts/FuturaNewBook.eot");
-  src: local("☺"), url("../fonts/FuturaNewBook.woff") format("woff"), url("../fonts/FuturaNewBook.ttf") format("truetype"), url("../fonts/FuturaNewBook.svg") format("svg");
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+0020-25CA;
+	font-family: 'FuturaNew';
+	src: url("../fonts/FuturaNewBook.eot");
+	src: local("☺"), url("../fonts/FuturaNewBook.woff") format("woff"), url("../fonts/FuturaNewBook.ttf") format("truetype"), url("../fonts/FuturaNewBook.svg") format("svg");
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
 }
