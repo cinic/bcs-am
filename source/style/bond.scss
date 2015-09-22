@@ -1,3 +1,4 @@
+@import 'partials/variables';
 .bond {
 	.section-label,
 	.section-title {
@@ -11,7 +12,7 @@
 				-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-national.jpg', sizingMethod='scale')";
 				background-size: cover;
 				
-				.page-title {
+				.page-subtitle {
 					margin-top: 180px;
 					margin-bottom: 34px;
 					color: #002665;
@@ -26,25 +27,15 @@
 	}
 	
 	.calculator {
-		padding-bottom: 120px;
-		.section-title {
-			margin-bottom: 60px;
-			color: #002a61;
-		}
-		
 		.calculator-form {
 			.calc-row {
 				background: #f7f7f7 !important;
 			}
 			.calc-row {
-				&:nth-child(1) {
+				&:nth-child(2) {
 					background: rgba(204, 209, 218,.5) !important;
 					border-top: 1px solid #9ea9b8;
 					border-bottom: 1px solid #9ea9b8;
-				}
-				&:nth-child(2) {
-					padding-bottom: 289px;
-					border-bottom: 0;
 				}
 			}
 		}
@@ -52,77 +43,125 @@
 	.main-indicator {
 		color: #002a61;
 		background: #eceff4;
-		.main-indicator-graph {
-			margin: 60px 25px 156px;
-			border: 1px solid #9ea9b8;
-			.caption {
-				padding: 0 56px;
-				line-height: 42px;
-				font-size: 14px;
-				border-bottom: 1px solid #9ea9b8;
-			}
-			.legend {
-				.item {
-					float: left;
-					margin-right: 32px;
-				}
-			}
-			.title {
-				font-size: 20px;
-				font-weight: normal;
-			}
-			.col-left {
+
+		.caption {
+			padding: 0;
+		}
+
+		.legend {
+			.item {
 				float: left;
-				padding-left: 56px;
-				width: 532px;
-				
-				.graph {
-					margin-left: -28px;
-				}
-			}
-			.col-right {
-				float: right;
-				width: 476px;
-			}
-			.timing {
-				margin: 16px 0 4px;
-				.item {
-					display: inline-block;
-					margin: 0 12px 10px 0;
-					padding: 0 20px;
-					line-height: 30px;
-					font-size: 16px;
-					background: white;
-					border: 1px solid #9ea9b9;
-					border-radius: 15px;
-					cursor: pointer;
-				}
-			}
-			.btn {
-				margin-top: 24px;
 				font-size: 14px;
 			}
-			.cost {
-				padding: 0 56px 32px;
-				border-top: 1px solid #9ea9b8;
+			.item-2 {
+				float: right;
+			}
+		}
+
+		.timing {
+			margin: 16px 0 4px;
+			.item {
+				display: inline-block;
+				margin: 0 12px 10px 0;
+				padding: 0 20px;
+				line-height: 30px;
+				font-size: 16px;
+				background: white;
+				border: 1px solid #9ea9b9;
+				border-radius: 15px;
+				cursor: pointer;
+			}
+		}
+		.btn {
+			margin-top: 24px;
+			font-size: 14px;
+		}
+
+		.cost {
+			padding-bottom: 30px;
+
+			.cost-table {
+				width: 100%;
+				font-size: 10px;
+				background: white;
+				tr {
+					border-bottom: 1px solid #f2f2f2;
+					&:last-child {
+						border: 0;
+					}
+				}
+				th,
+				td {
+					padding: 6px 8px;
+					text-align: left;
+				}
+				.red { color: #ff0000; }
+				.green { color: #3bb303; }
+			}
+		}
+		
+		@media (min-width: $screen-sm-max) {
+			.main-indicator-graph {
+				margin: 60px 25px 156px;
+				border: 1px solid #9ea9b8;
 				
-				.cost-table {
-					width: 100%;
-					font-size: 16px;
-					background: white;
-					tr {
-						border-bottom: 1px solid #f2f2f2;
-						&:last-child {
-							border: 0;
+				.caption {
+					padding: 0 56px;
+					line-height: 42px;
+					font-size: 14px;
+					border-bottom: 1px solid #9ea9b8;
+				}
+				.legend {
+					.item {
+						float: left;
+						margin-right: 32px;
+						font-size: 20px;
+					}
+				}
+				.title {
+					font-size: 20px;
+					font-weight: normal;
+				}
+				.col-left {
+					float: left;
+					padding-left: 56px;
+					width: 532px;
+					
+					.graph {
+						margin-left: -28px;
+					}
+				}
+				.col-right {
+					float: right;
+					padding-right: 28px;
+					width: 476px;
+				}
+				.cost {
+					padding: 0 56px 32px;
+					border-top: 1px solid #9ea9b8;
+					
+					.cost-table {
+						width: 100%;
+						font-size: 16px;
+						background: white;
+						tr {
+							border-bottom: 1px solid #f2f2f2;
+							&:last-child {
+								border: 0;
+							}
 						}
+						th,
+						td {
+							padding: 12px 18px;
+							text-align: left;
+						}
+						.red { color: #ff0000; }
+						.green { color: #3bb303; }
 					}
-					th,
-					td {
-						padding: 12px 18px;
-						text-align: left;
-					}
-					.red { color: #ff0000; }
-					.green { color: #3bb303; }
+				}
+				
+				.pie-graph {
+					margin-top: 66px;
 				}
 			}
 		}
@@ -130,13 +169,15 @@
 	
 	.advantages {
 		&.bond-national-fund {
-			min-height: 757px !important;
-			height: 757px !important;
+			height: 820px;
 			background: url('../img/pages/bonds/advantages-bg-bond-national.jpg') no-repeat 50% 50%;
+			background-size: cover;
+			
 			.item {
 				position: relative;
-				margin-bottom: 54px;
-				padding-top: 90px;
+				margin-bottom: 20px;
+				padding-top: 70px;
+				height: 210px;
 
 				.icon {
 					margin-left: -30px;
@@ -155,6 +196,15 @@
 				p {
 					color: #ccd7e6;
 				}
+
+				@media (min-width: $screen-sm-max) {
+					margin-bottom: 54px;
+					padding-top: 90px;
+					height: auto;
+				}
+			}
+			@media (min-width: $screen-sm-max) {
+				height: 757px;
 			}
 		}
 		.section-title {
@@ -164,9 +214,9 @@
 	}
 	
 	.documentation {
-		padding-bottom: 90px;
 		color: #002a61;
 		background: #eceff4;
+		
 		.section-title {
 			margin: 62px 0 40px;
 		}
@@ -181,14 +231,15 @@
 			}
 		}
 		.docs-list {
-			margin: 0 -10px;
+			@media (min-width: $screen-sm-max) {
+				margin: 0 -10px;
+			}
 		}
 		.item {
-			display: inline-block;
-			margin-right: 20px;
+			display: block;
+			margin-bottom: 24px;
 			padding: 147px 0 22px;
-			width: 175px;
-			background: #002a61 url('../img/docs-arrow-down.png') no-repeat 147px 13px;
+			background: #002a61 url('../img/docs-arrow-down.png') no-repeat right top;
 			text-decoration: none;
 			vertical-align: top;
 			&:last-child {
@@ -197,10 +248,22 @@
 			.label {
 				padding: 10px;
 				height: 68px;
-				font-size: 14px;
+				font-size: 12px;
 				background: #ffc300;
 				color: #002a61;
 			}
+
+			@media (min-width: $screen-sm-max) {
+
+				.label {
+					height: 68px;
+					font-size: 14px;
+				}
+			}
+		}
+
+		@media (min-width: $screen-sm-max) {
+			padding-bottom: 90px;
 		}
 	}
 }

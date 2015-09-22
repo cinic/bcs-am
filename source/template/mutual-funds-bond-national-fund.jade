@@ -33,6 +33,11 @@ html(lang="ru")
 							.caption Дата формирования фонда хх.хх.хххх г.
 							.clearfix
 								.col-left
+									
+								.col-right
+									
+							.clearfix
+								.col-left
 									h3.title Динамика стоимости пая и СЧА
 									.legend.clearfix
 										.item.item-1
@@ -41,10 +46,6 @@ html(lang="ru")
 										.item.item-2
 											span.icon
 											|— стоимость СЧА
-								.col-right
-									h3.title Распределение активов
-							.clearfix
-								.col-left
 									#line-graph.graph
 									.timing
 										span.item 3 мес
@@ -53,7 +54,8 @@ html(lang="ru")
 										span.item 2 года
 										span.item с момента формирования фонда
 								.col-right
-									#pie-graph.graph
+									h3.title Распределение активов
+									#pie-graph.graph.pie-graph
 									.actions.text-center
 										a.btn.btn-yellow(href="#") Оставить заявку
 							.cost
@@ -78,39 +80,38 @@ html(lang="ru")
 			.container
 				h2.section-title.text-center Преимущества фонда
 				.row
-					.col-sm-6.col-sm-offset-1
+					.col-sm-6.col-sm-offset-1.col-xs-10
 						.item
 							.icon.income
 							h3 Доход
 							p Высокий доход по сравнению с доходностью высоконадёжных государственных ценных бумаг
-					.col-sm-6
+					.col-sm-6.col-xs-10
 						.item
 							.icon.investment
 							h3 Инвестирование
 							p Возможность инвестирования в еврооблигации и хеджирования валютных рисков
-					.col-sm-6.col-sm-offset-1
+					.col-sm-6.col-xs-10
 						.item
 							.icon.management
 							h3 Управление
 							p Консервативная стратегия управления, в первую очередь направленная на сохранение инвестиций
-				.row
-					.col-sm-6.col-sm-offset-1
+					.col-sm-6.col-sm-offset-1.col-xs-10
+						.item
+							.icon.sell-buy
+							h3 Купля-продажа
+							p Возможность купить или продать пай в любой момент без потери накопленного дохода
+					.col-sm-6.col-xs-10
+						.item
+							.icon.bonds
+							h3 Облигации
+							p В состав портфеля включаются еврооблигации и облигации крупных зарубежных компаний!
+					.col-sm-6.col-xs-10
 						.item
 							.icon.control
 							h3 Контроль
 							p Контроль риска
 								br
 								|вложений бумаг
-					.col-sm-6
-						.item
-							.icon.sell-buy
-							h3 Купля-продажа
-							p Возможность купить или продать пай в любой момент без потери накопленного дохода
-					.col-sm-6.col-sm-offset-1
-						.item
-							.icon.bonds
-							h3 Облигации
-							p В состав портфеля включаются еврооблигации и облигации крупных зарубежных компаний!
 		section.documentation.bond-national-fund
 			.container
 				h2.section-title Документы фонда
@@ -123,17 +124,23 @@ html(lang="ru")
 							.reg-date
 								|Дата регистрации правил фонда: 
 								b 08.10.2003
-						.docs-list.clearfix
+				.row
+					.docs-list.clearfix
+						.col-sm-4.col-xs-10
 							a.item(href="#")
 								.label Правила определения стоимости активов и величины обязательств
+						.col-sm-4.col-xs-10
 							a.item(href="#")
 								.label Правила доверительного управления ПИФа
+						.col-sm-4.col-xs-10
 							a.item(href="#")
 								.label Правила определения стоимости активов на 2014 год
+						.col-sm-4.col-xs-10
 							a.item(href="#")
 								.label Политика осуществления прав голоса по акциям
+						.col-sm-4.col-xs-10
 							a.item(href="#")
-								.label Банковские реквизиты для&nbsp;перечисления&nbsp;средств в&nbsp;оплату&nbsp;паев&nbsp;ПИФ&nbsp;«БКС»					
+								.label Банковские реквизиты для перечисления средств в оплату паев ПИФ «БКС»					
 
 		include ./partials/_feedback.jade
 		include ./partials/_footer.jade
@@ -290,8 +297,8 @@ html(lang="ru")
 					series: [{
 						name: 'Browsers',
 						data: [["Сырьё",30],["Финансы",40],["Нефть и газ",40]],
-						size: '80%',
-						innerSize: '80%',
+						size: '75%',
+						innerSize: '70%',
 						showInLegend:true,
 						dataLabels: {
 							enabled: true,
@@ -303,4 +310,7 @@ html(lang="ru")
 						}
 					}]
 				});
+				
+				$('.calculator-form input[name="fund"][value="2"]').prop('checked', true);
+				$('.custom-radio input:checked').parent().addClass('checked').parent().addClass('checked');
 			});

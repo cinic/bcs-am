@@ -112,7 +112,7 @@
 	}
 	
 	.advantages {
-		min-height: 996px;
+		height: 1750px;
 		color: white;
 		background: url('../img/pages/bonds/advantages-bg.jpg') no-repeat 50% 50%;
 		background-size: cover;
@@ -156,14 +156,26 @@
 		}
 		
 		h3 {
-			margin: 0 0 22px;
-			font-size: 30px;
-			font-weight: normal;
+			margin: 0 0 10px;
+			font-size: 20px;
+			font-weight: 400;
 		}
 		p {
-			font-size: 18px;
-			line-height: 22px;
+			font-size: 14px;
+			line-height: 18px;
 			color: #cacaca;
+		}
+
+		@media (min-width: $screen-sm-max) {
+			height: 996px;
+			h3 {
+				margin: 0 0 22px;
+				font-size: 30px;
+			}
+			p {
+				font-size: 18px;
+				line-height: 22px;
+			}
 		}
 	}
 	

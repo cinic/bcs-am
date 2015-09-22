@@ -596,14 +596,18 @@ nav.menu {
 }
 
 .section-label {
-	margin-top: 44px;
-	font-family: 'FuturaNew', sans-serif;
+	margin: 14px 0;
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 25px;
 	color: #4992ff;
 	text-align: center;
 	text-transform: uppercase;
+
+	@media(min-width: $screen-sm-max) {
+		margin-top: 44px;
+		margin-bottom: 0;
+	}
 }
 
 .pseudo-link {
@@ -662,8 +666,13 @@ label { cursor: pointer; }
 	}
 
 	.section-title {
-		margin-bottom: 60px;
-		color: #78849b;
+		display: none;
+		color: #002a61;
+		/*color: #78849b;*/
+		@media (min-width: $screen-sm-max) {
+			display: block;
+			margin-bottom: 60px;
+		}
 	}
 	
 	.calculator-form {
@@ -1244,6 +1253,7 @@ label { cursor: pointer; }
 			@media (min-width: $screen-sm-max) {
 				margin-right: 94px;
 				margin-bottom: 0;
+				display: inline-block;
 			}
 		}
 
