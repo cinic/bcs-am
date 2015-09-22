@@ -15,7 +15,7 @@
   font-weight: 300;
   color: #002665;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .index .header .page-title {
     margin: 108px 0 36px;
     line-height: 70px;
@@ -31,7 +31,7 @@
   font-size: 16px;
   color: #002a61;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .index .calculator .section-label {
     margin: 44px 0 0;
     font-size: 18px;
@@ -40,7 +40,7 @@
 .index .calculator .section-title {
   display: none;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .index .calculator .section-title {
     display: block;
   }
@@ -52,7 +52,7 @@
 .index .assets-management .section-title {
   margin: 17px 0 34px;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .index .assets-management .section-title {
     margin: 62px 0 100px;
   }
@@ -67,7 +67,17 @@
 .index .assets-management .item.offices {
   display: none;
 }
-@media (min-width: 991px) {
+@media (min-width: 768px) {
+  .index .assets-management .item.offices {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  .index .assets-management .item.offices {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
   .index .assets-management .item {
     padding-top: 112px;
     line-height: 22px;
@@ -83,7 +93,7 @@
   font-weight: 400;
   color: white;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .index .assets-management .item h3 {
     line-height: 36px;
     font-size: 30px;
@@ -114,7 +124,7 @@
 .index .assets-management .item .icon.offices {
   background-position: 0 -272px;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .index .assets-management .item .icon {
     margin-left: -51px;
     width: 103px;
@@ -137,7 +147,7 @@
     background-position: 0 -412px;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .index .assets-management {
     padding-bottom: 85px;
   }
@@ -149,7 +159,7 @@
   margin: 16px 0 24px 22px;
   text-align: left;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .index .experts .section-title {
     margin: 60px 0 70px;
     text-align: center;
@@ -158,50 +168,67 @@
 .index .experts .expert-comment {
   display: none;
   border: 2px solid #4992ff;
-  box-shadow: 33px 0px 0px 0px white, 34px 0px 0px 0px #ced4db;
 }
-.index .experts .expert-comment:after {
-  content: " ";
-  border-left: 1px solid black;
+.index .experts .expert-comment article {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 20px;
 }
-@media (min-width: 991px) {
+.index .experts .expert-comment article time {
+  font-size: 20px;
+}
+.index .experts .expert-comment article h3 {
+  margin: 10px 0 14px;
+  font-weight: 500;
+  line-height: 22px;
+}
+.index .experts .expert-comment article p {
+  margin: 12px 0 26px;
+}
+@media (min-width: 992px) {
+  .index .experts .expert-comment article {
+    float: right;
+    padding-left: 36px;
+    width: 66%;
+  }
+}
+.index .experts .expert-comment .author {
+  font-size: 16px;
+  font-weight: 300;
+}
+.index .experts .expert-comment .author b {
+  display: block;
+  margin: 6px 0 6px;
+  font-size: 20px;
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  .index .experts .expert-comment .author {
+    margin-bottom: 12px;
+  }
+  .index .experts .expert-comment .author img {
+    float: left;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .index .experts .expert-comment .author {
+    float: left;
+    padding-right: 10px;
+    width: 34%;
+  }
+}
+@media (min-width: 768px) {
   .index .experts .expert-comment {
     display: block;
     margin-left: -10px;
     margin-right: -10px;
     padding: 34px 30px 34px 40px;
   }
-  .index .experts .expert-comment article {
-    float: right;
-    padding-left: 36px;
-    width: 66%;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 20px;
-  }
-  .index .experts .expert-comment article time {
-    font-size: 20px;
-  }
-  .index .experts .expert-comment article h3 {
-    margin: 10px 0 14px;
-    font-weight: 500;
-    line-height: 22px;
-  }
-  .index .experts .expert-comment article p {
-    margin: 12px 0 26px;
-  }
-  .index .experts .expert-comment .author {
-    float: left;
-    padding-right: 10px;
-    width: 34%;
-    font-size: 16px;
-    font-weight: 300;
-  }
-  .index .experts .expert-comment .author b {
-    display: block;
-    margin: 6px 0 6px;
-    font-size: 20px;
-    font-weight: 500;
+}
+@media (min-width: 1200px) {
+  .index .experts .expert-comment {
+    box-shadow: 33px 0px 0px 0px white, 34px 0px 0px 0px #ced4db;
   }
 }
 .index .experts .news {
@@ -227,14 +254,14 @@
 .index .experts .news li p {
   margin: 0 0 5px;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .index .experts .news li {
     padding-top: 0;
     padding-left: 8px;
     border-top: 0;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .index .experts .news {
     margin: 0 0 0 24px;
   }
@@ -252,12 +279,12 @@
   background: url("../img/burger-blue.png") no-repeat 0 50%;
   text-decoration: none;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .index .experts .all-comments {
     margin: 42px 0 0 56px;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .index .experts {
     padding-bottom: 80px;
   }

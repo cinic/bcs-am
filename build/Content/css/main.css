@@ -47,13 +47,33 @@
   font-size: 14px;
   line-height: 14px;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .btn {
     width: auto;
     white-space: nowrap;
   }
 }
 
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important;
+  }
+}
 body {
   margin: 0 auto;
   font-family: 'FuturaNew', sans-serif;
@@ -87,7 +107,7 @@ nav.menu a {
   background: url("../img/burger.png") no-repeat center;
   cursor: pointer;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .top-panel .toggle-nav {
     display: none;
   }
@@ -100,7 +120,7 @@ nav.menu a {
   width: 61px;
   height: 23px;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .top-panel .brand img {
     width: 117px;
     height: 45px;
@@ -162,7 +182,7 @@ nav.menu a {
   line-height: 0;
   font-size: 0;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .top-panel .top-nav {
     display: block;
   }
@@ -172,7 +192,7 @@ nav.menu a {
   float: left;
   display: none;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .top-panel .meta .search,
   .top-panel .meta .phone {
     display: block;
@@ -186,7 +206,7 @@ nav.menu a {
   border-radius: 11px;
   background: #ffc300 url("../img/mobile/phone.png") no-repeat 50% 50%;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .top-panel .meta .search-icon,
   .top-panel .meta .phone-icon {
     margin-right: 10px;
@@ -219,23 +239,23 @@ nav.menu a {
 .top-panel .meta .phone .description {
   display: none;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .top-panel .meta .phone .num,
   .top-panel .meta .phone .description {
     display: block;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .top-panel .meta .phone {
     width: 222px;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .top-panel .meta {
     width: 272px;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .top-panel {
     margin-bottom: 55px;
     padding: 18px 0 13px;
@@ -252,11 +272,13 @@ nav.menu.active {
   z-index: 1000;
   width: 69.375%;
   background: white;
+  overflow: hidden;
 }
 nav.menu.active .main-nav {
   margin: 0 -10px;
   padding: 0 0 22px 0;
   list-style: none;
+  background: white;
 }
 nav.menu.active .main-nav li {
   padding-left: 12px;
@@ -268,7 +290,7 @@ nav.menu.active .main-nav li a {
   color: #445267;
   line-height: 29px;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   nav.menu {
     display: block;
     position: absolute;
@@ -328,7 +350,7 @@ nav.menu.active .main-nav li a {
 .header .page-title-description {
   display: none;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .header .page-title-description {
     display: block;
   }
@@ -336,7 +358,7 @@ nav.menu.active .main-nav li a {
 .header .content {
   height: 442px;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .header .content {
     height: 704px;
   }
@@ -344,7 +366,7 @@ nav.menu.active .main-nav li a {
 .header .owl-carousel .item {
   height: 442px;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .header .owl-carousel .item {
     height: 706px;
   }
@@ -362,7 +384,7 @@ nav.menu.active .main-nav li a {
 .header .owl-controls .owl-page.active span {
   background: #002665 !important;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .header .owl-controls {
     margin-top: -40px;
   }
@@ -375,7 +397,7 @@ nav.menu.active .main-nav li a {
   font-weight: 400;
   color: #4992ff;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .header .page-title {
     margin-top: 118px;
     margin-bottom: 24px;
@@ -389,7 +411,7 @@ nav.menu.active .main-nav li a {
   font-weight: 400;
   color: #002665;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .header .page-subtitle {
     margin: 0;
     margin-bottom: 78px;
@@ -404,13 +426,13 @@ nav.menu.active .main-nav li a {
   left: 0;
   width: 100%;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .header .advice {
     position: static;
     margin-top: 82px;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .header {
     height: 706px;
     background-size: 2560px 706px;
@@ -429,7 +451,7 @@ nav.menu.active .main-nav li a {
   font-size: 14px;
   line-height: 18px;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .footer .footer-menu,
   .footer .social {
     margin: 50px 0 40px;
@@ -454,7 +476,7 @@ nav.menu.active .main-nav li a {
   text-transform: uppercase;
   color: white;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .footer .footer-menu {
     float: left;
     margin-left: -20px;
@@ -498,7 +520,7 @@ nav.menu.active .main-nav li a {
 .footer .social .item.fb {
   background-position: 0 -60px;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .footer .social .item {
     margin-left: 16px;
     margin-right: 0;
@@ -517,7 +539,7 @@ nav.menu.active .main-nav li a {
     background-position: 0 -94px;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .footer .social {
     float: right;
     margin-right: 20px;
@@ -571,7 +593,7 @@ nav.menu.active .main-nav li a {
 .footer .copy-and-address .address .city-select span {
   border-bottom: 1px dashed;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .footer .copy-and-address .address .city-select {
     color: #002a61;
   }
@@ -599,7 +621,7 @@ nav.menu.active .main-nav li a {
 .footer .copy-and-address .address .tel .icon {
   background-position: 0 -23px;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .footer .copy-and-address .address {
     float: left;
     margin-bottom: 0;
@@ -614,20 +636,20 @@ nav.menu.active .main-nav li a {
 .footer .copy-and-address .copy p {
   margin-top: 0;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .footer .copy-and-address .copy {
     float: right;
     width: 73.454545%;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .footer .copy-and-address {
     margin: 0 -20px;
     padding-top: 36px;
     border-top: 1px solid #002a61;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .footer {
     padding: 0 0 88px;
     background-color: #e7e8ea;
@@ -643,7 +665,7 @@ nav.menu.active .main-nav li a {
   font-weight: 300;
   text-align: center;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .section-title {
     line-height: 70px;
     font-size: 70px;
@@ -659,7 +681,7 @@ nav.menu.active .main-nav li a {
   text-align: center;
   text-transform: uppercase;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .section-label {
     margin-top: 44px;
     margin-bottom: 0;
@@ -719,7 +741,7 @@ label {
 .calculator {
   padding-bottom: 36px;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .calculator {
     padding-bottom: 120px;
   }
@@ -729,7 +751,7 @@ label {
   color: #002a61;
   /*color: #78849b;*/
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .calculator .section-title {
     display: block;
     margin-bottom: 60px;
@@ -739,7 +761,7 @@ label {
   margin: 0 -10px;
   color: #002a61;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .calculator .calculator-form .calc-col-1,
   .calculator .calculator-form .calc-col-2 {
     float: left;
@@ -749,7 +771,7 @@ label {
 .calculator .calculator-form .calc-col-1 {
   background: #ebecee;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .calculator .calculator-form .calc-col-1 {
     width: 565px;
     background: #eceff4;
@@ -760,7 +782,7 @@ label {
   position: relative;
   padding-top: 125px;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .calculator .calculator-form .calc-col-2 {
     padding: 10px 38px 56px 24px;
   }
@@ -790,12 +812,12 @@ label {
 .calculator .calculator-form .calc-row:nth-child(2), .calculator .calculator-form .calc-row:nth-child(3) {
   padding: 20px 12px 42px;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .calculator .calculator-form .calc-row:nth-child(2), .calculator .calculator-form .calc-row:nth-child(3) {
     padding: 36px 24px 62px;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .calculator .calculator-form .calc-row {
     padding: 36px 24px 62px;
   }
@@ -837,7 +859,7 @@ label {
   background: #4992ff;
   color: white;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .calculator .calculator-form .opt-group.table-group {
     display: block;
   }
@@ -869,12 +891,12 @@ label {
   left: 0;
   top: 4px;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .calculator .calculator-form .opt-group label .custom-radio {
     display: block;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .calculator .calculator-form .opt-group label {
     padding: 0;
     margin-right: 30px;
@@ -929,7 +951,7 @@ label {
   border: 1px solid #9ea9b9;
   text-align: center;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .calculator .calculator-form .calc-range {
     margin-top: -10px;
     border-radius: 22px;
@@ -942,7 +964,7 @@ label {
 .calculator .calculator-form #range-slider {
   padding-top: 20px;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .calculator .calculator-form #range-slider {
     padding-top: 36px;
   }
@@ -966,7 +988,7 @@ label {
   height: 18px;
   border-radius: 9px;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .calculator .calculator-form #calc-range .noUi-handle {
     width: 30px;
     height: 30px;
@@ -975,7 +997,7 @@ label {
     border-radius: 15px;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .calculator .calculator-form #calc-range {
     font-size: 20px;
   }
@@ -1001,7 +1023,7 @@ label {
   padding: 8px 48px;
   border-bottom: 1px solid #dadce1;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .calculator .calculator-form .income-values .in,
   .calculator .calculator-form .income-values .out {
     position: relative;
@@ -1018,12 +1040,12 @@ label {
     width: 100%;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .calculator .calculator-form .income-values .in {
     float: left;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .calculator .calculator-form .income-values .out {
     float: right;
   }
@@ -1034,7 +1056,7 @@ label {
   height: 10px;
   background: #ccd1da;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .calculator .calculator-form .income-values .value-bg {
     display: block;
   }
@@ -1045,7 +1067,7 @@ label {
   line-height: 22px;
   font-weight: 300;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .calculator .calculator-form .income-values b {
     float: none;
     font-size: 21px;
@@ -1057,7 +1079,7 @@ label {
   font-size: 16px;
   line-height: 22px;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .calculator .calculator-form .income-values #range-value,
   .calculator .calculator-form .income-values #income-value {
     float: none;
@@ -1070,7 +1092,7 @@ label {
   display: none;
   background: #4992ff;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .calculator .calculator-form .income-values .income-bg {
     display: block;
   }
@@ -1092,7 +1114,7 @@ label {
   float: right;
   font-weight: 300;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .calculator .calculator-form .income-percent {
     margin: 38px 0 46px;
     padding: 20px 0 30px;
@@ -1128,7 +1150,7 @@ label {
   font-size: 20px;
   font-weight: 400;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .calculator .calculator-form .income-result b {
     line-height: 40px;
     font-size: 30px;
@@ -1140,13 +1162,13 @@ label {
   line-height: 60px;
   font-weight: 300;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .calculator .calculator-form .income-result #income-result {
     font-size: 62px;
     line-height: 74px;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .calculator .calculator-form .income-result {
     position: static;
     padding-top: 0;
@@ -1158,14 +1180,14 @@ label {
 .calculator .calculator-form .actions .btn {
   margin-top: 18px;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .calculator .calculator-form .actions .btn {
     margin-top: 26px;
     width: 252px;
     font-size: 18px;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .calculator .calculator-form {
     border: 1px solid #9ea9b8;
   }
@@ -1265,7 +1287,7 @@ label {
 .products .products-list li .investment-portfolio span {
   font-size: 14px;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .products .products-list li .investment-portfolio span {
     font-size: 16px;
   }
@@ -1273,19 +1295,31 @@ label {
 .products .products-list li .actions {
   margin-top: 12px;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .products .products-list li .actions {
     margin-top: 24px;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 768px) {
   .products .products-list li {
-    width: 350px;
+    margin-right: 20px;
+    width: 320px;
   }
 }
-.products .products-list li:nth-child(3),
-.products .products-list li:nth-child(6) {
-  margin-right: 0;
+@media (min-width: 992px) {
+  .products .products-list li {
+    margin-right: 20px;
+    width: 272px;
+  }
+  .products .products-list li:nth-child(3), .products .products-list li:nth-child(6) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .products .products-list li {
+    margin-right: 32px;
+    width: 350px;
+  }
 }
 
 .feedback {
@@ -1295,7 +1329,7 @@ label {
   margin: 22px 0 26px;
   color: #002a61;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .feedback .section-title {
     margin: 46px 0 56px;
     font-size: 48px;
@@ -1334,14 +1368,24 @@ label {
 .feedback .steps .step .icon.icon-3 {
   background-position: 0 -68px;
 }
-@media (min-width: 991px) {
+@media (min-width: 768px) {
   .feedback .steps .step {
-    margin-right: 94px;
+    margin-right: 50px;
     margin-bottom: 0;
     display: inline-block;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 992px) {
+  .feedback .steps .step {
+    margin-right: 44px;
+  }
+}
+@media (min-width: 1200px) {
+  .feedback .steps .step {
+    margin-right: 94px;
+  }
+}
+@media (min-width: 1200px) {
   .feedback .steps {
     display: inline-block;
   }
@@ -1349,7 +1393,7 @@ label {
 .feedback .feedback-form {
   margin: 20px 0;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .feedback .feedback-form {
     margin: 40px -10px 0;
   }

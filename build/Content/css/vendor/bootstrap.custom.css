@@ -63,12 +63,12 @@ html {
 }
 @media (min-width: 768px) {
   .container {
-    width: 1200px;
+    width: 740px;
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 1200px;
+    width: 980px;
   }
 }
 @media (min-width: 1200px) {

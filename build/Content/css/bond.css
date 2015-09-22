@@ -83,7 +83,7 @@
 .bond .main-indicator .cost .cost-table .green {
   color: #3bb303;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .bond .main-indicator .main-indicator-graph {
     margin: 60px 25px 156px;
     border: 1px solid #9ea9b8;
@@ -184,14 +184,19 @@
 .bond .advantages.bond-national-fund .item p {
   color: #ccd7e6;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .bond .advantages.bond-national-fund .item {
     margin-bottom: 54px;
     padding-top: 90px;
     height: auto;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 768px) {
+  .bond .advantages.bond-national-fund {
+    height: 570px;
+  }
+}
+@media (min-width: 1200px) {
   .bond .advantages.bond-national-fund {
     height: 757px;
   }
@@ -217,7 +222,7 @@
 .bond .documentation .dates .reg-date {
   float: right;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .bond .documentation .docs-list {
     margin: 0 -10px;
   }
@@ -240,13 +245,13 @@
   background: #ffc300;
   color: #002a61;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .bond .documentation .item .label {
     height: 68px;
     font-size: 14px;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .bond .documentation {
     padding-bottom: 90px;
   }

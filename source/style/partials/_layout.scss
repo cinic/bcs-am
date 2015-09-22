@@ -28,7 +28,7 @@ nav.menu {
 		background: url('../img/burger.png') no-repeat center;
 		cursor: pointer;
 
-		@media	(min-width: $screen-sm-max) {
+		@media	(min-width: $screen-lg) {
 			display: none;
 		}
 	}
@@ -40,7 +40,7 @@ nav.menu {
 			width: 61px;
 			height: 23px;
 
-			@media	(min-width: $screen-sm-max) {
+			@media	(min-width: $screen-lg) {
 				width: 117px;
 				height: 45px;
 			}
@@ -106,7 +106,7 @@ nav.menu {
 			}
 		}
 
-		@media (min-width: $screen-sm-max) {
+		@media (min-width: $screen-lg) {
 			display: block;
 		}
 	}
@@ -117,7 +117,7 @@ nav.menu {
 			float: left;
 			display: none;
 
-			@media (min-width: $screen-sm-max) {
+			@media (min-width: $screen-lg) {
 				display: block;
 			}
 		}
@@ -130,7 +130,7 @@ nav.menu {
 			border-radius: 11px;
 			background: #ffc300 url('../img/mobile/phone.png') no-repeat 50% 50%;
 
-			@media (min-width: $screen-sm-max) {
+			@media (min-width: $screen-lg) {
 				margin-right: $grid-gutter-width/2;
 				width: 36px;
 				height: 36px;
@@ -161,22 +161,22 @@ nav.menu {
 			.num,
 			.description {
 				display: none;
-				@media (min-width: $screen-sm-max) {
+				@media (min-width: $screen-lg) {
 					display: block;
 				}
 			}
 
-			@media (min-width: $screen-sm-max) {
+			@media (min-width: $screen-lg) {
 				width: 222px;
 			}
 		}
 
-		@media (min-width: $screen-sm-max) {
+		@media (min-width: $screen-lg) {
 			width: 272px;
 		}
 	}
 	/* Adaptive */
-	@media (min-width: $screen-sm-max) {
+	@media (min-width: $screen-lg) {
 		margin-bottom: 55px;
 		padding: 18px 0 13px;
 	}
@@ -191,11 +191,13 @@ nav.menu {
 		z-index: 1000;
 		width: 69.375%;
 		background: white;
+		overflow: hidden;
 
 		.main-nav {
 			margin: 0 -10px;
 			padding: 0 0 22px 0;
 			list-style: none;
+			background: white;
 			
 			li {
 				padding-left: 12px;
@@ -210,7 +212,7 @@ nav.menu {
 			}
 		}
 	}
-	@media (min-width: $screen-sm-max) {
+	@media (min-width: $screen-lg) {
 		display: block;
 		position: absolute;
 		top: 76px;
@@ -270,14 +272,14 @@ nav.menu {
 	.page-title-description {
 		display: none;
 
-		@media (min-width: $screen-sm-max) {
+		@media (min-width: $screen-lg) {
 			display: block;
 		}
 	}
 
 	.content {
 		height: 442px;
-		@media (min-width: $screen-sm-max) {
+		@media (min-width: $screen-lg) {
 			height: 704px;
 		}
 	}
@@ -286,7 +288,7 @@ nav.menu {
 		.item {
 			height: 442px;
 			
-			@media (min-width: $screen-sm-max) {
+			@media (min-width: $screen-lg) {
 				height: 706px;
 			}
 		}
@@ -309,7 +311,7 @@ nav.menu {
 			}
 		}
 
-		@media (min-width: $screen-sm-max) {
+		@media (min-width: $screen-lg) {
 			margin-top: -40px;
 		}
 	}
@@ -321,7 +323,7 @@ nav.menu {
 		font-size: 12px;
 		font-weight: 400;
 		color: #4992ff;
-		@media (min-width: $screen-sm-max) {
+		@media (min-width: $screen-lg) {
 			margin-top: 118px;
 			margin-bottom: 24px;
 			line-height: 32px;
@@ -335,7 +337,7 @@ nav.menu {
 		font-weight: 400;
 		color: #002665;
 
-		@media (min-width: $screen-sm-max) {
+		@media (min-width: $screen-lg) {
 			margin: 0;
 			margin-bottom: 78px;
 			line-height: 70px;
@@ -350,13 +352,13 @@ nav.menu {
 		left: 0;
 		width: 100%;
 
-		@media (min-width: $screen-sm-max) {
+		@media (min-width: $screen-lg) {
 			position: static;
 			margin-top: 82px;
 		}
 	}
 
-	@media (min-width: $screen-sm-max) {
+	@media (min-width: $screen-lg) {
 		height: 706px;
 		background-size: 2560px 706px;
 	}
@@ -373,7 +375,7 @@ nav.menu {
 		font-size: 14px;
 		line-height: 18px;
 
-		@media (min-width: $screen-sm-max) {
+		@media (min-width: $screen-lg) {
 			margin: 50px 0 40px;
 		}
 	}
@@ -399,7 +401,7 @@ nav.menu {
 			}
 		}
 
-		@media (min-width: $screen-sm-max) {
+		@media (min-width: $screen-lg) {
 			float: left;
 			margin-left: -20px;
 			li {
@@ -443,7 +445,7 @@ nav.menu {
 				background-position: 0 -60px;
 			}
 
-			@media (min-width: $screen-sm-max) {
+			@media (min-width: $screen-lg) {
 				margin-left: 16px;
 				margin-right: 0;
 				margin-top: -18px;
@@ -462,7 +464,7 @@ nav.menu {
 			}
 		}
 
-		@media (min-width: $screen-sm-max) {
+		@media (min-width: $screen-lg) {
 			float: right;
 			margin-right: 20px;
 			padding-bottom: 12px;
@@ -519,7 +521,7 @@ nav.menu {
 					border-bottom: 1px dashed;
 				}
 
-				@media (min-width: $screen-sm-max) {
+				@media (min-width: $screen-lg) {
 					color: #002a61;
 					&:after {
 						border-top-color: #002665;
@@ -547,7 +549,7 @@ nav.menu {
 				.icon { background-position: 0 -23px; }
 			}
 
-			@media (min-width: $screen-sm-max) {
+			@media (min-width: $screen-lg) {
 				float: left;
 				margin-bottom: 0;
 				padding: 0;
@@ -561,20 +563,20 @@ nav.menu {
 				margin-top: 0;
 			}
 
-			@media (min-width: $screen-sm-max) {
+			@media (min-width: $screen-lg) {
 				float: right;
 				width: 73.454545%;
 			}
 		}
 
-		@media (min-width: $screen-sm-max) {
+		@media (min-width: $screen-lg) {
 			margin: 0 -20px;
 			padding-top: 36px;
 			border-top: 1px solid #002a61;
 		}
 	}
 
-	@media (min-width: $screen-sm-max) {
+	@media (min-width: $screen-lg) {
 		padding: 0 0 88px;
 		background-color: #e7e8ea;
 		color: #002a61;
@@ -589,7 +591,7 @@ nav.menu {
 	font-weight: 300;
 	text-align: center;
 
-	@media (min-width: $screen-sm-max) {
+	@media (min-width: $screen-lg) {
 		line-height: 70px;
 		font-size: 70px;
 	}
@@ -604,7 +606,7 @@ nav.menu {
 	text-align: center;
 	text-transform: uppercase;
 
-	@media(min-width: $screen-sm-max) {
+	@media(min-width: $screen-lg) {
 		margin-top: 44px;
 		margin-bottom: 0;
 	}
@@ -661,7 +663,7 @@ label { cursor: pointer; }
 .calculator {
 	padding-bottom: 36px;
 
-	@media (min-width: $screen-sm-max) {
+	@media (min-width: $screen-lg) {
 		padding-bottom: 120px;
 	}
 
@@ -669,7 +671,7 @@ label { cursor: pointer; }
 		display: none;
 		color: #002a61;
 		/*color: #78849b;*/
-		@media (min-width: $screen-sm-max) {
+		@media (min-width: $screen-lg) {
 			display: block;
 			margin-bottom: 60px;
 		}
@@ -681,14 +683,14 @@ label { cursor: pointer; }
 		
 		.calc-col-1,
 		.calc-col-2 {
-			@media (min-width: $screen-sm-max) {
+			@media (min-width: $screen-lg) {
 				float: left;
 				width: 392px;
 			}
 		}
 		.calc-col-1 {
 			background: #ebecee;
-			@media (min-width: $screen-sm-max) {
+			@media (min-width: $screen-lg) {
 				width: 565px;
 				background: #eceff4;
 				border-right: 1px solid #ccd4df;
@@ -697,7 +699,7 @@ label { cursor: pointer; }
 		.calc-col-2 {
 			position: relative;
 			padding-top: 125px;
-			@media (min-width: $screen-sm-max) {
+			@media (min-width: $screen-lg) {
 				padding: 10px 38px 56px 24px;
 			}
 		}
@@ -729,12 +731,12 @@ label { cursor: pointer; }
 			&:nth-child(2),
 			&:nth-child(3) {
 				padding: 20px 12px 42px;
-				@media (min-width: $screen-sm-max) {
+				@media (min-width: $screen-lg) {
 					padding: 36px 24px 62px;
 				}
 			}
 			
-			@media (min-width: $screen-sm-max) {
+			@media (min-width: $screen-lg) {
 				padding: 36px 24px 62px;
 				&:first-child {
 					>label {
@@ -782,7 +784,7 @@ label { cursor: pointer; }
 						color: white;
 					}
 				}
-				@media (min-width: $screen-sm-max) {
+				@media (min-width: $screen-lg) {
 					display: block;
 
 					label {
@@ -814,12 +816,12 @@ label { cursor: pointer; }
 					left: 0;
 					top: 4px;
 
-					@media (min-width: $screen-sm-max) {
+					@media (min-width: $screen-lg) {
 						display: block;
 					}
 				}
 
-				@media (min-width: $screen-sm-max) {
+				@media (min-width: $screen-lg) {
 					padding: 0;
 					margin-right: 30px;
 					padding-left: 28px;
@@ -851,7 +853,7 @@ label { cursor: pointer; }
 					cursor: default;
 				}
 
-				@media (min-width: $screen-sm-max) {
+				@media (min-width: $screen-lg) {
 					
 				}
 			}
@@ -880,7 +882,7 @@ label { cursor: pointer; }
 			border: 1px solid #9ea9b9;
 			text-align: center;
 
-			@media (min-width: $screen-sm-max) {
+			@media (min-width: $screen-lg) {
 				margin-top: -10px;
 				border-radius: 22px;
 				padding: 0 38px;
@@ -892,7 +894,7 @@ label { cursor: pointer; }
 		#range-slider {
 			padding-top: 20px;
 
-			@media (min-width: $screen-sm-max) {
+			@media (min-width: $screen-lg) {
 				padding-top: 36px;
 			}
 		}
@@ -909,7 +911,7 @@ label { cursor: pointer; }
 				height: 18px;
 				border-radius: 9px;
 
-				@media (min-width: $screen-sm-max) {
+				@media (min-width: $screen-lg) {
 					width: 30px;
 					height: 30px;
 					left: -17px;
@@ -918,7 +920,7 @@ label { cursor: pointer; }
 				}
 			}
 			
-			@media (min-width: $screen-sm-max) {
+			@media (min-width: $screen-lg) {
 				font-size: 20px;
 				.noUi-value-horizontal { padding-top: 20px; }
 				.noUi-marker-horizontal.noUi-marker { height: 10px; }
@@ -938,7 +940,7 @@ label { cursor: pointer; }
 			.out {
 				padding: 8px 48px;
 				border-bottom: 1px solid #dadce1;
-				@media (min-width: $screen-sm-max) {
+				@media (min-width: $screen-lg) {
 					position: relative;
 					padding: 0;
 					width: 150px;
@@ -953,12 +955,12 @@ label { cursor: pointer; }
 				}
 			}
 			.in {
-				@media (min-width: $screen-sm-max) {
+				@media (min-width: $screen-lg) {
 					float: left;
 				}
 			}
 			.out {
-				@media (min-width: $screen-sm-max) {
+				@media (min-width: $screen-lg) {
 					float: right;
 				}
 			}
@@ -968,7 +970,7 @@ label { cursor: pointer; }
 				height: 10px;
 				background: #ccd1da;
 
-				@media (min-width: $screen-sm-max) {
+				@media (min-width: $screen-lg) {
 					display: block;
 				}
 			}
@@ -977,7 +979,7 @@ label { cursor: pointer; }
 				font-size: 16px;
 				line-height: 22px;
 				font-weight: 300;
-				@media (min-width: $screen-sm-max) {
+				@media (min-width: $screen-lg) {
 					float: none;
 					font-size: 21px;
 				}
@@ -987,7 +989,7 @@ label { cursor: pointer; }
 				float: right;
 				font-size: 16px;
 				line-height: 22px;
-				@media (min-width: $screen-sm-max) {
+				@media (min-width: $screen-lg) {
 					float: none;
 					margin-bottom: 10px;
 					font-size: 30px;
@@ -998,7 +1000,7 @@ label { cursor: pointer; }
 				display: none;
 				background: #4992ff;
 
-				@media (min-width: $screen-sm-max) {
+				@media (min-width: $screen-lg) {
 					display: block;
 				}
 			}
@@ -1017,7 +1019,7 @@ label { cursor: pointer; }
 				float: right;
 				font-weight: 300;
 			}
-			@media (min-width: $screen-sm-max) {
+			@media (min-width: $screen-lg) {
 				margin: 38px 0 46px;
 				padding: 20px 0 30px;
 				font-size: 20px;
@@ -1049,7 +1051,7 @@ label { cursor: pointer; }
 				font-size: 20px;
 				font-weight: 400;
 
-				@media (min-width: $screen-sm-max) {
+				@media (min-width: $screen-lg) {
 					line-height: 40px;
 					font-size: 30px;
 					font-weight: 300;
@@ -1059,13 +1061,13 @@ label { cursor: pointer; }
 				font-size: 40px;
 				line-height: 60px;
 				font-weight: 300;
-				@media (min-width: $screen-sm-max) {
+				@media (min-width: $screen-lg) {
 					font-size: 62px;
 					line-height: 74px;
 				}
 			}
 
-			@media (min-width: $screen-sm-max) {
+			@media (min-width: $screen-lg) {
 				position: static;
 				padding-top: 0;
 				height: auto;
@@ -1076,7 +1078,7 @@ label { cursor: pointer; }
 		.actions {
 			.btn {
 				margin-top: 18px;
-				@media (min-width: $screen-sm-max) {
+				@media (min-width: $screen-lg) {
 					margin-top: 26px;
 					width: 252px;
 					font-size: 18px;
@@ -1084,7 +1086,7 @@ label { cursor: pointer; }
 			}
 		}
 	
-		@media (min-width: $screen-sm-max) {
+		@media (min-width: $screen-lg) {
 			border: 1px solid #9ea9b8;
 		}
 	}
@@ -1190,7 +1192,7 @@ label { cursor: pointer; }
 				span {
 					font-size: 14px;
 
-					@media (min-width: $screen-sm-max) {
+					@media (min-width: $screen-lg) {
 						font-size: 16px;						
 					}
 				}
@@ -1199,17 +1201,29 @@ label { cursor: pointer; }
 			.actions {
 				margin-top: 12px;
 
-				@media (min-width: $screen-sm-max) {
+				@media (min-width: $screen-lg) {
 					margin-top: 24px;
 				}
 			}
 			
-			@media (min-width: $screen-sm-max) {
+			@media (min-width: $screen-sm) {
+				margin-right: 20px;
+				width: 320px;
+			}
+
+			@media (min-width: $screen-md) {
+				margin-right: 20px;
+				width: 272px;
+				
+				&:nth-child(3),
+				&:nth-child(6){ margin-right: 0; }
+			}
+
+			@media (min-width: $screen-lg) {
+				margin-right: 32px;
 				width: 350px;
 			}
 		}
-		li:nth-child(3),
-		li:nth-child(6){ margin-right: 0; }
 	}
 }
 
@@ -1219,7 +1233,7 @@ label { cursor: pointer; }
 		margin: 22px 0 26px;
 		color: #002a61;
 
-		@media (min-width: $screen-sm-max) {
+		@media (min-width: $screen-lg) {
 			margin: 46px 0 56px;
 			font-size: 48px;
 			line-height: 42px;
@@ -1237,6 +1251,7 @@ label { cursor: pointer; }
 			text-align: left;
 			vertical-align: top;
 			&:last-child { margin-right: 0; }
+			
 			.icon {
 				position: absolute;
 				left: 0;
@@ -1250,14 +1265,20 @@ label { cursor: pointer; }
 				&.icon-3 { background-position: 0 -68px; }
 			}
 
-			@media (min-width: $screen-sm-max) {
-				margin-right: 94px;
+			@media (min-width: $screen-sm) {
+				margin-right: 50px;
 				margin-bottom: 0;
 				display: inline-block;
 			}
+			@media (min-width: $screen-md) {
+				margin-right: 44px;
+			}
+			@media (min-width: $screen-lg) {
+				margin-right: 94px;
+			}
 		}
 
-		@media (min-width: $screen-sm-max) {
+		@media (min-width: $screen-lg) {
 			display: inline-block;
 		}
 	}
@@ -1265,7 +1286,7 @@ label { cursor: pointer; }
 	.feedback-form {
 		margin: 20px 0;
 
-		@media (min-width: $screen-sm-max) {
+		@media (min-width: $screen-lg) {
 			margin: 40px -10px 0;
 		}
 	}

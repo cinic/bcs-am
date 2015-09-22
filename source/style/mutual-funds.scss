@@ -10,9 +10,10 @@
 	}
 	
 	.what-is {
-		min-height: 446px;
 		background: #4c535e url('../img/pages/bonds/what-is-bg.jpg') no-repeat 50% 50%;
+		background-size: cover;
 		letter-spacing: 0;
+		
 		.section-title,
 		.description {
 			color: white;
@@ -37,20 +38,28 @@
 				background: #4992ff;
 			}
 
-			@media (min-width: $screen-sm-max) {
+			@media (min-width: $screen-lg) {
 				margin: 0 0 80px;
 				line-height: 33px;
 				font-size: 30px;
 			}
 		}
 		p {
-			margin: 0;
+			margin: 0 0 24px;
 
 			font-size: 18px;
 
-			@media (min-width: $screen-sm-max) {
+			@media (min-width: $screen-lg) {
 				font-size: 20px;
 			}
+		}
+
+		@media (min-width: $screen-sm) {
+			height: auto;
+		}
+
+		@media (min-width: $screen-lg) {
+			height: 446px;
 		}
 	}
 	
@@ -63,7 +72,7 @@
 			margin: 28px 0 20px;
 			color: #002a61;
 
-			@media (min-width: $screen-sm-max) {
+			@media (min-width: $screen-lg) {
 				margin: 56px 0 42px;
 				font-size: 50px;
 				line-height: 60px;
@@ -97,7 +106,7 @@
 		.actions {
 			padding-top: 24px;
 			padding-bottom: 36px;
-			@media (min-width: $screen-sm-max) {
+			@media (min-width: $screen-lg) {
 				padding-top: 84px;
 				padding-bottom: 96px;
 			}
@@ -105,7 +114,7 @@
 		p {
 			margin: 0 0 18px;
 
-			@media (min-width: $screen-sm-max) {
+			@media (min-width: $screen-lg) {
 				margin: 0;	
 			}
 		}
@@ -120,7 +129,7 @@
 		.section-title {
 			margin: 30px 0 40px;
 
-			@media (min-width: $screen-sm-max) {
+			@media (min-width: $screen-lg) {
 				margin: 62px 0 110px;
 			}
 		}
@@ -166,7 +175,11 @@
 			color: #cacaca;
 		}
 
-		@media (min-width: $screen-sm-max) {
+		@media (min-width: $screen-sm) {
+			height: 740px;
+		}
+
+		@media (min-width: $screen-lg) {
 			height: 996px;
 			h3 {
 				margin: 0 0 22px;
@@ -188,7 +201,7 @@
 			margin: 0 0 28px;
 			color: #002a61;
 
-			@media (min-width: $screen-sm-max) {
+			@media (min-width: $screen-lg) {
 				font-size: 50px;
 				line-height: 60px;
 			}
@@ -202,13 +215,14 @@
 			text-align: center;
 		}
 
-		@media (min-width: $screen-sm-max) {
+		@media (min-width: $screen-lg) {
 			padding: 50px 0 72px;
 		}
 	}
 	
 	.experience {
-		background: #4d5560 url(../img/pages/bonds/experience-bg.jpg) no-repeat 50% 50%;
+		background: #4d5560 url('../img/pages/bonds/experience-bg.jpg') no-repeat 50% 50%;
+		background-size: cover;
 		color: white;
 		
 		.section-label {
@@ -235,7 +249,7 @@
 			}
 			
 			&.rate {
-				@media (min-width: $screen-sm-max) {
+				@media (min-width: $screen-lg) {
 					margin: 0 -14px;
 				}
 			}
