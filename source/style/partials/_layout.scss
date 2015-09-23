@@ -289,7 +289,7 @@ nav.menu {
 			height: 442px;
 			
 			@media (min-width: $screen-lg) {
-				height: 706px;
+				height: 704px;
 			}
 		}
 	}
@@ -359,7 +359,7 @@ nav.menu {
 	}
 
 	@media (min-width: $screen-lg) {
-		height: 706px;
+		height: 704px;
 		background-size: 2560px 706px;
 	}
 }
@@ -590,6 +590,9 @@ nav.menu {
 	font-size: 30px;
 	font-weight: 300;
 	text-align: center;
+
+	&.white { color: white; }
+	&.dark-blue { color: #002a61; }
 
 	@media (min-width: $screen-lg) {
 		line-height: 70px;
@@ -1292,3 +1295,35 @@ label { cursor: pointer; }
 	}
 }
 
+.what-is {
+	.description {
+		color: white;
+		font-size: 16px;
+		line-height: 24px;
+		&:after {
+			position: relative;
+			top: 34px;
+			display: block;
+			margin: 0 auto;
+			content: " ";
+			width: 47px;
+			height: 3px;
+			background: #4992ff;
+		}
+
+		@media (min-width: $screen-md) {
+			font-size: 30px;
+			line-height: $line-height-base;
+		}
+	}
+	.teaser {
+		margin: 36px 0;
+		line-height: 21px;
+		font-size: 14px;
+
+		@media (min-width: $screen-md) {
+			font-size: 20px;
+			line-height: $line-height-base;
+		}
+	}
+}

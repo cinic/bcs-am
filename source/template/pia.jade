@@ -1,0 +1,85 @@
+doctype html
+html(lang="ru")
+	head
+		include ./partials/_header.jade
+		link(rel="stylesheet" href="Content/css/pia.css")/
+	body.pai
+		include ./partials/_navigation.jade
+		header.header
+			.content.clearfix
+				.container
+					.row
+						.col-sm-11.text-center.clearfix
+							h1.page-title
+								|Индивидуальный 
+								br
+								|Инвестиционный Счет
+							.page-subtitle
+								| 52 000 рублей 
+								br
+								|к вашему счету
+								sup 1
+							.advice.text-center
+								a.btn.btn-yellow(href="#" title="Получить консультацию") Узнать больше
+
+		section.what-is.text-center
+			.container
+				h2.section-title.white
+					|Индивидуальный 
+					br
+					|Инвестиционный Счет (ИИС)
+				.row
+					.col-sm-20.col-md-14.col-md-offset-3
+						p.description Новый вид брокерского счета, который позволяет получить более высокую доходность за счет максимальных налоговых&nbsp;льгот от государства.
+				.row
+					.col-sm-12.col-sm-offset-4
+						p.teaser Теперь вы можете каждый год вносить 400 000 рублей на счет ИИС и получать государственные налоговые вычеты — 13% от суммы вложений. Индивидуальные счета позволяют не просто накапливать денежные средства и получать налоговые вычеты, а также инвестировать в перспективные биржевые инструменты с доходностью значительно превышающей доходность по депозитам.
+						.advice.text-center
+								a.btn.btn-yellow(href="#" title="Получить консультацию") Посчитать выгоду
+
+		include ./partials/_calculator.jade
+		section.which
+			.container
+				.section-label Существует два типа налоговых льгот
+				h2.section-title.dark-blue Какой тип вычета выбрать?
+
+		section.advantages.bond-national-fund.text-center
+			.container
+				h2.section-title.text-center Преимущества фонда
+				.row
+					.col-sm-6.col-sm-offset-1.col-xs-10
+						.item
+							.icon.income
+							h3 Доход
+							p Высокий доход по сравнению с доходностью высоконадёжных государственных ценных бумаг
+					.col-sm-6.col-xs-10
+						.item
+							.icon.investment
+							h3 Инвестирование
+							p Возможность инвестирования в еврооблигации и хеджирования валютных рисков
+					.col-sm-6.col-xs-10
+						.item
+							.icon.management
+							h3 Управление
+							p Консервативная стратегия управления, в первую очередь направленная на сохранение инвестиций
+					.col-sm-6.col-sm-offset-1.col-xs-10
+						.item
+							.icon.sell-buy
+							h3 Купля-продажа
+							p Возможность купить или продать пай в любой момент без потери накопленного дохода
+					.col-sm-6.col-xs-10
+						.item
+							.icon.bonds
+							h3 Облигации
+							p В состав портфеля включаются еврооблигации и облигации крупных зарубежных компаний!
+					.col-sm-6.col-xs-10
+						.item
+							.icon.control
+							h3 Контроль
+							p Контроль риска
+								br
+								|вложений бумаг		
+
+		include ./partials/_feedback.jade
+		include ./partials/_footer.jade
+		include ./partials/_footer_scripts.jade

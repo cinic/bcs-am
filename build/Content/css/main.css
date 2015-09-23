@@ -368,7 +368,7 @@ nav.menu.active .main-nav li a {
 }
 @media (min-width: 1200px) {
   .header .owl-carousel .item {
-    height: 706px;
+    height: 704px;
   }
 }
 .header .owl-controls {
@@ -434,7 +434,7 @@ nav.menu.active .main-nav li a {
 }
 @media (min-width: 1200px) {
   .header {
-    height: 706px;
+    height: 704px;
     background-size: 2560px 706px;
   }
 }
@@ -664,6 +664,12 @@ nav.menu.active .main-nav li a {
   font-size: 30px;
   font-weight: 300;
   text-align: center;
+}
+.section-title.white {
+  color: white;
+}
+.section-title.dark-blue {
+  color: #002a61;
 }
 @media (min-width: 1200px) {
   .section-title {
@@ -1396,5 +1402,38 @@ label {
 @media (min-width: 1200px) {
   .feedback .feedback-form {
     margin: 40px -10px 0;
+  }
+}
+
+.what-is .description {
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+}
+.what-is .description:after {
+  position: relative;
+  top: 34px;
+  display: block;
+  margin: 0 auto;
+  content: " ";
+  width: 47px;
+  height: 3px;
+  background: #4992ff;
+}
+@media (min-width: 992px) {
+  .what-is .description {
+    font-size: 30px;
+    line-height: 1.1;
+  }
+}
+.what-is .teaser {
+  margin: 36px 0;
+  line-height: 21px;
+  font-size: 14px;
+}
+@media (min-width: 992px) {
+  .what-is .teaser {
+    font-size: 20px;
+    line-height: 1.1;
   }
 }
