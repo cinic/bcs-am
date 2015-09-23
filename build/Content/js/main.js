@@ -27,6 +27,10 @@ $(function() {
 });
 
 $(function() {
+  return $('.tab-container').easytabs();
+});
+
+$(function() {
   return $('.custom-select').selectize();
 });
 

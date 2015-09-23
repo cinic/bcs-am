@@ -1,10 +1,10 @@
 @import 'partials/variables';
-.pai {
+.pia {
 	.header {
 		.content {
-			background: url('../img/pages/pai/header.jpg') no-repeat center;
-			filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/pai/header.jpg', sizingMethod='scale');
-			-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/pai/header.jpg', sizingMethod='scale')";
+			background: url('../img/pages/pia/header.jpg') no-repeat center;
+			filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/pia/header.jpg', sizingMethod='scale');
+			-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/pia/header.jpg', sizingMethod='scale')";
 			background-size: cover;
 
 			.page-title-description {
@@ -21,14 +21,247 @@
 
 	.what-is {
 		padding: 30px 0;
-		background: url('../img/pages/pai/what-is.jpg') no-repeat center;
-		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/pai/what-is.jpg', sizingMethod='scale');
-		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/pai/what-is.jpg', sizingMethod='scale')";
+		background: url('../img/pages/pia/what-is.jpg') no-repeat center;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/pia/what-is.jpg', sizingMethod='scale');
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/pia/what-is.jpg', sizingMethod='scale')";
 		background-size: cover;
 	}
 
 	.which {
 		padding: 0 0 44px;
 		background: #eceff4;
+
+		.section-title {
+			margin: 10px 0 50px;
+		}
+
+		.type-of-recoupment {
+			padding: 0;
+			list-style: none;
+
+			@media (min-width: $screen-md) {
+				padding-top: 26px;
+				padding-bottom: 26px;
+				background: white;
+				border: 1px solid #9ea9b8;
+				.icon {
+					position: absolute;
+					left: 93px;
+					top: 0;
+					width: 93px;
+					height: 93px;
+					background: url('../img/pages/pia/which-icons.png') no-repeat 0 0;
+				}
+				.item {
+					position: relative;
+					padding-left: 93px;
+					height: 93px;
+
+					.text {
+						display: table-cell;
+						vertical-align: middle;
+						padding: 0 36px;
+						height: 93px;
+						line-height: 27px;
+						font-size: 25px;
+						color: #002a61;
+					}
+				}
+				.item:first-child {
+					padding-left: 186px;
+				}
+				.item:nth-child(2) {
+					.icon {
+						left: 0;
+						background-position: 0 -93px;
+					}
+				}
+			}
+		}
+
+		.note {
+			color: #002a61;
+			line-height: 21px;
+			font-size: 14px;
+
+			@media (min-width: $screen-md) {
+				line-height: $line-height-base;
+				font-size: 20px;
+				color: #78849b;
+			}
+		}
+		.types {
+			margin-top: 36px;
+			margin-bottom: 40px;
+
+			.advice {
+				margin-top: 44px;
+				margin-bottom: 30px;
+			}
+		}
+		.types-table {
+			tr {
+				&:nth-child(even) {
+					background: #f5f7f9;
+				}
+
+				>th {
+					width: 20%;
+					background: #eceff4;
+					font-weight: 500;
+					@media (min-width: $screen-md) {
+						padding: 26px 10px 26px 60px;
+						text-align: left;
+					}
+				}
+				>td {
+					width: 20%;
+					&.filled {
+						font-weight: 500;
+						background: #002a61;
+						color: #ffc300;
+					}
+					@media (min-width: $screen-md) {
+						padding: 26px 10px 26px 44px;
+					}
+				}
+			}
+		}
+	}
+
+	.advantages {
+		height: 1750px;
+		color: #002a61;
+		background: white;
+		
+		.section-title {
+			margin: 30px 0 40px;
+
+			@media (min-width: $screen-lg) {
+				margin: 62px 0 110px;
+			}
+		}
+		
+		.item {
+			position: relative;
+			margin-bottom: 60px;
+			padding-top: 102px;
+			
+			.icon {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin-left: -45px;
+				width: 90px;
+				height: 86px;
+				background: url('../img/pages/pia/advantages-icons.png') no-repeat 0 0;
+				
+				&.shield { background-position: 0 0; }
+				&.value { background-position: 0 -86px; }
+				&.availability { background-position: 0 -172px; }
+				&.multiplication { background-position: 0 -258px; }
+				&.control { background-position: 0 -344px; }
+				&.planning { background-position: 0 -430px; }
+			}
+		}
+
+		h3 {
+			margin: 0 0 10px;
+			font-size: 20px;
+			font-weight: 400;
+		}
+		p {
+			font-size: 14px;
+			line-height: 18px;
+			&.mini {
+				@media (min-width: $screen-sm) {
+					line-height: 16px;
+				}
+				@media (min-width: $screen-md) {
+					line-height: 22px;
+				}
+				@media (min-width: $screen-lg) {
+					line-height: 22px;
+				}
+			}
+		}
+
+		@media (min-width: $screen-sm) {
+			height: 740px;
+		}
+
+		@media (min-width: $screen-lg) {
+			height: 996px;
+			h3 {
+				margin: 0 0 22px;
+				font-size: 30px;
+			}
+			p {
+				font-size: 18px;
+				line-height: 22px;
+			}
+		}
+	}
+
+	.experience {
+		background: #4d5560 url('../img/pages/bonds/experience-bg.jpg') no-repeat 50% 50%;
+		background-size: cover;
+		color: white;
+		
+		.section-label {
+			color: white;
+		}
+		
+		.section-title {
+			margin-bottom: 64px;
+		}
+		
+		.item {
+			position: relative;
+			margin-bottom: 80px;
+			padding-top: 62px;
+			color: #ccd7e6;
+			
+			b {
+				display: block;
+				margin-bottom: 22px;
+				font-size: 30px;
+				line-height: 33px;
+				color: white;
+				font-weight: normal;
+			}
+			
+			&.rate {
+				@media (min-width: $screen-lg) {
+					margin: 0 -14px;
+				}
+			}
+			
+			.icon {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin-left: -23px;
+				width: 46px;
+				height: 42px;
+				background: url('../img/pages/bonds/experience-icons.png') no-repeat 0 0;
+				
+				&.year {
+					background-position: 0 -84px;
+				}
+				&.rate {
+					background-position: 0 -126px;
+				}
+				&.offices {
+					background-position: 0 -168px;
+				}
+				&.clients {
+					background-position: 0 -42px;
+				}
+				&.value {
+					background-position: 0 0;
+				}
+			}
+		}
 	}
 }

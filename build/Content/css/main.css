@@ -1437,3 +1437,102 @@ label {
     line-height: 1.1;
   }
 }
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 22px;
+  background: white;
+}
+.table caption {
+  font-size: 16px;
+  line-height: 21px;
+  color: #002a61;
+}
+@media (min-width: 992px) {
+  .table caption {
+    padding: 34px 0;
+    line-height: 1.1;
+    font-size: 20px;
+  }
+}
+.table tr > th,
+.table tr > td {
+  padding: 0;
+  line-height: 1.1;
+  vertical-align: middle;
+  border: 1px solid #9ea9b8;
+  color: #002a61;
+}
+
+.tab-container .etabs {
+  margin: 0 0 -1px;
+  padding-left: 0;
+  list-style: none;
+}
+.tab-container .etabs .tab {
+  float: left;
+  font-size: 16px;
+  border: 1px solid #9eaab8;
+  color: #002a61;
+  text-align: center;
+  white-space: nowrap;
+}
+.tab-container .etabs .tab a {
+  position: relative;
+  display: block;
+  color: #002a61;
+  text-decoration: none;
+}
+.tab-container .etabs .tab.active {
+  border-bottom-color: white;
+}
+.tab-container .etabs .tab.active a {
+  background: white;
+}
+.tab-container .etabs .tab:first-child {
+  margin-left: 0;
+}
+@media (min-width: 992px) {
+  .tab-container .etabs .tab {
+    margin-left: -1px;
+    font-size: 30px;
+    border-color: #9ea9b7;
+  }
+  .tab-container .etabs .tab:nth-child(2) .corner {
+    border-left: 1px solid #9eaab8;
+  }
+  .tab-container .etabs .tab a {
+    padding: 20px 40px;
+  }
+  .tab-container .etabs .tab a .corner {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 34px;
+    height: 34px;
+    overflow: hidden;
+  }
+  .tab-container .etabs .tab a .corner i {
+    position: absolute;
+    top: -24px;
+    left: -24px;
+    width: 48px;
+    height: 48px;
+    background: #eceff4;
+    border-bottom: 1px solid #9eaab8;
+    -moz-transform: rotate(-45deg);
+    /* Firefox */
+    -o-transform: rotate(-45deg);
+    /* Opera */
+    -webkit-transform: rotate(-45deg);
+    /* Safari y Chrome */
+    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.7071067811865476, M12=0.7071067811865475, M21=-0.7071067811865475, M22=0.7071067811865476);
+    /* IE */
+  }
+}
+.tab-container .tab-content {
+  padding: 10px 24px 26px;
+  background: white;
+  border: 1px solid #9eaab8;
+}
