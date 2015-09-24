@@ -21,11 +21,40 @@
 	background: #eceff4;
 }
 .pia .which .section-title {
-	margin: 10px 0 50px;
+	margin: 10px 0 10px;
+}
+@media (min-width: 992px) {
+	.pia .which .section-title {
+		margin: 10px 0 50px;
+	}
 }
 .pia .which .type-of-recoupment {
+	margin-top: 0;
 	padding: 0;
 	list-style: none;
+}
+.pia .which .type-of-recoupment .icon {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	margin-left: -46px;
+	width: 93px;
+	height: 93px;
+	background: url("../img/pages/pia/which-icons.png") no-repeat 0 0;
+}
+.pia .which .type-of-recoupment .item {
+	position: relative;
+	padding-top: 110px;
+}
+.pia .which .type-of-recoupment .item .text {
+	display: table-cell;
+	line-height: 21px;
+	font-size: 15px;
+	color: #7c899b;
+	text-align: center;
+}
+.pia .which .type-of-recoupment .item:nth-child(2) .icon {
+	background-position: 0 -93px;
 }
 @media (min-width: 992px) {
 	.pia .which .type-of-recoupment {
@@ -38,6 +67,7 @@
 		position: absolute;
 		left: 93px;
 		top: 0;
+		margin-left: 0;
 		width: 93px;
 		height: 93px;
 		background: url("../img/pages/pia/which-icons.png") no-repeat 0 0;
@@ -45,6 +75,7 @@
 	.pia .which .type-of-recoupment .item {
 		position: relative;
 		padding-left: 93px;
+		padding-top: 0;
 		height: 93px;
 	}
 	.pia .which .type-of-recoupment .item .text {
@@ -55,6 +86,7 @@
 		line-height: 27px;
 		font-size: 25px;
 		color: #002a61;
+		text-align: left;
 	}
 	.pia .which .type-of-recoupment .item:first-child {
 		padding-left: 186px;
@@ -65,24 +97,40 @@
 	}
 }
 .pia .which .note {
+	margin-top: 0;
+	padding-top: 20px;
 	color: #002a61;
 	line-height: 21px;
 	font-size: 14px;
+	text-align: center;
+	border-top: 1px solid #9eaab8;
 }
 @media (min-width: 992px) {
 	.pia .which .note {
+		margin-top: 1em;
+		padding-top: 0;
 		line-height: 1.1;
 		font-size: 20px;
 		color: #78849b;
+		text-align: left;
+		border-top: 0;
 	}
 }
 .pia .which .types {
 	margin-top: 36px;
 	margin-bottom: 40px;
+	margin-left: -10px;
+	margin-right: -10px;
 }
 .pia .which .types .advice {
 	margin-top: 44px;
 	margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+	.pia .which .types {
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
 .pia .which .types-table tr:nth-child(even) {
 	background: #f5f7f9;
@@ -91,6 +139,7 @@
 	width: 20%;
 	background: #eceff4;
 	font-weight: 500;
+	text-align: center;
 }
 @media (min-width: 992px) {
 	.pia .which .types-table tr > th {
@@ -100,6 +149,7 @@
 }
 .pia .which .types-table tr > td {
 	width: 20%;
+	text-align: center;
 }
 .pia .which .types-table tr > td.filled {
 	font-weight: 500;
@@ -109,6 +159,7 @@
 @media (min-width: 992px) {
 	.pia .which .types-table tr > td {
 		padding: 26px 10px 26px 44px;
+		text-align: left;
 	}
 }
 .pia .advantages {

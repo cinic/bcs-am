@@ -1335,6 +1335,7 @@ label { cursor: pointer; }
   background: white;
 
   caption {
+  	padding: 18px 0 24px;
   	font-size: 16px;
   	line-height: 21px;
   	color: #002a61;
@@ -1367,14 +1368,18 @@ label { cursor: pointer; }
 
 		.tab {
 			float: left;
+			margin-left: -1px;
+			width: 50%;
 			font-size: 16px;
-			border: 1px solid #9eaab8;
+			border-top: 1px solid #9eaab8;
+			border-left: 1px solid #9eaab8;
 			color: #002a61;
 			text-align: center;
 			white-space: nowrap;
 
 			a {
 				position: relative;
+				padding: 10px 0;
 				display: block;
 				color: #002a61;
 				text-decoration: none;
@@ -1392,8 +1397,10 @@ label { cursor: pointer; }
 
 			@media (min-width: $screen-md) {
 				margin-left: -1px;
+				width: auto;
 				font-size: 30px;
 				border-color: #9ea9b7;
+				border: 1px solid #9eaab8;
 
 				&:nth-child(2) {
 					.corner {
@@ -1431,9 +1438,14 @@ label { cursor: pointer; }
 		}
 	}
 	.tab-content {
-		padding: 10px 24px 26px;
+		padding: 10px 0 26px;
 		background: white;
-		border: 1px solid #9eaab8;
+		border-top: 1px solid #9eaab8;
+
+		@media (min-width: $screen-md) {
+			padding: 10px 24px 26px;
+			border: 1px solid #9eaab8;
+		}
 	}
 }
 
