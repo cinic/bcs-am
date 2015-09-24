@@ -1,0 +1,18 @@
+.pai .header .content {
+  background: url("../img/pages/pai/header.jpg") no-repeat center;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/pai/header.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/pai/header.jpg', sizingMethod='scale')";
+  background-size: cover;
+}
+.pai .header .content .page-title-description {
+  margin-bottom: 80px;
+  line-height: 25px;
+  color: #002665;
+}
+.pai .what-is {
+  padding: 30px 0;
+  background: url("../img/pages/pai/what-is.jpg") no-repeat center;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/pai/what-is.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/pai/what-is.jpg', sizingMethod='scale')";
+  background-size: cover;
+}

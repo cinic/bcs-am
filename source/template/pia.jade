@@ -3,7 +3,7 @@ html(lang="ru")
 	head
 		include ./partials/_header.jade
 		link(rel="stylesheet" href="Content/css/pia.css")/
-	body.pia
+	body.pai
 		include ./partials/_navigation.jade
 		header.header
 			.content.clearfix
@@ -35,246 +35,51 @@ html(lang="ru")
 					.col-sm-12.col-sm-offset-4
 						p.teaser Теперь вы можете каждый год вносить 400 000 рублей на счет ИИС и получать государственные налоговые вычеты — 13% от суммы вложений. Индивидуальные счета позволяют не просто накапливать денежные средства и получать налоговые вычеты, а также инвестировать в перспективные биржевые инструменты с доходностью значительно превышающей доходность по депозитам.
 						.advice.text-center
-							a.btn.btn-yellow(href="#" title="Получить консультацию") Посчитать выгоду
+								a.btn.btn-yellow(href="#" title="Получить консультацию") Посчитать выгоду
 
 		include ./partials/_calculator.jade
 		section.which
 			.container
 				.section-label Существует два типа налоговых льгот
 				h2.section-title.dark-blue Какой тип вычета выбрать?
-				.row
-					.col-md-16.col-md-offset-2
-						ol.type-of-recoupment.row
-							li.item.col-xs-10
-								span.icon
-								span.text 13% вычет на взнос денежных&nbsp;средств
-							li.item.col-xs-10
-								span.icon
-								span.text 13% вычет на доход, полученных от операций с&nbsp;бумагами
-				.row
-					.col-md-12.col-md-offset-4
-						p.note Совмещение налоговых вычетов не предусмотрено. Вы можете открыть только один ИИС и в течение трех лет выбрать тип вычета, который хотите получить.
-				.row
-					.col-md-16.col-md-offset-2
-						.types.tab-container
-							ul.etabs.clearfix
-								li.tab
-									a(href="#tabs1-html")
-										span.corner
-											i
-										|13% вычет на взнос
-								li.tab
-									a(href="#tabs2-html")
-										span.corner
-											i
-										|13% вычет на доход
-							#tabs1-html.tab-content
-								table.types-table.table
-									caption
-										|Подойдет инвесторам, ориентированным
-										br
-										|на долгосрочные вложения.
-									tr
-										th
-											span.icon.time
-											span Срок
-										td 2015
-										td 2016
-										td 2017
-										td.filled 3 года
-									tr
-										th
-											span.icon.refill
-											span Ежегодное<br>пополнение
-										td 400 000 ₽
-										td 400 000 ₽
-										td 400 000 ₽
-										td.filled 1 200 000 ₽
-									tr
-										th
-											span.icon.recoupment
-											span Вычет 13%
-										td 52 000 ₽
-										td 52 000 ₽
-										td 52 000 ₽
-										td.filled 156 000 ₽
 
-								table.types-table.table
-									caption
-										|Подойдет инвесторам, активно торгующим 
-										br
-										|ценными бумагами.
-									tr
-										th
-											span.icon.time
-											span Срок
-										td 2015
-										td 2016
-										td 2017
-										td.filled 3 года
-									tr
-										th
-											span.icon.refill
-											span Ежегодное<br>пополнение
-										td 400 000 ₽
-										td 400 000 ₽
-										td 400 000 ₽
-										td.filled 1 200 000 ₽
-									tr
-										th
-											span.icon.recoupment
-											span Доход от&nbsp;операций с&nbsp;ЦБ
-										td 52 000 ₽
-										td 52 000 ₽
-										td 52 000 ₽
-										td.filled 156 000 ₽
-								.advice.text-center
-									a.btn.btn-yellow(href="#" title="Получить консультацию") Посчитать выгоду
-							#tabs2-html.tab-content
-								table.types-table.table
-									caption
-										|Подойдет инвесторам, ориентированным
-										br
-										|на долгосрочные вложения.
-									tr
-										th
-											span.icon.time
-											span Срок
-										td 2015
-										td 2016
-										td 2017
-										td.filled 3 года
-									tr
-										th
-											span.icon.refill
-											span Ежегодное пополнение
-										td 400 000 ₽
-										td 400 000 ₽
-										td 400 000 ₽
-										td.filled 1 200 000 ₽
-									tr
-										th
-											span.icon.recoupment
-											span Вычет 13%
-										td 52 000 ₽
-										td 52 000 ₽
-										td 52 000 ₽
-										td.filled 156 000 ₽
-
-								table.types-table.table
-									caption
-										|Подойдет инвесторам, активно торгующим 
-										br
-										|ценными бумагами.
-									tr
-										th
-											span.icon.time
-											span Срок
-										td 2015
-										td 2016
-										td 2017
-										td.filled 3 года
-									tr
-										th
-											span.icon.refill
-											span Ежегодное пополнение
-										td 400 000 ₽
-										td 400 000 ₽
-										td 400 000 ₽
-										td.filled 1 200 000 ₽
-									tr
-										th
-											span.icon.recoupment
-											span Доход от&nbsp;операций с&nbsp;ЦБ
-										td %
-										td %
-										td %
-										td.filled 13% вычет<br>на % доход
-								.advice.text-center
-									a.btn.btn-yellow(href="#" title="Получить консультацию") Посчитать выгоду
-
-		section.advantages.text-center
+		section.advantages.bond-national-fund.text-center
 			.container
-				h2.section-title.dark-blue Ваши неоспоримые преимущества
+				h2.section-title.text-center Преимущества фонда
 				.row
-					.col-sm-6.col-sm-offset-1
+					.col-sm-6.col-sm-offset-1.col-xs-10
 						.item
-							.icon.shield
-							h3 Правовая защищенность
-							p.mini Гарантия возврата налогового вычета с инвестиций от государства
-					.col-sm-6
+							.icon.income
+							h3 Доход
+							p Высокий доход по сравнению с доходностью высоконадёжных государственных ценных бумаг
+					.col-sm-6.col-xs-10
 						.item
-							.icon.value
-							h3 Высокий доход
-							p Возможность получать не только вычет 13%, но и результаты от инвестиций в биржевые инструменты
-					.col-sm-6
+							.icon.investment
+							h3 Инвестирование
+							p Возможность инвестирования в еврооблигации и хеджирования валютных рисков
+					.col-sm-6.col-xs-10
 						.item
-							.icon.availability
-							h3 Доступность
-							p Простая процедура открытия ИИС и получения вычетов до 52 000 рублей в год
-								br
-								br
-					.col-sm-6.col-sm-offset-1
+							.icon.management
+							h3 Управление
+							p Консервативная стратегия управления, в первую очередь направленная на сохранение инвестиций
+					.col-sm-6.col-sm-offset-1.col-xs-10
 						.item
-							.icon.multiplication
-							h3 Преумножение капиала
-							p Эффективный инструмент для долгосрочных инвестиций
-					.col-sm-6
+							.icon.sell-buy
+							h3 Купля-продажа
+							p Возможность купить или продать пай в любой момент без потери накопленного дохода
+					.col-sm-6.col-xs-10
+						.item
+							.icon.bonds
+							h3 Облигации
+							p В состав портфеля включаются еврооблигации и облигации крупных зарубежных компаний!
+					.col-sm-6.col-xs-10
 						.item
 							.icon.control
-							h3 Личный контроль
-							p Возможность отслеживать состояние счета онлайн через удобный личный кабинет
-					.col-sm-6
-						.item
-							.icon.planning
-							h3 Планирование вложений
-							p Периодичность и сумма взносов на счет определяется индивидуально инвестором
-		
-		section.experience.text-center
-			.container
-				.section-label Опыт в цифрах
-				h2.section-title Управление активами в БКС –
-					br
-					|взвешенное решение
-				.row
-					.col-sm-4.col-sm-offset-3.col-xs-10
-						.item
-							span.icon.year
-							b 15 лет
-							div управляем активами
+							h3 Контроль
+							p Контроль риска
 								br
-								|ПИФов с 2000 года
-					.col-sm-4.col-sm-offset-1.col-xs-10
-						.item.rate
-							span.icon.rate
-							b AАА-рейтинг
-							div входит в группу
-								br
-								|«очень высокая надежность»
-					.col-sm-4.col-sm-offset-1.col-xs-10
-						.item
-							span.icon.offices
-							b 50 офисов
-							div широкая сеть
-								br
-								|по всей России
-					.col-sm-4.col-sm-offset-5.col-xs-10
-						.item
-							span.icon.clients
-							b 12 000 клиентов
-							div уже инвестируют
-								br
-								|с нами
-					.col-sm-4.col-sm-offset-2.col-xs-20
-						.item
-							span.icon.value
-							b 9,3 млрд. рублей
-							div общая стоимость активов
-								br
-								|в управлении
+								|вложений бумаг		
+
 		include ./partials/_feedback.jade
 		include ./partials/_footer.jade
 		include ./partials/_footer_scripts.jade
-		script(src="Content/js/vendor/jquery.browser.js")
-		script(src="Content/js/vendor/easytabs.min.js")
-		script(src="Content/js/vendor/jquery.hashchange.min.js")
