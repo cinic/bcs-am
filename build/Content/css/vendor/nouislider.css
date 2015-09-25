@@ -148,7 +148,8 @@
   width: 90px;
 }
 
-#range-slider {
+#range-slider,
+.range-slider {
   padding-top: 36px;
 }
 

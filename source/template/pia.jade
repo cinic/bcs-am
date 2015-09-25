@@ -37,7 +37,7 @@ html(lang="ru")
 						.advice.text-center
 							a.btn.btn-yellow(href="#" title="Получить консультацию") Посчитать выгоду
 
-		include ./partials/_calculator.jade
+		include ./partials/_calculator-pia.jade
 		section.which
 			.container
 				.section-label Существует два типа налоговых льгот
@@ -69,129 +69,131 @@ html(lang="ru")
 											i
 										|13% вычет на доход
 							#tabs1-html.tab-content
-								table.types-table.table
-									caption
-										|Подойдет инвесторам, ориентированным
-										br
-										|на долгосрочные вложения.
-									tr
-										th
-											span.icon.time
-											span Срок
-										td 2015
-										td 2016
-										td 2017
-										td.filled 3 года
-									tr
-										th
-											span.icon.refill
-											span Ежегодное<br>пополнение
-										td 400 000 ₽
-										td 400 000 ₽
-										td 400 000 ₽
-										td.filled 1 200 000 ₽
-									tr
-										th
-											span.icon.recoupment
-											span Вычет 13%
-										td 52 000 ₽
-										td 52 000 ₽
-										td 52 000 ₽
-										td.filled 156 000 ₽
+								.table-responsive
+									table.types-table.table
+										caption
+											|Подойдет инвесторам, ориентированным
+											br
+											|на долгосрочные вложения.
+										tr
+											th
+												span.icon.time
+												span Срок
+											td 2015
+											td 2016
+											td 2017
+											td.filled 3 года
+										tr
+											th
+												span.icon.refill
+												span Ежегодное<br>пополнение
+											td 400 000 ₽
+											td 400 000 ₽
+											td 400 000 ₽
+											td.filled 1 200 000 ₽
+										tr
+											th
+												span.icon.recoupment
+												span Вычет 13%
+											td 52 000 ₽
+											td 52 000 ₽
+											td 52 000 ₽
+											td.filled 156 000 ₽
 
-								table.types-table.table
-									caption
-										|Подойдет инвесторам, активно торгующим 
-										br
-										|ценными бумагами.
-									tr
-										th
-											span.icon.time
-											span Срок
-										td 2015
-										td 2016
-										td 2017
-										td.filled 3 года
-									tr
-										th
-											span.icon.refill
-											span Ежегодное<br>пополнение
-										td 400 000 ₽
-										td 400 000 ₽
-										td 400 000 ₽
-										td.filled 1 200 000 ₽
-									tr
-										th
-											span.icon.recoupment
-											span Доход от&nbsp;операций с&nbsp;ЦБ
-										td 52 000 ₽
-										td 52 000 ₽
-										td 52 000 ₽
-										td.filled 156 000 ₽
-								.advice.text-center
-									a.btn.btn-yellow(href="#" title="Получить консультацию") Посчитать выгоду
+									table.types-table.table
+										caption
+											|Подойдет инвесторам, активно торгующим 
+											br
+											|ценными бумагами.
+										tr
+											th
+												span.icon.time
+												span Срок
+											td 2015
+											td 2016
+											td 2017
+											td.filled 3 года
+										tr
+											th
+												span.icon.refill
+												span Ежегодное<br>пополнение
+											td 400 000 ₽
+											td 400 000 ₽
+											td 400 000 ₽
+											td.filled 1 200 000 ₽
+										tr
+											th
+												span.icon.recoupment
+												span Доход от&nbsp;операций с&nbsp;ЦБ
+											td 52 000 ₽
+											td 52 000 ₽
+											td 52 000 ₽
+											td.filled 156 000 ₽
+									.advice.text-center
+										a.btn.btn-yellow(href="#" title="Получить консультацию") Посчитать выгоду
 							#tabs2-html.tab-content
-								table.types-table.table
-									caption
-										|Подойдет инвесторам, ориентированным
-										br
-										|на долгосрочные вложения.
-									tr
-										th
-											span.icon.time
-											span Срок
-										td 2015
-										td 2016
-										td 2017
-										td.filled 3 года
-									tr
-										th
-											span.icon.refill
-											span Ежегодное пополнение
-										td 400 000 ₽
-										td 400 000 ₽
-										td 400 000 ₽
-										td.filled 1 200 000 ₽
-									tr
-										th
-											span.icon.recoupment
-											span Вычет 13%
-										td 52 000 ₽
-										td 52 000 ₽
-										td 52 000 ₽
-										td.filled 156 000 ₽
+								.table-responsive
+									table.types-table.table
+										caption
+											|Подойдет инвесторам, ориентированным
+											br
+											|на долгосрочные вложения.
+										tr
+											th
+												span.icon.time
+												span Срок
+											td 2015
+											td 2016
+											td 2017
+											td.filled 3 года
+										tr
+											th
+												span.icon.refill
+												span Ежегодное пополнение
+											td 400 000 ₽
+											td 400 000 ₽
+											td 400 000 ₽
+											td.filled 1 200 000 ₽
+										tr
+											th
+												span.icon.recoupment
+												span Вычет 13%
+											td 52 000 ₽
+											td 52 000 ₽
+											td 52 000 ₽
+											td.filled 156 000 ₽
 
-								table.types-table.table
-									caption
-										|Подойдет инвесторам, активно торгующим 
-										br
-										|ценными бумагами.
-									tr
-										th
-											span.icon.time
-											span Срок
-										td 2015
-										td 2016
-										td 2017
-										td.filled 3 года
-									tr
-										th
-											span.icon.refill
-											span Ежегодное пополнение
-										td 400 000 ₽
-										td 400 000 ₽
-										td 400 000 ₽
-										td.filled 1 200 000 ₽
-									tr
-										th
-											span.icon.recoupment
-											span Доход от&nbsp;операций с&nbsp;ЦБ
-										td %
-										td %
-										td %
-										td.filled 13% вычет<br>на % доход
-								.advice.text-center
-									a.btn.btn-yellow(href="#" title="Получить консультацию") Посчитать выгоду
+									table.types-table.table
+										caption
+											|Подойдет инвесторам, активно торгующим 
+											br
+											|ценными бумагами.
+										tr
+											th
+												span.icon.time
+												span Срок
+											td 2015
+											td 2016
+											td 2017
+											td.filled 3 года
+										tr
+											th
+												span.icon.refill
+												span Ежегодное пополнение
+											td 400 000 ₽
+											td 400 000 ₽
+											td 400 000 ₽
+											td.filled 1 200 000 ₽
+										tr
+											th
+												span.icon.recoupment
+												span Доход от&nbsp;операций с&nbsp;ЦБ
+											td %
+											td %
+											td %
+											td.filled 13% вычет<br>на % доход
+									.advice.text-center
+										a.btn.btn-yellow(href="#" title="Получить консультацию") Посчитать выгоду
 
 		section.advantages.text-center
 			.container
