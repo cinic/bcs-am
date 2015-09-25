@@ -68,6 +68,41 @@
 	
 	.calculator {
 		.calculator-form {
+			.calc-col-1 {
+				position: relative;
+				&:before {
+					content: '';
+					position: absolute;
+					width: 0;
+					height: 0;
+					z-index: 100;
+					bottom: -27px;
+					border-left: 25px solid transparent;
+					border-right: 25px solid transparent;
+					border-top: 27px solid #f7f7f7;
+					left: 50%;
+					margin-left: -25px;
+					@media (min-width: $screen-sm) {
+						display: none;
+					}
+				}
+				&:after {
+					content: '';
+					position: absolute;
+					width: 0;
+					height: 0;
+					z-index: 99;
+					bottom: -28px;
+					border-left: 25px solid transparent;
+					border-right: 25px solid transparent;
+					border-top: 27px solid #9ea9b8;
+					left: 50%;
+					margin-left: -25px;
+					@media (min-width: $screen-sm) {
+						display: none;
+					}
+				}
+			}
 			.calc-row {
 				background: #f7f7f7 !important;
 			}

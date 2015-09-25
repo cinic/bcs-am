@@ -1,258 +1,390 @@
 .bond .section-label,
 .bond .section-title {
-	color: #002a61;
+  color: #002a61;
+}
+.bond .page-title-description-m {
+  margin: 80px 0 16px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 18px;
+  color: #4992ff;
+}
+@media (min-width: 1200px) {
+  .bond .page-title-description-m {
+    display: none;
+  }
 }
 .bond.bond-national-fund .header .content {
-	background: url("../img/pages/bonds/header-national.jpg") no-repeat top center;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-national.jpg', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-national.jpg', sizingMethod='scale')";
-	background-size: cover;
+  background: url("../img/pages/bonds/header-national.jpg") no-repeat top center;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-national.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-national.jpg', sizingMethod='scale')";
+  background-size: cover;
 }
 .bond.bond-national-fund .header .content .page-subtitle {
-	margin-top: 180px;
-	margin-bottom: 34px;
-	color: #002665;
+  margin-top: 180px;
+  margin-bottom: 34px;
+  color: #002665;
+}
+@media (max-width: 1200px) {
+  .bond.bond-national-fund .header .content .page-subtitle {
+    margin-top: 0;
+  }
 }
 .bond.bond-national-fund .header .content .page-title-description {
-	margin-bottom: 80px;
-	line-height: 25px;
-	color: #002665;
+  margin-bottom: 80px;
+  line-height: 25px;
+  color: #002665;
+}
+.bond.bond-dividend-fund .header .content {
+  background: url("../img/pages/bonds/header-dividend.jpg") no-repeat top center;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-dividend.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-dividend.jpg', sizingMethod='scale')";
+  background-size: cover;
+}
+.bond.bond-dividend-fund .header .content .page-subtitle {
+  margin-top: 75px;
+  margin-bottom: 24px;
+  color: #002665;
+}
+@media (max-width: 1200px) {
+  .bond.bond-dividend-fund .header .content .page-subtitle {
+    margin-top: 0;
+  }
+}
+.bond.bond-dividend-fund .header .content .page-title-description {
+  margin-bottom: 60px;
+  line-height: 25px;
+  color: #002665;
+}
+.bond .calculator .calculator-form .calc-col-1 {
+  position: relative;
+}
+.bond .calculator .calculator-form .calc-col-1:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: 100;
+  bottom: -27px;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 27px solid #f7f7f7;
+  left: 50%;
+  margin-left: -25px;
+}
+@media (min-width: 768px) {
+  .bond .calculator .calculator-form .calc-col-1:before {
+    display: none;
+  }
+}
+.bond .calculator .calculator-form .calc-col-1:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: 99;
+  bottom: -28px;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 27px solid #9ea9b8;
+  left: 50%;
+  margin-left: -25px;
+}
+@media (min-width: 768px) {
+  .bond .calculator .calculator-form .calc-col-1:after {
+    display: none;
+  }
 }
 .bond .calculator .calculator-form .calc-row {
-	background: #f7f7f7 !important;
+  background: #f7f7f7 !important;
 }
 .bond .calculator .calculator-form .calc-row:nth-child(2) {
-	background: rgba(204, 209, 218, 0.5) !important;
-	border-top: 1px solid #9ea9b8;
-	border-bottom: 1px solid #9ea9b8;
+  background: rgba(204, 209, 218, 0.5) !important;
+  border-top: 1px solid #9ea9b8;
+  border-bottom: 1px solid #9ea9b8;
 }
 .bond .main-indicator {
-	color: #002a61;
-	background: #eceff4;
+  color: #002a61;
+  background: #eceff4;
 }
 .bond .main-indicator .caption {
-	padding: 0;
+  padding: 0;
 }
 .bond .main-indicator .legend .item {
-	float: left;
-	font-size: 14px;
+  float: left;
+  font-size: 14px;
 }
 .bond .main-indicator .legend .item-2 {
-	float: right;
+  float: right;
 }
 .bond .main-indicator .timing {
-	margin: 16px 0 4px;
+  margin: 16px 0 4px;
 }
 .bond .main-indicator .timing .item {
-	display: inline-block;
-	margin: 0 12px 10px 0;
-	padding: 0 20px;
-	line-height: 30px;
-	font-size: 16px;
-	background: white;
-	border: 1px solid #9ea9b9;
-	border-radius: 15px;
-	cursor: pointer;
+  display: inline-block;
+  margin: 0 12px 10px 0;
+  padding: 0 20px;
+  line-height: 30px;
+  font-size: 16px;
+  background: white;
+  border: 1px solid #9ea9b9;
+  border-radius: 15px;
+  cursor: pointer;
 }
 .bond .main-indicator .btn {
-	margin-top: 24px;
-	font-size: 14px;
+  margin-top: 24px;
+  font-size: 14px;
 }
 .bond .main-indicator .cost {
-	padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 .bond .main-indicator .cost .cost-table {
-	width: 100%;
-	font-size: 10px;
-	background: white;
+  width: 100%;
+  font-size: 10px;
+  background: white;
 }
 .bond .main-indicator .cost .cost-table tr {
-	border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
 }
 .bond .main-indicator .cost .cost-table tr:last-child {
-	border: 0;
+  border: 0;
 }
 .bond .main-indicator .cost .cost-table th,
 .bond .main-indicator .cost .cost-table td {
-	padding: 6px 8px;
-	text-align: left;
+  padding: 6px 8px;
+  text-align: left;
 }
 .bond .main-indicator .cost .cost-table .red {
-	color: #ff0000;
+  color: #ff0000;
 }
 .bond .main-indicator .cost .cost-table .green {
-	color: #3bb303;
+  color: #3bb303;
 }
 @media (min-width: 1200px) {
-	.bond .main-indicator .main-indicator-graph {
-		margin: 60px 25px 156px;
-		border: 1px solid #9ea9b8;
-	}
-	.bond .main-indicator .main-indicator-graph .caption {
-		padding: 0 56px;
-		line-height: 42px;
-		font-size: 14px;
-		border-bottom: 1px solid #9ea9b8;
-	}
-	.bond .main-indicator .main-indicator-graph .legend .item {
-		float: left;
-		margin-right: 32px;
-		font-size: 20px;
-	}
-	.bond .main-indicator .main-indicator-graph .title {
-		font-size: 20px;
-		font-weight: normal;
-	}
-	.bond .main-indicator .main-indicator-graph .col-left {
-		float: left;
-		padding-left: 56px;
-		width: 532px;
-	}
-	.bond .main-indicator .main-indicator-graph .col-left .graph {
-		margin-left: -28px;
-	}
-	.bond .main-indicator .main-indicator-graph .col-right {
-		float: right;
-		padding-right: 28px;
-		width: 476px;
-	}
-	.bond .main-indicator .main-indicator-graph .cost {
-		padding: 0 56px 32px;
-		border-top: 1px solid #9ea9b8;
-	}
-	.bond .main-indicator .main-indicator-graph .cost .cost-table {
-		width: 100%;
-		font-size: 16px;
-		background: white;
-	}
-	.bond .main-indicator .main-indicator-graph .cost .cost-table tr {
-		border-bottom: 1px solid #f2f2f2;
-	}
-	.bond .main-indicator .main-indicator-graph .cost .cost-table tr:last-child {
-		border: 0;
-	}
-	.bond .main-indicator .main-indicator-graph .cost .cost-table th,
-	.bond .main-indicator .main-indicator-graph .cost .cost-table td {
-		padding: 12px 18px;
-		text-align: left;
-	}
-	.bond .main-indicator .main-indicator-graph .cost .cost-table .red {
-		color: #ff0000;
-	}
-	.bond .main-indicator .main-indicator-graph .cost .cost-table .green {
-		color: #3bb303;
-	}
-	.bond .main-indicator .main-indicator-graph .pie-graph {
-		margin-top: 66px;
-	}
+  .bond .main-indicator .main-indicator-graph {
+    margin: 60px 25px 156px;
+    border: 1px solid #9ea9b8;
+  }
+  .bond .main-indicator .main-indicator-graph .caption {
+    padding: 0 56px;
+    line-height: 42px;
+    font-size: 14px;
+    border-bottom: 1px solid #9ea9b8;
+  }
+  .bond .main-indicator .main-indicator-graph .legend .item {
+    float: left;
+    margin-right: 32px;
+    font-size: 20px;
+  }
+  .bond .main-indicator .main-indicator-graph .title {
+    font-size: 20px;
+    font-weight: normal;
+  }
+  .bond .main-indicator .main-indicator-graph .col-left {
+    float: left;
+    padding-left: 56px;
+    width: 532px;
+  }
+  .bond .main-indicator .main-indicator-graph .col-left .graph {
+    margin-left: -28px;
+  }
+  .bond .main-indicator .main-indicator-graph .col-right {
+    float: right;
+    padding-right: 28px;
+    width: 476px;
+  }
+  .bond .main-indicator .main-indicator-graph .cost {
+    padding: 0 56px 32px;
+    border-top: 1px solid #9ea9b8;
+  }
+  .bond .main-indicator .main-indicator-graph .cost .cost-table {
+    width: 100%;
+    font-size: 16px;
+    background: white;
+  }
+  .bond .main-indicator .main-indicator-graph .cost .cost-table tr {
+    border-bottom: 1px solid #f2f2f2;
+  }
+  .bond .main-indicator .main-indicator-graph .cost .cost-table tr:last-child {
+    border: 0;
+  }
+  .bond .main-indicator .main-indicator-graph .cost .cost-table th,
+  .bond .main-indicator .main-indicator-graph .cost .cost-table td {
+    padding: 12px 18px;
+    text-align: left;
+  }
+  .bond .main-indicator .main-indicator-graph .cost .cost-table .red {
+    color: #ff0000;
+  }
+  .bond .main-indicator .main-indicator-graph .cost .cost-table .green {
+    color: #3bb303;
+  }
+  .bond .main-indicator .main-indicator-graph .pie-graph {
+    margin-top: 66px;
+  }
+}
+@media (max-width: 1200px) {
+  .bond .advantages {
+    height: auto;
+  }
 }
 .bond .advantages.bond-national-fund {
-	height: 820px;
-	background: url("../img/pages/bonds/advantages-bg-bond-national.jpg") no-repeat 50% 50%;
-	background-size: cover;
+  height: 820px;
+  background: url("../img/pages/bonds/advantages-bg-bond-national.jpg") no-repeat 50% 50%;
+  background-size: cover;
 }
 .bond .advantages.bond-national-fund .item {
-	position: relative;
-	margin-bottom: 20px;
-	padding-top: 70px;
-	height: 210px;
+  position: relative;
+  margin-bottom: 20px;
+  padding-top: 70px;
+  height: 210px;
 }
 .bond .advantages.bond-national-fund .item .icon {
-	margin-left: -30px;
-	width: 60px;
-	height: 60px;
-	background: url("../img/pages/bonds/advantages-icons-bond-national.png") no-repeat 0 0;
+  margin-left: -30px;
+  width: 60px;
+  height: 60px;
+  background: url("../img/pages/bonds/advantages-icons-bond-national.png") no-repeat 0 0;
 }
 .bond .advantages.bond-national-fund .item .icon.income {
-	background-position: 0 0;
+  background-position: 0 0;
 }
 .bond .advantages.bond-national-fund .item .icon.investment {
-	background-position: 0 -60px;
+  background-position: 0 -60px;
 }
 .bond .advantages.bond-national-fund .item .icon.management {
-	background-position: 0 -120px;
+  background-position: 0 -120px;
 }
 .bond .advantages.bond-national-fund .item .icon.control {
-	background-position: 0 -180px;
+  background-position: 0 -180px;
 }
 .bond .advantages.bond-national-fund .item .icon.sell-buy {
-	background-position: 0 -240px;
+  background-position: 0 -240px;
 }
 .bond .advantages.bond-national-fund .item .icon.bonds {
-	background-position: 0 -300px;
+  background-position: 0 -300px;
 }
 .bond .advantages.bond-national-fund .item p {
-	color: #ccd7e6;
+  color: #ccd7e6;
 }
 @media (min-width: 1200px) {
-	.bond .advantages.bond-national-fund .item {
-		margin-bottom: 54px;
-		padding-top: 90px;
-		height: auto;
-	}
+  .bond .advantages.bond-national-fund .item {
+    margin-bottom: 54px;
+    padding-top: 90px;
+    height: auto;
+  }
 }
 @media (min-width: 768px) {
-	.bond .advantages.bond-national-fund {
-		height: 570px;
-	}
+  .bond .advantages.bond-national-fund {
+    height: 570px;
+  }
 }
 @media (min-width: 1200px) {
-	.bond .advantages.bond-national-fund {
-		height: 757px;
-	}
+  .bond .advantages.bond-national-fund {
+    height: 757px;
+  }
+}
+.bond .advantages.bond-dividend-fund .item {
+  position: relative;
+  margin-bottom: 20px;
+  padding-top: 70px;
+  height: 210px;
+}
+.bond .advantages.bond-dividend-fund .item .icon {
+  margin-left: -30px;
+  width: 60px;
+  height: 60px;
+  background: url("../img/pages/bonds/advantages-icons-bond-dividend.png") no-repeat 0 0;
+}
+.bond .advantages.bond-dividend-fund .item .icon.extensive {
+  background-position: 0 0;
+}
+.bond .advantages.bond-dividend-fund .item .icon.dividend {
+  background-position: 0 -60px;
+}
+.bond .advantages.bond-dividend-fund .item .icon.unique-opportunity {
+  background-position: 0 -120px;
+}
+.bond .advantages.bond-dividend-fund .item .icon.high-potential {
+  background-position: 0 -180px;
+}
+.bond .advantages.bond-dividend-fund .item .icon.liquidity {
+  background-position: 0 -240px;
+}
+.bond .advantages.bond-dividend-fund .item .icon.diversification {
+  background-position: 0 -300px;
+}
+.bond .advantages.bond-dividend-fund .item p {
+  color: #ccd7e6;
+}
+@media (min-width: 1200px) {
+  .bond .advantages.bond-dividend-fund .item {
+    margin-bottom: 54px;
+    padding-top: 90px;
+    height: auto;
+  }
+}
+@media (min-width: 768px) {
+  .bond .advantages.bond-dividend-fund {
+    height: 570px;
+  }
+}
+@media (min-width: 1200px) {
+  .bond .advantages.bond-dividend-fund {
+    height: 757px;
+  }
 }
 .bond .advantages .section-title {
-	margin: 60px 0 42px;
-	color: white;
+  margin: 60px 0 42px;
+  color: white;
 }
 .bond .documentation {
-	color: #002a61;
-	background: #eceff4;
+  color: #002a61;
+  background: #eceff4;
 }
 .bond .documentation .section-title {
-	margin: 62px 0 40px;
+  margin: 62px 0 40px;
 }
 .bond .documentation .dates {
-	margin-bottom: 40px;
-	font-size: 16px;
+  margin-bottom: 40px;
+  font-size: 16px;
 }
 .bond .documentation .dates .reg-num {
-	float: left;
+  float: left;
 }
 .bond .documentation .dates .reg-date {
-	float: right;
+  float: right;
 }
 @media (min-width: 1200px) {
-	.bond .documentation .docs-list {
-		margin: 0 -10px;
-	}
+  .bond .documentation .docs-list {
+    margin: 0 -10px;
+  }
 }
 .bond .documentation .item {
-	display: block;
-	margin-bottom: 24px;
-	padding: 147px 0 22px;
-	background: #002a61 url("../img/docs-arrow-down.png") no-repeat right top;
-	text-decoration: none;
-	vertical-align: top;
+  display: block;
+  margin-bottom: 24px;
+  padding: 147px 0 22px;
+  background: #002a61 url("../img/docs-arrow-down.png") no-repeat right top;
+  text-decoration: none;
+  vertical-align: top;
 }
 .bond .documentation .item:last-child {
-	margin-right: 0;
+  margin-right: 0;
 }
 .bond .documentation .item .label {
-	padding: 10px;
-	height: 68px;
-	font-size: 12px;
-	background: #ffc300;
-	color: #002a61;
+  padding: 10px;
+  height: 68px;
+  font-size: 12px;
+  background: #ffc300;
+  color: #002a61;
 }
 @media (min-width: 1200px) {
-	.bond .documentation .item .label {
-		height: 68px;
-		font-size: 14px;
-	}
+  .bond .documentation .item .label {
+    height: 68px;
+    font-size: 14px;
+  }
 }
 @media (min-width: 1200px) {
-	.bond .documentation {
-		padding-bottom: 90px;
-	}
+  .bond .documentation {
+    padding-bottom: 90px;
+  }
 }

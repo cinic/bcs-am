@@ -52,19 +52,20 @@ html(lang="ru")
 											|— стоимость СЧА
 									#line-graph.graph
 									.timing
-										span.item 3 мес
-										span.item 6 мес
-										span.item 1 год
-										span.item 2 года
-										span.item с момента формирования фонда
-								.col-right
+										span.item.pull-left.col-xs-9 3 мес
+										span.item.pull-right.col-xs-9 6 мес
+										span.item.pull-left.col-xs-9 1 год
+										span.item.pull-right.col-xs-9 2 года
+										span.item.col-xs-20 с момента формирования фонда
+
+								.col-right.hidden-xs
 									h3.title Распределение активов
 									#pie-graph.graph.pie-graph
 									.actions.text-center
 										a.btn.btn-yellow(href="#") Оставить заявку
 							.cost
 								h3.title Стоимость пая и чистых активов на 18.08.2015
-								table.cost-table
+								table.cost-table.hidden-xs
 									tr
 										th &nbsp;
 										th 18.08.2015
@@ -76,6 +77,21 @@ html(lang="ru")
 											span.red - 0,04% / - 96 237,17 руб.
 									tr
 										td Стоимость пая, руб. коп.
+										td 3 472,84 руб.
+										td.green
+											span.green 0,00% / -0,05 руб.
+								table.cost-table.hidden-sm.hidden-md.hidden-lg
+									tr
+										th &nbsp;
+										th Стоимость чистых активов, руб. коп
+										th Стоимость пая, руб. коп.
+									tr
+										td 18.08.2015
+										td 261 551 258,90 руб.
+										td.red
+											span.red - 0,04% / - 96 237,17 руб.
+									tr
+										td Изменения за 1 день
 										td 3 472,84 руб.
 										td.green
 											span.green 0,00% / -0,05 руб.
@@ -148,7 +164,7 @@ html(lang="ru")
 		section.documentation.bond-dividend-fund
 			.container
 				h2.section-title Документы фонда
-				.row
+				.row.hidden-xs.hidden-sm
 					.col-sm-16.col-sm-offset-2
 						.dates.clearfix
 							.reg-num
