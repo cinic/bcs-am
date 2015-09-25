@@ -1,0 +1,277 @@
+/* About page styles */
+@import 'partials/variables';
+.about {
+	.header {
+
+		color: white;
+		background: url('../img/pages/about/header.jpg') no-repeat 50% 50%;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/about/header.jpg', sizingMethod='scale');
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/about/header.jpg', sizingMethod='scale')";
+		background-size: cover;
+
+		@media (min-width: $screen-md) {
+			height: 660px;
+		}
+		
+		.page-title,
+		.page-subtitle { color: white; }
+		.page-subtitle {
+			margin: 40px 0px;
+		}
+
+		.about {
+			line-height: 33px;
+			font-size: 30px;
+
+			&:after {
+				position: relative;
+				top: 34px;
+				display: block;
+				margin: 0 auto;
+				content: " ";
+				width: 47px;
+				height: 3px;
+				background: #4992ff;
+			}
+		}
+
+		.experience {
+			margin: 80px 0 40px;
+
+			.item {
+				position: relative;
+				margin-bottom: 80px;
+				padding-top: 118px;
+				color: #ccd7e6;
+				
+				b {
+					display: block;
+					margin-bottom: 22px;
+					font-size: 30px;
+					line-height: 33px;
+					color: white;
+					font-weight: normal;
+				}
+				
+				.icon {
+					position: absolute;
+					top: 0;
+					left: 50%;
+					margin-left: -52px;
+					width: 103px;
+					height: 103px;
+					background: url('../img/pages/about/header-icons.png') no-repeat 0 0;
+					
+					&.year {
+						background-position: 0 0;
+					}
+					&.rate {
+						background-position: 0 -103px;
+					}
+					&.clients {
+						background-position: 0 -206px;
+					}
+					&.value {
+						background-position: 0 -309px;
+					}
+					&.offices {
+						background-position: 0 -412px;
+					}
+				}
+			}
+		}
+	}
+
+	.why {
+		padding-bottom: 30px;
+		.note {
+			margin: 30px 0 68px;
+			font-size: 30px;
+			color: #78849b;
+		}
+
+		.item {
+			position: relative;
+			padding: 97px 22px 0;
+			
+			.icon {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin-left: -48px;
+				width: 97px;
+				height: 97px;
+				background: url('../img/pages/about/why-icons.png') no-repeat 0 0;
+
+				&.respective {
+					background-position: 0 0;
+				}
+				&.professionalism {
+					background-position: 0 -97px;
+				}
+				&.transparence {
+					background-position: 0 -194px;
+				}
+				&.continuous-progress {
+					background-position: 0 -291px;
+				}
+			}
+
+			h3 {
+				margin: 16px 0 30px;
+				line-height: 20px;
+				font-size: 20px;
+				font-weight: 400;
+				color: #133058;
+
+				&:after {
+					position: relative;
+					top: 13px;
+					display: block;
+					margin: 0 auto;
+					content: " ";
+					width: 53px;
+					height: 1px;
+					background: #002a61;
+
+					@media (min-width: $screen-md) {
+						top: 19px;
+					}
+				}
+
+				@media (min-width: $screen-md) {
+					margin: 16px 0 28px;
+				}
+			}
+
+			p {
+				line-height: 13px;
+				font-size: 13px;
+				font-weight: 300;
+				color: #002a61;
+
+				@media (min-width: $screen-md) {
+					line-height: 20px;
+					font-size: 16px;
+				}
+			}
+
+			@media (min-width: $screen-md) {
+
+			}
+		}
+
+		@media (min-width: $screen-md) {
+			padding-bottom: 60px;
+		}
+	}
+
+	.awards {
+		padding-bottom: 44px;
+		background: #446389 url('../img/pages/about/awards.jpg') no-repeat 50% 50%;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/about/awards.jpg', sizingMethod='scale');
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/about/awards.jpg', sizingMethod='scale')";
+		background-size: cover;
+		color: white;
+
+		.section-title {
+			margin: 20px 0 10px;
+			color: white;
+
+			@media (min-width: $screen-md) {
+				margin: 75px 0 50px;
+			}
+		}
+
+		.item {
+			position: relative;
+			margin-bottom: 14px;
+			padding: 6px 6px 6px 40px;
+
+			.year {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				width: 40px;
+
+				i {
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 16px;
+					width: 2px;
+					background: white;
+
+					&:after {
+						position: absolute;
+						top: 50%;
+						left: 0;
+						margin-left: -6px;
+						margin-top: -7px;
+						content: ' ';
+						width: 14px;
+						height: 14px;
+						border: 2px solid white;
+						background: #486589;
+						border-radius: 10px;
+					}
+				}
+
+				time {
+					position: absolute;
+					bottom: -14px;
+					line-height: 14px;
+					font-size: 12px;
+				}
+			}
+
+			.content {
+				position: relative;
+				padding: 10px 16px;
+				border: 3px solid white;
+				background: #577aa6;
+
+				.title {
+					margin: 0;
+					font-size: 10px;
+					font-weight: 500;
+					color: #ffc300;
+					text-transform: uppercase;
+				}
+
+				p {
+					margin: 5px 0;
+					font-size: 10px;
+					font-weight: 300;
+					color: white;
+				}
+
+				.more-link {
+					font-size: 9px;
+					color: #ffc300;
+					text-decoration: none;
+					border-bottom: 1px dashed;
+				}
+
+				&:before {
+					position: absolute;
+					top: 50%;
+					left: 0;
+					margin-top: -9px;
+					margin-left: -9px;
+					width: 18px;
+					height: 18px;
+					border: 3px solid white;
+					border-bottom-color: #577aa6;
+					border-right-color: #577aa6;
+					background: #577aa6;
+					content: ' ';
+					-ms-transform: rotate(-45deg); /* IE 9 */
+			    -webkit-transform: rotate(-45deg); /* Safari */
+			    transform: rotate(-45deg);
+				}
+			}
+		}
+	}
+}
