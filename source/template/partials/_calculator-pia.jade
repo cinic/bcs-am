@@ -1,0 +1,51 @@
+section.calculator.calculator-pia.clearfix
+	.container
+		.section-label Калькулятор
+		h2.section-title.text-center Оцените потенциальный доход
+		.row
+			.col-sm-16.col-sm-offset-2
+				form.calculator-form.clearfix
+					.calc-col-1
+						.calc-row
+							label Сумма 
+								span.hidden-mobile для 
+								|инвестирования
+							input.calc-range(id="calc-range-input-investments")
+							#slider-1.range-slider.no-ui-slider
+								#calc-range-pia-investments.calc-range-pia.slider
+						.calc-row
+							label Сумма пополнения
+							input.calc-range(id="calc-range-input-refill")
+							#slider-2.range-slider.no-ui-slider
+								#calc-range-pia-refill.calc-range-pia.slider
+								
+						.calc-row
+							label.double-margin Срок инвестирования
+							input(type="hidden" name="interval" id="pia-interval" value="1")
+							.opt-group
+								span.time(data-value="0.25") 3 мес.
+								span.time(data-value="0.5") 6 мес.
+								span.time.active(data-value="1") 1 год
+								span.time(data-value="2") 2 года
+								span.time(data-value="3") 3 года
+					.calc-col-2
+						.income-values.clearfix
+							.in
+								.wrap.clearfix
+									b Взнос
+									#range-value 100 000 Р
+									.value-bg
+							.out
+								.wrap.clearfix
+									b Вычет 13%
+									#income-value 58 000 Р
+									.income-bg
+									.value-bg
+						.income-percent.clearfix
+							span Доход в процентах 
+							b#income-percent(data-value="23") 23%
+						.income-result
+							b Вы получите
+							span#income-result 58 000 ₽
+						.actions.text-center
+							span.btn.btn-yellow получить
