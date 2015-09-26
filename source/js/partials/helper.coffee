@@ -21,3 +21,6 @@ $ ->
 
 	$('.toggle-nav').on 'click', ->
 		$('nav.menu').toggleClass('active')
+$ ->
+	if typeof $.fn.easytabs == 'function'
+		$('.tab-container').easytabs()
