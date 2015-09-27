@@ -27,6 +27,12 @@ $(function() {
 });
 
 $(function() {
+  if (typeof $.fn.easytabs === 'function') {
+    return $('.tab-container').easytabs();
+  }
+});
+
+$(function() {
   return $('.custom-select').selectize();
 });
 
