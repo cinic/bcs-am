@@ -19,6 +19,13 @@ calcValueHeight = (v) ->
 	opposite = v / 10000 < 10
 	res = if opposite then v / 10000 * -1 else v / 10000
 
+calcValueHeight2 = (v) ->
+	opposite = 10000 if v <= 500000 && v > 0
+	opposite = 20000 if v <= 1500000 && v > 500000
+	opposite = 30000 if v <= 2000000 && v > 1500000
+	base = v / opposite
+	
+
 calcIncomeHeight = (v) ->
 	v.match(/([0-9\s]+)( ₽)/)[1].replace(/\s/g, "") * 1 / 10000
 
@@ -35,9 +42,6 @@ if slider?
 		step: 10000,
 		range:
 			'min': 50000,
-			'25%': 500000,
-			'50%': 1000000,
-			'75%': 1500000,
 			'max': 2000000
 		pips:
 			mode: 'values',
@@ -73,15 +77,13 @@ if slider?
 			$('.calculator .income-values .income-bg').css('height', calcIncomeHeight(calcValue( value )))
 
 if sliderPiaInvest?
+	valueInput2 = document.getElementById('calc-range-input-investments')
 	noUiSlider.create sliderPiaInvest,
 		start: 100000,
 		connect: 'lower',
 		step: 10000,
 		range:
 			'min': 50000,
-			'25%': 500000,
-			'50%': 1000000,
-			'75%': 1500000,
 			'max': 2000000
 		pips:
 			mode: 'values',
@@ -92,22 +94,41 @@ if sliderPiaInvest?
 				encoder: (value) ->
 					value / 1000
 
+	valueInput2.addEventListener 'change', ->
+		sliderPiaInvest.noUiSlider.set([null, this.value])
+
+	sliderPiaInvest.noUiSlider.on 'update', ( values, handle ) ->
+		rawValue = values[handle] * 1
+		valueInput2.value = (values[handle] * 1).formatMoney(0, '', ' ')
+		$('.calculator #range-value').text( valueInput2.value )
+		$('.calculator .income-values .value-bg').css('height', calcValueHeight2(rawValue))
+
 if sliderPiaRefill?
+	valueInput3 = document.getElementById('calc-range-input-refill')
 	noUiSlider.create sliderPiaRefill,
 		start: 100000,
-		connect: 'lower',
+		connect: 'upper',
 		step: 10000,
 		range:
-			'min': 50000,
-			'25%': 500000,
-			'50%': 1000000,
-			'75%': 1500000,
-			'max': 2000000
+			'min': 10000,
+			'max': 400000
 		pips:
 			mode: 'values',
-			values: [50000, 500000, 1000000, 1500000, 2000000],
-			density: 10000,
+			values: [10000, 100000, 200000, 300000, 400000],
+			density: 500,
 			format: wNumb
 				postfix: '&nbsp;т.',
 				encoder: (value) ->
 					value / 1000
+	valueInput3.addEventListener 'change', ->
+		sliderPiaRefill.noUiSlider.set([null, this.value])
+
+if sliderPiaInvest? && sliderPiaRefill?
+	sliderPiaInvest.noUiSlider.on 'update', ( values, handle ) ->
+		rawValue = values[handle] * 1
+		valueInput2.value = (values[handle] * 1).formatMoney(0, '', ' ')
+
+	sliderPiaRefill.noUiSlider.on 'update', ( values, handle ) ->
+		rawValue = values[handle] * 1
+		valueInput3.value = (values[handle] * 1).formatMoney(0, '', ' ')
+
