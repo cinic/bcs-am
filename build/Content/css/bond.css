@@ -18,6 +18,22 @@
   line-height: 25px;
   color: #002665;
 }
+.bond.micex-fund .header .content {
+  background: url("../img/pages/bonds/header-micex.jpg") no-repeat top center;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-micex.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-micex.jpg', sizingMethod='scale')";
+  background-size: cover;
+}
+.bond.micex-fund .header .content .page-subtitle {
+  margin-top: 180px;
+  margin-bottom: 34px;
+  color: #002665;
+}
+.bond.micex-fund .header .content .page-title-description {
+  margin-bottom: 80px;
+  line-height: 25px;
+  color: #002665;
+}
 .bond.bond-dividend-fund .header .content {
   background: url("../img/pages/bonds/header-dividend.jpg") no-repeat top center;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-dividend.jpg', sizingMethod='scale');
@@ -221,6 +237,10 @@
   .bond .advantages.bond-national-fund {
     height: 757px;
   }
+}
+.bond .advantages.bond-dividend-fund {
+  background: url("../img/pages/bonds/advantages-bg-bond-national.jpg") no-repeat 50% 50%;
+  background-size: cover;
 }
 .bond .advantages.bond-dividend-fund .item {
   position: relative;
