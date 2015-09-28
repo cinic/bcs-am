@@ -68,27 +68,15 @@ calcValue = function(v) {
 };
 
 calcValueHeight = function(v) {
-  var opposite, res;
-  opposite = v / 10000 < 10;
-  return res = opposite ? v / 10000 * -1 : v / 10000;
+  return Math.log(v) * 5;
 };
 
 calcValueHeight2 = function(v) {
-  var base, opposite;
-  if (v <= 500000 && v > 0) {
-    opposite = 10000;
-  }
-  if (v <= 1500000 && v > 500000) {
-    opposite = 20000;
-  }
-  if (v <= 2000000 && v > 1500000) {
-    opposite = 30000;
-  }
-  return base = v / opposite;
+  return Math.log(v) * 10;
 };
 
 calcIncomeHeight = function(v) {
-  return v.match(/([0-9\s]+)( ₽)/)[1].replace(/\s/g, "") * 1 / 10000;
+  return Math.log(v.match(/([0-9\s]+)( ₽)/)[1].replace(/\s/g, "") * 1) * 3;
 };
 
 slider = document.getElementById('calc-range');

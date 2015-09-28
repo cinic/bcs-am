@@ -16,18 +16,15 @@ calcValue = (v) ->
 	(Math.floor(r,0)).formatMoney(0, '', ' ')
 
 calcValueHeight = (v) ->
-	opposite = v / 10000 < 10
-	res = if opposite then v / 10000 * -1 else v / 10000
+	Math.log(v) * 5
 
 calcValueHeight2 = (v) ->
-	opposite = 10000 if v <= 500000 && v > 0
-	opposite = 20000 if v <= 1500000 && v > 500000
-	opposite = 30000 if v <= 2000000 && v > 1500000
-	base = v / opposite
+	Math.log(v) * 10
 	
 
 calcIncomeHeight = (v) ->
-	v.match(/([0-9\s]+)( ₽)/)[1].replace(/\s/g, "") * 1 / 10000
+	#v.match(/([0-9\s]+)( ₽)/)[1].replace(/\s/g, "") * 1 / 10000
+	Math.log(v.match(/([0-9\s]+)( ₽)/)[1].replace(/\s/g, "") * 1) * 3
 
 
 slider = document.getElementById('calc-range')

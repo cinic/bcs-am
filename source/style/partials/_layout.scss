@@ -992,6 +992,7 @@ label { cursor: pointer; }
 				float: right;
 				font-size: 16px;
 				line-height: 22px;
+				white-space: nowrap;
 				@media (min-width: $screen-lg) {
 					float: none;
 					margin-bottom: 10px;
