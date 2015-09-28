@@ -72,7 +72,7 @@ calcValueHeight = function(v) {
 };
 
 calcValueHeight2 = function(v) {
-  return Math.log(v) * 10;
+  return Math.log(v) * 8;
 };
 
 calcIncomeHeight = function(v) {

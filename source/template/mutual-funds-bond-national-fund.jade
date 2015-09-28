@@ -31,14 +31,19 @@ html(lang="ru")
 					.col-sm-18.col-sm-offset-1
 						.main-indicator-graph
 							.caption Дата формирования фонда хх.хх.хххх г.
-							.clearfix
-								.col-left
-									
-								.col-right
-									
-							.clearfix
-								.col-left
-									h3.title Динамика стоимости пая и СЧА
+							.tab-container
+								ul.etabs.clearfix
+									li.tab
+										a(href="#tabs1-html")
+											span.corner
+												i
+											|Динамика стоимости пая и СЧА
+									li.tab
+										a(href="#tabs2-html")
+											span.corner
+												i
+											|Распределение активов
+								#tabs1-html.tab-content
 									.legend.clearfix
 										.item.item-1
 											span.icon
@@ -53,10 +58,9 @@ html(lang="ru")
 										span.item 1 год
 										span.item 2 года
 										span.item с момента формирования фонда
-								.col-right
-									h3.title Распределение активов
+								#tabs2-html.tab-content
 									#pie-graph.graph.pie-graph
-									.actions.text-center
+								.actions.text-center
 										a.btn.btn-yellow(href="#") Оставить заявку
 							.cost
 								h3.title Стоимость пая и чистых активов на 18.08.2015
@@ -112,35 +116,49 @@ html(lang="ru")
 							p Контроль риска
 								br
 								|вложений бумаг
-		section.fun
+		section.fund-rates
 			.container
-				h2.section-title Документы фонда
+				h2.section-title Тарифы фонда
 				.row
-					.col-sm-16.col-sm-offset-2
-						.dates.clearfix
-							.reg-num
-								|Регистрационный номер правил фонда: 
-								b 0140-58233625
-							.reg-date
-								|Дата регистрации правил фонда: 
-								b 08.10.2003
-				.row
-					.docs-list.clearfix
-						.col-sm-4.col-xs-10
-							a.item(href="#")
-								.label Правила определения стоимости активов и величины обязательств
-						.col-sm-4.col-xs-10
-							a.item(href="#")
-								.label Правила доверительного управления ПИФа
-						.col-sm-4.col-xs-10
-							a.item(href="#")
-								.label Правила определения стоимости активов на 2014 год
-						.col-sm-4.col-xs-10
-							a.item(href="#")
-								.label Политика осуществления прав голоса по акциям
-						.col-sm-4.col-xs-10
-							a.item(href="#")
-								.label Банковские реквизиты для перечисления средств в оплату паев ПИФ «БКС»					
+					.col-sm-12.col-sm-offset-4
+						table.fund-rates-tabs
+							tr
+								td
+									a.buy(href="#fund-rates-buy") Приобретение
+										br
+										|паев
+								td
+									a.sell(href="#fund-rates-sell") Погашение
+										br
+										|паев
+								td
+									a.profit(href="#fund-rates-profit") Вознаграж-
+										br
+										|дение
+						table#fund-rates-buy.fund-rates-content
+							caption
+								b Погашение паев
+								|Скидка, при погашении паев, в % от стоимости пая
+							tr.filled
+								td
+									|при подаче заявки в Управляющую компанию*
+									br
+									br
+									|при подаче заявки Агентам Фонда ООО «Компания БКС»
+								td 0
+							tr
+								td при погашении паев в период владения до 1 года
+								td 2%
+							tr
+								td при погашении паев в период владения до 1 года
+								td 2%
+							tr
+								td при погашении паев в период владения до 1 года
+								td 2%
+							tr
+								td при погашении паев в период владения до 1 года
+								td 2%
+
 		section.documentation.bond-national-fund
 			.container
 				h2.section-title Документы фонда
@@ -174,6 +192,9 @@ html(lang="ru")
 		include ./partials/_feedback.jade
 		include ./partials/_footer.jade
 		include ./partials/_footer_scripts.jade
+		script(src="Content/js/vendor/jquery.browser.js")
+		script(src="Content/js/vendor/easytabs.min.js")
+		script(src="Content/js/vendor/jquery.hashchange.min.js")
 		script(src="Content/js/vendor/highcharts.js")
 		script.
 			$(function () {
@@ -312,7 +333,8 @@ html(lang="ru")
 					},
 					plotOptions: {
 						pie: {
-							shadow: false
+							shadow: false,
+							center: ['50%', '50%']
 						}
 					},
 					tooltip: {

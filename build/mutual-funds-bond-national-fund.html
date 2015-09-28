@@ -132,13 +132,12 @@
           <div class="col-sm-18 col-sm-offset-1">
             <div class="main-indicator-graph">
               <div class="caption">Дата формирования фонда хх.хх.хххх г.</div>
-              <div class="clearfix">
-                <div class="col-left"></div>
-                <div class="col-right"></div>
-              </div>
-              <div class="clearfix">
-                <div class="col-left">
-                  <h3 class="title">Динамика стоимости пая и СЧА</h3>
+              <div class="tab-container">
+                <ul class="etabs clearfix">
+                  <li class="tab"><a href="#tabs1-html"><span class="corner"><i></i></span>Динамика стоимости пая и СЧА</a></li>
+                  <li class="tab"><a href="#tabs2-html"><span class="corner"><i></i></span>Распределение активов</a></li>
+                </ul>
+                <div id="tabs1-html" class="tab-content">
                   <div class="legend clearfix">
                     <div class="item item-1"><span class="icon"></span>— стоимость пая</div>
                     <div class="item item-2"><span class="icon"></span>— стоимость СЧА</div>
@@ -146,11 +145,10 @@
                   <div id="line-graph" class="graph"></div>
                   <div class="timing"><span class="item">3 мес</span><span class="item">6 мес</span><span class="item">1 год</span><span class="item">2 года</span><span class="item">с момента формирования фонда</span></div>
                 </div>
-                <div class="col-right">
-                  <h3 class="title">Распределение активов</h3>
+                <div id="tabs2-html" class="tab-content">
                   <div id="pie-graph" class="graph pie-graph"></div>
-                  <div class="actions text-center"><a href="#" class="btn btn-yellow">Оставить заявку</a></div>
                 </div>
+                <div class="actions text-center"><a href="#" class="btn btn-yellow">Оставить заявку</a></div>
               </div>
               <div class="cost">
                 <h3 class="title">Стоимость пая и чистых активов на 18.08.2015</h3>
@@ -226,29 +224,41 @@
         </div>
       </div>
     </section>
-    <section class="fun">
+    <section class="fund-rates">
       <div class="container">
-        <h2 class="section-title">Документы фонда</h2>
+        <h2 class="section-title">Тарифы фонда</h2>
         <div class="row">
-          <div class="col-sm-16 col-sm-offset-2">
-            <div class="dates clearfix">
-              <div class="reg-num">Регистрационный номер правил фонда: <b>0140-58233625</b></div>
-              <div class="reg-date">Дата регистрации правил фонда: <b>08.10.2003</b></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="docs-list clearfix">
-            <div class="col-sm-4 col-xs-10"><a href="#" class="item">
-                <div class="label">Правила определения стоимости активов и величины обязательств</div></a></div>
-            <div class="col-sm-4 col-xs-10"><a href="#" class="item">
-                <div class="label">Правила доверительного управления ПИФа</div></a></div>
-            <div class="col-sm-4 col-xs-10"><a href="#" class="item">
-                <div class="label">Правила определения стоимости активов на 2014 год</div></a></div>
-            <div class="col-sm-4 col-xs-10"><a href="#" class="item">
-                <div class="label">Политика осуществления прав голоса по акциям</div></a></div>
-            <div class="col-sm-4 col-xs-10"><a href="#" class="item">
-                <div class="label">Банковские реквизиты для перечисления средств в оплату паев ПИФ «БКС»					</div></a></div>
+          <div class="col-sm-12 col-sm-offset-4">
+            <table class="fund-rates-tabs">
+              <tr>
+                <td><a href="#fund-rates-buy" class="buy">Приобретение<br>паев</a></td>
+                <td><a href="#fund-rates-sell" class="sell">Погашение<br>паев</a></td>
+                <td><a href="#fund-rates-profit" class="profit">Вознаграж-<br>дение</a></td>
+              </tr>
+            </table>
+            <table id="fund-rates-buy" class="fund-rates-content">
+              <caption><b>Погашение паев</b>Скидка, при погашении паев, в % от стоимости пая</caption>
+              <tr class="filled">
+                <td>при подаче заявки в Управляющую компанию*<br><br>при подаче заявки Агентам Фонда ООО «Компания БКС»</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>при погашении паев в период владения до 1 года</td>
+                <td>2%</td>
+              </tr>
+              <tr>
+                <td>при погашении паев в период владения до 1 года</td>
+                <td>2%</td>
+              </tr>
+              <tr>
+                <td>при погашении паев в период владения до 1 года</td>
+                <td>2%</td>
+              </tr>
+              <tr>
+                <td>при погашении паев в период владения до 1 года</td>
+                <td>2%</td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
@@ -371,6 +381,9 @@
     <script src="Content/js/vendor/wNumb.js"></script>
     <script src="Content/js/vendor/owl.carousel.min.js"></script>
     <script src="Content/js/main.js"></script>
+    <script src="Content/js/vendor/jquery.browser.js"></script>
+    <script src="Content/js/vendor/easytabs.min.js"></script>
+    <script src="Content/js/vendor/jquery.hashchange.min.js"></script>
     <script src="Content/js/vendor/highcharts.js"></script>
     <script>
       $(function () {
@@ -509,7 +522,8 @@
       		},
       		plotOptions: {
       			pie: {
-      				shadow: false
+      				shadow: false,
+      				center: ['50%', '50%']
       			}
       		},
       		tooltip: {

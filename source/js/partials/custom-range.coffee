@@ -19,7 +19,7 @@ calcValueHeight = (v) ->
 	Math.log(v) * 5
 
 calcValueHeight2 = (v) ->
-	Math.log(v) * 10
+	Math.log(v) * 8
 	
 
 calcIncomeHeight = (v) ->

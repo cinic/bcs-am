@@ -173,6 +173,9 @@
     margin: 60px 25px 156px;
     border: 1px solid #9ea9b8;
   }
+  .bond .main-indicator .main-indicator-graph .tab-container {
+    padding: 20px;
+  }
   .bond .main-indicator .main-indicator-graph .caption {
     padding: 0 56px;
     line-height: 42px;
@@ -608,4 +611,49 @@
   .bond .documentation {
     padding-bottom: 90px;
   }
+}
+.bond .fund-rates {
+  padding-bottom: 60px;
+}
+.bond .fund-rates .section-title {
+  margin: 60px 0 30px;
+}
+.bond .fund-rates .fund-rates-tabs,
+.bond .fund-rates .fund-rates-content {
+  width: 100%;
+  color: #002a61;
+}
+.bond .fund-rates .fund-rates-tabs td {
+  padding-bottom: 20px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.bond .fund-rates .fund-rates-tabs td a {
+  text-decoration: none;
+  color: #002a61;
+}
+.bond .fund-rates .fund-rates-content {
+  border: 1px solid #9ea9b8;
+}
+.bond .fund-rates .fund-rates-content caption {
+  padding: 20px 0;
+  font-size: 16px;
+  border: 1px solid #9ea9b8;
+  border-bottom: 0;
+}
+.bond .fund-rates .fund-rates-content caption b {
+  display: block;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.bond .fund-rates .fund-rates-content .filled {
+  background-color: #eceef1;
+}
+.bond .fund-rates .fund-rates-content td {
+  padding: 20px;
+  font-size: 14px;
+  border: 1px solid #9ea9b8;
 }
