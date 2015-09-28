@@ -1,0 +1,20 @@
+@import 'partials/variables';
+.institutional {
+	.header {
+		.content {
+			background: url('../img/pages/institutional/header.jpg') no-repeat center;
+			filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/institutional/header.jpg', sizingMethod='scale');
+			-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/institutional/header.jpg', sizingMethod='scale')";
+			background-size: cover;
+
+			.page-subtitle {
+				margin: 40px 0px;
+			}
+			.page-title-description {
+				margin-bottom: 80px;
+				line-height: 25px;
+				color: #002665;
+			}
+		}
+	}
+}
