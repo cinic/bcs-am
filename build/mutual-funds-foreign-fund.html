@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BCS Broker landing page - structured bonds</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Content/css/fonts.css">
+    <link rel="stylesheet" href="Content/css/vendor/normalize.css">
+    <link rel="stylesheet" href="Content/css/vendor/bootstrap.custom.css">
+    <link rel="stylesheet" href="Content/css/vendor/nouislider.css">
+    <link rel="stylesheet" href="Content/css/vendor/selectize.default.css">
+    <link rel="stylesheet" href="Content/css/vendor/owl.carousel.css">
+    <link rel="stylesheet" href="Content/css/vendor/owl.theme.css">
+    <link rel="stylesheet" href="Content/css/main.css">
+    <link rel="shortcut icon" href="Content/img/favicon.ico">
+    <link rel="stylesheet" href="Content/css/mutual-funds.css">
+    <link rel="stylesheet" href="Content/css/bond.css">
+  </head>
+  <body class="mutual-funds bond foreign-fund">
+    <div class="top-panel clearfix">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-18 col-sm-offset-1">
+            <div class="toggle-nav"></div><a href="http://broker.ru" target="_blank" class="brand"><img src="Content/img/logo.png" alt="БКС Брокер"></a>
+            <ul role="nav" class="top-nav pull-left">
+              <li><a href="about.html"><span class="icon home"></span>О компании</a></li>
+              <li><a href="#"><span class="icon cabinet"></span>Личный кабинет</a></li>
+              <li><a href="/contacts" class="pseudo-link offices"><span class="icon offices"></span><i>Офисы в москве</i></a></li>
+            </ul>
+            <div class="meta pull-right">
+              <div class="search"><a href="#" class="search-icon text-hide">Поиск</a></div>
+              <div class="phone"><a href="tel:88005005545" class="phone-icon"></a><a href="tel:88005005545" class="cpc-tel num">8 800 500 55 45</a><span class="description">бесплатный звонок по России</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-18 col-sm-offset-1">
+            <ul class="main-nav clearfix">
+              <li><a href="mutual-funds.html">Паевые фонды</a></li>
+              <li><a href="mutual-funds-bond-national-fund.html">Доверительное управление</a></li>
+              <li><a href="pia.html">ИИС</a></li>
+              <li><a href="#">Аналитика</a></li>
+              <li><a href="#">Тарифы</a></li>
+              <li><a href="#">Поддержка</a></li>
+              <li class="open-account last"><a href="#">Открыть счёт</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="content clearfix">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-11 text-center clearfix">
+              <h1 class="page-subtitle">Зарубежные фонды</h1>
+              <div class="page-title-description">Защитите свои накопления от девальвации рубля</div>
+              <div class="advice text-center"><a href="#" title="Получить консультацию" class="btn btn-yellow">Узнать больше</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="calculator clearfix">
+      <div class="container">
+        <div class="section-label">Калькулятор</div>
+        <h2 class="section-title text-center">Оцените потенциальный доход</h2>
+        <div class="row">
+          <div class="col-sm-16 col-sm-offset-2">
+            <form class="calculator-form clearfix">
+              <div class="calc-col-1">
+                <div class="calc-row">
+                  <label>Выберите инвестиционный фонд</label>
+                  <div class="opt-group table-group">
+                    <label><span class="custom-radio">
+                        <input type="radio" name="fund" value="0"></span><span>Технологии</span></label>
+                    <label><span class="custom-radio">
+                        <input type="radio" name="fund" value="1"></span><span>Зарубежные рынки</span></label>
+                    <label><span class="custom-radio">
+                        <input type="radio" name="fund" value="2"></span><span>Глобальные рынки</span></label>
+                  </div>
+                </div>
+                <div class="calc-row">
+                  <label>Сумма <span class="hidden-mobile">для инвестирования</span></label>
+                  <input id="calc-range-input" class="calc-range">
+                  <div id="range-slider" class="no-ui-slider">
+                    <div id="calc-range" class="slider"></div>
+                  </div>
+                </div>
+                <div class="calc-row">
+                  <label class="double-margin">Срок инвестирования</label>
+                  <input type="hidden" name="interval" id="bond-interval" value="1">
+                  <div class="opt-group"><span data-value="0.25" class="time">3 мес.</span><span data-value="0.5" class="time">6 мес.</span><span data-value="1" class="time active">1 год</span><span data-value="2" class="time">2 года</span><span data-value="3" class="time">3 года</span></div>
+                </div>
+              </div>
+              <div class="calc-col-2">
+                <div class="income-values clearfix">
+                  <div class="in">
+                    <div class="wrap clearfix"><b>Вклад</b>
+                      <div id="range-value">100 000 Р</div>
+                      <div class="value-bg"></div>
+                    </div>
+                  </div>
+                  <div class="out">
+                    <div class="wrap clearfix"><b>Доход</b>
+                      <div id="income-value">58 000 Р</div>
+                      <div class="income-bg"></div>
+                      <div class="value-bg"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="income-percent clearfix"><span>Доход в процентах </span><b id="income-percent" data-value="23">23%</b></div>
+                <div class="income-result"><b>Вы получите</b><span id="income-result">58 000 ₽</span></div>
+                <div class="actions text-center"><span class="btn btn-yellow">получить</span></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-indicator">
+      <div class="container">
+        <div class="section-label">Основные показатели фонда</div>
+        <h2 class="section-title">Состав и график доходности</h2>
+        <div class="row">
+          <div class="col-sm-18 col-sm-offset-1">
+            <div class="main-indicator-graph">
+              <div class="caption">Дата формирования фонда хх.хх.хххх г.</div>
+              <div class="clearfix">
+                <div class="col-left"></div>
+                <div class="col-right"></div>
+              </div>
+              <div class="clearfix">
+                <div class="col-left">
+                  <h3 class="title">Динамика стоимости пая и СЧА</h3>
+                  <div class="legend clearfix">
+                    <div class="item item-1"><span class="icon"></span>— стоимость пая</div>
+                    <div class="item item-2"><span class="icon"></span>— стоимость СЧА</div>
+                  </div>
+                  <div id="line-graph" class="graph"></div>
+                  <div class="timing"><span class="item pull-left col-xs-9">3 мес</span><span class="item pull-right col-xs-9">6 мес</span><span class="item pull-left col-xs-9">1 год</span><span class="item pull-right col-xs-9">2 года</span><span class="item col-xs-20">с момента формирования фонда</span></div>
+                </div>
+                <div class="col-right hidden-xs">
+                  <h3 class="title">Распределение активов</h3>
+                  <div id="pie-graph" class="graph pie-graph"></div>
+                  <div class="actions text-center"><a href="#" class="btn btn-yellow">Оставить заявку</a></div>
+                </div>
+              </div>
+              <div class="cost">
+                <h3 class="title">Стоимость пая и чистых активов на 18.08.2015</h3>
+                <table class="cost-table hidden-xs">
+                  <tr>
+                    <th>&nbsp;</th>
+                    <th>18.08.2015</th>
+                    <th>Изменения за 1 день</th>
+                  </tr>
+                  <tr>
+                    <td>Стоимость чистых активов, руб. коп</td>
+                    <td>261 551 258,90 руб.</td>
+                    <td class="red"><span class="red">- 0,04% / - 96 237,17 руб.</span></td>
+                  </tr>
+                  <tr>
+                    <td>Стоимость пая, руб. коп.</td>
+                    <td>3 472,84 руб.</td>
+                    <td class="green"><span class="green">0,00% / -0,05 руб.</span></td>
+                  </tr>
+                </table>
+                <table class="cost-table hidden-sm hidden-md hidden-lg">
+                  <tr>
+                    <th>&nbsp;</th>
+                    <th>Стоимость чистых активов, руб. коп</th>
+                    <th>Стоимость пая, руб. коп.</th>
+                  </tr>
+                  <tr>
+                    <td>18.08.2015</td>
+                    <td>261 551 258,90 руб.</td>
+                    <td class="red"><span class="red">- 0,04% / - 96 237,17 руб.</span></td>
+                  </tr>
+                  <tr>
+                    <td>Изменения за 1 день</td>
+                    <td>3 472,84 руб.</td>
+                    <td class="green"><span class="green">0,00% / -0,05 руб.</span></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="advantages foreign-fund text-center">
+      <div class="container">
+        <h2 class="section-title text-center">Преимущества фонда</h2>
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-1 col-xs-10">
+            <div class="item">
+              <div class="icon icon-1"></div>
+              <h3>Диверсификация</h3>
+              <p>Активы в различных валютах с потенциалом роста относительно рубля<br></p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-10">
+            <div class="item">
+              <div class="icon icon-3"></div>
+              <h3>Защита</h3>
+              <p>Хеджирование валютных рисков с помощью валютных фьючерсов<br></p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-10">
+            <div class="item">
+              <div class="icon icon-2"></div>
+              <h3>Доступность</h3>
+              <p>Размещение активов в иностранных инвестиционных фондах (ETF) с начальной суммой инвестиций от 50 000 руб.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-sm-offset-1 col-xs-10">
+            <div class="item">
+              <div class="icon icon-4"></div>
+              <h3>Гибкость</h3>
+              <p>Оптимизации портфеля с целью достижения баланса целевого уровня доходности и риска.<br><br><br></p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-10">
+            <div class="item">
+              <div class="icon icon-5"></div>
+              <h3>Ликвидность</h3>
+              <p>Возможность входа/выхода в любой момент без потери накопленного дохода</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-10">
+            <div class="item">
+              <div class="icon icon-6"></div>
+              <h3>Инвестиции</h3>
+              <p>Возможность зарабатывать как на росте, так и на падении любых рынков</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="documentation bond-dividend-fund">
+      <div class="container">
+        <h2 class="section-title">Документы фонда</h2>
+        <div class="row hidden-xs hidden-sm">
+          <div class="col-sm-16 col-sm-offset-2">
+            <div class="dates clearfix">
+              <div class="reg-num">Регистрационный номер правил фонда: <b>0140-58233625</b></div>
+              <div class="reg-date">Дата регистрации правил фонда: <b>08.10.2003</b></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="docs-list clearfix">
+            <div class="col-sm-4 col-xs-10"><a href="#" class="item">
+                <div class="label">Правила определения стоимости активов и величины обязательств</div></a></div>
+            <div class="col-sm-4 col-xs-10"><a href="#" class="item">
+                <div class="label">Правила доверительного управления ПИФа</div></a></div>
+            <div class="col-sm-4 col-xs-10"><a href="#" class="item">
+                <div class="label">Правила определения стоимости активов на 2014 год</div></a></div>
+            <div class="col-sm-4 col-xs-10"><a href="#" class="item">
+                <div class="label">Политика осуществления прав голоса по акциям</div></a></div>
+            <div class="col-sm-4 col-xs-10"><a href="#" class="item">
+                <div class="label">Банковские реквизиты для перечисления средств в оплату паев ПИФ «БКС»					</div></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="feedback">
+      <div class="container">
+        <h2 class="section-title text-center">Заполните заявку<br>для получения консультации</h2>
+        <div class="row">
+          <div class="col-sm-19 col-sm-offset-1 col-md-14 col-md-offset-3 text-center">
+            <div class="steps"><span class="step step-1"><span class="icon icon-1"></span>Оставьте ваши<br>контактные данные</span><span class="step step-2"><span class="icon icon-2"></span>Дождитесь звонка,<br>и получите консультацию<br>финансового советника</span><span class="step step-3"><span class="icon icon-3"></span>Присоединяйтесь <br>к компании БКС</span></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-5 col-lg-6 col-lg-offset-7">
+            <form class="feedback-form">
+              <div class="form-group clearfix">
+                <label for="city2">Ваш город</label>
+                <select id="city2" name="city" class="custom-select">
+                  <option selected="selected" value="0">Ваш город</option>
+                  <option value="108">Москва</option>
+                  <option value="134">Новосибирск</option>
+                  <option value="46">Абакан</option>
+                  <option value="36">Алматы</option>
+                  <option value="113">Альметьевск</option>
+                  <option value="115">Анапа</option>
+                  <option value="119">Армавир</option>
+                  <option value="71">Архангельск</option>
+                  <option value="105">Астрахань</option>
+                  <option value="175">Ачинск</option>
+                  <option value="79">Барнаул</option>
+                  <option value="139">Белгород</option>
+                  <option value="35">Биробиджан</option>
+                </select>
+              </div>
+              <div class="form-group clearfix">
+                <label for="name">Ваше имя</label>
+                <input type="text" id="name" name="name" placeholder="Ваше имя" class="name">
+              </div>
+              <div class="form-group clearfix">
+                <label for="mobile">Ваш телефон</label>
+                <input type="text" id="mobile" name="phone" placeholder="Ваш телефон" class="error">
+              </div>
+              <div class="form-group clearfix">
+                <label for="email">Ваша Электронная почта</label>
+                <input type="text" id="email" name="email" placeholder="Ваша Электронная почта">
+              </div>
+              <div class="form-group label-offset clearfix actions">
+                <div class="advice">
+                  <input type="submit" value="Получить консультацию" class="btn btn-yellow">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer clearfix">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-18 col-sm-offset-1">
+            <ul class="footer-menu clearfix">
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Руководство</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Офисы и агенты</a></li>
+            </ul>
+            <div class="social clearfix"><span class="label">Мы в соц. сетях</span><a href="#" class="item tw"></a><a href="#" class="item vk"></a><a href="#" class="item fb"></a></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-18 col-sm-offset-1">
+            <div class="copy-and-address clearfix">
+              <div class="address">
+                <div class="phone-num">8 800 100 73 70</div>
+                <div class="phone-descr">бесплатный звонок по россии</div>
+                <div class="city-select"><span>Москва</span></div>
+                <div class="addr"><span class="icon"></span>Проспект мира, д.69, стр. 1</div>
+                <div class="tel"><span class="icon"></span>+7 (495) 785 19 99</div>
+              </div>
+              <div class="copy">
+                <p>1. Под доходностью имеется в виду прирост стоимости пая. Указана доходность ОПИФ фондов «БКС — Зарубежные Фонды», ОПИФ смешанных инвестиций «БКС — Технологии» и ОПИФ смешанных инвестиций «БКС — Глобальные рынки» за 2014 год.</p>
+                <p>ООО «Компания БКС» является агентом ЗАО УК «БКС» по выдаче, погашению и обмену паев.</p>
+                <p>ЗАО УК «БКС». Лицензия № 21-000-1-00071 от 25.06.2002 г. на осуществление деятельности по управлению инвестиционными фондами, паевыми инвестиционными фондами и негосударственными пенсионными фондами. Выдана ФСФР РФ. Подробную информацию об осуществлении ЗАО УК «БКС» а также об агентах, в том числе о полном, сокращенном фирменном названии, местонахождении, лицензии агентов, деятельности по управлению паевыми инвестиционными фондами Вы можете найти в информационном бюллетене «Приложение к Вестнику ФСФР», на сайте www.bcs.ru/am, в ленте ЗАО «Интерфакс», в ЗАО УК «БКС» по адресу: Российская Федерация, 630099, г. Новосибирск, ул. Советская, д. 37, тел.: (383) 210-50-20. Стоимость инвестиционных паёв может увеличиваться и уменьшаться, результаты инвестирования в прошлом не определяют доходы в будущем. ЗАО УК «БКС», государство не гарантируют доходность инвестиций в инвестиционные фонды. Прежде чем приобрести инвестиционный пай, следует внимательно ознакомиться с правилами доверительного управления паевым фондом.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="Content/js/vendor/jquery-2.1.4.min.js"></script>
+    <script src="Content/js/vendor/selectize.js"></script>
+    <script src="Content/js/vendor/nouislider.js"></script>
+    <script src="Content/js/vendor/wNumb.js"></script>
+    <script src="Content/js/vendor/owl.carousel.min.js"></script>
+    <script src="Content/js/main.js"></script>
+    <script src="Content/js/vendor/highcharts.js"></script>
+    <script>
+      $(function () {
+      	$('#line-graph').highcharts({
+      		chart: {
+      			type: 'line'
+      		},
+      		credits: {
+      			enabled: false
+      		},
+      		title: {
+      			align: 'left',
+      			text: '20 Мая 2014г. — 20 Марта 2015г.',
+      			style: {
+      				color: '#8198b6',
+      				font: '16px FuturaNew',
+      				fontWeight: '400'
+      			}
+      		},
+      		subtitle: {
+      			align: 'right',
+      			text: '↑ 1380.56 руб.(64.19%)',
+      			y: 12,
+      			style: {
+      				color: '#3bb303',
+      				font: '16px FuturaNew',
+      				fontWeight: '400'
+      			}
+      		},
+      		xAxis: {
+      			categories: ["Янв,<br>2015", 'Фев,<br>2015', 'Мар,<br>2015', 'Апр,<br>2015', 'Май,<br>2015', 'Июн,<br>2015'],
+      			labels: {
+      				rotation: 0,
+      				style: {
+      					color: '#002a61',
+      					font: '12px FuturaNew',
+      					fontWeight: '400'
+      				},
+      			},
+      		},
+      		yAxis: [{
+      			labels: {
+      				format: '{value} тыс.',
+      				style: {
+      					//color: Highcharts.getOptions().colors[1],
+      					color: '##002a61',
+      					font: '12px FuturaNew',
+      					fontWeight: '400'
+      				}
+      			},
+      			title: {
+      				text: ''
+      			}
+      		}, {
+      			title: {
+      				text: '',
+      				style: {
+      					//color: Highcharts.getOptions().colors[0]
+      				}
+      			},
+      			labels: {
+      				format: '{value} млн.',
+      				style: {
+      					//color: Highcharts.getOptions().colors[0],
+      					color: '#002a61',
+      					font: '12px FuturaNew',
+      					fontWeight: '400'
+      				}
+      			},
+      			opposite: true
+      		}],
+      		plotOptions: {
+      			line: {
+      				dataLabels: {
+      					//enabled: true
+      				},
+      				enableMouseTracking: false
+      			}
+      		},
+      		series: [{
+      			name: 'Стоимость пая',
+      			data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5],
+      			color: '#4992ff',
+      			marker: {
+      				symbol: 'circle',
+      				lineWidth: 3,
+      				radius: 3,
+      				lineColor: '#4992ff',
+      				fillColor: '#ffffff'
+      			},
+      		}, {
+      			name: 'Стоимость СЧА',
+      			yAxis: 1,
+      			color: '#ffc300',
+      			data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2],
+      			marker: {
+      				symbol: 'circle',
+      				lineWidth: 3,
+      				radius: 3,
+      				lineColor: '#ffc300',
+      				fillColor: '#ffffff'
+      			},
+      		}],
+      		legend: {
+      			enabled: false,
+      			layout: 'horizontal',
+      			align: 'left',
+      			x: 0,
+      			verticalAlign: 'top',
+      			y: 0,
+      			floating: true,
+      			style: {
+      				color: '#002a61',
+      				font: '12px FuturaNew',
+      				fontWeight: '400'
+      			},
+      			backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
+      		},
+      	});
+      	
+      	$('#pie-graph').highcharts({
+      		chart: {
+      			renderTo: 'container',
+      			type: 'pie'
+      		},
+      		credits: {
+      			enabled: false
+      		},
+      		title: {
+      			text: ''
+      		},
+      		yAxis: {
+      			title: {
+      				text: 'Total percent market share'
+      			}
+      		},
+      		plotOptions: {
+      			pie: {
+      				shadow: false
+      			}
+      		},
+      		tooltip: {
+      			formatter: function() {
+      				return '<b>'+ this.point.name +'</b>: '+ this.y +' %';
+      			}
+      		},
+      		legend: {
+      			enabled: false,
+      		},
+      		series: [{
+      			name: 'Browsers',
+      			data: [["Сырьё",30],["Финансы",40],["Нефть и газ",40]],
+      			size: '75%',
+      			innerSize: '70%',
+      			showInLegend:true,
+      			dataLabels: {
+      				enabled: true,
+      				style: {
+      					color: '#002a61',
+      					font: '14px FuturaNew',
+      					fontWeight: '400',
+      				}
+      			}
+      		}]
+      	});
+      	
+      	$('.calculator-form input[name="fund"][value="2"]').prop('checked', true);
+      	$('.custom-radio input:checked').parent().addClass('checked').parent().addClass('checked');
+      });
+    </script>
+  </body>
+</html>
