@@ -67,6 +67,27 @@
 			}
 		} 
 	}
+	&.global-fund {
+		.header {
+			.content {
+				background: url('../img/pages/bonds/header-global.jpg') no-repeat top center;
+				filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-global.jpg', sizingMethod='scale');
+				-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-global.jpg', sizingMethod='scale')";
+				background-size: cover;
+				
+				.page-subtitle {
+					margin-top: 180px;
+					margin-bottom: 34px;
+					color: #002665;
+				}
+				.page-title-description {
+					margin-bottom: 80px;
+					line-height: 25px;
+					color: #002665;
+				}
+			}
+		} 
+	}
 	&.micex-fund {
 		.header {
 			.content {
@@ -441,6 +462,48 @@
 					width: 67px;
 					height: 60px;
 					background: url('../img/pages/bonds/advantages-icons-foreign.png') no-repeat 0 0;
+
+					&.icon-1 { background-position: 0 0; }
+					&.icon-2 { background-position: 0 -60px; }
+					&.icon-3 { background-position: 0 -120px; }
+					&.icon-4 { background-position: 0 -180px; }
+					&.icon-5 { background-position: 0 -240px; }
+					&.icon-6 { background-position: 0 -300px; }
+				}
+				
+				p {
+					color: #ccd7e6;
+				}
+
+				@media (min-width: $screen-lg) {
+					margin-bottom: 54px;
+					padding-top: 90px;
+					height: auto;
+				}
+			}
+			
+			@media (min-width: $screen-sm) {
+				height: 570px;
+			}
+
+			@media (min-width: $screen-lg) {
+				height: 757px;
+			}
+		}
+		&.global-fund {
+			height: auto;
+			background: url('../img/pages/bonds/advantages-bg-bond-national.jpg') no-repeat 50% 50%;
+			background-size: cover;
+			.item {
+				position: relative;
+				margin-bottom: 20px;
+				padding-top: 70px;
+
+				.icon {
+					margin-left: -30px;
+					width: 60px;
+					height: 60px;
+					background: url('../img/pages/bonds/advantages-icons-global.png') no-repeat 0 0;
 
 					&.icon-1 { background-position: 0 0; }
 					&.icon-2 { background-position: 0 -60px; }

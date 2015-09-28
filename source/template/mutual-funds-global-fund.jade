@@ -1,0 +1,330 @@
+doctype html
+html(lang="ru")
+	head
+		include ./partials/_header.jade
+		link(rel="stylesheet" href="Content/css/mutual-funds.css")/
+		link(rel="stylesheet" href="Content/css/bond.css")/
+	body.mutual-funds.bond.global-fund
+		include ./partials/_navigation.jade
+		header.header
+			.content.clearfix
+				.container
+					.row
+						.col-sm-11.text-center.clearfix
+							h1.page-subtitle
+								|Глобальные рынки
+							.page-title-description
+								|Зарабатывайте на динамике
+								br
+								|международных рынков
+							.advice.text-center
+								a.btn.btn-yellow(href="#" title="Получить консультацию") Узнать больше
+
+		include ./partials/_calculator.jade
+		section.main-indicator
+			.container
+				.section-label Основные показатели фонда
+				h2.section-title Состав и график доходности
+				.row
+					.col-sm-18.col-sm-offset-1
+						.main-indicator-graph
+							.caption Дата формирования фонда хх.хх.хххх г.
+							.clearfix
+								.col-left
+									
+								.col-right
+									
+							.clearfix
+								.col-left
+									h3.title Динамика стоимости пая и СЧА
+									.legend.clearfix
+										.item.item-1
+											span.icon
+											|— стоимость пая
+										.item.item-2
+											span.icon
+											|— стоимость СЧА
+									#line-graph.graph
+									.timing
+										span.item.pull-left.col-xs-9 3 мес
+										span.item.pull-right.col-xs-9 6 мес
+										span.item.pull-left.col-xs-9 1 год
+										span.item.pull-right.col-xs-9 2 года
+										span.item.col-xs-20 с момента формирования фонда
+
+								.col-right.hidden-xs
+									h3.title Распределение активов
+									#pie-graph.graph.pie-graph
+									.actions.text-center
+										a.btn.btn-yellow(href="#") Оставить заявку
+							.cost
+								h3.title Стоимость пая и чистых активов на 18.08.2015
+								table.cost-table.hidden-xs
+									tr
+										th &nbsp;
+										th 18.08.2015
+										th Изменения за 1 день
+									tr
+										td Стоимость чистых активов, руб. коп
+										td 261 551 258,90 руб.
+										td.red
+											span.red - 0,04% / - 96 237,17 руб.
+									tr
+										td Стоимость пая, руб. коп.
+										td 3 472,84 руб.
+										td.green
+											span.green 0,00% / -0,05 руб.
+								table.cost-table.hidden-sm.hidden-md.hidden-lg
+									tr
+										th &nbsp;
+										th Стоимость чистых активов, руб. коп
+										th Стоимость пая, руб. коп.
+									tr
+										td 18.08.2015
+										td 261 551 258,90 руб.
+										td.red
+											span.red - 0,04% / - 96 237,17 руб.
+									tr
+										td Изменения за 1 день
+										td 3 472,84 руб.
+										td.green
+											span.green 0,00% / -0,05 руб.
+				
+		section.advantages.global-fund.text-center
+			.container
+				h2.section-title.text-center Преимущества фонда
+				.row
+					.col-sm-6.col-sm-offset-1.col-xs-10
+						.item
+							.icon.icon-1
+							h3 Доходность
+							p Потенциальная  валютная доходность фонда превышает ставки по депозитам
+					.col-sm-6.col-xs-10
+						.item
+							.icon.icon-3
+							h3 Доступность
+							p Возможность выйти на зарубежные рынки капитала с объемом от 50 000  руб.
+					.col-sm-6.col-xs-10
+						.item
+							.icon.icon-2
+							h3 Актуальность
+							p Широкая диверсификация, минимизация рублевых рисков
+								br
+								br
+					.col-sm-6.col-sm-offset-1.col-xs-10
+						.item
+							.icon.icon-4
+							h3 Гибкость
+							p Возможность пересматривать портфель активов в зависимости от рыночной ситуации
+					.col-sm-6.col-xs-10
+						.item
+							.icon.icon-5
+							h3 Ликвидность
+							p Возможность входа/выхода в любой момент без потери накопленного дохода
+					.col-sm-6.col-xs-10
+						.item
+							.icon.icon-6
+							h3 Высокий потенциал
+							p Агрессивная стратегия управления направлена на выбор инструментов, с перспективой опережающего роста на длинном горизонте инвестирования.
+		section.documentation.bond-dividend-fund
+			.container
+				h2.section-title Документы фонда
+				.row.hidden-xs.hidden-sm
+					.col-sm-16.col-sm-offset-2
+						.dates.clearfix
+							.reg-num
+								|Регистрационный номер правил фонда: 
+								b 0140-58233625
+							.reg-date
+								|Дата регистрации правил фонда: 
+								b 08.10.2003
+				.row
+					.docs-list.clearfix
+						.col-sm-4.col-xs-10
+							a.item(href="#")
+								.label Правила определения стоимости активов и величины обязательств
+						.col-sm-4.col-xs-10
+							a.item(href="#")
+								.label Правила доверительного управления ПИФа
+						.col-sm-4.col-xs-10
+							a.item(href="#")
+								.label Правила определения стоимости активов на 2014 год
+						.col-sm-4.col-xs-10
+							a.item(href="#")
+								.label Политика осуществления прав голоса по акциям
+						.col-sm-4.col-xs-10
+							a.item(href="#")
+								.label Банковские реквизиты для перечисления средств в оплату паев ПИФ «БКС»					
+
+		include ./partials/_feedback.jade
+		include ./partials/_footer.jade
+		include ./partials/_footer_scripts.jade
+		script(src="Content/js/vendor/highcharts.js")
+		script.
+			$(function () {
+				$('#line-graph').highcharts({
+					chart: {
+						type: 'line'
+					},
+					credits: {
+						enabled: false
+					},
+					title: {
+						align: 'left',
+						text: '20 Мая 2014г. — 20 Марта 2015г.',
+						style: {
+							color: '#8198b6',
+							font: '16px FuturaNew',
+							fontWeight: '400'
+						}
+					},
+					subtitle: {
+						align: 'right',
+						text: '↑ 1380.56 руб.(64.19%)',
+						y: 12,
+						style: {
+							color: '#3bb303',
+							font: '16px FuturaNew',
+							fontWeight: '400'
+						}
+					},
+					xAxis: {
+						categories: ["Янв,<br>2015", 'Фев,<br>2015', 'Мар,<br>2015', 'Апр,<br>2015', 'Май,<br>2015', 'Июн,<br>2015'],
+						labels: {
+							rotation: 0,
+							style: {
+								color: '#002a61',
+								font: '12px FuturaNew',
+								fontWeight: '400'
+							},
+						},
+					},
+					yAxis: [{
+						labels: {
+							format: '{value} тыс.',
+							style: {
+								//color: Highcharts.getOptions().colors[1],
+								color: '##002a61',
+								font: '12px FuturaNew',
+								fontWeight: '400'
+							}
+						},
+						title: {
+							text: ''
+						}
+					}, {
+						title: {
+							text: '',
+							style: {
+								//color: Highcharts.getOptions().colors[0]
+							}
+						},
+						labels: {
+							format: '{value} млн.',
+							style: {
+								//color: Highcharts.getOptions().colors[0],
+								color: '#002a61',
+								font: '12px FuturaNew',
+								fontWeight: '400'
+							}
+						},
+						opposite: true
+					}],
+					plotOptions: {
+						line: {
+							dataLabels: {
+								//enabled: true
+							},
+							enableMouseTracking: false
+						}
+					},
+					series: [{
+						name: 'Стоимость пая',
+						data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5],
+						color: '#4992ff',
+						marker: {
+							symbol: 'circle',
+							lineWidth: 3,
+							radius: 3,
+							lineColor: '#4992ff',
+							fillColor: '#ffffff'
+						},
+					}, {
+						name: 'Стоимость СЧА',
+						yAxis: 1,
+						color: '#ffc300',
+						data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2],
+						marker: {
+							symbol: 'circle',
+							lineWidth: 3,
+							radius: 3,
+							lineColor: '#ffc300',
+							fillColor: '#ffffff'
+						},
+					}],
+					legend: {
+						enabled: false,
+						layout: 'horizontal',
+						align: 'left',
+						x: 0,
+						verticalAlign: 'top',
+						y: 0,
+						floating: true,
+						style: {
+							color: '#002a61',
+							font: '12px FuturaNew',
+							fontWeight: '400'
+						},
+						backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
+					},
+				});
+				
+				$('#pie-graph').highcharts({
+					chart: {
+						renderTo: 'container',
+						type: 'pie'
+					},
+					credits: {
+						enabled: false
+					},
+					title: {
+						text: ''
+					},
+					yAxis: {
+						title: {
+							text: 'Total percent market share'
+						}
+					},
+					plotOptions: {
+						pie: {
+							shadow: false
+						}
+					},
+					tooltip: {
+						formatter: function() {
+							return '<b>'+ this.point.name +'</b>: '+ this.y +' %';
+						}
+					},
+					legend: {
+						enabled: false,
+					},
+					series: [{
+						name: 'Browsers',
+						data: [["Сырьё",30],["Финансы",40],["Нефть и газ",40]],
+						size: '75%',
+						innerSize: '70%',
+						showInLegend:true,
+						dataLabels: {
+							enabled: true,
+							style: {
+								color: '#002a61',
+								font: '14px FuturaNew',
+								fontWeight: '400',
+							}
+						}
+					}]
+				});
+				
+				$('.calculator-form input[name="fund"][value="2"]').prop('checked', true);
+				$('.custom-radio input:checked').parent().addClass('checked').parent().addClass('checked');
+			});

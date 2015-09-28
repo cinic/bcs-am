@@ -50,6 +50,22 @@
   line-height: 25px;
   color: #002665;
 }
+.bond.global-fund .header .content {
+  background: url("../img/pages/bonds/header-global.jpg") no-repeat top center;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-global.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-global.jpg', sizingMethod='scale')";
+  background-size: cover;
+}
+.bond.global-fund .header .content .page-subtitle {
+  margin-top: 180px;
+  margin-bottom: 34px;
+  color: #002665;
+}
+.bond.global-fund .header .content .page-title-description {
+  margin-bottom: 80px;
+  line-height: 25px;
+  color: #002665;
+}
 .bond.micex-fund .header .content {
   background: url("../img/pages/bonds/header-micex.jpg") no-repeat top center;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-micex.jpg', sizingMethod='scale');
@@ -481,6 +497,60 @@
 }
 @media (min-width: 1200px) {
   .bond .advantages.foreign-fund {
+    height: 757px;
+  }
+}
+.bond .advantages.global-fund {
+  height: auto;
+  background: url("../img/pages/bonds/advantages-bg-bond-national.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+.bond .advantages.global-fund .item {
+  position: relative;
+  margin-bottom: 20px;
+  padding-top: 70px;
+}
+.bond .advantages.global-fund .item .icon {
+  margin-left: -30px;
+  width: 60px;
+  height: 60px;
+  background: url("../img/pages/bonds/advantages-icons-global.png") no-repeat 0 0;
+}
+.bond .advantages.global-fund .item .icon.icon-1 {
+  background-position: 0 0;
+}
+.bond .advantages.global-fund .item .icon.icon-2 {
+  background-position: 0 -60px;
+}
+.bond .advantages.global-fund .item .icon.icon-3 {
+  background-position: 0 -120px;
+}
+.bond .advantages.global-fund .item .icon.icon-4 {
+  background-position: 0 -180px;
+}
+.bond .advantages.global-fund .item .icon.icon-5 {
+  background-position: 0 -240px;
+}
+.bond .advantages.global-fund .item .icon.icon-6 {
+  background-position: 0 -300px;
+}
+.bond .advantages.global-fund .item p {
+  color: #ccd7e6;
+}
+@media (min-width: 1200px) {
+  .bond .advantages.global-fund .item {
+    margin-bottom: 54px;
+    padding-top: 90px;
+    height: auto;
+  }
+}
+@media (min-width: 768px) {
+  .bond .advantages.global-fund {
+    height: 570px;
+  }
+}
+@media (min-width: 1200px) {
+  .bond .advantages.global-fund {
     height: 757px;
   }
 }
