@@ -25,6 +25,31 @@
 			}
 		} 
 	}
+	&.bond-dividend-fund {
+		.header {
+			.content {
+				background: url('../img/pages/bonds/header-dividend.jpg') no-repeat top center;
+				filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-dividend.jpg', sizingMethod='scale');
+				-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-dividend.jpg', sizingMethod='scale')";
+				background-size: cover;
+
+				.page-subtitle {
+					margin-top: 75px;
+					margin-bottom: 24px;
+					color: #002665;
+					
+					@media (max-width: $screen-lg) {
+						margin-top: 0;
+					}
+				}
+				.page-title-description {
+					margin-bottom: 60px;
+					line-height: 25px;
+					color: #002665;
+				}
+			}
+		} 
+	}
 	
 	.calculator {
 		.calculator-form {
