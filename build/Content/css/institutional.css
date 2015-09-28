@@ -12,3 +12,93 @@
   line-height: 25px;
   color: #002665;
 }
+.institutional .what-is .description {
+  padding: 90px 0 70px;
+  font-size: 16px;
+  background: url("../img/pages/institutional/what-is-icon.png") no-repeat center 26px;
+  background-size: 43px 43px;
+  color: #002f65;
+}
+.institutional .what-is .description:after {
+  display: none;
+}
+@media (min-width: 992px) {
+  .institutional .what-is .description {
+    padding: 245px 0 135px;
+    font-size: 30px;
+    background-size: 118px 118px;
+    background-position: center 88px;
+  }
+}
+.institutional .services {
+  color: #cddfe7;
+}
+.institutional .services .item {
+  margin: 0 -10px;
+  padding: 0 20px;
+  font-size: 16px;
+  background-size: cover;
+}
+.institutional .services .item.item-1 {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/institutional/services-01.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/institutional/services-01.jpg', sizingMethod='scale')";
+  background: #58616e url("../img/pages/institutional/services-01.jpg") no-repeat center top;
+}
+.institutional .services .item.item-2 {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/institutional/services-02.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/institutional/services-02.jpg', sizingMethod='scale')";
+  background: #58616e url("../img/pages/institutional/services-02.jpg") no-repeat center top;
+}
+.institutional .services .item.item-3 {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/institutional/services-03.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/institutional/services-03.jpg', sizingMethod='scale')";
+  background: #58616e url("../img/pages/institutional/services-03.jpg") no-repeat center top;
+}
+.institutional .services .item.item-4 {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/institutional/services-04.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/institutional/services-04.jpg', sizingMethod='scale')";
+  background: #58616e url("../img/pages/institutional/services-04.jpg") no-repeat center top;
+}
+.institutional .services .item.item-5 {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/institutional/services-05.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/institutional/services-05.jpg', sizingMethod='scale')";
+  background: #58616e url("../img/pages/institutional/services-05.jpg") no-repeat center top;
+}
+.institutional .services .item.item-6 {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/institutional/services-06.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/institutional/services-06.jpg', sizingMethod='scale')";
+  background: #58616e url("../img/pages/institutional/services-06.jpg") no-repeat center top;
+}
+.institutional .services .item .outer {
+  display: table;
+  width: 100%;
+}
+.institutional .services .item .wrap {
+  display: table-cell;
+  width: 100%;
+  height: 500px;
+  vertical-align: middle;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .institutional .services .item .wrap {
+    height: 600px;
+  }
+}
+.institutional .services .item h3 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+  color: white;
+}
+@media (min-width: 992px) {
+  .institutional .services .item h3 {
+    font-size: 60px;
+  }
+}
+@media (min-width: 992px) {
+  .institutional .services .item {
+    padding: 0 60px;
+    font-size: 20px;
+  }
+}
