@@ -292,6 +292,58 @@
     height: 757px;
   }
 }
+.bond .advantages.micex-fund {
+  height: 820px;
+  background: url("../img/pages/bonds/advantages-bg-bond-national.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+.bond .advantages.micex-fund .item {
+  position: relative;
+  margin-bottom: 20px;
+  padding-top: 70px;
+  height: 210px;
+}
+.bond .advantages.micex-fund .item .icon {
+  margin-left: -30px;
+  width: 60px;
+  height: 60px;
+  background: url("../img/pages/bonds/advantages-icons-micex.png") no-repeat 0 0;
+}
+.bond .advantages.micex-fund .item .icon.extensive {
+  background-position: 0 0;
+}
+.bond .advantages.micex-fund .item .icon.actual {
+  background-position: 0 -60px;
+}
+.bond .advantages.micex-fund .item .icon.liquidity {
+  background-position: 0 -120px;
+}
+.bond .advantages.micex-fund .item .icon.high-potential {
+  background-position: 0 -180px;
+}
+.bond .advantages.micex-fund .item .icon.transparency {
+  background-position: 0 -240px;
+}
+.bond .advantages.micex-fund .item p {
+  color: #ccd7e6;
+}
+@media (min-width: 1200px) {
+  .bond .advantages.micex-fund .item {
+    margin-bottom: 54px;
+    padding-top: 90px;
+    height: auto;
+  }
+}
+@media (min-width: 768px) {
+  .bond .advantages.micex-fund {
+    height: 570px;
+  }
+}
+@media (min-width: 1200px) {
+  .bond .advantages.micex-fund {
+    height: 757px;
+  }
+}
 .bond .advantages .section-title {
   margin: 60px 0 42px;
   color: white;
