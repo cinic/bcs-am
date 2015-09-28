@@ -25,6 +25,27 @@
 			}
 		} 
 	}
+	&.techno-fund {
+		.header {
+			.content {
+				background: url('../img/pages/bonds/header-techno.jpg') no-repeat top center;
+				filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-techno.jpg', sizingMethod='scale');
+				-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-techno.jpg', sizingMethod='scale')";
+				background-size: cover;
+				
+				.page-subtitle {
+					margin-top: 180px;
+					margin-bottom: 34px;
+					color: #002665;
+				}
+				.page-title-description {
+					margin-bottom: 80px;
+					line-height: 25px;
+					color: #002665;
+				}
+			}
+		} 
+	}
 	&.micex-fund {
 		.header {
 			.content {
@@ -322,6 +343,48 @@
 					&.liquidity { background-position: 0 -120px; }
 					&.high-potential { background-position: 0 -180px; }
 					&.transparency { background-position: 0 -240px; }
+				}
+				
+				p {
+					color: #ccd7e6;
+				}
+
+				@media (min-width: $screen-lg) {
+					margin-bottom: 54px;
+					padding-top: 90px;
+					height: auto;
+				}
+			}
+			
+			@media (min-width: $screen-sm) {
+				height: 570px;
+			}
+
+			@media (min-width: $screen-lg) {
+				height: 757px;
+			}
+		}
+		&.techno-fund {
+			background: url('../img/pages/bonds/advantages-bg-bond-national.jpg') no-repeat 50% 50%;
+			background-size: cover;
+			.item {
+				position: relative;
+				margin-bottom: 20px;
+				padding-top: 70px;
+				height: 210px;
+
+				.icon {
+					margin-left: -30px;
+					width: 60px;
+					height: 60px;
+					background: url('../img/pages/bonds/advantages-icons-bond-dividend.png') no-repeat 0 0;
+
+					&.extensive { background-position: 0 0; }
+					&.dividend { background-position: 0 -60px; }
+					&.unique-opportunity { background-position: 0 -120px; }
+					&.high-potential { background-position: 0 -180px; }
+					&.liquidity { background-position: 0 -240px; }
+					&.diversification { background-position: 0 -300px; }
 				}
 				
 				p {

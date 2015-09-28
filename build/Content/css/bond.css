@@ -18,6 +18,22 @@
   line-height: 25px;
   color: #002665;
 }
+.bond.techno-fund .header .content {
+  background: url("../img/pages/bonds/header-techno.jpg") no-repeat top center;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-techno.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-techno.jpg', sizingMethod='scale')";
+  background-size: cover;
+}
+.bond.techno-fund .header .content .page-subtitle {
+  margin-top: 180px;
+  margin-bottom: 34px;
+  color: #002665;
+}
+.bond.techno-fund .header .content .page-title-description {
+  margin-bottom: 80px;
+  line-height: 25px;
+  color: #002665;
+}
 .bond.micex-fund .header .content {
   background: url("../img/pages/bonds/header-micex.jpg") no-repeat top center;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/bonds/header-micex.jpg', sizingMethod='scale');
@@ -341,6 +357,60 @@
 }
 @media (min-width: 1200px) {
   .bond .advantages.micex-fund {
+    height: 757px;
+  }
+}
+.bond .advantages.techno-fund {
+  background: url("../img/pages/bonds/advantages-bg-bond-national.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+.bond .advantages.techno-fund .item {
+  position: relative;
+  margin-bottom: 20px;
+  padding-top: 70px;
+  height: 210px;
+}
+.bond .advantages.techno-fund .item .icon {
+  margin-left: -30px;
+  width: 60px;
+  height: 60px;
+  background: url("../img/pages/bonds/advantages-icons-bond-dividend.png") no-repeat 0 0;
+}
+.bond .advantages.techno-fund .item .icon.extensive {
+  background-position: 0 0;
+}
+.bond .advantages.techno-fund .item .icon.dividend {
+  background-position: 0 -60px;
+}
+.bond .advantages.techno-fund .item .icon.unique-opportunity {
+  background-position: 0 -120px;
+}
+.bond .advantages.techno-fund .item .icon.high-potential {
+  background-position: 0 -180px;
+}
+.bond .advantages.techno-fund .item .icon.liquidity {
+  background-position: 0 -240px;
+}
+.bond .advantages.techno-fund .item .icon.diversification {
+  background-position: 0 -300px;
+}
+.bond .advantages.techno-fund .item p {
+  color: #ccd7e6;
+}
+@media (min-width: 1200px) {
+  .bond .advantages.techno-fund .item {
+    margin-bottom: 54px;
+    padding-top: 90px;
+    height: auto;
+  }
+}
+@media (min-width: 768px) {
+  .bond .advantages.techno-fund {
+    height: 570px;
+  }
+}
+@media (min-width: 1200px) {
+  .bond .advantages.techno-fund {
     height: 757px;
   }
 }
