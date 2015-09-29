@@ -1,0 +1,56 @@
+section.main-indicator
+	.container
+		.section-label Основные показатели фонда
+		h2.section-title Состав и график доходности
+		.row
+			.col-sm-18.col-sm-offset-1
+				.main-indicator-graph
+					.caption Дата формирования фонда хх.хх.хххх г.
+					.tab-container
+						ul.etabs.clearfix
+							li.tab
+								a(href="#tabs1-html")
+									span.corner
+										i
+									|Динамика стоимости пая и СЧА
+							li.tab
+								a(href="#tabs2-html")
+									span.corner
+										i
+									|Распределение активов
+						#tabs1-html.tab-content
+							.legend.clearfix
+								.item.item-1
+									span.icon
+									|— стоимость пая
+								.item.item-2
+									span.icon
+									|— стоимость СЧА
+							#line-graph.graph
+							.timing
+								span.item 3 мес
+								span.item 6 мес
+								span.item 1 год
+								span.item 2 года
+								span.item с момента формирования фонда
+						#tabs2-html.tab-content
+							#pie-graph.graph.pie-graph
+						.actions.text-center
+								a.btn.btn-yellow(href="#") Оставить заявку
+					.cost.table-responsive
+						h3.title Стоимость пая и чистых активов на 18.08.2015
+						table.cost-table.table
+							tr
+								th &nbsp;
+								th 18.08.2015
+								th Изменения за 1 день
+							tr
+								td Стоимость чистых активов, руб. коп
+								td 261 551 258,90 руб.
+								td.red
+									span.red - 0,04% / - 96 237,17 руб.
+							tr
+								td Стоимость пая, руб. коп.
+								td 3 472,84 руб.
+								td.green
+									span.green 0,00% / -0,05 руб.

@@ -104,7 +104,7 @@ if sliderPiaRefill?
 	valueInput3 = document.getElementById('calc-range-input-refill')
 	noUiSlider.create sliderPiaRefill,
 		start: 100000,
-		connect: 'upper',
+		connect: 'lower',
 		step: 10000,
 		range:
 			'min': 10000,

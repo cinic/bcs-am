@@ -23,74 +23,7 @@ html(lang="ru")
 								a.btn.btn-yellow(href="#" title="Получить консультацию") Узнать больше
 
 		include ./partials/_calculator.jade
-		section.main-indicator
-			.container
-				.section-label Основные показатели фонда
-				h2.section-title Состав и график доходности
-				.row
-					.col-sm-18.col-sm-offset-1
-						.main-indicator-graph
-							.caption Дата формирования фонда хх.хх.хххх г.
-							.clearfix
-								.col-left
-									
-								.col-right
-									
-							.clearfix
-								.col-left
-									h3.title Динамика стоимости пая и СЧА
-									.legend.clearfix
-										.item.item-1
-											span.icon
-											|— стоимость пая
-										.item.item-2
-											span.icon
-											|— стоимость СЧА
-									#line-graph.graph
-									.timing
-										span.item.pull-left.col-xs-9 3 мес
-										span.item.pull-right.col-xs-9 6 мес
-										span.item.pull-left.col-xs-9 1 год
-										span.item.pull-right.col-xs-9 2 года
-										span.item.col-xs-20 с момента формирования фонда
-
-								.col-right.hidden-xs
-									h3.title Распределение активов
-									#pie-graph.graph.pie-graph
-									.actions.text-center
-										a.btn.btn-yellow(href="#") Оставить заявку
-							.cost
-								h3.title Стоимость пая и чистых активов на 18.08.2015
-								table.cost-table.hidden-xs
-									tr
-										th &nbsp;
-										th 18.08.2015
-										th Изменения за 1 день
-									tr
-										td Стоимость чистых активов, руб. коп
-										td 261 551 258,90 руб.
-										td.red
-											span.red - 0,04% / - 96 237,17 руб.
-									tr
-										td Стоимость пая, руб. коп.
-										td 3 472,84 руб.
-										td.green
-											span.green 0,00% / -0,05 руб.
-								table.cost-table.hidden-sm.hidden-md.hidden-lg
-									tr
-										th &nbsp;
-										th Стоимость чистых активов, руб. коп
-										th Стоимость пая, руб. коп.
-									tr
-										td 18.08.2015
-										td 261 551 258,90 руб.
-										td.red
-											span.red - 0,04% / - 96 237,17 руб.
-									tr
-										td Изменения за 1 день
-										td 3 472,84 руб.
-										td.green
-											span.green 0,00% / -0,05 руб.
+		include ./partials/_main_indicator.jade
 				
 		section.advantages.bond-dividend-fund.text-center
 			.container
@@ -190,6 +123,9 @@ html(lang="ru")
 		include ./partials/_feedback.jade
 		include ./partials/_footer.jade
 		include ./partials/_footer_scripts.jade
+		script(src="Content/js/vendor/jquery.browser.js")
+		script(src="Content/js/vendor/easytabs.min.js")
+		script(src="Content/js/vendor/jquery.hashchange.min.js")
 		script(src="Content/js/vendor/highcharts.js")
 		script.
 			$(function () {
@@ -341,7 +277,7 @@ html(lang="ru")
 					},
 					series: [{
 						name: 'Browsers',
-						data: [["Сырьё",30],["Финансы",40],["Нефть и газ",40]],
+						data: [["Акции – Здравоохранение",4],["Акции – Финансы",6],["Акции – Телекоммуникации",8],["Акции – Нефть и газ",21],["Акции – Сырьё и материалы",21],["Акции – Электроэнергетика",16],["Акции – Информационные технологии",15],["Акции – Промышленное производство",9]],
 						size: '75%',
 						innerSize: '70%',
 						showInLegend:true,

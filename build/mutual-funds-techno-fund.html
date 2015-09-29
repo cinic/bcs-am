@@ -132,29 +132,27 @@
           <div class="col-sm-18 col-sm-offset-1">
             <div class="main-indicator-graph">
               <div class="caption">Дата формирования фонда хх.хх.хххх г.</div>
-              <div class="clearfix">
-                <div class="col-left"></div>
-                <div class="col-right"></div>
-              </div>
-              <div class="clearfix">
-                <div class="col-left">
-                  <h3 class="title">Динамика стоимости пая и СЧА</h3>
+              <div class="tab-container">
+                <ul class="etabs clearfix">
+                  <li class="tab"><a href="#tabs1-html"><span class="corner"><i></i></span>Динамика стоимости пая и СЧА</a></li>
+                  <li class="tab"><a href="#tabs2-html"><span class="corner"><i></i></span>Распределение активов</a></li>
+                </ul>
+                <div id="tabs1-html" class="tab-content">
                   <div class="legend clearfix">
                     <div class="item item-1"><span class="icon"></span>— стоимость пая</div>
                     <div class="item item-2"><span class="icon"></span>— стоимость СЧА</div>
                   </div>
                   <div id="line-graph" class="graph"></div>
-                  <div class="timing"><span class="item pull-left col-xs-9">3 мес</span><span class="item pull-right col-xs-9">6 мес</span><span class="item pull-left col-xs-9">1 год</span><span class="item pull-right col-xs-9">2 года</span><span class="item col-xs-20">с момента формирования фонда</span></div>
+                  <div class="timing"><span class="item">3 мес</span><span class="item">6 мес</span><span class="item">1 год</span><span class="item">2 года</span><span class="item">с момента формирования фонда</span></div>
                 </div>
-                <div class="col-right hidden-xs">
-                  <h3 class="title">Распределение активов</h3>
+                <div id="tabs2-html" class="tab-content">
                   <div id="pie-graph" class="graph pie-graph"></div>
-                  <div class="actions text-center"><a href="#" class="btn btn-yellow">Оставить заявку</a></div>
                 </div>
+                <div class="actions text-center"><a href="#" class="btn btn-yellow">Оставить заявку</a></div>
               </div>
-              <div class="cost">
+              <div class="cost table-responsive">
                 <h3 class="title">Стоимость пая и чистых активов на 18.08.2015</h3>
-                <table class="cost-table hidden-xs">
+                <table class="cost-table table">
                   <tr>
                     <th>&nbsp;</th>
                     <th>18.08.2015</th>
@@ -167,23 +165,6 @@
                   </tr>
                   <tr>
                     <td>Стоимость пая, руб. коп.</td>
-                    <td>3 472,84 руб.</td>
-                    <td class="green"><span class="green">0,00% / -0,05 руб.</span></td>
-                  </tr>
-                </table>
-                <table class="cost-table hidden-sm hidden-md hidden-lg">
-                  <tr>
-                    <th>&nbsp;</th>
-                    <th>Стоимость чистых активов, руб. коп</th>
-                    <th>Стоимость пая, руб. коп.</th>
-                  </tr>
-                  <tr>
-                    <td>18.08.2015</td>
-                    <td>261 551 258,90 руб.</td>
-                    <td class="red"><span class="red">- 0,04% / - 96 237,17 руб.</span></td>
-                  </tr>
-                  <tr>
-                    <td>Изменения за 1 день</td>
                     <td>3 472,84 руб.</td>
                     <td class="green"><span class="green">0,00% / -0,05 руб.</span></td>
                   </tr>
@@ -361,6 +342,9 @@
     <script src="Content/js/vendor/wNumb.js"></script>
     <script src="Content/js/vendor/owl.carousel.min.js"></script>
     <script src="Content/js/main.js"></script>
+    <script src="Content/js/vendor/jquery.browser.js"></script>
+    <script src="Content/js/vendor/easytabs.min.js"></script>
+    <script src="Content/js/vendor/jquery.hashchange.min.js"></script>
     <script src="Content/js/vendor/highcharts.js"></script>
     <script>
       $(function () {
@@ -512,7 +496,7 @@
       		},
       		series: [{
       			name: 'Browsers',
-      			data: [["Сырьё",30],["Финансы",40],["Нефть и газ",40]],
+      			data: [["Програмное обеспечение",23],["Интернет",43],["Аппаратное обеспечение и оборудование",34]],
       			size: '75%',
       			innerSize: '70%',
       			showInLegend:true,
