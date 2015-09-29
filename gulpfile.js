@@ -3,6 +3,8 @@
 
 var gulp = require('gulp'),
   watch = require('gulp-watch'),
+  gutil = require('gulp-util'),
+  notify = require('gulp-notify'),
   prefixer = require('gulp-autoprefixer'),
   uglify = require('gulp-uglify'),
   sass = require('gulp-ruby-sass'),
@@ -31,7 +33,7 @@ var path = {
     html: ['source/template/*.jade', '!source/template/_*.jade'],
     js: ['source/js/*.coffee', '!source/js/*/_*.coffee'],
     style: 'source/style/',
-    img: 'source/img/**/*.*',
+    img: 'source/img/**/**/*.*',
     fonts: 'source/fonts/**/*.*'
   },
   vendor: {
@@ -44,7 +46,7 @@ var path = {
     vendor_js: 'source/js/vendor/*.js',
     style: 'source/style/**/*.scss',
     vendor_style: 'source/style/vendor/*.scss',
-    img: 'source/img/**/*.*',
+    img: 'source/img/**/**/*.*',
     fonts: 'source/fonts/**/*.*'
   },
   clean: './build'
@@ -143,12 +145,17 @@ gulp.task('vendor:style:build', function () {
 gulp.task('image:build', function () {
   gulp.src(path.src.img)
     .pipe(imagemin({
-      progressive: true,
+      //progressive: true,
       svgoPlugins: [{removeViewBox: false}],
       use: [pngquant()],
       interlaced: true
     }))
+    .on('error', console.log) // Если есть ошибки, выводим и продолжаем
     .pipe(gulp.dest(path.build.img))
+    //.pipe(notify({
+    //  message: "Image: <%= file.relative %>",
+    //  title: "Image optimized and published."
+    //}))
     .pipe(reload({stream: true}));
 });
 
