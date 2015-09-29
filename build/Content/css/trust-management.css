@@ -1,0 +1,11 @@
+.trust-management .header .content {
+  background: url("../img/pages/trust-management/header.jpg") no-repeat center;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/trust-management/header.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/trust-management/header.jpg', sizingMethod='scale')";
+  background-size: cover;
+}
+.trust-management .header .content .page-title-description {
+  margin-bottom: 80px;
+  line-height: 25px;
+  color: #002665;
+}
