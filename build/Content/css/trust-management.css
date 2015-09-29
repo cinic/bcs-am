@@ -4,8 +4,410 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/trust-management/header.jpg', sizingMethod='scale')";
   background-size: cover;
 }
-.trust-management .header .content .page-title-description {
+.trust-management .header .content .page-title,
+.trust-management .header .content .page-subtitle {
+  font-weight: 300;
+}
+.trust-management .what-is {
+  color: #002f65;
+}
+.trust-management .what-is .section-title {
+  padding: 36px 0 0;
+  font-size: 24px;
+}
+@media (min-width: 992px) {
+  .trust-management .what-is .section-title {
+    padding: 70px 0 0;
+    font-size: 70px;
+  }
+}
+.trust-management .what-is .description {
+  padding: 42px 15px;
+  font-size: 15px;
+  line-height: 22px;
+  color: #002f65;
+}
+.trust-management .what-is .description:before {
+  position: relative;
+  top: -24px;
+  display: block;
+  margin: 0 auto;
+  content: " ";
+  width: 47px;
+  height: 3px;
+  background: #ffc300;
+}
+@media (min-width: 992px) {
+  .trust-management .what-is .description:before {
+    width: 74px;
+    height: 4px;
+    top: -44px;
+  }
+}
+.trust-management .what-is .description:after {
+  display: none;
+}
+@media (min-width: 992px) {
+  .trust-management .what-is .description {
+    padding: 90px 15px;
+    line-height: 33px;
+    font-size: 30px;
+  }
+}
+.trust-management .advantages {
+  height: 1750px;
+  color: white;
+  background: url("../img/pages/bonds/advantages-bg-bond-national.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+.trust-management .advantages .section-title {
+  margin: 30px 0 40px;
+}
+@media (min-width: 1200px) {
+  .trust-management .advantages .section-title {
+    margin: 62px 0 110px;
+  }
+}
+.trust-management .advantages .item {
+  position: relative;
+  margin-bottom: 60px;
+  padding-top: 102px;
+}
+.trust-management .advantages .item .icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -35px;
+  width: 70px;
+  height: 60px;
+  background: url("../img/pages/trust-management/advantages-icons.png") no-repeat 0 0;
+}
+.trust-management .advantages .item .icon.icon-1 {
+  background-position: 0 0;
+}
+.trust-management .advantages .item .icon.icon-2 {
+  background-position: 0 -60px;
+}
+.trust-management .advantages .item .icon.icon-3 {
+  background-position: 0 -120px;
+}
+.trust-management .advantages .item .icon.icon-4 {
+  background-position: 0 -180px;
+}
+.trust-management .advantages .item .icon.icon-5 {
+  background-position: 0 -240px;
+}
+.trust-management .advantages .item .icon.icon-6 {
+  background-position: 0 -300px;
+}
+.trust-management .advantages h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.trust-management .advantages p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #cacaca;
+}
+@media (min-width: 768px) {
+  .trust-management .advantages {
+    height: 940px;
+  }
+}
+@media (min-width: 992px) {
+  .trust-management .advantages {
+    height: 740px;
+  }
+}
+@media (min-width: 1200px) {
+  .trust-management .advantages {
+    height: 996px;
+  }
+  .trust-management .advantages h3 {
+    margin: 0 0 22px;
+    font-size: 30px;
+  }
+  .trust-management .advantages p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+.trust-management .consultation {
+  padding: 28px 0 50px;
+  font-size: 15px;
+  line-height: 22px;
+  color: white;
+  background: #123159 url("../img/pages/trust-management/consultation.jpg") no-repeat center;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/trust-management/consultation.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/trust-management/consultation.jpg', sizingMethod='scale')";
+  background-size: cover;
+  background-color: #123159;
+}
+.trust-management .consultation .section-title {
+  font-size: 22px;
+  line-height: 22px;
+}
+@media (min-width: 992px) {
+  .trust-management .consultation .section-title {
+    font-size: 70px;
+    line-height: 70px;
+  }
+}
+.trust-management .consultation .item {
+  padding: 44px 0 56px;
+}
+.trust-management .consultation .item:before {
+  position: relative;
+  top: -20px;
+  display: block;
+  margin: 0 auto;
+  content: " ";
+  width: 47px;
+  height: 3px;
+  background: #ffc300;
+}
+@media (min-width: 992px) {
+  .trust-management .consultation .item:before {
+    width: 74px;
+    height: 4px;
+    top: -40px;
+  }
+}
+@media (min-width: 992px) {
+  .trust-management .consultation .item {
+    padding: 80px 0 90px;
+  }
+}
+@media (min-width: 992px) {
+  .trust-management .consultation {
+    padding: 60px 0 86px;
+    font-size: 30px;
+    line-height: 33px;
+  }
+}
+.trust-management .strategies {
+  padding-top: 88px;
+}
+.trust-management .strategies .section-title {
+  font-size: 24px;
+  line-height: 24px;
+  color: #002f65;
+  font-weight: 300;
+}
+@media (min-width: 992px) {
+  .trust-management .strategies .section-title {
+    font-size: 70px;
+    line-height: 70px;
+  }
+}
+.trust-management .strategies .section-label {
+  padding: 40px 0 14px;
+  color: #124b8c;
+}
+.trust-management .strategies .section-label:before {
+  position: relative;
+  top: -20px;
+  display: block;
+  margin: 0 auto;
+  content: " ";
+  width: 47px;
+  height: 3px;
+  background: #ffc300;
+}
+@media (min-width: 992px) {
+  .trust-management .strategies .section-label:before {
+    width: 74px;
+    height: 4px;
+    top: -40px;
+  }
+}
+.trust-management .strategies .strategies-tabs {
+  margin: 60px -10px 40px;
+  line-height: 14px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.trust-management .strategies .strategies-tabs .item {
+  float: left;
+  padding-left: 20px;
+  width: 25%;
+}
+.trust-management .strategies .strategies-tabs .item a {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 0 60px;
+  color: #002a61;
+  text-decoration: none;
+}
+.trust-management .strategies .strategies-tabs .item.active {
+  cursor: default;
+}
+.trust-management .strategies .strategies-tabs .item .icon {
+  position: absolute;
+  top: -4px;
+  left: -50px;
+  width: 34px;
+  height: 36px;
+  background: url("../img/pages/trust-management/services-tabs-icons.png") no-repeat 0 0;
+}
+.trust-management .strategies .strategies-tabs .item .icon.icon-1 {
+  background-position: 0 0;
+}
+.trust-management .strategies .strategies-tabs .item .icon.icon-2 {
+  background-position: 0 -36px;
+}
+.trust-management .strategies .strategies-tabs .item .icon.icon-3 {
+  background-position: 0 -72px;
+}
+.trust-management .strategies .strategies-tabs .item .icon.icon-4 {
+  background-position: 0 -108px;
+}
+.trust-management .strategies .strategies-tabs .item.active,
+.trust-management .strategies .strategies-tabs .item a:hover {
+  background: white;
+}
+.trust-management .strategies .strategies-tabs .item.active .icon.icon-1,
+.trust-management .strategies .strategies-tabs .item a:hover .icon.icon-1 {
+  background-position: -34px 0;
+}
+.trust-management .strategies .strategies-tabs .item.active .icon.icon-2,
+.trust-management .strategies .strategies-tabs .item a:hover .icon.icon-2 {
+  background-position: -34px -36px;
+}
+.trust-management .strategies .strategies-tabs .item.active .icon.icon-3,
+.trust-management .strategies .strategies-tabs .item a:hover .icon.icon-3 {
+  background-position: -34px -72px;
+}
+.trust-management .strategies .strategies-tabs .item.active .icon.icon-4,
+.trust-management .strategies .strategies-tabs .item a:hover .icon.icon-4 {
+  background-position: -34px -108px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .trust-management .strategies .strategies-tabs .item {
+    padding-left: 0;
+    text-align: center;
+  }
+  .trust-management .strategies .strategies-tabs .item a {
+    margin-left: 0;
+  }
+  .trust-management .strategies .strategies-tabs .item a .icon {
+    top: -44px;
+    left: 50%;
+    margin-left: -17px;
+  }
+}
+@media (max-width: 767px) {
+  .trust-management .strategies .strategies-tabs .item {
+    padding-left: 0;
+    text-align: center;
+    background: #eff0f1;
+    width: 50%;
+  }
+  .trust-management .strategies .strategies-tabs .item.top {
+    border-top: 1px solid #c6c8c9;
+  }
+  .trust-management .strategies .strategies-tabs .item.top-right {
+    border-top: 1px solid #c6c8c9;
+    border-right: 1px solid #c6c8c9;
+  }
+  .trust-management .strategies .strategies-tabs .item a {
+    margin: 0;
+    padding: 60px 0 14px;
+  }
+  .trust-management .strategies .strategies-tabs .item a .icon {
+    top: 14px;
+    left: 50%;
+    margin-left: -17px;
+  }
+}
+@media (max-width: 767px) {
+  .trust-management .strategies .strategies-tabs {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+.trust-management .strategies .outer {
+  margin: 0 -10px;
+}
+.trust-management .strategies .table-responsive {
+  margin-bottom: 0;
+}
+.trust-management .strategies .tab-container .tab-content {
+  padding: 0;
+  border: 0;
+}
+.trust-management .strategies .strategies-table {
+  line-height: 22px;
+  font-size: 15px;
+  border: 3px solid #ffc300;
+}
+.trust-management .strategies .strategies-table td,
+.trust-management .strategies .strategies-table th {
+  padding: 16px 30px;
+  border: 1px solid #9ea9b8;
+}
+.trust-management .strategies .strategies-table th {
+  font-weight: 300;
+  vertical-align: top;
+  white-space: normal;
+}
+@media (min-width: 992px) {
+  .trust-management .strategies .strategies-table th {
+    text-align: left;
+  }
+}
+.trust-management .experience {
+  background: #4d5560 url("../img/pages/bonds/experience-bg.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  color: white;
+}
+.trust-management .experience .section-label {
+  color: white;
+}
+.trust-management .experience .section-title {
+  margin-bottom: 64px;
+}
+.trust-management .experience .item {
+  position: relative;
   margin-bottom: 80px;
-  line-height: 25px;
-  color: #002665;
+  padding-top: 62px;
+  color: #ccd7e6;
+}
+.trust-management .experience .item b {
+  display: block;
+  margin-bottom: 22px;
+  font-size: 30px;
+  line-height: 33px;
+  color: white;
+  font-weight: normal;
+}
+@media (min-width: 1200px) {
+  .trust-management .experience .item.rate {
+    margin: 0 -14px;
+  }
+}
+.trust-management .experience .item .icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -23px;
+  width: 46px;
+  height: 42px;
+  background: url("../img/pages/bonds/experience-icons.png") no-repeat 0 0;
+}
+.trust-management .experience .item .icon.year {
+  background-position: 0 -84px;
+}
+.trust-management .experience .item .icon.rate {
+  background-position: 0 -126px;
+}
+.trust-management .experience .item .icon.offices {
+  background-position: 0 -168px;
+}
+.trust-management .experience .item .icon.clients {
+  background-position: 0 -42px;
+}
+.trust-management .experience .item .icon.value {
+  background-position: 0 0;
 }

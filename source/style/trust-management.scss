@@ -7,10 +7,382 @@
 			-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/trust-management/header.jpg', sizingMethod='scale')";
 			background-size: cover;
 
-			.page-title-description {
-				margin-bottom: 80px;
-				line-height: 25px;
-				color: #002665;
+			.page-title,
+			.page-subtitle {
+				font-weight: 300;
+			}
+		}
+	}
+
+	.what-is {
+		color: #002f65;
+
+		.section-title {
+			padding: 36px 0 0;
+			font-size: 24px;
+
+			@media (min-width: $screen-md) {
+				padding: 70px 0 0;
+				font-size: 70px;
+			}
+		}
+
+		.description {
+			padding: 42px 15px;
+			font-size: 15px;
+			line-height: 22px;
+			color: #002f65;
+
+			&:before {
+				position: relative;
+				top: -24px;
+				display: block;
+				margin: 0 auto;
+				content: " ";
+				width: 47px;
+				height: 3px;
+				background: #ffc300;
+
+				@media (min-width: $screen-md) {
+					width: 74px;
+					height: 4px;
+					top: -44px;
+				}
+			}
+			&:after { display: none; }
+
+			@media (min-width: $screen-md) {
+				padding: 90px 15px;
+				line-height: 33px;
+				font-size: 30px;
+			}
+		}
+	}
+	
+	.advantages {
+		height: 1750px;
+		color: white;
+		background: url('../img/pages/bonds/advantages-bg-bond-national.jpg') no-repeat 50% 50%;
+		background-size: cover;
+		
+		.section-title {
+			margin: 30px 0 40px;
+
+			@media (min-width: $screen-lg) {
+				margin: 62px 0 110px;
+			}
+		}
+		
+		.item {
+			position: relative;
+			margin-bottom: 60px;
+			padding-top: 102px;
+			
+			.icon {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin-left: -35px;
+				width: 70px;
+				height: 60px;
+				background: url('../img/pages/trust-management/advantages-icons.png') no-repeat 0 0;
+				
+				&.icon-1 { background-position: 0 0; }
+				&.icon-2 { background-position: 0 -60px; }
+				&.icon-3 { background-position: 0 -120px; }
+				&.icon-4 { background-position: 0 -180px; }
+				&.icon-5 { background-position: 0 -240px; }
+				&.icon-6 { background-position: 0 -300px; }
+			}
+		}
+		
+		h3 {
+			margin: 0 0 10px;
+			font-size: 20px;
+			font-weight: 400;
+		}
+		p {
+			font-size: 14px;
+			line-height: 18px;
+			color: #cacaca;
+		}
+
+		@media (min-width: $screen-sm) {
+			height: 940px;
+		}
+
+		@media (min-width: $screen-md) {
+			height: 740px;
+		}
+
+		@media (min-width: $screen-lg) {
+			height: 996px;
+			h3 {
+				margin: 0 0 22px;
+				font-size: 30px;
+			}
+			p {
+				font-size: 18px;
+				line-height: 22px;
+			}
+		}
+	}
+
+	.consultation {
+		padding: 28px 0 50px;
+		font-size: 15px;
+		line-height: 22px;
+		color: white;
+		background: #123159 url('../img/pages/trust-management/consultation.jpg') no-repeat center;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/trust-management/consultation.jpg', sizingMethod='scale');
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/trust-management/consultation.jpg', sizingMethod='scale')";
+		background-size: cover;
+		background-color: #123159;
+
+		.section-title {
+			font-size: 22px;
+			line-height: 22px;
+
+			@media (min-width: $screen-md) {
+				font-size: 70px;
+				line-height: 70px;
+			}
+		}
+		.item {
+			padding: 44px 0 56px;
+
+			&:before {
+				position: relative;
+				top: -20px;
+				display: block;
+				margin: 0 auto;
+				content: " ";
+				width: 47px;
+				height: 3px;
+				background: #ffc300;
+
+				@media (min-width: $screen-md) {
+					width: 74px;
+					height: 4px;
+					top: -40px;
+				}
+			}
+			@media (min-width: $screen-md) {
+				padding: 80px 0 90px;
+			}
+		}
+		@media (min-width: $screen-md) {
+			padding: 60px 0 86px;
+			font-size: 30px;
+			line-height: 33px;
+		}
+	}
+	.strategies {
+		padding-top: 88px;
+		.section-title {
+			font-size: 24px;
+			line-height: 24px;
+			color: #002f65;
+			font-weight: 300;
+
+			@media (min-width: $screen-md) {
+				font-size: 70px;
+				line-height: 70px;
+			}
+		}
+		.section-label {
+			padding: 40px 0 14px;
+			color: #124b8c;
+
+			&:before {
+				position: relative;
+				top: -20px;
+				display: block;
+				margin: 0 auto;
+				content: " ";
+				width: 47px;
+				height: 3px;
+				background: #ffc300;
+
+				@media (min-width: $screen-md) {
+					width: 74px;
+					height: 4px;
+					top: -40px;
+				}
+			}
+		}
+		.strategies-tabs {
+			margin: 60px -10px 40px;
+			line-height: 14px;
+			font-size: 12px;
+			text-transform: uppercase;
+
+			.item {
+				float: left;
+				padding-left: 20px;
+				width: 25%;
+				
+				a {
+					position: relative;
+					display: inline-block;
+					margin: 0 0 0 60px;
+					color: #002a61;
+					text-decoration: none;
+				}
+				&.active { cursor: default; }
+				.icon {
+					position: absolute;
+					top: -4px;
+					left: -50px;
+					width: 34px;
+					height: 36px;
+					background: url('../img/pages/trust-management/services-tabs-icons.png') no-repeat 0 0;
+
+					&.icon-1 { background-position: 0 0; }
+					&.icon-2 { background-position: 0 -36px; }
+					&.icon-3 { background-position: 0 -72px; }
+					&.icon-4 { background-position: 0 -108px; }
+				}
+
+				&.active,
+				a:hover {
+					background: white;
+					.icon {
+						&.icon-1 { background-position: -34px 0; }
+						&.icon-2 { background-position: -34px -36px; }
+						&.icon-3 { background-position: -34px -72px; }
+						&.icon-4 { background-position: -34px -108px; }
+					}
+				}
+
+				@media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+					padding-left: 0;
+					text-align: center;
+					a {
+						margin-left: 0;
+						.icon {
+							top: -44px;
+							left: 50%;
+							margin-left: -17px;
+						}
+					}
+				}
+				@media (max-width: $screen-xs-max) {
+					padding-left: 0;
+					text-align: center;
+					background: #eff0f1;
+					width: 50%;
+					&.top {
+						border-top: 1px solid #c6c8c9;
+					}
+					&.top-right {
+						border-top: 1px solid #c6c8c9;
+						border-right: 1px solid #c6c8c9;
+					}
+					a {
+						margin: 0;
+						padding: 60px 0 14px;
+						.icon {
+							top: 14px;
+							left: 50%;
+							margin-left: -17px;
+						}
+					}
+				}
+			}
+			@media (max-width: $screen-xs-max) {
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+		}
+		.outer { margin: 0 -10px; }
+		.table-responsive { margin-bottom: 0; }
+		.tab-container {
+			.tab-content {
+				padding: 0;
+				border: 0;
+			}
+		}
+		.strategies-table {
+			line-height: 22px;
+			font-size: 15px;
+			border: 3px solid #ffc300;
+
+			td,
+			th {
+				padding: 16px 30px;
+				border: 1px solid #9ea9b8;
+			}
+
+			th {
+				font-weight: 300;
+				vertical-align: top;
+				white-space: normal;
+
+				@media (min-width: $screen-md) {
+					text-align: left;
+				}
+			}
+		}
+	}
+	.experience {
+		background: #4d5560 url('../img/pages/bonds/experience-bg.jpg') no-repeat 50% 50%;
+		background-size: cover;
+		color: white;
+		
+		.section-label {
+			color: white;
+		}
+		
+		.section-title {
+			margin-bottom: 64px;
+		}
+		
+		.item {
+			position: relative;
+			margin-bottom: 80px;
+			padding-top: 62px;
+			color: #ccd7e6;
+			
+			b {
+				display: block;
+				margin-bottom: 22px;
+				font-size: 30px;
+				line-height: 33px;
+				color: white;
+				font-weight: normal;
+			}
+			
+			&.rate {
+				@media (min-width: $screen-lg) {
+					margin: 0 -14px;
+				}
+			}
+			
+			.icon {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin-left: -23px;
+				width: 46px;
+				height: 42px;
+				background: url('../img/pages/bonds/experience-icons.png') no-repeat 0 0;
+				
+				&.year {
+					background-position: 0 -84px;
+				}
+				&.rate {
+					background-position: 0 -126px;
+				}
+				&.offices {
+					background-position: 0 -168px;
+				}
+				&.clients {
+					background-position: 0 -42px;
+				}
+				&.value {
+					background-position: 0 0;
+				}
 			}
 		}
 	}

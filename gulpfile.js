@@ -143,7 +143,7 @@ gulp.task('vendor:style:build', function () {
 });
 
 gulp.task('image:build', function () {
-  gulp.src(path.src.img)
+  return gulp.src(path.src.img)
     .pipe(imagemin({
       //progressive: true,
       svgoPlugins: [{removeViewBox: false}],
