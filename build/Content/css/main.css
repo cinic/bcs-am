@@ -1199,6 +1199,23 @@ label {
     border: 1px solid #9ea9b8;
   }
 }
+.calculator.calculator-pia .calculator-form .calc-row {
+  padding: 30px 25px 72px;
+}
+.calculator.calculator-pia .calculator-form .calc-row:first-child > label {
+  display: inline-block;
+  line-height: 22px;
+  text-align: left;
+  border: 0;
+}
+@media (max-width: 1199px) {
+  .calculator.calculator-pia .calculator-form .calc-row:first-child > label {
+    display: block;
+    line-height: 22px;
+    text-align: left;
+    border: 0;
+  }
+}
 
 .main-indicator-graph .legend {
   margin-bottom: 12px;
@@ -1523,7 +1540,7 @@ label {
   .tab-container .etabs .tab {
     margin-left: -1px;
     width: auto;
-    font-size: 30px;
+    font-size: 24px;
     border-color: #9ea9b7;
     border: 1px solid #9eaab8;
   }
@@ -1557,6 +1574,11 @@ label {
     /* Safari y Chrome */
     filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.7071067811865476, M12=0.7071067811865475, M21=-0.7071067811865475, M22=0.7071067811865476);
     /* IE */
+  }
+}
+@media (min-width: 1200px) {
+  .tab-container .etabs .tab {
+    font-size: 30px;
   }
 }
 .tab-container .tab-content {

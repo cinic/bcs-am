@@ -137,10 +137,19 @@
 	
 	.calculator {
 		.calculator-form {
-			.calc-row {
-				background: #f7f7f7 !important;
+			.calc-col-2 {
+				@media (min-width: $screen-lg) {
+					margin-left: -1px;
+					border-left: 1px solid #ccd4df;
+				}
 			}
 			.calc-row {
+				margin-top: -1px;
+				border-top: 1px solid #9ea9b8;
+				background: #f7f7f7 !important;
+				&:first-child {
+					display: none;
+				}
 				&:nth-child(2) {
 					background: rgba(204, 209, 218,.5) !important;
 					border-top: 1px solid #9ea9b8;
@@ -559,7 +568,7 @@
 		}
 		.docs-list {
 			@media (min-width: $screen-lg) {
-				margin: 0 -10px;
+				/*margin: 0 -10px;*/
 			}
 		}
 		.item {

@@ -1094,6 +1094,35 @@ label { cursor: pointer; }
 			border: 1px solid #9ea9b8;
 		}
 	}
+
+	&.calculator-pia {
+		.calculator-form {
+			.calc-row {
+				padding: 30px 25px 72px;
+				&:first-child {
+					>label {
+						display: inline-block;
+						line-height: 22px;
+						text-align: left;
+						border: 0;
+					}
+				}
+			}
+			@media (max-width: $screen-md-max) {
+				.calc-row {
+					&:first-child {
+						>label {
+							display: block;
+							line-height: 22px;
+							text-align: left;
+							border: 0;
+						}
+					}
+				}
+			}
+			
+		}
+	}
 }
 
 .main-indicator-graph {
@@ -1430,7 +1459,7 @@ label { cursor: pointer; }
 			@media (min-width: $screen-md) {
 				margin-left: -1px;
 				width: auto;
-				font-size: 30px;
+				font-size: 24px;
 				border-color: #9ea9b7;
 				border: 1px solid #9eaab8;
 
@@ -1466,6 +1495,9 @@ label { cursor: pointer; }
 						}
 					}
 				}
+			}
+			@media (min-width: $screen-lg) {
+				font-size: 30px;
 			}
 		}
 	}

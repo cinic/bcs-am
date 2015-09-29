@@ -77,12 +77,15 @@
 				border: 1px solid #9ea9b8;
 				.icon {
 					position: absolute;
-					left: 93px;
+					left: 43px;
 					top: 0;
 					margin-left: 0;
 					width: 93px;
 					height: 93px;
 					background: url('../img/pages/pia/which-icons.png') no-repeat 0 0;
+					@media (min-width: $screen-lg) {
+						left: 93px;
+					}
 				}
 				.item {
 					position: relative;
@@ -102,7 +105,11 @@
 					}
 				}
 				.item:first-child {
-					padding-left: 186px;
+					padding-left: 126px;
+
+					@media (min-width: $screen-lg) {
+						padding-left: 186px;
+					}
 				}
 				.item:nth-child(2) {
 					.icon {

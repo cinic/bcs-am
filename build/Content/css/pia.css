@@ -65,13 +65,20 @@
   }
   .pia .which .type-of-recoupment .icon {
     position: absolute;
-    left: 93px;
+    left: 43px;
     top: 0;
     margin-left: 0;
     width: 93px;
     height: 93px;
     background: url("../img/pages/pia/which-icons.png") no-repeat 0 0;
   }
+}
+@media (min-width: 992px) and (min-width: 1200px) {
+  .pia .which .type-of-recoupment .icon {
+    left: 93px;
+  }
+}
+@media (min-width: 992px) {
   .pia .which .type-of-recoupment .item {
     position: relative;
     padding-left: 93px;
@@ -89,8 +96,15 @@
     text-align: left;
   }
   .pia .which .type-of-recoupment .item:first-child {
+    padding-left: 126px;
+  }
+}
+@media (min-width: 992px) and (min-width: 1200px) {
+  .pia .which .type-of-recoupment .item:first-child {
     padding-left: 186px;
   }
+}
+@media (min-width: 992px) {
   .pia .which .type-of-recoupment .item:nth-child(2) .icon {
     left: 0;
     background-position: 0 -93px;
