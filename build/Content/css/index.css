@@ -46,7 +46,11 @@
 }
 .index .assets-management {
   padding-bottom: 56px;
-  background: #525965;
+  background-color: #525965;
+  background: url("../img/pages/index/assets-management.jpg") no-repeat center;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/index/assets-management.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/index/assets-management.jpg', sizingMethod='scale')";
+  background-size: cover;
 }
 .index .assets-management .section-title {
   margin: 17px 0 34px;
