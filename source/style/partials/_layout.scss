@@ -17,6 +17,7 @@ nav.menu {
 .top-panel {
 	padding: 7px 0 8px;
 	background: white;
+	border-bottom: 1px solid #dadce1;
 	color: #002665;
 
 	.toggle-nav {
@@ -28,7 +29,7 @@ nav.menu {
 		background: url('../img/burger.png') no-repeat center;
 		cursor: pointer;
 
-		@media	(min-width: $screen-lg) {
+		@media	(min-width: $screen-sm) {
 			display: none;
 		}
 	}
@@ -40,7 +41,7 @@ nav.menu {
 			width: 61px;
 			height: 23px;
 
-			@media	(min-width: $screen-lg) {
+			@media	(min-width: $screen-sm) {
 				width: 117px;
 				height: 45px;
 			}
@@ -60,9 +61,8 @@ nav.menu {
 			margin-top: 18px;
 			margin-right: 70px;
 			list-style: none;
-			&:last-child {
-				margin-right: 0;
-			}
+			
+			&:last-child { margin-right: 0; }
 			
 			a {
 				position: relative;
@@ -104,10 +104,23 @@ nav.menu {
 					}
 				}
 			}
+
+			@media (min-width: $screen-sm) {
+				margin-right: 40px;
+			}
 		}
 
-		@media (min-width: $screen-lg) {
+		@media (min-width: $screen-sm) {
 			display: block;
+			margin-left: 60px;
+			font-size: 14px;
+		}
+		@media (min-width: $screen-md) {
+			font-size: 16px;
+		}
+		@media (min-width: $screen-lg) {
+			margin-left: 120px;
+			font-size: 18px;
 		}
 	}
 	
@@ -117,7 +130,7 @@ nav.menu {
 			float: left;
 			display: none;
 
-			@media (min-width: $screen-lg) {
+			@media (min-width: $screen-sm) {
 				display: block;
 			}
 		}
@@ -130,6 +143,18 @@ nav.menu {
 			border-radius: 11px;
 			background: #ffc300 url('../img/mobile/phone.png') no-repeat 50% 50%;
 
+			@media (min-width: $screen-sm) {
+				margin-right: 4px;
+				width: 28px;
+				height: 28px;
+				border-radius: 14px;
+			}
+			@media (min-width: $screen-md) {
+				margin-right: 4px;
+				width: 28px;
+				height: 28px;
+				border-radius: 14px;
+			}
 			@media (min-width: $screen-lg) {
 				margin-right: $grid-gutter-width/2;
 				width: 36px;
@@ -138,9 +163,20 @@ nav.menu {
 				background: #ffc300 url('../img/top-panel-icons.png') no-repeat 0 -36px;
 			}
 		}
+		.phone-icon {
+			@media (min-width: $screen-sm) {
+				display: none;
+			}
+			@media (min-width: $screen-md) {
+				display: block;
+			}
+		}
 		.search-icon {
 			background-color: #002a61;
-			background-position: 0 0;
+			background: #002a61 url('../img/mobile/search.png') no-repeat 50% 50%;
+			@media (min-width: $screen-lg) {
+				background: #002a61 url('../img/top-panel-icons.png') no-repeat 0 0;
+			}
 		}
 		.phone {
 			display: block;
@@ -149,6 +185,16 @@ nav.menu {
 				font-size: 22px;
 				line-height: 20px;
 				letter-spacing: 1px;
+
+				@media (min-width: $screen-sm) {
+					font-size: 18px;
+				}
+				@media (min-width: $screen-md) {
+					font-size: 20px;
+				}
+				@media (min-width: $screen-lg) {
+					font-size: 22px;
+				}
 			}
 
 			.description {
@@ -156,27 +202,52 @@ nav.menu {
 				font-size: 10px;
 				line-height: 16px;
 				text-transform: uppercase;
+
+				@media (min-width: $screen-sm) {
+					font-size: 8px;
+				}
+				@media (min-width: $screen-md) {
+					font-size: 9px;
+				}
+				@media (min-width: $screen-lg) {
+					font-size: 10px;
+				}
 			}
 
 			.num,
 			.description {
 				display: none;
-				@media (min-width: $screen-lg) {
+				@media (min-width: $screen-sm) {
 					display: block;
 				}
 			}
 
+			@media (min-width: $screen-sm) {
+				width: 155px;
+			}
+			@media (min-width: $screen-md) {
+				width: 195px;
+			}
 			@media (min-width: $screen-lg) {
 				width: 222px;
 			}
 		}
 
+		@media (min-width: $screen-sm) {
+			width: 188px;
+			margin-top: 10px;
+		}
+		@media (min-width: $screen-md) {
+			width: 232px;
+			margin-top: 10px;
+		}
 		@media (min-width: $screen-lg) {
 			width: 272px;
+			margin-top: 5px;
 		}
 	}
 	/* Adaptive */
-	@media (min-width: $screen-lg) {
+	@media (min-width: $screen-sm) {
 		margin-bottom: 55px;
 		padding: 18px 0 13px;
 	}
@@ -212,7 +283,7 @@ nav.menu {
 			}
 		}
 	}
-	@media (min-width: $screen-lg) {
+	@media (min-width: $screen-sm) {
 		display: block;
 		position: absolute;
 		top: 76px;
@@ -255,8 +326,37 @@ nav.menu {
 						padding: 12px 35px 7px;
 						background-color: #ffc300;
 						border-radius: 18px;
+						@media (min-width: $screen-sm) {
+							padding-left: 15px;
+							padding-right: 15px;
+						}
+						@media (min-width: $screen-lg) {
+							padding-left: 35px;
+							padding-right: 35px;
+						}
 					}
 				}
+				@media (min-width: $screen-sm) {
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+				@media (min-width: $screen-md) {
+					padding-left: 15px;
+					padding-right: 15px;
+				}
+				@media (min-width: $screen-lg) {
+					padding-left: 30px;
+					padding-right: 30px;
+				}
+			}
+			@media (min-width: $screen-sm) {
+				font-size: 10px;
+			}
+			@media (min-width: $screen-md) {
+				font-size: 12px;
+			}
+			@media (min-width: $screen-md) {
+				font-size: 14px;
 			}
 		}
 	}
