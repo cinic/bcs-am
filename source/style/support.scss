@@ -1,0 +1,216 @@
+@import 'partials/variables';
+.support {
+	.page-title {
+		margin: 0 -10px;
+		padding-top: 12px;
+		padding-bottom: 18px;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 24px;
+		color: #002665;
+		text-align: center;
+
+		@media (min-width: $screen-sm) {
+			margin-bottom: 46px;
+			padding-top: 16px;
+			padding-bottom: 16px;
+			font-size: 30px;
+			font-weight: 300;
+			line-height: 30px;
+			border-bottom: 1px solid #dadce1;
+			text-align: left;
+		}
+	}
+
+	.sub-menu {
+		margin: 0 -10px;
+		padding: 0;
+		list-style: none;
+		border-top: 1px solid #b6bcc5; 
+		border-bottom: 1px solid #b6bcc5;
+
+		>li,
+		>li.item {
+			text-align: center;
+			a {
+				display: inline-block;
+				margin: 13px 0 11px;
+				padding: 2px 0;
+				font-size: 16px;
+				line-height: 16px;
+				text-decoration: none;
+				color: #6d6d6d;
+
+				@media (min-width: $screen-sm) {
+					display: block;
+					margin: 0 0 0 42px;
+					padding: 14px 0;
+					font-size: 20px;
+					line-height: 20px;
+				}
+				@media (min-width: $screen-md) {
+					margin-left: 68px;
+				}
+			}
+			>a {
+				position: relative;
+				display: block;
+				margin: 0;
+				padding: 15px 0;
+				color: #445267;
+
+				&.active {
+					border-top: 1px solid #b6bcc5;
+					border-bottom: 1px solid #b6bcc5;
+					
+					&:before {
+						@media (max-width: $screen-xs-max) {
+							top: -2px;
+							height: 2px;
+							background: #ffc300;
+						}
+					}
+
+					@media (min-width: $screen-sm) {
+						color: #445267;
+						border: 0;
+						background: #dce0e7;
+					}
+				}
+				&:before {
+					@media (max-width: $screen-xs-max) {
+						position: absolute;
+						top: 0;
+						left: 50%;
+						margin-left: -35px;
+						width: 70px;
+						height: 1px;
+						background: #b6bcc5;
+						content: ' ';
+					}
+				}
+				.icon { display: none; }
+				@media (min-width: $screen-sm) {
+					position: relative;
+					padding: 24px 0 24px 42px;
+					color: #47669a;
+					&.dropdown {
+						.label {
+							border-bottom: 1px dashed;
+						}
+					}
+					.icon {
+						position: absolute;
+						display: block;
+						top: 50%;
+						margin-top: -7px;
+						margin-left: -35px;
+						width: 18px;
+						height: 18px;
+						background: url('../img/pages/support/sub-menu-icons.png') no-repeat 0 0;
+
+						&.newbie { background-position: 0 0; }
+						&.funds { background-position: 0 -18px; }
+						&.trust { background-position: 0 -36px; }
+						&.pia { background-position: 0 -54px; }
+					}
+				}
+				@media (min-width: $screen-md) {
+					padding-left: 68px;
+				}
+			}
+			&:first-child {
+				>a.active {
+					border-top: 0;
+				}
+			}
+			&:last-child {
+				>a.active {
+					border-bottom: 0;
+				}
+			}
+
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+
+				li {
+
+					a {
+						border-bottom: 2px solid transparent;
+						&.active {
+							color: #000000;
+							border-bottom-color: #ffc300;
+						}
+						@media (min-width: $screen-sm) {
+							font-size: 18px;
+						}
+					}
+				}
+			}
+			@media (min-width: $screen-sm) {
+				text-align: left;
+			}
+		}
+
+		@media (min-width: $screen-sm) {
+			border: 1px solid #dadce1;
+			background: #f2f4f7;
+		}
+		@media screen and (max-width: $screen-xs-max) {
+			margin-bottom: 28px;
+		}
+	}
+	.support-item {
+		margin-bottom: 26px;
+		line-height: 22px;
+		font-size: 15px;
+		font-weight: 300;
+		color: #333333;
+		
+		.title {
+			margin-top: 0;
+			margin-bottom: 18px;
+			line-height: 24px;
+			font-size: 24px;
+			font-weight: 500;
+			color: #002665;
+
+			@media (min-width: $screen-sm) {
+				line-height: $line-height-base;
+				font-size: 30px;
+			}
+		}
+
+		h3 {
+			font-size: 18px;
+			line-height: 24px;
+			font-weight: 400;
+
+			@media (min-width: $screen-sm) {
+				line-height: 28px;
+				font-size: 24px;
+			}
+		}
+
+		.note {
+			padding-left: 22px;
+			padding-right: 22px;
+			font-style: italic;
+			border: 1px solid #ffc300;
+		}
+
+		ul {
+			padding-left: 20px;
+			li {
+				margin-bottom: 12px;
+				padding-left: 10px;
+				list-style-image: url('../img/bull.png');
+			}
+		}
+		@media (min-width: $screen-sm) {
+			font-size: 18px;
+		}
+	}
+}
