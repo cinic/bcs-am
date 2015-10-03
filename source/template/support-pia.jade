@@ -1,0 +1,145 @@
+doctype html
+html(lang="ru")
+	head
+		include ./partials/_header.jade
+		link(rel="stylesheet" href="Content/css/support.css")/
+	body.support.support-pia
+		include ./partials/_navigation.jade
+		.container
+			.row
+				.col-sm-18.col-sm-offset-1
+					h1.page-title Поддержка
+		section.what-is.text-center
+			.container
+				.row
+					.col-sm-18.col-sm-offset-1
+						h2.section-title Что такое ИИС?
+						.description
+							b Индивидуальный инвестиционный счет — новый вид брокерского счета, 
+							|владелец которого имеет возможность инвестировать свои сбережения, получая от государства максимальные налоговые льготы. Счет вы можете использовать для торговли на фондовом рынке, освобождая прибыль от налогов.
+				.row
+					.col-xs-10.col-md-4.col-md-offset-2
+						dl.item
+							dt 13%
+							dd Налоговый вычет на инвестируемые средства
+					.col-xs-10.col-md-4.col-md-offset-2
+						dl.item
+							dt До 52 000 руб.
+							dd Возврат в год из налогового бюджета
+								sup 1
+					.col-xs-10.col-xs-offset-5.col-md-4.col-md-offset-2
+						dl.item
+							dt 400 000  руб.
+							dd Максимальный объем инвестиций за год
+				.row
+					.col-md-16.col-md-offset-2
+						.table-responsive
+							table.table.type-table.table-vertical-headers
+								tr
+									th Срок
+									td 2015
+									td 2016
+									td 2017
+									td.filled 3 года
+								tr
+									th Ежегодное<br>пополнение
+									td 400 000 ₽
+									td 400 000 ₽
+									td 400 000 ₽
+									td.filled 1 200 000 ₽
+								tr
+									th Вычет 13%
+									td 52 000 ₽
+									td 52 000 ₽
+									td 52 000 ₽
+									td.filled 156 000 ₽
+		section.advantages
+			.container
+				.row
+					.col-sm-14.col-sm-offset-3
+						h2.section-title Какие&nbsp;преимущества инвестиционного счета?
+				.row.text-center
+					.col-xs-10.col-md-5.col-md-offset-1
+						.item
+							.icon.icon-1
+							p Гарантия возврата налогового вычета с инвестиций от государства
+					.col-xs-10.col-md-6.col-md-offset-1
+						.item
+							.icon.icon-2
+							p Возможность получать не только вычет 13%, но и доход от инвестиций в биржевые инструменты
+					.col-xs-10.col-md-5.col-md-offset-1
+						.item
+							.icon.icon-3
+							p Простая процедура открытия ИИС и получения вычетов до 52 000 рублей в год
+								br
+								br
+					.col-xs-10.col-md-6.col-md-offset-3
+						.item
+							.icon.icon-4
+							p Эффективный инструмент для долгосрочных инвестиций
+					.col-xs-10.col-xs-offset-5.col-md-6.col-md-offset-2
+						.item
+							.icon.icon-5
+							p Периодичность и сумма взносов на счет определяется индивидуально инвестором
+		section.what-to-know
+			.container
+				.row
+					.col-sm-10.col-sm-offset-5
+						h2.section-title Что важно знать?
+				.row
+					.col-sm-6.col-sm-offset-3.col-md-5.col-md-offset-4
+						ul.know-list.list-plus
+							li Вы можете открыть только один инвестиционный счет
+							li Вносить на счет можно только рубли
+							li Минимальная сумма первоначального вложения — 50 000 рублей
+							li Максимальная сумма вложений в год — 400 000 рублей
+					.col-sm-6.col-sm-offset-2.col-md-5.col-md-offset-2
+						ul.know-list.list-plus
+							li Периодичность и сумма последующих взносов — на ваш выбор
+							li Минимальный срок инвестиций — от 3-х лет
+							li Частичное снятие средств не предусмотрено
+							li Совмещение налоговых вычетов не предусмотрено, два варианта вычета на ваш выбор
+		section.which
+			.container
+				.row
+					.col-sm-14.col-sm-offset-3
+						h2.section-title
+							em Какой 
+							|Один из двух типов инвестиционных вычетов 
+							small подходит именно вам?
+				.row
+					.col-xs-10.col-sm-6.col-sm-offset-3
+						.item
+							h4.title Вычет<br>на взнос
+							p Ежегодно на сумму взносов предоставляется вычет по НДФЛ 13%
+							p
+								b 400 000 руб. х 13% = 52 000
+					.col-xs-10.col-sm-6.col-sm-offset-2
+						.item
+							h4.title Льгота<br>на доход
+							p Совокупный доход от операций по ИИС за весь срок действия счета не облагается НДФЛ. Вы можете освободить свой инвестиционных доход от налогообложения.
+							p Этот вариант подходит для трейдеров, которые занимаются активной торговлей
+							p
+								b 1 000 000 руб. x 13% = 130 000
+
+		section.how.text-center
+			.container
+				.row
+					.col-sm-8.col-sm-offset-2
+						.item.item-deposit.clearfix
+							h3.title Как получить вычет на взнос?
+							p Для возврата 13% необходимо подать налоговую декларацию до 30 апреля года, следующего за отчетным, по форме 3 НДФЛ с приложением:
+							ol.list-ordered
+								li Документов подтверждающих получение дохода, облагаемого по ставке 13% в соответствующем налоговом периоде
+								li Документов, подтверждающих зачисление денежных средств на счет
+								li Заявление на возврат налога с указанием банковских реквизитов налогоплательщика
+					.col-sm-8
+						.item.item-income.clearfix
+							h3.title Как получить вычет на доход?
+							p Совокупный доход от операций на ИИС за весь срок действия счета не облагается НДФЛ. 
+							p При расторжении договора на ведение индивидуального инвестиционного счета Вы  предоставляете брокеру справку из налоговой инспекции о том, что не пользовались налоговыми вычетами на взносы в течение срока существование счета. Брокер, выступающий налоговым агентом, не удерживает НДФЛ при возврате средств инвестору. 
+
+		include ./partials/_feedback.jade
+		include ./partials/_footer.jade
+		include ./partials/_footer_scripts.jade
+

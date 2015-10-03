@@ -71,7 +71,7 @@ gulp.task('clean', function (cb) {
 });
 
 gulp.task('html:build', function () {
-  gulp.src(path.src.html)
+  return gulp.src(path.src.html)
     .pipe(jade({
       pretty: true //Add pretty-indentation whitespace to output (false by default)
     }))  // Собираем Jade только в папке ./assets/template/ исключая файлы с _*
@@ -81,7 +81,7 @@ gulp.task('html:build', function () {
 });
 
 gulp.task('js:build', function () {
-  gulp.src(path.src.js)
+  return gulp.src(path.src.js)
     .pipe(rigger())
     //.pipe(sourcemaps.init())
     //.pipe(uglify())
@@ -92,7 +92,7 @@ gulp.task('js:build', function () {
 });
 
 gulp.task('vendor:js:build', function () {
-  gulp.src(path.vendor.js)
+  return gulp.src(path.vendor.js)
     .pipe(gulp.dest(path.build.vendor_js))
     .pipe(reload({stream: true}));
 });

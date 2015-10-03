@@ -8,6 +8,7 @@ body {
 	letter-spacing: .025em;
 
 	a { color: #4992ff; }
+	b { font-weight: 600; }
 }
 
 .top-panel,
@@ -1488,6 +1489,27 @@ label { cursor: pointer; }
 			color: #002a61;
 		}
 	}
+
+	&.table-vertical-headers {
+		tr {
+			>th {
+				padding: 15px 10px 15px 30px;
+				text-align: left;
+				font-weight: 500;
+				background: #eceff4;
+
+				@media (min-width: $screen-md) {
+					padding: 30px 20px 30px 60px;
+				}
+			}
+			>td {
+				padding: 15px 10px;
+				@media (min-width: $screen-md) {
+					padding: 30px 20px;
+				}
+			}
+		}
+	}
 }
 
 // Responsive tables
@@ -1581,6 +1603,64 @@ label { cursor: pointer; }
 		@media (min-width: $screen-md) {
 			padding: 10px 24px 26px;
 			border: 1px solid #9eaab8;
+		}
+	}
+}
+
+.list-plus {
+	padding-left: 0;
+	list-style: none;
+	
+	li {
+		position: relative;
+		&:before {
+			position: absolute;
+			left: -20px;
+			top: 0;
+			line-height: 17px;
+			font-weight: 600;
+			font-size: 26px;
+			content: "+";
+			color: #ffc300;
+
+			@media (min-width: $screen-sm) {
+				left: -26px;
+				top: 2px;
+				line-height: 22px;
+				font-size: 36px;
+				font-weight: 300;
+			}
+		}
+		@media (min-width: $screen-sm) {
+			margin-bottom: 24px;
+		}
+	}
+}
+
+.list-ordered {
+	padding-left: 0;
+	list-style: none;
+	counter-reset: list;
+	li {
+		position: relative;
+		margin-bottom: 20px;
+		&:before {
+			display: block;
+			margin: 0 auto;
+			line-height: 30px;
+			font-weight: 600;
+			font-size: 20px;
+			counter-increment: list;
+			content: counter(list) ". ";
+			color: #ffc300;
+
+			@media (min-width: $screen-sm) {
+				line-height: 36px;
+				font-size: 30px;
+			}
+		}
+		@media (min-width: $screen-sm) {
+			margin-bottom: 24px;
 		}
 	}
 }

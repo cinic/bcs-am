@@ -2,6 +2,7 @@
 Futura new Book
 Futura new Light
 Futura new Medium
+Futura new Demi
 */
 @font-face {
 	font-family: 'FuturaNew';
@@ -32,3 +33,29 @@ Futura new Medium
   font-stretch: normal;
   unicode-range: U+0020-25CA;
 }
+@font-face {
+	font-family: 'FuturaNew';
+	src: url('../fonts/FuturaNewLightOblique.eot');
+	src: local('☺'), url('../fonts/FuturaNewLightOblique.woff') format('woff'), url('../fonts/FuturaNewLightOblique.ttf') format('truetype'), url('../fonts/FuturaNewLightOblique.svg') format('svg');
+	font-weight: 300;
+	font-style: italic;
+	unicode-range: U+0020-25CA;
+}
+@font-face {
+	font-family: 'FuturaNew';
+	src: url('../fonts/FuturaNewDemi.eot');
+	src: local('☺'), url('../fonts/FuturaNewDemi.woff') format('woff'), url('../fonts/FuturaNewDemi.ttf') format('truetype'), url('../fonts/FuturaNewDemi.svg') format('svg');
+	font-weight: 600;
+	font-style: normal;
+	unicode-range: U+0020-25CA;
+}
+@font-face {
+	font-family: 'FuturaNew';
+	src: url('../fonts/FuturaNewBookOblique.eot');
+	src: local('☺'), url('../fonts/FuturaNewBookOblique.woff') format('woff'), url('../fonts/FuturaNewBookOblique.ttf') format('truetype'), url('../fonts/FuturaNewBookOblique.svg') format('svg');
+	font-weight: 400;
+	font-style: italic;
+	unicode-range: U+0020-25CA;
+}
+
+

@@ -1,3 +1,6 @@
+.support {
+  /* Support sub pages */
+}
 .support .page-title {
   margin: 0 -10px;
   padding-top: 12px;
@@ -243,5 +246,334 @@
 @media (min-width: 768px) {
   .support .support-item {
     font-size: 18px;
+  }
+}
+.support.support-pia {
+  color: #445267;
+}
+.support.support-pia .section-title {
+  margin: 30px 0;
+  color: #002a61;
+}
+@media (min-width: 992px) {
+  .support.support-pia .section-title {
+    margin: 60px 0;
+  }
+}
+.support.support-pia .what-is .section-title {
+  margin-top: 30px;
+}
+.support.support-pia .what-is .description {
+  margin-bottom: 20px;
+  line-height: 22px;
+  font-size: 15px;
+  color: #445267;
+}
+.support.support-pia .what-is .description:after {
+  display: none;
+}
+@media (min-width: 768px) {
+  .support.support-pia .what-is .description {
+    margin-bottom: 80px;
+    line-height: 33px;
+    font-size: 30px;
+  }
+}
+.support.support-pia .what-is .item dt {
+  padding-bottom: 24px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.support.support-pia .what-is .item dt:after {
+  position: relative;
+  display: block;
+  top: 12px;
+  margin: 0 auto;
+  content: " ";
+  width: 47px;
+  height: 3px;
+  background: #ffc300;
+}
+@media (min-width: 768px) {
+  .support.support-pia .what-is .item dt {
+    padding-bottom: 42px;
+    font-size: 30px;
+  }
+  .support.support-pia .what-is .item dt:after {
+    position: relative;
+    display: block;
+    top: 21px;
+    margin: 0 auto;
+    content: " ";
+    width: 70px;
+    height: 6px;
+    background: #ffc300;
+  }
+}
+.support.support-pia .what-is .item dd {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+@media (min-width: 768px) {
+  .support.support-pia .what-is .item dd {
+    font-size: 20px;
+  }
+}
+.support.support-pia .what-is .type-table {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+@media (min-width: 992px) {
+  .support.support-pia .what-is .type-table {
+    margin-top: 108px;
+    margin-bottom: 108px;
+  }
+}
+.support.support-pia .advantages .item {
+  position: relative;
+  padding-top: 75px;
+}
+.support.support-pia .advantages .item .icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -40px;
+  width: 66px;
+  height: 67px;
+  background: url("../img/pages/support/advantages-pia-icons.png") no-repeat 0 0;
+  background-size: 66px 334px;
+}
+.support.support-pia .advantages .item .icon.icon-1 {
+  background-position: 0 0;
+}
+.support.support-pia .advantages .item .icon.icon-2 {
+  background-position: 0 -67px;
+}
+.support.support-pia .advantages .item .icon.icon-3 {
+  background-position: 0 -134px;
+}
+.support.support-pia .advantages .item .icon.icon-4 {
+  background-position: 0 -201px;
+}
+.support.support-pia .advantages .item .icon.icon-5 {
+  background-position: 0 -267px;
+}
+@media (min-width: 992px) {
+  .support.support-pia .advantages .item .icon {
+    margin-left: -40px;
+    width: 80px;
+    height: 81px;
+    background-size: 80px 405px;
+  }
+  .support.support-pia .advantages .item .icon.icon-1 {
+    background-position: 0 0;
+  }
+  .support.support-pia .advantages .item .icon.icon-2 {
+    background-position: 0 -81px;
+  }
+  .support.support-pia .advantages .item .icon.icon-3 {
+    background-position: 0 -162px;
+  }
+  .support.support-pia .advantages .item .icon.icon-4 {
+    background-position: 0 -243px;
+  }
+  .support.support-pia .advantages .item .icon.icon-5 {
+    background-position: 0 -324px;
+  }
+}
+@media (min-width: 992px) {
+  .support.support-pia .advantages .item {
+    padding-top: 95px;
+  }
+}
+.support.support-pia .what-to-know {
+  padding-bottom: 40px;
+  background-color: #505762;
+  background: url("../img/pages/support/what-to-know-pia.jpg") no-repeat top center;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/support/what-to-know-pia.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/support/what-to-know-pia.jpg', sizingMethod='scale')";
+  color: #f4f4f4;
+}
+.support.support-pia .what-to-know .section-title {
+  color: white;
+}
+.support.support-pia .what-to-know .know-list {
+  font-size: 15px;
+}
+@media (max-width: 767px) {
+  .support.support-pia .what-to-know .know-list li {
+    padding-top: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .support.support-pia .what-to-know .know-list li:before {
+    top: 0;
+    left: 50%;
+    margin-left: -10px;
+  }
+}
+@media (min-width: 768px) {
+  .support.support-pia .what-to-know .know-list {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+@media (min-width: 768px) {
+  .support.support-pia .what-to-know {
+    padding-bottom: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .support.support-pia .what-to-know {
+    padding-bottom: 90px;
+  }
+}
+.support.support-pia .which .section-title {
+  margin: 30px 0;
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 22px;
+  color: #002665;
+}
+.support.support-pia .which .section-title em {
+  font-style: normal;
+  font-size: 22px;
+}
+.support.support-pia .which .section-title small {
+  font-size: 22px;
+}
+@media (min-width: 768px) {
+  .support.support-pia .which .section-title {
+    font-size: 70px;
+    font-weight: 300;
+    line-height: 60px;
+    color: #78849b;
+  }
+  .support.support-pia .which .section-title em,
+  .support.support-pia .which .section-title small {
+    display: block;
+  }
+  .support.support-pia .which .section-title em {
+    line-height: 25px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #4992ff;
+    text-transform: uppercase;
+  }
+  .support.support-pia .which .section-title small {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+.support.support-pia .which .item {
+  font-size: 14px;
+  text-align: center;
+}
+.support.support-pia .which .item .title {
+  display: inline-block;
+  padding: 35px 0;
+  width: 98px;
+  height: 98px;
+  line-height: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  background: #ffc300;
+  border-radius: 49px;
+}
+@media (min-width: 768px) {
+  .support.support-pia .which .item .title {
+    padding: 50px 0;
+    width: 156px;
+    height: 156px;
+    line-height: 24px;
+    font-size: 24px;
+    border-radius: 78px;
+  }
+}
+.support.support-pia .which .item p {
+  margin-top: 0;
+}
+@media (min-width: 768px) {
+  .support.support-pia .which .item {
+    font-size: 20px;
+  }
+}
+.support.support-pia .how {
+  padding-bottom: 46px;
+  font-size: 15px;
+}
+.support.support-pia .how .item {
+  padding: 0 20px;
+  line-height: 17px;
+  color: white;
+}
+.support.support-pia .how .item .title {
+  line-height: 30px;
+  font-size: 30px;
+  font-weight: 400;
+}
+@media (min-width: 992px) {
+  .support.support-pia .how .item .title {
+    line-height: 55px;
+    font-size: 50px;
+    font-weight: 300;
+  }
+}
+@media (min-width: 768px) {
+  .support.support-pia .how .item {
+    height: 570px;
+    font-weight: 300;
+    background-color: #5a6473;
+  }
+  .support.support-pia .how .item.item-deposit {
+    background: #5a6473 url("../img/pages/support/how-01-pia.jpg") no-repeat top center;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/support/how-01-pia.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/support/how-01-pia.jpg', sizingMethod='scale')";
+  }
+  .support.support-pia .how .item.item-income {
+    background: #5a6473 url("../img/pages/support/how-02-pia.jpg") no-repeat top center;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/support/how-02-pia.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/support/how-02-pia.jpg', sizingMethod='scale')";
+  }
+}
+@media (min-width: 992px) {
+  .support.support-pia .how .item {
+    padding: 0 40px;
+    height: 820px;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 300;
+  }
+}
+@media (min-width: 1200px) {
+  .support.support-pia .how .item {
+    height: 700px;
+  }
+}
+@media (max-width: 767px) {
+  .support.support-pia .how {
+    background: #5a6473 url("../img/pages/support/how-01-pia.jpg") no-repeat top center;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/support/how-01-pia.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/support/how-01-pia.jpg', sizingMethod='scale')";
+  }
+}
+@media (min-width: 768px) {
+  .support.support-pia .how {
+    padding-top: 30px;
+    background: none;
+  }
+}
+@media (min-width: 992px) {
+  .support.support-pia .how {
+    padding-top: 50px;
+    background: none;
   }
 }

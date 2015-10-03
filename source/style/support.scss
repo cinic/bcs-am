@@ -213,4 +213,311 @@
 			font-size: 18px;
 		}
 	}
+
+	/* Support sub pages */
+
+	&.support-pia {
+		color: #445267;
+
+		.section-title {
+			margin: 30px 0;
+			color: #002a61;
+			@media (min-width: $screen-md) {
+				margin: 60px 0;
+			}
+		}
+		
+		.what-is {
+			.section-title { margin-top: 30px; }
+
+			.description {
+				margin-bottom: 20px;
+				line-height: 22px;
+				font-size: 15px;
+				color: #445267;
+
+				&:after { display: none; }
+
+				@media (min-width: $screen-sm) {
+					margin-bottom: 80px;
+					line-height: 33px;
+					font-size: 30px;
+				}
+			}
+
+			.item {
+				dt {
+					padding-bottom: 24px;
+					font-size: 22px;
+					font-weight: 600;
+
+					&:after {
+						position: relative;
+						display: block;
+						top: 12px;
+						margin: 0 auto;
+						content: " ";
+						width: 47px;
+						height: 3px;
+						background: #ffc300;
+					}
+					@media (min-width: $screen-sm) {
+						padding-bottom: 42px;
+						font-size: 30px;
+
+						&:after {
+							position: relative;
+							display: block;
+							top: 21px;
+							margin: 0 auto;
+							content: " ";
+							width: 70px;
+							height: 6px;
+							background: #ffc300;
+						}
+					}
+				}
+				dd {
+					margin: 0;
+					font-size: 14px;
+					line-height: 24px;
+					@media (min-width: $screen-sm) {
+						font-size: 20px;
+					}
+				}
+			}
+
+			.type-table {
+				margin-top: 24px;
+				margin-bottom: 24px;
+
+				@media (min-width: $screen-md) {
+					margin-top: 108px;
+					margin-bottom: 108px;
+				}
+			}
+		}
+
+		.advantages {
+			.item {
+				position: relative;
+				padding-top: 75px;
+
+				.icon {
+					position: absolute;
+					top: 0;
+					left: 50%;
+					margin-left: -40px;
+					width: 66px;
+					height: 67px;
+					background: url('../img/pages/support/advantages-pia-icons.png') no-repeat 0 0;
+					background-size: 66px 334px;
+					
+					&.icon-1 { background-position: 0 0; }
+					&.icon-2 { background-position: 0 -67px; }
+					&.icon-3 { background-position: 0 -134px; }
+					&.icon-4 { background-position: 0 -201px; }
+					&.icon-5 { background-position: 0 -267px; }
+
+					@media (min-width: $screen-md) {
+						margin-left: -40px;
+						width: 80px;
+						height: 81px;
+						background-size: 80px 405px;
+
+						&.icon-1 { background-position: 0 0; }
+						&.icon-2 { background-position: 0 -81px; }
+						&.icon-3 { background-position: 0 -162px; }
+						&.icon-4 { background-position: 0 -243px; }
+						&.icon-5 { background-position: 0 -324px; }
+					}
+				}
+
+				@media (min-width: $screen-md) {
+					padding-top: 95px;
+				}
+			}
+		}
+
+		.what-to-know {
+			padding-bottom: 40px;
+			background-color: #505762;
+			background: url('../img/pages/support/what-to-know-pia.jpg') no-repeat top center;
+			background-size: cover;
+			filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/support/what-to-know-pia.jpg', sizingMethod='scale');
+			-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/support/what-to-know-pia.jpg', sizingMethod='scale')";
+			color: #f4f4f4;
+
+			.section-title { color: white;}
+
+			.know-list {
+				font-size: 15px;
+
+				@media (max-width: $screen-xs-max) {
+					li {
+						padding-top: 22px;
+						margin-bottom: 10px;
+						text-align: center;
+						&:before {
+							top: 0;
+							left: 50%;
+							margin-left: -10px;
+						}
+					}
+				}
+				@media (min-width: $screen-sm) {
+					font-size: 20px;
+					font-weight: 300;
+				}
+			}
+
+			@media (min-width: $screen-sm) {
+				padding-bottom: 50px;
+			}
+			@media (min-width: $screen-md) {
+				padding-bottom: 90px;
+			}
+		}
+
+		.which {
+			.section-title {
+				margin: 30px 0;
+				font-weight: 500;
+				line-height: 22px;
+				font-size: 22px;
+				
+				color: #002665;
+
+				em {
+					font-style: normal;
+					font-size: 22px;
+				}
+				small {
+					font-size: 22px;
+				}
+				@media (min-width: $screen-sm) {
+					font-size: 70px;
+					font-weight: 300;
+					line-height: 60px;
+					color: #78849b;
+					em,
+					small {
+						display: block;
+					}
+
+					em {
+						line-height: 25px;
+						font-weight: 500;
+						font-size: 18px;
+						color: #4992ff;
+						text-transform: uppercase;
+					}
+					small {
+						margin-top: 20px;
+						font-size: 20px;
+						line-height: 22px;
+					}
+				}
+			}
+
+			.item {
+				font-size: 14px;
+				text-align: center;
+				
+				.title {
+					display: inline-block;
+					padding: 35px 0;
+					width: 98px;
+					height: 98px;
+					line-height: 15px;
+					font-size: 15px;
+					font-weight: 600;
+					text-align: center;
+					text-transform: uppercase;
+					background: #ffc300;
+					border-radius: 49px;
+
+					@media (min-width: $screen-sm) {
+						padding: 50px 0;
+						width: 156px;
+						height: 156px;
+						line-height: 24px;
+						font-size: 24px;
+						border-radius: 78px;
+					}
+				}
+
+				p { margin-top: 0; }
+
+				@media (min-width: $screen-sm) {
+					font-size: 20px;
+				}
+			}
+		}
+
+		.how {
+			padding-bottom: 46px;
+			font-size: 15px;
+			.item {
+				padding: 0 20px;
+				line-height: 17px;
+				color: white;
+
+				.title {
+					line-height: 30px;
+					font-size: 30px;
+					font-weight: 400;
+
+					@media (min-width: $screen-md) {
+						line-height: 55px;
+						font-size: 50px;
+						font-weight: 300;
+					}
+				}
+				@media (min-width: $screen-sm) {
+					height: 570px;
+					font-weight: 300;
+					background-color: #5a6473;
+
+					&.item-deposit {
+						background: #5a6473 url('../img/pages/support/how-01-pia.jpg') no-repeat top center;
+						background-size: cover;
+						filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/support/how-01-pia.jpg', sizingMethod='scale');
+						-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/support/how-01-pia.jpg', sizingMethod='scale')";
+					}
+					&.item-income {
+						background: #5a6473 url('../img/pages/support/how-02-pia.jpg') no-repeat top center;
+						background-size: cover;
+						filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/support/how-02-pia.jpg', sizingMethod='scale');
+						-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/support/how-02-pia.jpg', sizingMethod='scale')";
+					}
+				}
+				@media (min-width: $screen-md) {
+					padding: 0 40px;
+					height: 820px;
+					font-size: 20px;
+					line-height: 22px;
+					font-weight: 300;
+				}
+				@media (min-width: $screen-lg) {
+					height: 700px;
+				}
+			}
+
+			@media (max-width: $screen-xs-max) {
+				background: #5a6473 url('../img/pages/support/how-01-pia.jpg') no-repeat top center;
+				background-size: cover;
+				filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/support/how-01-pia.jpg', sizingMethod='scale');
+				-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/support/how-01-pia.jpg', sizingMethod='scale')";
+			}
+			@media (min-width: $screen-sm) {
+				padding-top: 30px;
+				background: none;
+			}
+			@media (min-width: $screen-md) {
+				padding-top: 50px;
+				background: none;
+			}
+		}
+	}
 }
