@@ -191,6 +191,11 @@ nav.menu a {
     margin-right: 40px;
   }
 }
+@media (min-width: 1200px) {
+  .top-panel .top-nav li {
+    margin-right: 60px;
+  }
+}
 @media (min-width: 768px) {
   .top-panel .top-nav {
     display: block;
