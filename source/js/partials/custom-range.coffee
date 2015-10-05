@@ -73,6 +73,7 @@ if slider?
 			$('.calculator #income-value, .calculator #income-result').text( calcValue( value) )
 			$('.calculator .income-values .income-bg').css('height', calcIncomeHeight(calcValue( value )))
 
+# Calculator on Pia page
 if sliderPiaInvest?
 	valueInput2 = document.getElementById('calc-range-input-investments')
 	noUiSlider.create sliderPiaInvest,
@@ -128,4 +129,9 @@ if sliderPiaInvest? && sliderPiaRefill?
 	sliderPiaRefill.noUiSlider.on 'update', ( values, handle ) ->
 		rawValue = values[handle] * 1
 		valueInput3.value = (values[handle] * 1).formatMoney(0, '', ' ')
+
+	# Calculator pia time click binding
+	$ -> 
+		$('.calculator-form span.time').on 'click', ->
+			$(@).siblings().removeClass('active').end().andSelf().addClass('active')
 

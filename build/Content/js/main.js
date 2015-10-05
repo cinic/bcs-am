@@ -210,4 +210,9 @@ if ((sliderPiaInvest != null) && (sliderPiaRefill != null)) {
     rawValue = values[handle] * 1;
     return valueInput3.value = (values[handle] * 1).formatMoney(0, '', ' ');
   });
+  $(function() {
+    return $('.calculator-form span.time').on('click', function() {
+      return $(this).siblings().removeClass('active').end().andSelf().addClass('active');
+    });
+  });
 }
