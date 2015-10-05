@@ -520,4 +520,48 @@
 			}
 		}
 	}
+	/* Graph on page */
+	.change-risk {
+		text-align: right;
+		span {
+			display: inline-block;
+			font-size: 20px;
+			font-weight: 400;
+			color: #002665;
+			cursor: pointer;
+		}
+
+		.ranger {
+			position: relative;
+			margin: 0 10px;
+			width: 35px;
+			height: 12px;
+			background: #f2f4f7;
+			border: 1px solid #9ea9b8;
+			border-radius: 4px;
+
+			i {
+				position: absolute;
+				top: -5px;
+				left: -5px;
+				width: 20px;
+				height: 20px;
+				background: white;
+				border: 2px solid #4992ff;
+				border-radius: 10px;
+			}
+			&.high {
+				i {
+					left: auto;
+					right: -5px;
+				}
+			}
+			&.low {
+				i {
+					left: -5px;
+					right: auto;
+				}
+			}
+		}
+	}
 }

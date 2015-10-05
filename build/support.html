@@ -97,6 +97,7 @@
             <p>Нет идеального набора активов или стратегий, который идеально подошел бы для всех. Кроме горизонта и профиля риска инвестора существует много других факторов. Например, каковы ваши текущие накопления и какую часть общего капитала вы можете позволить себе инвестировать. Важным фактором является базовая валюта (или комбинация валют).</p>
             <h3>Изменение доли активов в зависимости от выбранного уровня риска</h3>
             <div id="graph" class="graph"></div>
+            <div class="change-risk clearfix"><span id="low" data-risk="low" class="item low">Низкий</span><span class="ranger low"><i></i></span><span id="high" data-risk="high" class="item high">Высокий</span></div>
             <h3>Шаги для составления оптимального портфеля</h3>
             <ul>
               <li>Оцените свои текущие финансовые возможности (доходы, расходы, сбережения) и определите цели инвестирования</li>
@@ -201,5 +202,98 @@
     <script src="Content/js/vendor/wNumb.js"></script>
     <script src="Content/js/vendor/owl.carousel.min.js"></script>
     <script src="Content/js/main.js"></script>
+    <script src="Content/js/vendor/highcharts.js"></script>
+    <script>
+      $('.change-risk .item').on('click', function () {
+      	var norm = [["Денежные средства",40],["Облигации",30],["Акции",30]],
+      			extra = [["Денежные средства",60],["Облигации",20],["Акции",20]];
+      	var elem = $(this);
+      	var risk = $(this).data('risk');
+      	var chart = $('#graph').highcharts();
+      	log(norm[0])
+      	log(extra[0])
+      	if (risk == 'low') {
+      		elem.siblings('.ranger').removeClass('high').addClass('low');
+      		chart.series[0].setData(norm);
+      	}
+      	if (risk == 'high') {
+      		elem.siblings('.ranger').removeClass('low').addClass('high');
+      		chart.series[0].setData(extra);
+      	}
+      });
+      $('#graph').highcharts({
+      		chart: {
+      			renderTo: 'container',
+      			type: 'pie',
+      			marginLeft: 300,
+      			height: 300
+      		},
+      		colors: [
+      			'#1bb329',
+      			'#ffc300',
+      			'#4992ff'
+      		],
+      		credits: {
+      			enabled: false
+      		},
+      		title: {
+      			text: ''
+      		},
+      		yAxis: {
+      			title: {
+      				text: 'Total percent market share'
+      			}
+      		},
+      		plotOptions: {
+      			pie: {
+      				shadow: false,
+      				legendItemClick: false,
+      				dataLabels: {
+      					enabled: false,
+      				}
+      			}
+      		},
+      		tooltip: {
+      			formatter: function() {
+      				return '<b>'+ this.point.name +'</b>: '+ this.y +' %';
+      			}
+      		},
+      		legend: {
+      			align: 'left',
+      			verticalAlign: 'top',
+      			enabled: true,
+      			floating: true,
+      			layout: 'vertical',
+      			itemMarginBottom: 18,
+      			itemMarginTop: 18,
+      			symbolPadding: 20,
+      			symbolHeight: 34,
+      			symbolWidth: 34,
+      			lineHeight: 34,
+      			itemStyle: {
+      				color: '#002a61',
+      				font: '300 20px FuturaNew',
+      				fontWeight: '300',
+      			},
+      			title: {
+      				text: 'Доли активов',
+      				style: {
+      					color: '#002a61',
+      					font: '24px FuturaNew',
+      					fontWeight: '600',
+      				}
+      			},
+      			x: -18,
+      			y: 10
+      		},
+      		series: [{
+      			name: 'Browsers',
+      			data: [["Денежные средства",40],["Облигации",30],["Акции",30]],
+      			size: '95%',
+      			innerSize: '75%',
+      			showInLegend: true
+      		}]
+      	});
+    </script>
   </body>
 </html>
