@@ -551,7 +551,7 @@ nav.menu.active .main-nav li a {
   margin-top: 50px;
   margin-bottom: 12px;
   line-height: 18px;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 400;
   color: #4992ff;
 }
@@ -560,7 +560,7 @@ nav.menu.active .main-nav li a {
     margin-top: 118px;
     margin-bottom: 24px;
     line-height: 32px;
-    font-size: 26px;
+    font-size: 36px;
   }
 }
 .header .page-subtitle {
