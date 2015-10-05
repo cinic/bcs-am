@@ -427,6 +427,10 @@ nav.menu {
 		font-size: 18px;
 		font-weight: 400;
 		color: #4992ff;
+		@media (min-width: $screen-md) {
+			line-height: 30px;
+			font-size: 28px;
+		}
 		@media (min-width: $screen-lg) {
 			margin-top: 118px;
 			margin-bottom: 24px;
