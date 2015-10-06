@@ -40,6 +40,11 @@
 
 	&.btn-yellow {
 		background-color: #ffc300;
+
+		&:hover,
+		&.active { background-color: #ffb400; }
+
+		&:active { background-color: #ffd200; }
 	}
 
 	&[type='submit'] {

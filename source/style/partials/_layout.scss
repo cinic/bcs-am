@@ -69,6 +69,10 @@ nav.menu {
 				position: relative;
 				display: inline-block;
 				
+				&:hover,
+				&.active {
+					border-bottom: 1px solid;
+				}
 				.icon {
 					position: absolute;
 					left: -32px;
@@ -87,6 +91,14 @@ nav.menu {
 					}
 				}
 				&.pseudo-link {
+					&:hover,
+					&.active {
+						border-bottom: 0;
+
+						i {
+							border-bottom-style: solid;
+						}
+					}
 					i {
 						font-style: normal;
 						border-bottom: 1px dashed;
@@ -301,35 +313,76 @@ nav.menu {
 			z-index: 100;
 		}
 		.main-nav {
-			margin: 10px 0;
+			margin: 0;
 			padding: 0;
 			font-size: 14px;
 			text-transform: uppercase;
 			li {
 				float: left;
-				padding: 12px 30px 7px;
 				list-style: none;
-				border-left: 1px solid #dadce1;
+
 				&:first-child {
-					padding-left: 0;
-					border: 0;
+					a {
+						padding-left: 0;
+						&:after { display: none; }
+					}
 				}
 				&:last-child,
 				.last {
-					padding: 0;
-					border: 0;
+					a {
+						padding: 0;
+						&:after { display: none; }
+					}
 				}
 
 				a {
+					position: relative;
+					float: left;
+					padding: 20px 30px 20px;
 					color: #445267;
 					letter-spacing: 0.025em;
+
+					&:after {
+						position: absolute;
+						display: block;
+						left: 0;
+						top: 50%;
+						margin-top: -17px;
+						width: 1px;
+						height: 36px;
+						content: ' ';
+						background: #dadce1;
+					}
+
+					@media (min-width: $screen-sm) {
+						padding-left: 10px;
+						padding-right: 10px;
+					}
+					@media (min-width: $screen-md) {
+						padding-left: 15px;
+						padding-right: 15px;
+					}
+					@media (min-width: $screen-lg) {
+						padding-left: 30px;
+						padding-right: 30px;
+					}
+
+					&:hover,
+					&.active {
+						background: #dadce1;
+					}
 				}
 				&.open-account {
 					a {
+						margin-top: 10px;
 						display: inline-block;
 						padding: 12px 35px 7px;
 						background-color: #ffc300;
 						border-radius: 18px;
+
+						&:hover,
+						&.active { background-color: #ffb400; }
+						&:active { background-color: #ffbd200; }
 						@media (min-width: $screen-sm) {
 							padding-left: 15px;
 							padding-right: 15px;
@@ -340,18 +393,6 @@ nav.menu {
 						}
 					}
 				}
-				@media (min-width: $screen-sm) {
-					padding-left: 10px;
-					padding-right: 10px;
-				}
-				@media (min-width: $screen-md) {
-					padding-left: 15px;
-					padding-right: 15px;
-				}
-				@media (min-width: $screen-lg) {
-					padding-left: 30px;
-					padding-right: 30px;
-				}
 			}
 			@media (min-width: $screen-sm) {
 				font-size: 10px;
@@ -359,7 +400,7 @@ nav.menu {
 			@media (min-width: $screen-md) {
 				font-size: 12px;
 			}
-			@media (min-width: $screen-md) {
+			@media (min-width: $screen-lg) {
 				font-size: 14px;
 			}
 		}
