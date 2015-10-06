@@ -66,44 +66,98 @@ html(lang="ru")
 				h2.section-title Тарифы фонда
 				.row
 					.col-sm-12.col-sm-offset-4
-						table.fund-rates-tabs
-							tr
-								td
-									a.buy(href="#fund-rates-buy") Приобретение
+						.tab-rates-container
+							ul.fund-rates-tabs.etabs.clearfix
+								li.tab
+									a.buy(href="#fund-rates-buy")
+										span.icon.buy
+										|Приобретение
 										br
 										|паев
-								td
-									a.sell(href="#fund-rates-sell") Погашение
+								li.tab
+									a.sell(href="#fund-rates-sell")
+										span.icon.sell
+										|Погашение
 										br
 										|паев
-								td
-									a.profit(href="#fund-rates-profit") Вознаграж-
+								li.tab
+									a.profit(href="#fund-rates-profit")
+										span.icon.profit
+										|Вознаграж-
 										br
 										|дение
-						table#fund-rates-buy.fund-rates-content
-							caption
-								b Погашение паев
-								|Скидка, при погашении паев, в % от стоимости пая
-							tr.filled
-								td
-									|при подаче заявки в Управляющую компанию*
-									br
-									br
-									|при подаче заявки Агентам Фонда ООО «Компания БКС»
-								td 0
-							tr
-								td при погашении паев в период владения до 1 года
-								td 2%
-							tr
-								td при погашении паев в период владения до 1 года
-								td 2%
-							tr
-								td при погашении паев в период владения до 1 года
-								td 2%
-							tr
-								td при погашении паев в период владения до 1 года
-								td 2%
+							.table-responsive
+								table#fund-rates-buy.fund-rates-content
+									caption
+										b Погашение паев
+										|Скидка, при погашении паев, в % от стоимости пая
+									tr.filled
+										td
+											|при подаче заявки в Управляющую компанию*
+											br
+											br
+											|при подаче заявки Агентам Фонда ООО «Компания БКС»
+										td 0
+									tr
+										td при погашении паев в период владения до 1 года
+										td 2%
+									tr
+										td при погашении паев в период владения до 1 года
+										td 2%
+									tr
+										td при погашении паев в период владения до 1 года
+										td 2%
+									tr
+										td при погашении паев в период владения до 1 года
+										td 2%
 
+								table#fund-rates-sell.fund-rates-content
+									caption
+										b Погашение паев
+										|Скидка, при погашении паев, в % от стоимости пая
+									tr.filled
+										td
+											|при подаче заявки в Управляющую компанию*
+											br
+											br
+											|при подаче заявки Агентам Фонда ООО «Компания БКС»
+										td 0
+									tr
+										td при погашении паев в период владения до 2 года
+										td 2%
+									tr
+										td при погашении паев в период владения до 2 года
+										td 2%
+									tr
+										td при погашении паев в период владения до 2 года
+										td 2%
+									tr
+										td при погашении паев в период владения до 2 года
+										td 2%
+								table#fund-rates-profit.fund-rates-content
+									caption
+										b Погашение паев
+										|Скидка, при погашении паев, в % от стоимости пая
+									tr.filled
+										td
+											|при подаче заявки в Управляющую компанию*
+											br
+											br
+											|при подаче заявки Агентам Фонда ООО «Компания БКС»
+										td 0
+									tr
+										td при погашении паев в период владения до 3 года
+										td 2%
+									tr
+										td при погашении паев в период владения до 3 года
+										td 2%
+									tr
+										td при погашении паев в период владения до 3 года
+										td 2%
+									tr
+										td при погашении паев в период владения до 3 года
+										td 2%
+		
 		section.documentation.bond-national-fund
 			.container
 				h2.section-title Документы фонда

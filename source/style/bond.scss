@@ -616,17 +616,75 @@
 		}
 
 		.fund-rates-tabs {
-
-			td {
+			margin-top: 22px;
+			padding-left:0;
+			li {
+				float: left;
 				padding-bottom: 20px;
+				width: 33.333333%;
+				list-style-type: none;
 				line-height: 14px;
 				text-align: center;
 				text-transform: uppercase;
 				font-size: 10px;
 
 				a {
+					position: relative;
+					display: inline-block;
+					padding-top: 46px;
 					text-decoration: none;
 					color: #002a61;
+
+					.icon {
+						position: absolute;
+						top: 0;
+						left: 50%;
+						margin-left: -20px;
+						width: 41px;
+						height: 40px;
+						background: url('../img/pages/bonds/fund-rates-icons.png') no-repeat 0 0;
+
+						&.buy {
+							background-position: 0 0;
+						}
+						&.sell {
+							background-position: 0 -40px;
+						}
+						&.profit {
+							background-position: 0 -80px;
+						}
+
+						@media (min-width: $screen-md) {
+							left: 0;
+							margin-left: 0;
+						}
+					}
+
+					&:hover {
+						.icon {
+							&.buy {
+								background-position: -41px 0;
+							}
+							&.sell {
+								background-position: -41px -40px;
+							}
+							&.profit {
+								background-position: -41px -80px;
+							}
+						}
+					}
+					
+					@media (min-width: $screen-md) {
+						padding-top: 2px;
+						padding-left: 60px;
+					}
+				}
+
+				@media (min-width: $screen-md) {
+					padding-bottom: 40px;
+					padding-left: 40px;
+					text-align: left;
+					font-size: 12px;
 				}
 			}
 		}

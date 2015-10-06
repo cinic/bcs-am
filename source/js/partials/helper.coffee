@@ -23,4 +23,4 @@ $ ->
 		$('nav.menu').toggleClass('active')
 $ ->
 	if typeof $.fn.easytabs == 'function'
-		$('.tab-container').easytabs()
+		$('.tab-container, .tab-rates-container').easytabs()

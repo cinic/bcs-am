@@ -634,16 +634,73 @@
   width: 100%;
   color: #002a61;
 }
-.bond .fund-rates .fund-rates-tabs td {
+.bond .fund-rates .fund-rates-tabs {
+  margin-top: 22px;
+  padding-left: 0;
+}
+.bond .fund-rates .fund-rates-tabs li {
+  float: left;
   padding-bottom: 20px;
+  width: 33.333333%;
+  list-style-type: none;
   line-height: 14px;
   text-align: center;
   text-transform: uppercase;
   font-size: 10px;
 }
-.bond .fund-rates .fund-rates-tabs td a {
+.bond .fund-rates .fund-rates-tabs li a {
+  position: relative;
+  display: inline-block;
+  padding-top: 46px;
   text-decoration: none;
   color: #002a61;
+}
+.bond .fund-rates .fund-rates-tabs li a .icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -20px;
+  width: 41px;
+  height: 40px;
+  background: url("../img/pages/bonds/fund-rates-icons.png") no-repeat 0 0;
+}
+.bond .fund-rates .fund-rates-tabs li a .icon.buy {
+  background-position: 0 0;
+}
+.bond .fund-rates .fund-rates-tabs li a .icon.sell {
+  background-position: 0 -40px;
+}
+.bond .fund-rates .fund-rates-tabs li a .icon.profit {
+  background-position: 0 -80px;
+}
+@media (min-width: 992px) {
+  .bond .fund-rates .fund-rates-tabs li a .icon {
+    left: 0;
+    margin-left: 0;
+  }
+}
+.bond .fund-rates .fund-rates-tabs li a:hover .icon.buy {
+  background-position: -41px 0;
+}
+.bond .fund-rates .fund-rates-tabs li a:hover .icon.sell {
+  background-position: -41px -40px;
+}
+.bond .fund-rates .fund-rates-tabs li a:hover .icon.profit {
+  background-position: -41px -80px;
+}
+@media (min-width: 992px) {
+  .bond .fund-rates .fund-rates-tabs li a {
+    padding-top: 2px;
+    padding-left: 60px;
+  }
+}
+@media (min-width: 992px) {
+  .bond .fund-rates .fund-rates-tabs li {
+    padding-bottom: 40px;
+    padding-left: 40px;
+    text-align: left;
+    font-size: 12px;
+  }
 }
 .bond .fund-rates .fund-rates-content {
   border: 1px solid #9ea9b8;
