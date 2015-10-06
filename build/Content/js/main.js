@@ -28,7 +28,7 @@ $(function() {
 
 $(function() {
   if (typeof $.fn.easytabs === 'function') {
-    return $('.tab-container, .tab-rates-container').easytabs();
+    return $('.tab-container, .tab-rates-container, .tab-analytics-container').easytabs();
   }
 });
 

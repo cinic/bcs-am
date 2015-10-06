@@ -1,0 +1,131 @@
+doctype html
+html(lang="ru")
+	head
+		include ./partials/_header.jade
+		link(rel="stylesheet" href="Content/css/analytics.css")/
+	body.analytics
+		include ./partials/_navigation.jade
+		header.header.mini
+			.container
+				.row
+					.col-sm-16.col-sm-offset-2
+						h1.page-subtitle Комментарии и аналитика
+		section.content
+			i.line
+			.container
+				.row
+					.col-sm-16.col-sm-offset-2
+						.tab-analytics-container.clearfix
+							ul.etabs.clearfix
+								li.tab
+									a(href="#analytics-comments") Комментарии и аналитика
+								li.tab
+									a(href="#analytics-busines") Колонка главы&nbsp;бизнеса
+								li.tab
+									a(href="#analytics-reports") Отчёты по управлению ПИФ
+							.row
+								#analytics-comments.analytics-comments
+									.col-sm-10.col-md-6
+										.item
+											h3.title Долларовые активы могут проявить себя во второй половине года
+											time(datetime="2015-07-20") 20.07.15
+											.teaser Андрей Стоянов, портфельный Управляющий Департамента управления российскими акциями
+											a.more-link(href="#") Подробнее
+									.col-sm-10.col-md-6.col-md-offset-1
+										.item
+											h3.title Глобальная стратегия
+											time(datetime="2015-07-20") 20.07.15
+											.teaser Эдмунд Шинг, управляющий по глобальным акциям ООО «Компания БКС»
+											a.more-link(href="#") Подробнее
+									.col-sm-10.col-md-6.col-md-offset-1
+										.item
+											h3.title БКС Управление активами, глобальная стратегия
+											time(datetime="2015-07-20") 20.07.15
+											.teaser Эдмунд Шинг, управляющий по глобальным акциям ООО «Компания БКС»
+											a.donwload-link.pdf(href="#")
+												i
+												|PDF (180 Kb)
+									.col-sm-10.col-md-6
+										.item
+											h3.title Долларовые активы могут проявить себя во второй половине года
+											time(datetime="2015-07-20") 20.07.15
+											.teaser Андрей Стоянов, портфельный Управляющий Департамента управления российскими акциями
+											a.more-link(href="#") Подробнее
+									.col-sm-10.col-md-6.col-md-offset-1
+										.item
+											h3.title Глобальная стратегия
+											time(datetime="2015-07-20") 20.07.15
+											.teaser Эдмунд Шинг, управляющий по глобальным акциям ООО «Компания БКС»
+											a.more-link(href="#") Подробнее
+									.col-sm-10.col-md-6.col-md-offset-1
+										.item
+											h3.title БКС Управление активами, глобальная стратегия
+											time(datetime="2015-07-20") 20.07.15
+											.teaser Эдмунд Шинг, управляющий по глобальным акциям ООО «Компания БКС»
+											a.more-link(href="#") Подробнее
+								#analytics-busines.analytics-comments
+									.col-sm-10.col-md-6
+										.item
+											h3.title Долларовые активы могут проявить себя во второй половине года
+											time(datetime="2015-07-20") 20.07.15
+											.teaser Андрей Стоянов, портфельный Управляющий Департамента управления российскими акциями
+											a.more-link(href="#") Подробнее
+									.col-sm-10.col-md-6.col-md-offset-1
+										.item
+											h3.title Глобальная стратегия
+											time(datetime="2015-07-20") 20.07.15
+											.teaser Эдмунд Шинг, управляющий по глобальным акциям ООО «Компания БКС»
+											a.more-link(href="#") Подробнее
+									.col-sm-10.col-md-6.col-md-offset-1
+										.item
+											h3.title БКС Управление активами, глобальная стратегия
+											time(datetime="2015-07-20") 20.07.15
+											.teaser Эдмунд Шинг, управляющий по глобальным акциям ООО «Компания БКС»
+											a.donwload-link.pdf(href="#")
+												i
+												|PDF (180 Kb)
+								#analytics-reports.analytics-comments
+									.col-sm-10.col-md-6
+										.item
+											h3.title Долларовые активы могут проявить себя во второй половине года
+											time(datetime="2015-07-20") 20.07.15
+											.teaser Андрей Стоянов, портфельный Управляющий Департамента управления российскими акциями
+											a.more-link(href="#") Подробнее
+									.col-sm-10.col-md-6.col-md-offset-1
+										.item
+											h3.title Глобальная стратегия
+											time(datetime="2015-07-20") 20.07.15
+											.teaser Эдмунд Шинг, управляющий по глобальным акциям ООО «Компания БКС»
+											a.more-link(href="#") Подробнее
+									.col-sm-10.col-md-6.col-md-offset-1
+										.item
+											h3.title БКС Управление активами, глобальная стратегия
+											time(datetime="2015-07-20") 20.07.15
+											.teaser Эдмунд Шинг, управляющий по глобальным акциям ООО «Компания БКС»
+											a.donwload-link.pdf(href="#")
+												i
+												|PDF (180 Kb)
+									.col-sm-10.col-md-6
+										.item
+											h3.title Долларовые активы могут проявить себя во второй половине года
+											time(datetime="2015-07-20") 20.07.15
+											.teaser Андрей Стоянов, портфельный Управляющий Департамента управления российскими акциями
+											a.more-link(href="#") Подробнее
+						.pagination
+							.title Комментарии<br>и аналитика
+							ul.clearfix
+								li
+									a.item(href="#") 1
+								li
+									span.item.active 2
+								li
+									a.item(href="#") 3
+								li
+									a.item(href="#") 4
+
+
+		include ./partials/_footer.jade
+		include ./partials/_footer_scripts.jade
+		script(src="Content/js/vendor/jquery.browser.js")
+		script(src="Content/js/vendor/easytabs.min.js")
+		script(src="Content/js/vendor/jquery.hashchange.min.js")

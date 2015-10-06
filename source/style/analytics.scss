@@ -1,0 +1,136 @@
+@import 'partials/variables';
+.analytics {
+	color: #002a61;
+	.content {
+		position: relative;
+		padding-bottom: 30px;
+		>.line {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			width: 100%;
+			height: 55px;
+			background: #4992ff;
+			border-bottom: 1px solid #9ea9b8;
+
+			@media (min-width: $screen-md) {
+				height: 70px;
+			}
+		}
+
+		@media (max-width: $screen-xs-max) {
+			background: #eceef1;
+		}
+		@media (min-width: $screen-md) {
+			padding-bottom: 60px;
+		}
+	}
+
+	.etabs {
+		margin: 0;
+		padding-left: 0;
+		li {
+			float: left;
+			padding: 0 10px;
+			width: 33.333333%;
+			list-style-type: none;
+			text-align: center;
+
+			a {
+				display: inline-block;
+				padding: 12px 0 13px;
+				line-height: 13px;
+				font-size: 9px;
+				font-weight: 500;
+				border-top: 3px solid transparent;
+				color: #204372;
+				text-decoration: none;
+
+				&:hover,
+				&.active {
+					border-color: #ffc300;
+					color: white;
+				}
+
+				@media (min-width: $screen-md) {
+					padding: 20px 0 22px;
+					line-height: 24px;
+					font-size: 16px;
+				}
+				@media (min-width: $screen-lg) {
+					font-size: 20px;
+				}
+			}
+			@media (min-width: $screen-md) {
+				padding: 0 20px;
+				text-align: left;
+
+				&:first-child { padding-left: 0; }
+			}
+		}
+		@media (max-width: $screen-xs-max) {
+			height: 55px;
+		}
+	}
+
+	.analytics-comments {
+		.item {
+			margin: 0 -10px 16px;
+			padding: 0 10px 16px 10px;
+			line-height: 18px;
+			font-size: 12px;
+			border-bottom: 1px solid #9ea9b8;
+			
+			.title {
+				margin: 0;
+				padding: 12px 0;
+				line-height: 24px;
+				font-size: 22px;
+				font-weight: 500;
+				border-bottom: 1px solid #ced2d9;
+
+				@media (min-width: $screen-md) {
+					padding-top: 40px;
+				}
+			}
+			
+			time,
+			.teaser { color: #777777; }
+
+			time {
+				display: block;
+				margin: 26px 0 12px;
+				padding-left: 26px;
+				line-height: 16px;
+				background: url('../img/pages/analytics/time.png') no-repeat left center;
+			}
+
+			.teaser {
+				padding-bottom: 8px;
+				font-size: 16px;
+			}
+
+			.more-link {
+				color: #4a92f1;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+
+			@media (min-width: $screen-sm) {
+				height: 270px;
+				border-bottom: 0;
+			}
+			@media (min-width: $screen-md) {
+				height: 300px;
+				font-size: 14px;
+			}
+			@media (min-width: $screen-lg) {
+				height: 290px;
+			}
+		}
+	}
+}
