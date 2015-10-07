@@ -800,12 +800,36 @@ label { cursor: pointer; }
 
 .form-group {
 	margin-bottom: 30px;
-	
+	&.agreement {
+		label {
+			position: relative;
+			display: inline-block;
+			padding-left: 26px;
+			line-height: 18px;
+			font-size: 16px;
+			color: #646464;
+		}
+		.custom-checkbox {
+			margin-left: -26px;
+			margin-right: 11px;
+		}
+	}
 	>input,
 	.custom-select .selectize-input {
 		width: 100%;
 		color: #002a61;
 		font-size: 16px;
+	}
+	.custom-checkbox {
+		display: inline-block;
+		width: 15px;
+		height: 15px;
+		background: url('../img/custom-checkbox.png') no-repeat 0 0;
+
+		&.checked { background-position: 0 -15px; }
+		input {
+			display: none;
+		}
 	}
 	>input {
 		padding: 10px;
@@ -1776,7 +1800,7 @@ label { cursor: pointer; }
 			margin-right: 5px;
 			border: 1px solid #9ea9b8;
 
-			.item {
+			.pagination-item {
 				display: block;
 				margin: -1px;
 				width: 32px;

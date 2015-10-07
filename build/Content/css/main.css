@@ -937,11 +937,35 @@ label {
 .form-group {
   margin-bottom: 30px;
 }
+.form-group.agreement label {
+  position: relative;
+  display: inline-block;
+  padding-left: 26px;
+  line-height: 18px;
+  font-size: 16px;
+  color: #646464;
+}
+.form-group.agreement .custom-checkbox {
+  margin-left: -26px;
+  margin-right: 11px;
+}
 .form-group > input,
 .form-group .custom-select .selectize-input {
   width: 100%;
   color: #002a61;
   font-size: 16px;
+}
+.form-group .custom-checkbox {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url("../img/custom-checkbox.png") no-repeat 0 0;
+}
+.form-group .custom-checkbox.checked {
+  background-position: 0 -15px;
+}
+.form-group .custom-checkbox input {
+  display: none;
 }
 .form-group > input {
   padding: 10px;
@@ -1914,7 +1938,7 @@ label {
   margin-right: 5px;
   border: 1px solid #9ea9b8;
 }
-.pagination ul li .item {
+.pagination ul li .pagination-item {
   display: block;
   margin: -1px;
   width: 32px;
@@ -1927,6 +1951,6 @@ label {
   text-decoration: none;
   text-align: center;
 }
-.pagination ul li .item:hover, .pagination ul li .item.active {
+.pagination ul li .pagination-item:hover, .pagination ul li .pagination-item.active {
   border-bottom-color: #002a61;
 }
