@@ -1,0 +1,149 @@
+@import 'partials/variables';
+.open-account {
+	.open-account-content {
+		padding-top: 36px;
+		padding-bottom: 36px;
+
+		.feedback-form { margin-top: 40px; }
+		
+		.advantages {
+			line-height: 22px;
+			font-size: 15px;
+			text-align: center;
+
+			.teaser {
+				margin: 36px 0 60px;
+			}
+
+			@media (min-width: $screen-md) {
+				text-align: left;
+				br { display: none; }
+			}
+		}
+		.advantages-list {
+			margin-top: 0;
+			margin-bottom: 0;
+			padding-left: 0;
+			line-height: 18px;
+			list-style: none;
+
+			li {
+				position: relative;
+				margin-bottom: 24px;
+				padding-top: 54px;
+				
+
+				.icon {
+					position: absolute;
+					top: 0;
+					left: 50%;
+					margin-left: -24px;
+					width: 48px;
+					height: 48px;
+					background: url('../img/pages/open-account/advantages-icons.png') no-repeat 0 0;
+
+					&.icon-1 { background-position: 0 0; }
+					&.icon-2 { background-position: 0 -48px; }
+					&.icon-3 { background-position: 0 -96px; }
+					&.icon-4 { background-position: 0 -144px; }
+					&.icon-5 { background-position: 0 -192px; }
+
+					@media (min-width: $screen-md) {
+						top: 50%;
+						left: 0;
+						margin-left: 0;
+						margin-top: -24px;
+					}
+				}
+
+				em {
+					display: block;
+					line-height: 24px;
+					font-size: 24px;
+					font-style: normal;
+					font-weight: 500;
+
+					@media (min-width: $screen-sm) {
+						display: inline;
+						line-height: 22px;
+						font-size: 18px;
+						font-weight: 400;
+					}
+				}
+				@media (min-width: $screen-md) {
+					padding-top: 0;
+					padding-left: 60px;
+				}
+			}
+		}
+	}
+	.why {
+		padding-bottom: 30px;
+		.item {
+			position: relative;
+			padding: 97px 22px 0;
+			margin-bottom: 30px;
+			
+			.icon {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin-left: -48px;
+				width: 97px;
+				height: 97px;
+				background: url('../img/pages/about/why-icons.png') no-repeat 0 0;
+
+				&.respective {
+					background-position: 0 0;
+				}
+				&.professionalism {
+					background-position: 0 -97px;
+				}
+				&.transparence {
+					background-position: 0 -194px;
+				}
+				&.continuous-progress {
+					background-position: 0 -291px;
+				}
+			}
+
+			h3 {
+				margin: 16px 0 30px;
+				line-height: 20px;
+				font-size: 20px;
+				font-weight: 400;
+				color: #133058;
+
+				&:after {
+					position: relative;
+					top: 13px;
+					display: block;
+					margin: 0 auto;
+					content: " ";
+					width: 53px;
+					height: 1px;
+					background: #002a61;
+
+					@media (min-width: $screen-md) {
+						top: 19px;
+					}
+				}
+
+				@media (min-width: $screen-md) {
+					margin: 16px 0 28px;
+				}
+			}
+
+			p {
+				line-height: 20px;
+				font-size: 16px;
+				font-weight: 300;
+				color: #002a61;
+			}
+		}
+
+		@media (min-width: $screen-md) {
+			padding-bottom: 60px;
+		}
+	}
+}

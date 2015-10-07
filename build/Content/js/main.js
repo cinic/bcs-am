@@ -28,8 +28,18 @@ $(function() {
 
 $(function() {
   if (typeof $.fn.easytabs === 'function') {
-    return $('.tab-container, .tab-rates-container, .tab-analytics-container').easytabs();
+    $('.tab-container, .tab-rates-container, .tab-analytics-container').easytabs();
   }
+  if ($('.custom-checkbox input').is(':checked')) {
+    $('.custom-checkbox input').parent().addClass('checked').parent().addClass('checked');
+  }
+  return $('.custom-checkbox input').on('change', function() {
+    if ($(this).is(':checked')) {
+      return $(this).parent().addClass('checked').parent().addClass('checked');
+    } else {
+      return $(this).parent().removeClass('checked').parent().removeClass('checked');
+    }
+  });
 });
 
 $(function() {

@@ -24,3 +24,11 @@ $ ->
 $ ->
 	if typeof $.fn.easytabs == 'function'
 		$('.tab-container, .tab-rates-container, .tab-analytics-container').easytabs()
+
+	if $('.custom-checkbox input').is(':checked')
+			$('.custom-checkbox input').parent().addClass('checked').parent().addClass('checked')
+	$('.custom-checkbox input').on 'change', ->
+		if $(@).is(':checked')
+			$(@).parent().addClass('checked').parent().addClass('checked')
+		else
+			$(@).parent().removeClass('checked').parent().removeClass('checked')

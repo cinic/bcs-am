@@ -1,0 +1,39 @@
+doctype html
+html(lang="ru")
+	head
+		include ./partials/_header.jade
+		link(rel="stylesheet" href="Content/css/open-account.css")/
+	body.open-account
+		include ./partials/_navigation.jade
+		header.header.mini
+			.container
+				.row
+					.col-sm-16.col-sm-offset-2
+						h1.page-subtitle Открыть счёт
+		include ./partials/_open-account.jade
+		section.why.text-center
+			.container
+				.row
+					.col-md-5
+						.item
+							span.icon.respective
+							h3 Ответственность
+							p Четкий процесс управления портфелями и контроль рисков, в котором каждый менеджер и аналитик несет ответственность за каждое принятое решение.
+					.col-md-5
+						.item
+							span.icon.professionalism
+							h3 Профессионализм
+							p Активами клиентов управляет профессиональная команда менеджеров, имеющих многолетний опыт работы на рынках капитала.
+					.col-md-5
+						.item
+							span.icon.transparence
+							h3 Прозрачность
+							p Мы дорожим доверием, которое нам оказали клиенты, передав средства в управление. Предоставляем полную информацию о состоянии рынка, стратегии управления и составе портфеля.
+					.col-md-5
+						.item
+							span.icon.continuous-progress
+							h3 Непрерывное развитие
+							p Мы ежедневно работаем над повышением уровня сервиса, внедрением новых технологий и расширением продуктовой линейки.
+
+		include ./partials/_footer.jade
+		include ./partials/_footer_scripts.jade
