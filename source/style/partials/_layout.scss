@@ -318,58 +318,67 @@ nav.menu {
 			font-size: 14px;
 			text-transform: uppercase;
 			li {
+				position: relative;
 				float: left;
 				list-style: none;
 
+				&:after {
+					position: absolute;
+					display: block;
+					left: 0;
+					top: 50%;
+					margin-top: -17px;
+					width: 1px;
+					height: 36px;
+					content: ' ';
+					background: #dadce1;
+				}
+
 				&:first-child {
 					a {
-						padding-left: 0;
-						&:after { display: none; }
+						margin-left: 0;
 					}
+					&:after { display: none; }
 				}
 				&:last-child,
 				.last {
 					a {
 						padding: 0;
-						&:after { display: none; }
 					}
+					&:after { display: none; }
 				}
 
 				a {
-					position: relative;
 					float: left;
-					padding: 20px 30px 20px;
+					margin: 10px;
+					padding: 10px 20px;
 					color: #445267;
 					letter-spacing: 0.025em;
-
-					&:after {
-						position: absolute;
-						display: block;
-						left: 0;
-						top: 50%;
-						margin-top: -17px;
-						width: 1px;
-						height: 36px;
-						content: ' ';
-						background: #dadce1;
-					}
+					border: 2px solid transparent;
+					border-radius: 19px;
+					transition: all .3s;
 
 					@media (min-width: $screen-sm) {
-						padding-left: 10px;
-						padding-right: 10px;
+						padding-left: 6px;
+						padding-right: 6px;
+						margin-left: 4px;
+						margin-right: 4px;
 					}
 					@media (min-width: $screen-md) {
-						padding-left: 15px;
-						padding-right: 15px;
+						padding-left: 8px;
+						padding-right: 8px;
+						margin-left: 10px;
+						margin-right: 10px;
 					}
 					@media (min-width: $screen-lg) {
-						padding-left: 30px;
-						padding-right: 30px;
+						padding-left: 15px;
+						padding-right: 15px;
 					}
 
 					&:hover,
 					&.active {
-						background: #dadce1;
+						transition: all .3s;
+						border-color: #f3c632;
 					}
 				}
 				&.open-account {
@@ -379,6 +388,7 @@ nav.menu {
 						padding: 12px 35px 7px;
 						background-color: #ffc300;
 						border-radius: 18px;
+						border-color: transparent;
 
 						&:hover,
 						&.active { background-color: #ffb400; }
