@@ -1452,12 +1452,11 @@ label { cursor: pointer; }
 				position: absolute;
 				width: 100%;
 				left: 0;
-				bottom: 12px;
+				bottom: 24px;
 				margin-top: 12px;
 
 				@media (min-width: $screen-lg) {
 					margin-top: 24px;
-					bottom: 24px;
 				}
 			}
 			
