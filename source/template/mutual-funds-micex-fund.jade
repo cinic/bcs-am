@@ -11,7 +11,7 @@ html(lang="ru")
 				.container
 					.row
 						.col-sm-11.text-center.clearfix
-							h1.page-subtitle
+							h1.page-subtitle.wow.bounceInDown
 								|Фонд
 								br
 								|индекс ММВБ
@@ -19,13 +19,13 @@ html(lang="ru")
 								|Инвестируйте в наиболее ликвидные бумаги
 								br
 								|российского рынка
-							.advice.text-center
+							.advice.text-center.wow.bounceInUp
 								a.btn.btn-yellow(href="#" title="Получить консультацию") Узнать больше
 
 		include ./partials/_calculator.jade
 		include ./partials/_main_indicator.jade
 				
-		section.advantages.micex-fund.text-center
+		section.advantages.micex-fund.text-center.wow.fadeInUp
 			.container
 				h2.section-title.text-center Преимущества фонда
 				.row
@@ -54,7 +54,7 @@ html(lang="ru")
 							.icon.transparency
 							h3 Прозрачность
 							p Структура активов фонда соответствует структуре индекса ММВБ 
-		section.documentation.bond-dividend-fund
+		section.documentation.bond-dividend-fund.wow.fadeInUp
 			.container
 				h2.section-title Документы фонда
 				.row.hidden-xs.hidden-sm
