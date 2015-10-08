@@ -91,6 +91,12 @@ body {
 }
 body a {
   color: #4992ff;
+  -webkit-transition: all .3s;
+          transition: all .3s;
+}
+body a:hover {
+  -webkit-transition: all .3s;
+          transition: all .3s;
 }
 body b {
   font-weight: 600;
@@ -1521,6 +1527,7 @@ label {
   list-style: none;
 }
 .products .products-list li {
+  position: relative;
   float: left;
   margin: 0 32px 32px 0;
   padding: 0 18px;
@@ -1583,11 +1590,16 @@ label {
   }
 }
 .products .products-list li .actions {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 12px;
   margin-top: 12px;
 }
 @media (min-width: 1200px) {
   .products .products-list li .actions {
     margin-top: 24px;
+    bottom: 24px;
   }
 }
 @media (min-width: 768px) {

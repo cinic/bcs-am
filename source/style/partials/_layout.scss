@@ -7,7 +7,14 @@ body {
 	color: #ccd7e6;
 	letter-spacing: .025em;
 
-	a { color: #4992ff; }
+	a {
+		color: #4992ff;
+		transition: all .3s;
+
+		&:hover {
+			transition: all .3s;
+		}
+	}
 	b { font-weight: 600; }
 }
 
@@ -1376,6 +1383,7 @@ label { cursor: pointer; }
 		list-style: none;
 		
 		li {
+			position: relative;
 			float: left;
 			margin: 0 32px 32px 0;
 			padding: 0 18px;
@@ -1441,10 +1449,15 @@ label { cursor: pointer; }
 			}
 			
 			.actions {
+				position: absolute;
+				width: 100%;
+				left: 0;
+				bottom: 12px;
 				margin-top: 12px;
 
 				@media (min-width: $screen-lg) {
 					margin-top: 24px;
+					bottom: 24px;
 				}
 			}
 			
