@@ -43,6 +43,7 @@ Futura new Demi
   font-stretch: normal;
   unicode-range: U+0020-25CA;
 }
+/*
 @font-face {
 	font-family: 'FuturaNew';
 	src: url('../fonts/FuturaNewLightOblique.eot');
@@ -51,6 +52,7 @@ Futura new Demi
 	font-style: italic;
 	unicode-range: U+0020-25CA;
 }
+*/
 /*
 @font-face {
 	font-family: 'FuturaNew';
@@ -80,13 +82,3 @@ Futura new Demi
 	unicode-range: U+0020-25CA;
 }
 */
-@font-face {
-	font-family: 'FuturaNew';
-	src: url('../fonts/FuturaNewLightOblique.eot');
-	src: local('☺'), url('../fonts/FuturaNewLightOblique.woff') format('woff'), url('../fonts/FuturaNewLightOblique.ttf') format('truetype'), url('../fonts/FuturaNewLightOblique.svg') format('svg');
-	font-weight: 400;
-	font-style: italic;
-	unicode-range: U+0020-25CA;
-}
-
-
