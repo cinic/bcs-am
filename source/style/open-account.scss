@@ -4,7 +4,13 @@
 		padding-top: 36px;
 		padding-bottom: 36px;
 
-		.feedback-form { margin-top: 40px; }
+		.feedback-form {
+			margin-top: 40px;
+
+			@media (min-width: $screen-md) {
+				margin-top: 60px;
+			}
+		}
 		
 		.advantages {
 			line-height: 22px;
@@ -79,6 +85,16 @@
 	}
 	.why {
 		padding-bottom: 30px;
+		
+		.section-description {
+			margin-bottom: 24px;
+			color: #002a61;
+
+			@media (min-width: $screen-md) {
+				margin-bottom: 48px;
+			}
+		}
+
 		.item {
 			position: relative;
 			padding: 97px 22px 0;

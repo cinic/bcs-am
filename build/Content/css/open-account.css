@@ -5,6 +5,11 @@
 .open-account .open-account-content .feedback-form {
   margin-top: 40px;
 }
+@media (min-width: 992px) {
+  .open-account .open-account-content .feedback-form {
+    margin-top: 60px;
+  }
+}
 .open-account .open-account-content .advantages {
   line-height: 22px;
   font-size: 15px;
@@ -88,6 +93,15 @@
 }
 .open-account .why {
   padding-bottom: 30px;
+}
+.open-account .why .section-description {
+  margin-bottom: 24px;
+  color: #002a61;
+}
+@media (min-width: 992px) {
+  .open-account .why .section-description {
+    margin-bottom: 48px;
+  }
 }
 .open-account .why .item {
   position: relative;
