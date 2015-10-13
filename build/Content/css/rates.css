@@ -1,0 +1,20 @@
+/* Rates page styles */
+.rates .rates-list {
+  color: #002a61;
+  padding: 40px 0;
+}
+.rates .rates-list table tr > th,
+.rates .rates-list table tr > td {
+  padding: 10px;
+}
+.rates .rates-list table tr > th.filled,
+.rates .rates-list table tr > td.filled {
+  background: #002a61;
+  color: #ffc300;
+}
+.rates .rates-list table tr > th {
+  font-weight: 500;
+}
+.rates .rates-list table tr > th:first-child {
+  text-align: left;
+}

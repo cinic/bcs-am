@@ -1,0 +1,28 @@
+/* Rates page styles */
+@import 'partials/variables';
+.rates {
+	.rates-list {
+		color: #002a61;
+		padding: 40px 0;
+
+		table {
+			tr {
+				>th,
+				>td {
+					padding: 10px;
+
+					&.filled {
+						background: #002a61;
+						color: #ffc300;
+					}
+				}
+				>th {
+					font-weight: 500;
+					&:first-child {
+						text-align: left;
+					}
+				}
+			}
+		}
+	}
+}

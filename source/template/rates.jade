@@ -1,0 +1,173 @@
+doctype html
+html(lang="ru")
+	head
+		include ./partials/_header.jade
+		link(rel="stylesheet" href="Content/css/rates.css")/
+	body.rates
+		include ./partials/_navigation.jade
+		header.header.mini
+			.container
+				.row
+					.col-sm-16.col-sm-offset-2
+						h1.page-subtitle Тарифы
+		section.rates-list.wow.fadeInUp
+			.container
+				.row
+					.col-sm-18.col-sm-offset-1
+						.table-responsive
+							table.table
+								tr
+									th Тип фонда
+									th БКС — Фонд Национальных облигаций
+									th БКС — Зарубежные Фонды
+									th БКС — Фонд Дивидендных Идей
+									th БКС — Глобальные рынки
+									th БКС — Технологии
+									th БКС — Индекс ММВБ
+								tr
+									th.filled(colspan="7") Приобретение паев
+								tr
+									th Стоимость одного пая, руб.
+									td.text-center(colspan="6") Определяется ежедневно
+								tr
+									th.filled(colspan="7") Минимальная сумма инвестиций, руб.
+								tr
+									th при первой покупке паев
+									td 50 000 руб.
+									td 50 000 руб.
+									td 50 000 руб.
+									td 50 000 руб.
+									td 50 000 руб.
+									td 50 000 руб.
+								tr
+									th при последующих покупках паев
+									td 5 000 руб.
+									td 5 000 руб.
+									td 5 000 руб.
+									td 5 000 руб.
+									td 5 000 руб.
+									td 5 000 руб.
+								tr
+									th.filled(colspan="7") Надбавка при приобретении паев, в % от от расчётной стоимости пая
+								tr
+									th при подаче заявки Агенту Фонда ООО «Компания БКС» и АО «БКС Банк»
+									td 1,20%
+									td 1,20%
+									td 1,20%
+									td 1,20%
+									td 1,20%
+									td 1,20%
+								tr
+									th.filled(colspan="7") при подаче заявки в Управляющую компанию* на сумму:
+								tr
+									th меньше 1 млн. рублей
+									td 1%
+									td 1%
+									td 1%
+									td 1%
+									td 1%
+									td 1%
+								tr
+									th равна или выше 1 млн. рублей
+									td 0
+									td 0
+									td 0
+									td 0
+									td 0
+									td 0
+								tr
+									th.filled(colspan="7") Погашение паев
+								tr
+									th.filled(colspan="7") Скидка, при погашении паев, в % от стоимости пая:
+								tr
+									th при подаче заявки в Управляющую компанию<sup>*</sup>
+									td 0
+									td 0
+									td 0
+									td 0
+									td 0
+									td 0
+								tr
+									th.filled(colspan="7") при подаче заявки Агентам Фонда ООО «Компания БКС» и АО «БКС Банк» при погашении паев в период владения
+								tr
+									th до 1 года
+									td 2%
+									td 2%
+									td 2%
+									td 2%
+									td 2%
+									td 2%
+								tr
+									th от 1 года до 2 лет
+									td 1%
+									td 1%
+									td 1%
+									td 1%
+									td 1%
+									td 1%
+								tr
+									th от 2 лет до 3 лет
+									td 0,50%
+									td 0,50%
+									td 0,50%
+									td 0,50%
+									td 0,50%
+									td 0,50%
+								tr
+									th от 3 лет и больше
+									td 0
+									td 0
+									td 0
+									td 0
+									td 0
+									td 0
+								tr
+									th.filled(colspan="7") Вознаграждения, взимаемые от среднегодовой стоимости чистых активов
+								tr
+									th Вознаграждение Управляющей компании, в % от среднегодовой СЧА (с учетом НДС), не более:
+									td 1,50%
+									td 2,00%
+									td 3,00%
+									td 3,00%
+									td 3,00%
+									td 1,50%
+								tr
+									th Вознаграждение специализированного депозитария, регистратора и аудитора, в % от среднегодовой СЧА (с учетом НДС), не более
+									td 0,20%
+									td 1,10%
+									td 0,80%
+									td 0,90%
+									td 1,60%
+									td 0,90%
+								tr
+									th Прочие расходы за счет имущества фонда, в % от среднегодовой СЧА (с учетом НДС),  не более:
+									td 1,00%
+									td 1,00%
+									td 1,00%
+									td 1,00%
+									td 1,60%
+									td 3,00%
+						p
+							small <sup>*</sup> Управляющая компания — УК БКС. Адрес: 630099, г. Новосибирск, ул. Советская, д. 37.
+		section.documentation.wow.fadeInUp
+			.container
+				h2.section-title Полное описание тарифов
+				.row
+					.docs-list.clearfix
+						.col-sm-4.col-xs-10
+							a.item(href="#")
+								.label Тарифы по обслуживанию физических лиц, заключивших договор комплексного обслуживания с АО «БКС Банк»
+						.col-sm-4.col-xs-10
+							a.item(href="#")
+								.label Правила доверительного управления ПИФа
+						.col-sm-4.col-xs-10
+							a.item(href="#")
+								.label Правила определения стоимости активов на 2014 год
+						.col-sm-4.col-xs-10
+							a.item(href="#")
+								.label Политика осуществления прав голоса по акциям
+						.col-sm-4.col-xs-10
+							a.item(href="#")
+								.label Банковские реквизиты для перечисления средств в оплату паев ПИФ «БКС»					
+		include ./partials/_footer.jade
+		include ./partials/_footer_scripts.jade

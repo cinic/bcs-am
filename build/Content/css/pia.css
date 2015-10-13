@@ -179,7 +179,7 @@
   }
 }
 .pia .advantages {
-  height: 1750px;
+  height: 1580px;
   color: #002a61;
   background: white;
 }
@@ -254,7 +254,7 @@
 }
 @media (min-width: 1200px) {
   .pia .advantages {
-    height: 996px;
+    height: 896px;
   }
   .pia .advantages h3 {
     margin: 0 0 22px;

@@ -637,6 +637,10 @@ nav.menu.active .main-nav li a {
   font-weight: 400;
   color: #002665;
 }
+.header .page-subtitle sup {
+  top: -1.5em;
+  font-size: 25%;
+}
 @media (min-width: 1200px) {
   .header .page-subtitle {
     margin: 0;
@@ -1976,6 +1980,68 @@ label {
 }
 .pagination ul li .pagination-item:hover, .pagination ul li .pagination-item.active {
   border-bottom-color: #002a61;
+}
+
+/* Documentation */
+.documentation {
+  color: #002a61;
+  background: #eceff4;
+}
+.documentation .section-title {
+  margin: 62px 0 40px;
+}
+.documentation .dates {
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+.documentation .dates .reg-num {
+  float: left;
+}
+.documentation .dates .reg-date {
+  float: right;
+}
+@media (min-width: 1200px) {
+  .documentation .docs-list {
+    /*margin: 0 -10px;*/
+  }
+}
+.documentation .item {
+  display: block;
+  margin-bottom: 24px;
+  padding-top: 40px;
+  background: #002a61 url("../img/docs-arrow-down.png") no-repeat right top;
+  text-decoration: none;
+  vertical-align: top;
+}
+.documentation .item:last-child {
+  margin-right: 0;
+}
+.documentation .item .label {
+  padding: 10px;
+  height: 140px;
+  font-size: 12px;
+  background: #ffc300;
+  color: #002a61;
+}
+.documentation .item .date {
+  padding: 10px;
+  height: 140px;
+  font-size: 12px;
+  color: #fff;
+}
+@media (min-width: 1200px) {
+  .documentation .item .label {
+    height: 95px;
+    font-size: 14px;
+  }
+  .documentation .item .date {
+    height: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .documentation {
+    padding-bottom: 90px;
+  }
 }
 
 /*

@@ -597,7 +597,7 @@
 .bond .documentation .item {
   display: block;
   margin-bottom: 24px;
-  padding: 147px 0 22px;
+  padding-top: 40px;
   background: #002a61 url("../img/docs-arrow-down.png") no-repeat right top;
   text-decoration: none;
   vertical-align: top;
@@ -607,15 +607,24 @@
 }
 .bond .documentation .item .label {
   padding: 10px;
-  height: 68px;
+  height: 140px;
   font-size: 12px;
   background: #ffc300;
   color: #002a61;
 }
+.bond .documentation .item .date {
+  padding: 10px;
+  height: 140px;
+  font-size: 12px;
+  color: #fff;
+}
 @media (min-width: 1200px) {
   .bond .documentation .item .label {
-    height: 68px;
+    height: 95px;
     font-size: 14px;
+  }
+  .bond .documentation .item .date {
+    height: 100px;
   }
 }
 @media (min-width: 1200px) {
