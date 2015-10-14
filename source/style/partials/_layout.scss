@@ -1850,66 +1850,84 @@ label { cursor: pointer; }
 }
 /* Documentation */
 .documentation {
-		color: #002a61;
-		background: #eceff4;
-		
-		.section-title {
-			margin: 62px 0 40px;
+	color: #002a61;
+	background: #eceff4;
+	
+	.section-title {
+		margin: 62px 0 40px;
+	}
+	.dates {
+		margin-bottom: 40px;
+		font-size: 16px;
+		.reg-num {
+			float: left;
 		}
-		.dates {
-			margin-bottom: 40px;
-			font-size: 16px;
-			.reg-num {
-				float: left;
-			}
-			.reg-date {
-				float: right;
-			}
+		.reg-date {
+			float: right;
 		}
-		.docs-list {
-			@media (min-width: $screen-lg) {
-				/*margin: 0 -10px;*/
-			}
+	}
+	.docs-list {
+		@media (min-width: $screen-lg) {
+			/*margin: 0 -10px;*/
 		}
-		.item {
-			display: block;
-			margin-bottom: 24px;
-			padding-top: 40px;
-			background: #002a61 url('../img/docs-arrow-down.png') no-repeat right top;
-			text-decoration: none;
-			vertical-align: top;
-			&:last-child {
-				margin-right: 0;
-			}
-			.label {
-				padding: 10px;
-				height: 140px;
-				font-size: 12px;
-				background: #ffc300;
-				color: #002a61;
-			}
+	}
+	.item {
+		display: block;
+		margin-bottom: 24px;
+		padding-top: 40px;
+		background: #002a61 url('../img/docs-arrow-down.png') no-repeat right top;
+		text-decoration: none;
+		vertical-align: top;
+		&:last-child {
+			margin-right: 0;
+		}
+		.label {
+			padding: 10px;
+			height: 140px;
+			font-size: 12px;
+			background: #ffc300;
+			color: #002a61;
+		}
 
-			.date {
-				padding: 10px;
-				height: 140px;
-				font-size: 12px;
-				color: #fff;
-			}
-
-			@media (min-width: $screen-lg) {
-
-				.label {
-					height: 95px;
-					font-size: 14px;
-				}
-
-				.date {
-					height: 100px;
-				}
-			}
+		.date {
+			padding: 10px;
+			height: 140px;
+			font-size: 12px;
+			color: #fff;
 		}
 
 		@media (min-width: $screen-lg) {
-			padding-bottom: 90px;
+
+			.label {
+				height: 95px;
+				font-size: 14px;
+			}
+
+			.date {
+				height: 100px;
+			}
 		}
 	}
+
+	@media (min-width: $screen-lg) {
+		padding-bottom: 90px;
+	}
+}
+
+.marker {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  font-size: 18px;
+  background: url('../img/marker.png') no-repeat 0 0;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+
+  &:hover,
+  &.hovered,
+  &.active {
+    background-position: 0 -44px;
+  }
+}
