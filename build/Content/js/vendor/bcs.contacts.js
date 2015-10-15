@@ -7,7 +7,7 @@ function hoverMarker(num)
     var marker = markers[num];
     var placemark = marker.placemark;
     placemark.options.set('iconContentLayout', ymaps.templateLayoutFactory.createClass('<span class="marker active">'+num+'</span>'));
-    $('.point[data-point='+num+'] .marker').addClass('hovered');
+    $('.point[data-point='+num+']').addClass('hovered');
 }
 function blurMarker(num)
 {
@@ -15,7 +15,7 @@ function blurMarker(num)
     var placemark = marker.placemark;
     if (!marker.active)
         placemark.options.set('iconContentLayout', ymaps.templateLayoutFactory.createClass('<span class="marker">'+num+'</span>'));
-    $('.point[data-point='+num+'] .marker').removeClass('hovered');
+    $('.point[data-point='+num+']').removeClass('hovered');
 }
 
 function openRoute()
@@ -118,6 +118,7 @@ function openPointDetails(num) {
     closeAllPointDetails();
     //$('.points').hide();
     closeRoute();
+    $('.point[data-point=' + num + ']').addClass('active');
     $('.point-detail[data-point='+num+']').show();
 
     var marker = markers[num];
@@ -127,6 +128,7 @@ function openPointDetails(num) {
 }
 function closePointDetails(num)
 {
+    $('.point[data-point=' + num + ']').removeClass('active');
     $('.point-detail[data-point='+num+']').hide();
     var marker = markers[num];
     marker.active = false;

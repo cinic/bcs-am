@@ -1,5 +1,391 @@
 /* Rates page styles */
+.contacts {
+  color: #002665;
+}
+.contacts .mini-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+.contacts .mini-title .select-city {
+  cursor: pointer;
+}
+.contacts .mini-title .select-city:after {
+  position: relative;
+  top: 2px;
+  left: 4px;
+  display: inline-block;
+  content: " ";
+  border: 4px solid;
+  border-color: transparent;
+  border-top-color: #002665;
+  line-height: 0;
+  font-size: 0;
+}
+.contacts .tab-container,
 .contacts .offices-map-container {
+  margin: 0 -10px;
+}
+.contacts .tab-content {
+  padding: 0;
   width: 100%;
   height: 600px;
+  background: #f5f7f9;
+  overflow-y: scroll;
+  border: 0;
+}
+.contacts .offices-tabs .item {
+  float: left;
+  margin-left: 20px;
+}
+.contacts .offices-tabs .item a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: #002665;
+}
+.contacts .offices-tabs .item a:hover, .contacts .offices-tabs .item a.active {
+  background: #f5f7f9;
+}
+.contacts .offices-list {
+  counter-reset: list;
+}
+.contacts .offices-list li {
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+.contacts .offices-list .point {
+  position: relative;
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+.contacts .offices-list .point:before {
+  counter-increment: list;
+  content: counter(list);
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 0;
+  left: -34px;
+  border-radius: 50%;
+  background-color: #002863;
+  color: #fff;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+}
+.contacts .offices-list .point:hover:before, .contacts .offices-list .point.hovered:before, .contacts .offices-list .point.active:before {
+  color: #000;
+  background-color: #f4c733;
+}
+.contacts .offices-list .point-detail {
+  display: none;
+  padding-top: 24px;
+}
+.contacts ol[start="1"] {
+  counter-reset: list 1;
+}
+.contacts ol[start="2"] {
+  counter-reset: list 2;
+}
+.contacts ol[start="3"] {
+  counter-reset: list 3;
+}
+.contacts ol[start="4"] {
+  counter-reset: list 4;
+}
+.contacts ol[start="5"] {
+  counter-reset: list 5;
+}
+.contacts ol[start="6"] {
+  counter-reset: list 6;
+}
+.contacts ol[start="7"] {
+  counter-reset: list 7;
+}
+.contacts ol[start="8"] {
+  counter-reset: list 8;
+}
+.contacts ol[start="9"] {
+  counter-reset: list 9;
+}
+.contacts ol[start="10"] {
+  counter-reset: list 10;
+}
+.contacts ol[start="11"] {
+  counter-reset: list 11;
+}
+.contacts ol[start="12"] {
+  counter-reset: list 12;
+}
+.contacts ol[start="13"] {
+  counter-reset: list 13;
+}
+.contacts ol[start="14"] {
+  counter-reset: list 14;
+}
+.contacts ol[start="15"] {
+  counter-reset: list 15;
+}
+.contacts ol[start="16"] {
+  counter-reset: list 16;
+}
+.contacts ol[start="17"] {
+  counter-reset: list 17;
+}
+.contacts ol[start="18"] {
+  counter-reset: list 18;
+}
+.contacts ol[start="19"] {
+  counter-reset: list 19;
+}
+.contacts ol[start="20"] {
+  counter-reset: list 20;
+}
+.contacts ol[start="21"] {
+  counter-reset: list 21;
+}
+.contacts ol[start="22"] {
+  counter-reset: list 22;
+}
+.contacts ol[start="23"] {
+  counter-reset: list 23;
+}
+.contacts ol[start="24"] {
+  counter-reset: list 24;
+}
+.contacts ol[start="25"] {
+  counter-reset: list 25;
+}
+.contacts ol[start="26"] {
+  counter-reset: list 26;
+}
+.contacts ol[start="27"] {
+  counter-reset: list 27;
+}
+.contacts ol[start="28"] {
+  counter-reset: list 28;
+}
+.contacts ol[start="29"] {
+  counter-reset: list 29;
+}
+.contacts ol[start="30"] {
+  counter-reset: list 30;
+}
+.contacts ol[start="31"] {
+  counter-reset: list 31;
+}
+.contacts ol[start="32"] {
+  counter-reset: list 32;
+}
+.contacts ol[start="33"] {
+  counter-reset: list 33;
+}
+.contacts ol[start="34"] {
+  counter-reset: list 34;
+}
+.contacts ol[start="35"] {
+  counter-reset: list 35;
+}
+.contacts ol[start="36"] {
+  counter-reset: list 36;
+}
+.contacts ol[start="37"] {
+  counter-reset: list 37;
+}
+.contacts ol[start="38"] {
+  counter-reset: list 38;
+}
+.contacts ol[start="39"] {
+  counter-reset: list 39;
+}
+.contacts ol[start="40"] {
+  counter-reset: list 40;
+}
+.contacts ol[start="41"] {
+  counter-reset: list 41;
+}
+.contacts ol[start="42"] {
+  counter-reset: list 42;
+}
+.contacts ol[start="43"] {
+  counter-reset: list 43;
+}
+.contacts ol[start="44"] {
+  counter-reset: list 44;
+}
+.contacts ol[start="45"] {
+  counter-reset: list 45;
+}
+.contacts ol[start="46"] {
+  counter-reset: list 46;
+}
+.contacts ol[start="47"] {
+  counter-reset: list 47;
+}
+.contacts ol[start="48"] {
+  counter-reset: list 48;
+}
+.contacts ol[start="49"] {
+  counter-reset: list 49;
+}
+.contacts ol[start="50"] {
+  counter-reset: list 50;
+}
+.contacts ol[start="51"] {
+  counter-reset: list 51;
+}
+.contacts ol[start="52"] {
+  counter-reset: list 52;
+}
+.contacts ol[start="53"] {
+  counter-reset: list 53;
+}
+.contacts ol[start="54"] {
+  counter-reset: list 54;
+}
+.contacts ol[start="55"] {
+  counter-reset: list 55;
+}
+.contacts ol[start="56"] {
+  counter-reset: list 56;
+}
+.contacts ol[start="57"] {
+  counter-reset: list 57;
+}
+.contacts ol[start="58"] {
+  counter-reset: list 58;
+}
+.contacts ol[start="59"] {
+  counter-reset: list 59;
+}
+.contacts ol[start="60"] {
+  counter-reset: list 60;
+}
+.contacts ol[start="61"] {
+  counter-reset: list 61;
+}
+.contacts ol[start="62"] {
+  counter-reset: list 62;
+}
+.contacts ol[start="63"] {
+  counter-reset: list 63;
+}
+.contacts ol[start="64"] {
+  counter-reset: list 64;
+}
+.contacts ol[start="65"] {
+  counter-reset: list 65;
+}
+.contacts ol[start="66"] {
+  counter-reset: list 66;
+}
+.contacts ol[start="67"] {
+  counter-reset: list 67;
+}
+.contacts ol[start="68"] {
+  counter-reset: list 68;
+}
+.contacts ol[start="69"] {
+  counter-reset: list 69;
+}
+.contacts ol[start="70"] {
+  counter-reset: list 70;
+}
+.contacts ol[start="71"] {
+  counter-reset: list 71;
+}
+.contacts ol[start="72"] {
+  counter-reset: list 72;
+}
+.contacts ol[start="73"] {
+  counter-reset: list 73;
+}
+.contacts ol[start="74"] {
+  counter-reset: list 74;
+}
+.contacts ol[start="75"] {
+  counter-reset: list 75;
+}
+.contacts ol[start="76"] {
+  counter-reset: list 76;
+}
+.contacts ol[start="77"] {
+  counter-reset: list 77;
+}
+.contacts ol[start="78"] {
+  counter-reset: list 78;
+}
+.contacts ol[start="79"] {
+  counter-reset: list 79;
+}
+.contacts ol[start="80"] {
+  counter-reset: list 80;
+}
+.contacts ol[start="81"] {
+  counter-reset: list 81;
+}
+.contacts ol[start="82"] {
+  counter-reset: list 82;
+}
+.contacts ol[start="83"] {
+  counter-reset: list 83;
+}
+.contacts ol[start="84"] {
+  counter-reset: list 84;
+}
+.contacts ol[start="85"] {
+  counter-reset: list 85;
+}
+.contacts ol[start="86"] {
+  counter-reset: list 86;
+}
+.contacts ol[start="87"] {
+  counter-reset: list 87;
+}
+.contacts ol[start="88"] {
+  counter-reset: list 88;
+}
+.contacts ol[start="89"] {
+  counter-reset: list 89;
+}
+.contacts ol[start="90"] {
+  counter-reset: list 90;
+}
+.contacts ol[start="91"] {
+  counter-reset: list 91;
+}
+.contacts ol[start="92"] {
+  counter-reset: list 92;
+}
+.contacts ol[start="93"] {
+  counter-reset: list 93;
+}
+.contacts ol[start="94"] {
+  counter-reset: list 94;
+}
+.contacts ol[start="95"] {
+  counter-reset: list 95;
+}
+.contacts ol[start="96"] {
+  counter-reset: list 96;
+}
+.contacts ol[start="97"] {
+  counter-reset: list 97;
+}
+.contacts ol[start="98"] {
+  counter-reset: list 98;
+}
+.contacts ol[start="99"] {
+  counter-reset: list 99;
+}
+.contacts ol[start="100"] {
+  counter-reset: list 100;
+}
+.contacts .offices-map-container {
+  padding-top: 43px;
+  width: 100%;
+  height: 642px;
 }
