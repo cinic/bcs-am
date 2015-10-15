@@ -2,14 +2,14 @@ doctype html
 html(lang="ru")
 	head
 		include ./partials/_header.jade
-		link(rel="stylesheet" href="Content/css/contacts.css")/
+		link(rel="stylesheet" href="Content/css/contacts.css")/		
 	body.contacts
 		include ./partials/_navigation.jade
 		section.offices.contact-map
 			.outer.clearfix.text-center
 				h1.mini-title
 					|Выберите ваш город: 
-					span.select-city Москва
+					span.select-city.offices-select Москва
 			.outer.clearfix
 				.col-md-6
 					.tab-container
@@ -193,14 +193,16 @@ html(lang="ru")
 				.col-md-14
 					script.
 						var contactPoints = {1:[55.786495,37.634344],2:[55.709028,37.620761],3:[55.746573,37.559972],4:[55.731191,37.635309],5:[55.762085,37.570501],6:[55.738333,37.661635],7:[55.779859,37.599372],8:[55.75993727719997,37.578360499999995]};
-					#contact-map.offices-map-container
+					.offices-map-container
+						#contact-map
 
 		include ./partials/_footer.jade
+		include ./partials/_cities-choice.jade
 		include ./partials/_footer_scripts.jade
 		script(src="Content/js/vendor/jquery.browser.js")
 		script(src="Content/js/vendor/easytabs.min.js")
 		script(src="Content/js/vendor/jquery.hashchange.min.js")
-		script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
+		script(src="//api-maps.yandex.ru/2.1/?lang=ru_RU")
 		script.
 			var center_latitude = 55.786495, center_longitude = 37.634344;
 			var defaultTab = document.location.hash ? "li" + document.location.hash: "li#offices_tab";

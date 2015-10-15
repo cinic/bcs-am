@@ -226,3 +226,21 @@ if ((sliderPiaInvest != null) && (sliderPiaRefill != null)) {
     });
   });
 }
+
+$(function() {
+  return $('.offices-select').on('click', function(e) {
+    e.preventDefault();
+    $('<div class="darkbox"><div class="darkbox-wrapper"><div class="darkbox-close"></div></div></div>').appendTo('body');
+    $('#cities-choice').clone().appendTo('.darkbox-wrapper');
+    $('.darkbox').fadeIn(600, function() {
+      $('body').addClass('fixed');
+      return $('.darkbox').addClass('active');
+    });
+    return $('.darkbox-close').on('click', function() {
+      $('body').removeClass('fixed');
+      return $('.darkbox').fadeOut(600, function() {
+        return $('.darkbox').remove;
+      });
+    });
+  });
+});

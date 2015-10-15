@@ -26,7 +26,7 @@
             <ul role="nav" class="hidden-xs top-nav pull-left">
               <li class="hidden-sm"><a href="about.html"><span class="icon home"></span>О компании</a></li>
               <li><a href="#"><span class="icon cabinet"></span>Личный кабинет</a></li>
-              <li><a href="/contacts.html" class="pseudo-link offices"><span class="icon offices"></span><i>Офисы в москве</i></a></li>
+              <li><a href="/contacts.html" class="pseudo-link offices-select"><span class="icon offices"></span><i>Офисы в москве</i></a></li>
             </ul>
             <div class="meta pull-right">
               <div class="search"><a href="#" class="search-icon text-hide">Поиск</a></div>
@@ -55,7 +55,7 @@
     </nav>
     <section class="offices contact-map">
       <div class="outer clearfix text-center">
-        <h1 class="mini-title">Выберите ваш город: <span class="select-city">Москва</span></h1>
+        <h1 class="mini-title">Выберите ваш город: <span class="select-city offices-select">Москва</span></h1>
       </div>
       <div class="outer clearfix">
         <div class="col-md-6">
@@ -140,7 +140,9 @@
         </div>
         <div class="col-md-14">
           <script>var contactPoints = {1:[55.786495,37.634344],2:[55.709028,37.620761],3:[55.746573,37.559972],4:[55.731191,37.635309],5:[55.762085,37.570501],6:[55.738333,37.661635],7:[55.779859,37.599372],8:[55.75993727719997,37.578360499999995]};</script>
-          <div id="contact-map" class="offices-map-container"></div>
+          <div class="offices-map-container">
+            <div id="contact-map"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -163,7 +165,7 @@
               <div class="address">
                 <div class="phone-num">8 800 100 73 70</div>
                 <div class="phone-descr">бесплатный звонок по россии</div>
-                <div class="city-select"><span>Москва</span></div>
+                <div class="city-select offices-select"><span>Москва</span></div>
                 <div class="addr"><span class="icon"></span>Проспект мира, д.69, стр. 1</div>
                 <div class="tel"><span class="icon"></span>+7 (495) 785 19 99</div>
               </div>
@@ -177,6 +179,75 @@
         </div>
       </div>
     </footer>
+    <div id="cities-choice" class="cities-choice">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-11 col-sm-5">
+            <h3 class="city-char">А</h3>
+            <div class="city"><a href="#">Альметьевск</a></div>
+            <div class="city"><a href="#">Астрахань</a></div>
+            <h3 class="city-char">Б</h3>
+            <div class="city"><a href="#">Барнаул</a></div>
+            <h3 class="city-char">В</h3>
+            <div class="city"><a href="#">Волгоград</a></div>
+            <div class="city"><a href="#">Воронеж</a></div>
+            <h3 class="city-char">Е</h3>
+            <div class="city"><a href="#">Екатеринбург</a></div>
+            <h3 class="city-char">И</h3>
+            <div class="city"><a href="#">Ижевск</a></div>
+            <div class="city"><a href="#">Иркутск</a></div>
+            <h3 class="city-char">К</h3>
+            <div class="city"><a href="#">Казань</a></div>
+            <div class="city"><a href="#">Калининград</a></div>
+            <div class="city"><a href="#">Кемерово</a></div>
+            <div class="city"><a href="#">Краснодар</a></div>
+            <div class="city"><a href="#">Красноярск</a></div>
+          </div>
+          <div class="col-xs-11 col-sm-5">
+            <h3 class="city-char">Л</h3>
+            <div class="city"><a href="#">Липецк</a></div>
+            <h3 class="city-char">М</h3>
+            <div class="city"><a href="#">Москва</a></div>
+            <h3 class="city-char">Н</h3>
+            <div class="city"><a href="#">Нижний Новгород</a></div>
+            <div class="city"><a href="#">Новокузнецк</a></div>
+            <div class="city"><a href="#">Новосибирск</a></div>
+            <h3 class="city-char">О</h3>
+            <div class="city"><a href="#">Омск</a></div>
+            <div class="city"><a href="#">Оренбург</a></div>
+            <h3 class="city-char">П</h3>
+            <div class="city"><a href="#">Пенза</a></div>
+            <div class="city"><a href="#">Пермь</a></div>
+          </div>
+          <div class="col-sm-5">
+            <h3 class="city-char">Р</h3>
+            <div class="city"><a href="#">Ростов-на-Дону</a></div>
+            <h3 class="city-char">С</h3>
+            <div class="city"><a href="#">Самара</a></div>
+            <div class="city"><a href="#">Санкт-Петербург</a></div>
+            <div class="city"><a href="#">Саратов</a></div>
+            <div class="city"><a href="#">Сочи</a></div>
+            <div class="city"><a href="#">Ставрополь</a></div>
+            <div class="city"><a href="#">Стерлитамак</a></div>
+            <div class="city"><a href="#">Сургут</a></div>
+            <h3 class="city-char">Т</h3>
+            <div class="city"><a href="#">Таганрог</a></div>
+            <div class="city"><a href="#">Тольятти</a></div>
+            <div class="city"><a href="#">Томск</a></div>
+            <div class="city"><a href="#">Тюмень</a></div>
+            <h3 class="city-char">У</h3>
+            <div class="city"><a href="#">Уфа</a></div>
+          </div>
+          <div class="col-sm-5">
+            <h3 class="city-char">Ч</h3>
+            <div class="city"><a href="#">Челябинск</a></div>
+            <div class="city"><a href="#">Череповец</a></div>
+            <h3 class="city-char">Я</h3>
+            <div class="city"><a href="#">Ярославль</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="Content/js/vendor/jquery-2.1.4.min.js"></script>
     <script src="Content/js/vendor/selectize.js"></script>
     <script src="Content/js/vendor/nouislider.js"></script>
@@ -188,7 +259,7 @@
     <script src="Content/js/vendor/jquery.browser.js"></script>
     <script src="Content/js/vendor/easytabs.min.js"></script>
     <script src="Content/js/vendor/jquery.hashchange.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script>
       var center_latitude = 55.786495, center_longitude = 37.634344;
       var defaultTab = document.location.hash ? "li" + document.location.hash: "li#offices_tab";
