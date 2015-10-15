@@ -32,3 +32,10 @@ $ ->
 			$(@).parent().addClass('checked').parent().addClass('checked')
 		else
 			$(@).parent().removeClass('checked').parent().removeClass('checked')
+
+	$('.about .awards .expand .plus, .about .awards .expand .label').on 'click', ->
+		$('.about .awards .collapsed').slideDown()
+
+	$('.about .team .bio').on 'click', (e)->
+		e.preventDefault()
+		$(@).siblings('.collapsed').slideToggle()

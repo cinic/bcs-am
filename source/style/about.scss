@@ -208,7 +208,7 @@
 
 	.awards {
 		position: relative;
-		height: 486px;
+		min-height: 486px;
 		padding-bottom: 44px;
 		background: #446389 url('../img/pages/about/awards.jpg') no-repeat 50% 50%;
 		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/about/awards.jpg', sizingMethod='scale');
@@ -404,9 +404,11 @@
 			}
 		}
 
+		.collapsed { display: none; }
 		&.expanded {
 			height: auto;
 		}
+
 
 		.expand {
 			position: absolute;
@@ -466,7 +468,7 @@
 		}
 
 		@media (min-width: $screen-md) {
-			height: 887px;
+			min-height: 887px;
 		}
 	}
 
@@ -651,6 +653,10 @@
 			@media (min-width: $screen-md) {
 				font-size: 18px;
 			}
+		}
+		.collapsed {
+			display: none;
+			p:first-child { margin-top: 0; }
 		}
 		@media (min-width: $screen-md) {
 

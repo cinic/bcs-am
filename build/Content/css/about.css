@@ -196,7 +196,7 @@
 }
 .about .awards {
   position: relative;
-  height: 486px;
+  min-height: 486px;
   padding-bottom: 44px;
   background: #446389 url("../img/pages/about/awards.jpg") no-repeat 50% 50%;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/about/awards.jpg', sizingMethod='scale');
@@ -384,6 +384,9 @@
     margin-bottom: 22px;
   }
 }
+.about .awards .collapsed {
+  display: none;
+}
 .about .awards.expanded {
   height: auto;
 }
@@ -448,7 +451,7 @@
 }
 @media (min-width: 992px) {
   .about .awards {
-    height: 887px;
+    min-height: 887px;
   }
 }
 .about .news {
@@ -630,4 +633,10 @@
   .about .team .team-list {
     font-size: 18px;
   }
+}
+.about .team .collapsed {
+  display: none;
+}
+.about .team .collapsed p:first-child {
+  margin-top: 0;
 }

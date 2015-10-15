@@ -33,12 +33,19 @@ $(function() {
   if ($('.custom-checkbox input').is(':checked')) {
     $('.custom-checkbox input').parent().addClass('checked').parent().addClass('checked');
   }
-  return $('.custom-checkbox input').on('change', function() {
+  $('.custom-checkbox input').on('change', function() {
     if ($(this).is(':checked')) {
       return $(this).parent().addClass('checked').parent().addClass('checked');
     } else {
       return $(this).parent().removeClass('checked').parent().removeClass('checked');
     }
+  });
+  $('.about .awards .expand .plus, .about .awards .expand .label').on('click', function() {
+    return $('.about .awards .collapsed').slideDown();
+  });
+  return $('.about .team .bio').on('click', function(e) {
+    e.preventDefault();
+    return $(this).siblings('.collapsed').slideToggle();
   });
 });
 
