@@ -1,4 +1,8 @@
 # darkbox
+closeDarkbox = ->
+	$('body').removeClass('fixed')
+	$('.darkbox').fadeOut 600, ->
+		$('.darkbox').remove
 $ ->
 	$('.offices-select').on 'click', (e)->
 		e.preventDefault()
@@ -9,6 +13,6 @@ $ ->
 			$('.darkbox').addClass('active')
 
 		$('.darkbox-close').on 'click', ->
-			$('body').removeClass('fixed')
-			$('.darkbox').fadeOut 600, ->
-				$('.darkbox').remove
+			closeDarkbox()
+		$(document).on 'keypress', (e)->
+			if (e.keyCode == 27) then closeDarkbox()

@@ -25,13 +25,24 @@
 .contacts .offices-map-container {
   margin: 0 -10px;
 }
+.contacts .tab-container {
+  height: 642px;
+  background: #f5f7f9;
+}
 .contacts .tab-content {
   padding: 0;
   width: 100%;
   height: 600px;
-  background: #f5f7f9;
   overflow-y: scroll;
   border: 0;
+  background: transparent;
+}
+.contacts .tab-content > .active {
+  display: block !important;
+  visibility: visible !important;
+}
+.contacts .offices-tabs {
+  background-color: white;
 }
 .contacts .offices-tabs .item {
   float: left;

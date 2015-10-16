@@ -1,4 +1,4 @@
-var calcIncomeHeight, calcValue, calcValueHeight, calcValueHeight2, nav, slider, sliderPiaInvest, sliderPiaRefill, valueInput, valueInput2, valueInput3;
+var calcIncomeHeight, calcValue, calcValueHeight, calcValueHeight2, closeDarkbox, nav, slider, sliderPiaInvest, sliderPiaRefill, valueInput, valueInput2, valueInput3;
 
 window.log = function(param) {
   return console.log(param);
@@ -234,6 +234,13 @@ if ((sliderPiaInvest != null) && (sliderPiaRefill != null)) {
   });
 }
 
+closeDarkbox = function() {
+  $('body').removeClass('fixed');
+  return $('.darkbox').fadeOut(600, function() {
+    return $('.darkbox').remove;
+  });
+};
+
 $(function() {
   return $('.offices-select').on('click', function(e) {
     e.preventDefault();
@@ -243,11 +250,13 @@ $(function() {
       $('body').addClass('fixed');
       return $('.darkbox').addClass('active');
     });
-    return $('.darkbox-close').on('click', function() {
-      $('body').removeClass('fixed');
-      return $('.darkbox').fadeOut(600, function() {
-        return $('.darkbox').remove;
-      });
+    $('.darkbox-close').on('click', function() {
+      return closeDarkbox();
+    });
+    return $(document).on('keypress', function(e) {
+      if (e.keyCode === 27) {
+        return closeDarkbox();
+      }
     });
   });
 });
