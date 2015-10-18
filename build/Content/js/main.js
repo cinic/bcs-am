@@ -1,4 +1,4 @@
-var calcIncomeHeight, calcValue, calcValueHeight, calcValueHeight2, closeDarkbox, nav, slider, sliderPiaInvest, sliderPiaRefill, valueInput, valueInput2, valueInput3;
+var blurMarker, calcIncomeHeight, calcValue, calcValueHeight, calcValueHeight2, closeAllPointDetails, closeDarkbox, closePointDetails, contactMap, hoverMarker, markers, nav, openPointDetails, routing, slider, sliderPiaInvest, sliderPiaRefill, valueInput, valueInput2, valueInput3;
 
 window.log = function(param) {
   return console.log(param);
@@ -259,4 +259,126 @@ $(function() {
       }
     });
   });
+});
+
+markers = [];
+
+routing = false;
+
+contactMap = true;
+
+hoverMarker = function(num) {
+  var marker, placemark;
+  marker = markers[num];
+  placemark = marker.placemark;
+  placemark.options.set('iconContentLayout', ymaps.templateLayoutFactory.createClass('<span class="marker active">' + num + '</span>'));
+  return $('.point[data-point=' + num + ']').addClass('hovered');
+};
+
+blurMarker = function(num) {
+  var marker, placemark;
+  marker = markers[num];
+  placemark = marker.placemark;
+  if (!marker.active) {
+    placemark.options.set('iconContentLayout', ymaps.templateLayoutFactory.createClass('<span class="marker">' + num + '</span>'));
+  }
+  return $('.point[data-point=' + num + ']').removeClass('hovered');
+};
+
+openPointDetails = function(num) {
+  var marker;
+  if ($('.point-detail[data-point=' + num + ']').is(':visible')) {
+    false;
+  }
+  closeAllPointDetails();
+  $('.point[data-point=' + num + ']').addClass('active');
+  $('.point-detail[data-point=' + num + ']').show();
+  marker = markers[num];
+  marker.active = true;
+  markers[num] = marker;
+  return hoverMarker(num);
+};
+
+closePointDetails = function(num) {
+  var marker;
+  $('.point[data-point=' + num + ']').removeClass('active');
+  $('.point-detail[data-point=' + num + ']').hide();
+  marker = markers[num];
+  marker.active = false;
+  markers[num] = marker;
+  return blurMarker(num);
+};
+
+closeAllPointDetails = function() {
+  return $('.point-detail:visible').each(function() {
+    var num;
+    num = parseInt($(this).attr('data-point'));
+    return closePointDetails(num);
+  });
+};
+
+$(function() {
+  $('.contact-map .points a').on('mouseenter', function() {
+    var num;
+    num = parseInt($(this).attr('data-point'));
+    return hoverMarker(num);
+  });
+  $('.contact-map .points a').on('mouseleave', function() {
+    var num;
+    num = parseInt($(this).attr('data-point'));
+    return blurMarker(num);
+  });
+  $('.contact-map .points a').on('click', function() {
+    var num;
+    if ($(this).hasClass('active')) {
+      num = parseInt($(this).data('point'));
+      return closePointDetails(num);
+    } else {
+      num = parseInt($(this).attr('data-point'));
+      return openPointDetails(num);
+    }
+  });
+  if ($('#contact-map') && $('#contact-map').length) {
+    return ymaps.ready(function() {
+      var j, placemark, point, results;
+      contactMap = new ymaps.Map('contact-map', {
+        center: [center_latitude, center_longitude],
+        zoom: 11,
+        controls: [],
+        behaviors: ['drag']
+      });
+      results = [];
+      for (j in contactPoints) {
+        point = contactPoints[j];
+        placemark = new ymaps.Placemark(point, {}, {
+          iconLayout: 'default#imageWithContent',
+          iconImageHref: '/Content/img/spacer.png',
+          iconImageSize: [44, 44],
+          iconImageOffset: [-22, -22],
+          iconContentSize: [44, 44],
+          pointNum: j,
+          iconContentLayout: ymaps.templateLayoutFactory.createClass('<span class="marker">' + j + '</span>')
+        });
+        placemark.events.add('mouseenter', function(e) {
+          var num;
+          num = e.get('target').options.get('pointNum');
+          hoverMarker(num);
+        }).add('mouseleave', function(e) {
+          var num;
+          num = e.get('target').options.get('pointNum');
+          blurMarker(num);
+        }).add('click', function(e) {
+          var num;
+          num = e.get('target').options.get('pointNum');
+          openPointDetails(num);
+        });
+        contactMap.geoObjects.add(placemark);
+        results.push(markers[j] = {
+          placemark: placemark,
+          active: false
+        });
+      }
+      return results;
+    });
+  }
 });

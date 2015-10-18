@@ -60,6 +60,7 @@
   background: #f5f7f9;
 }
 .contacts .offices-list {
+  padding-left: 2em;
   counter-reset: list;
 }
 .contacts .offices-list li {
@@ -68,8 +69,8 @@
 }
 .contacts .offices-list .point {
   position: relative;
+  display: block;
   text-decoration: none;
-  border-bottom: 1px dashed;
 }
 .contacts .offices-list .point:before {
   counter-increment: list;
@@ -91,9 +92,59 @@
   color: #000;
   background-color: #f4c733;
 }
+.contacts .offices-list .point .title {
+  border-bottom: 1px dashed;
+}
+.contacts .offices-list .point .close {
+  display: none;
+  position: absolute;
+  right: 6px;
+  top: 2px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #002665;
+  z-index: 20;
+}
+.contacts .offices-list .point.active .close {
+  display: block;
+}
 .contacts .offices-list .point-detail {
   display: none;
   padding-top: 24px;
+}
+.contacts .offices-list .point-detail addr {
+  display: block;
+  margin-left: -2em;
+  padding-left: 2em;
+  padding-top: 6px;
+  font-weight: 500;
+  border-top: 1px solid #cccccc;
+}
+.contacts .offices-list .point-detail .time,
+.contacts .offices-list .point-detail .email,
+.contacts .offices-list .point-detail .phone {
+  position: relative;
+  margin-top: 18px;
+  padding-left: 30px;
+  line-height: 22px;
+  font-size: 18px;
+}
+.contacts .offices-list .point-detail .time .icon,
+.contacts .offices-list .point-detail .email .icon,
+.contacts .offices-list .point-detail .phone .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background: url("../img/pages/contacts/contact-icons.png") no-repeat 0 0;
+}
+.contacts .offices-list .point-detail .time .icon {
+  background-position: 0 -22px;
+}
+.contacts .offices-list .point-detail .email .icon {
+  background-position: 0 -44px;
 }
 .contacts ol[start="1"] {
   counter-reset: list 1;

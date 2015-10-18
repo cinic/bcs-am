@@ -65,6 +65,7 @@
 		}
 	}
 	.offices-list {
+		padding-left: 2em;
 		counter-reset: list;
 		li {
 			margin-bottom: 20px;
@@ -73,8 +74,8 @@
 		}
 		.point {
 			position: relative;
+			display: block;
 			text-decoration: none;
-			border-bottom: 1px dashed;
 			&:before {
 				counter-increment: list;
 				content: counter(list);
@@ -99,10 +100,63 @@
 					background-color: #f4c733;
 				}
 			}
+			.title {
+				border-bottom: 1px dashed;
+			}
+			.close {
+				display: none;
+				position: absolute;
+				right: 6px;
+				top: 2px;
+				font-size: 20px;
+				line-height: 20px;
+				font-weight: 500;
+				color: #002665;
+				z-index: 20;
+			}
+			&.active {
+				.close {
+					display: block;
+				}
+			}
 		}
 		.point-detail {
 			display: none;
 			padding-top: 24px;
+
+			addr {
+				display: block;
+				margin-left: -2em;
+				padding-left: 2em;
+				padding-top: 6px;
+				font-weight: 500;
+				border-top: 1px solid #cccccc;
+			}
+
+			.time,
+			.email,
+			.phone {
+				position: relative;
+				margin-top: 18px;
+				padding-left:30px;
+				line-height: 22px;
+				font-size: 18px;
+
+				.icon {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 22px;
+					height: 22px;
+					background: url('../img/pages/contacts/contact-icons.png') no-repeat 0 0;
+				}
+			}
+			.time {
+				.icon { background-position: 0 -22px; }
+			}
+			.email {
+				.icon { background-position: 0 -44px; }
+			}
 		}
 	}
 	@for $i from 1 through 100 {

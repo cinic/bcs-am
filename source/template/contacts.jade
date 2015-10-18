@@ -3,7 +3,6 @@ html(lang="ru")
 	head
 		include ./partials/_header.jade
 		link(rel="stylesheet" href="Content/css/contacts.css")/
-		script(src="//api-maps.yandex.ru/2.1/?lang=ru_RU")
 	body.contacts
 		include ./partials/_navigation.jade
 		section.offices.contact-map
@@ -15,185 +14,190 @@ html(lang="ru")
 				.col-md-6
 					.tab-container
 						ul.etabs.offices-tabs.clearfix
-							li.item.top-right#offices_tab
+							li.item#offices_tab
 								a(href="#tabs1-html") Агенты
-							li.item.top#partners_tab
+							li.item#partners_tab
 								a(href="#tabs2-html") Партнёры
-						.tab-content
-							#tabs1-html
-								ol.offices-list.points
-									li
-										a.togglelable.point(href="#" data-point="1")
-											span.title «На Проспекте Мира»
-										.point-detail(data-point="1")
-											addr
-												|129110, Москва, Проспект Мира, 69, строение 1
-											.phone
-												span.icon
-												a(href="tel:+74957855544") (495) 785-55-44
-												br
-												a(href="tel:+74957851999") (495) 785-19-99
-												br
-												a(href="+74957853995") (495) 785-39-95
-											.email
-												span.icon
-												|info@msk.bcs.ru
-											.time
-												span.icon
-												|пн–пт: с 10:00 до 20:00
-												br
-												|сб: выходной
-												br
-												|вс: выходной
-									li
-										a.togglelable.point(href="#" data-point="2")
-											span.title Филиал «На Тульской»
-										.point-detail(data-point="2")
-											addr
-												|115191, Москва, ул. Б. Тульcкая, 2
-											.phone
-												span.icon
-												a(href="tel:+74957855544") (495) 785-55-44
-												br
-												a(href="tel:+74957853995") (495) 785-39-95
-												br
-												a(href="tel:88001005502") 8 800 100-55-02
-											.email
-												span.icon
-												|info@msk.bcs.ru
-											.time
-												span.icon
-												|пн–пт: с 10:00 до 20:00
-												br
-												|сб: выходной
-												br
-												|вс: выходной
-									li
-										a.togglelable.point(href="#" data-point="3")
-											span.title Филиал «Кутузовский»
-										.point-detail(data-point="3")
-											addr
-												|121059, Москва, ул. Б. Дорогомиловская, 14
-											.phone
-												span.icon
-												a(href="tel:+74957855544") (495) 785-55-44
-												br
-												a(href="tel:+74957851999") (495) 785-19-99
-												br
-												a(href="tel:+74957853995") (495) 785-39-95
-											.email
-												span.icon
-												|info@msk.bcs.ru
-											.time
-												span.icon
-												|пн–пт: с 10:00 до 20:00
-												br
-												|сб: выходной
-												br
-												|вс: выходной
-									li
-										a.togglelable.point(href="#" data-point="4")
-											span.title Филиал «Павелецкий»
-										.point-detail(data-point="4")
-											addr
-												|115054, Москва, ул. Валовая, 2-4/44, стр. 1
-											.phone
-												span.icon
-												a(href="tel:+74957855544") (495) 785-55-44
-												br
-												a(href="tel:+74957853995") (495) 785-39-95
-												br
-												a(href="tel:88001005502") 8 800 100-55-02
-											.email
-												span.icon
-												|info@msk.bcs.ru
-											.time
-												span.icon
-												|пн–пт: с 10:00 до 20:00
-												br
-												|сб: c 10:00 до 18:00
-												br
-												|вс: выходной
-									li
-										a.togglelable.point(href="#" data-point="5")
-											span.title Филиал «На Красной Пресне»
-										.point-detail(data-point="5")
-											addr
-												|123022, Москва, ул. Красная Пресня, 22
-											.phone
-												span.icon
-												a(href="tel:+74957855544") (495) 785-55-44
-												br
-												a(href="tel:+74957853995") (495) 785-39-95
-											.email
-												span.icon
-												|info@msk.bcs.ru
-											.time
-												span.icon
-												|пн–пт: с 10:00 до 20:00
-												br
-												|сб: выходной
-												br
-												|вс: выходной
-									li
-										a.togglelable.point(href="#" data-point="6")
-											span.title Филиал «На Марксистской»
-										.point-detail(data-point="6")
-											addr
-												|109147, Москва, ул. Марксистская, 3, стр. 1
-											.phone
-												span.icon
-												a(href="tel:+74957855544") (495) 785-55-44
-											.email
-												span.icon
-												|info@msk.bcs.ru
-											.time
-												span.icon
-												|пн–пт: с 10:00 до 20:00
-												br
-												|сб: выходной
-												br
-												|вс: выходной
-									li
-										a.togglelable.point(href="#" data-point="7")
-											span.title Филиал «На Новослободской»
-										.point-detail(data-point="7")
-											addr
-												|127030, Москва, ул. Новослободская, 11
-											.phone
-												span.icon
-												a(href="tel:+74957855544") (495) 785-55-44
-												br
-												a(href="tel:+74957853995") (495) 785-39-95
-											.email
-												span.icon
-												|info@msk.bcs.ru
-											.time
-												span.icon
-												|пн–пт: с 10:00 до 20:00
-												br
-												|сб: выходной
-												br
-												|вс: выходной
-							#tabs2-html
-								ol.offices-list.partners-list.points(start="7")
-									li
-										a.togglelable.point(href="#" data-point="8")
-											span.title Филиал «Пресненский. Ультима»
-										.point-detail(data-point="8")
-											addr
-												|123242, Москва, ул. Конюшковская, 31, стр. 1
-											.time
-												span.icon
-												|пн–пт: с 10:00 до 20:00
-												br
-												|сб: выходной
-												br
-												|вс: выходной
+						#tabs1-html
+							ol.offices-list.points
+								li
+									a.togglelable.point(href="#" data-point="1")
+										span.title «На Проспекте Мира»
+										span.close x
+									.point-detail(data-point="1")
+										addr
+											|129110, Москва, Проспект Мира, 69, строение 1
+										.phone
+											span.icon
+											a(href="tel:+74957855544") (495) 785-55-44
+											br
+											a(href="tel:+74957851999") (495) 785-19-99
+											br
+											a(href="+74957853995") (495) 785-39-95
+										.email
+											span.icon
+											|info@msk.bcs.ru
+										.time
+											span.icon
+											|пн–пт: с 10:00 до 20:00
+											br
+											|сб: выходной
+											br
+											|вс: выходной
+								li
+									a.togglelable.point(href="#" data-point="2")
+										span.title Филиал «На Тульской»
+										span.close x
+									.point-detail(data-point="2")
+										addr
+											|115191, Москва, ул. Б. Тульcкая, 2
+										.phone
+											span.icon
+											a(href="tel:+74957855544") (495) 785-55-44
+											br
+											a(href="tel:+74957853995") (495) 785-39-95
+											br
+											a(href="tel:88001005502") 8 800 100-55-02
+										.email
+											span.icon
+											|info@msk.bcs.ru
+										.time
+											span.icon
+											|пн–пт: с 10:00 до 20:00
+											br
+											|сб: выходной
+											br
+											|вс: выходной
+								li
+									a.togglelable.point(href="#" data-point="3")
+										span.title Филиал «Кутузовский»
+										span.close x
+									.point-detail(data-point="3")
+										addr
+											|121059, Москва, ул. Б. Дорогомиловская, 14
+										.phone
+											span.icon
+											a(href="tel:+74957855544") (495) 785-55-44
+											br
+											a(href="tel:+74957851999") (495) 785-19-99
+											br
+											a(href="tel:+74957853995") (495) 785-39-95
+										.email
+											span.icon
+											|info@msk.bcs.ru
+										.time
+											span.icon
+											|пн–пт: с 10:00 до 20:00
+											br
+											|сб: выходной
+											br
+											|вс: выходной
+								li
+									a.togglelable.point(href="#" data-point="4")
+										span.title Филиал «Павелецкий»
+										span.close x
+									.point-detail(data-point="4")
+										addr
+											|115054, Москва, ул. Валовая, 2-4/44, стр. 1
+										.phone
+											span.icon
+											a(href="tel:+74957855544") (495) 785-55-44
+											br
+											a(href="tel:+74957853995") (495) 785-39-95
+											br
+											a(href="tel:88001005502") 8 800 100-55-02
+										.email
+											span.icon
+											|info@msk.bcs.ru
+										.time
+											span.icon
+											|пн–пт: с 10:00 до 20:00
+											br
+											|сб: c 10:00 до 18:00
+											br
+											|вс: выходной
+								li
+									a.togglelable.point(href="#" data-point="5")
+										span.title Филиал «На Красной Пресне»
+										span.close x
+									.point-detail(data-point="5")
+										addr
+											|123022, Москва, ул. Красная Пресня, 22
+										.phone
+											span.icon
+											a(href="tel:+74957855544") (495) 785-55-44
+											br
+											a(href="tel:+74957853995") (495) 785-39-95
+										.email
+											span.icon
+											|info@msk.bcs.ru
+										.time
+											span.icon
+											|пн–пт: с 10:00 до 20:00
+											br
+											|сб: выходной
+											br
+											|вс: выходной
+								li
+									a.togglelable.point(href="#" data-point="6")
+										span.title Филиал «На Марксистской»
+										span.close x
+									.point-detail(data-point="6")
+										addr
+											|109147, Москва, ул. Марксистская, 3, стр. 1
+										.phone
+											span.icon
+											a(href="tel:+74957855544") (495) 785-55-44
+										.email
+											span.icon
+											|info@msk.bcs.ru
+										.time
+											span.icon
+											|пн–пт: с 10:00 до 20:00
+											br
+											|сб: выходной
+											br
+											|вс: выходной
+								li
+									a.togglelable.point(href="#" data-point="7")
+										span.title Филиал «На Новослободской»
+										span.close x
+									.point-detail(data-point="7")
+										addr
+											|127030, Москва, ул. Новослободская, 11
+										.phone
+											span.icon
+											a(href="tel:+74957855544") (495) 785-55-44
+											br
+											a(href="tel:+74957853995") (495) 785-39-95
+										.email
+											span.icon
+											|info@msk.bcs.ru
+										.time
+											span.icon
+											|пн–пт: с 10:00 до 20:00
+											br
+											|сб: выходной
+											br
+											|вс: выходной
+						#tabs2-html
+							ol.offices-list.partners-list.points(start="7")
+								li
+									a.togglelable.point(href="#" data-point="8")
+										span.title Филиал «Пресненский. Ультима»
+										span.close x
+									.point-detail(data-point="8")
+										addr
+											|123242, Москва, ул. Конюшковская, 31, стр. 1
+										.time
+											span.icon
+											|пн–пт: с 10:00 до 20:00
+											br
+											|сб: выходной
+											br
+											|вс: выходной
 
 				.col-md-14
-					script.
-						var contactPoints = {1:[55.786495,37.634344],2:[55.709028,37.620761],3:[55.746573,37.559972],4:[55.731191,37.635309],5:[55.762085,37.570501],6:[55.738333,37.661635],7:[55.779859,37.599372],8:[55.75993727719997,37.578360499999995]};
 					.offices-map-container
 						#contact-map
 
@@ -204,6 +208,9 @@ html(lang="ru")
 		script(src="Content/js/vendor/easytabs.min.js")
 		script(src="Content/js/vendor/jquery.hashchange.min.js")
 		script.
+			var contactPoints = {1:[55.786495,37.634344],2:[55.709028,37.620761],3:[55.746573,37.559972],4:[55.731191,37.635309],5:[55.762085,37.570501],6:[55.738333,37.661635],7:[55.779859,37.599372],8:[55.75993727719997,37.578360499999995]};
 			var center_latitude = 55.786495, center_longitude = 37.634344;
-			var defaultTab = document.location.hash ? "li" + document.location.hash: "li#offices_tab";
-		script(src="Content/js/vendor/bcs.contacts.js")
+			var defaultTab = "li#offices_tab";
+			//var defaultTab = document.location.hash ? "li" + document.location.hash: "li#offices_tab";
+		script(src="//api-maps.yandex.ru/2.1/?lang=ru_RU")
+		

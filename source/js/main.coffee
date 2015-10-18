@@ -5,3 +5,4 @@
 #= partials/custom-range
 #= partials/bond-calculator
 #= partials/darkbox
+#= partials/contacts

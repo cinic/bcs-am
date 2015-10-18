@@ -174,21 +174,21 @@ $(function () {
   });
   $('.contact-map .points a').on('click', function () {
     var num = parseInt($(this).attr('data-point'));
-    //openPointDetails(num);
-    $(this).next().slideToggle('down');
+    openPointDetails(num);
+    //$(this).next().slideToggle('down');
     return false;
   });
 
   if ($('#contact-map') && $('#contact-map').length) {
     ymaps.ready(function () {
       contactMap = new ymaps.Map("contact-map",
-                {
-                  center: [center_latitude, center_longitude],
-                  zoom: 11,
-                  controls: [],
-                  behaviors: ['drag']
-                }
-            );
+        {
+          center: [center_latitude, center_longitude],
+          zoom: 11,
+          controls: [],
+          behaviors: ['drag']
+        }
+      );
 
       contactMap.events.add('click', function (e) {
         var coords = e.get('coords');
