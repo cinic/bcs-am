@@ -15,17 +15,15 @@ blurMarker = (num) ->
 	$('.point[data-point='+num+']').removeClass('hovered')
 
 openPointDetails = (num) ->
-	if $('.point-detail[data-point='+num+']').is(':visible') then false;
+	unless $('.point-detail[data-point='+num+']').is(':visible')
+		closeAllPointDetails()
+		$('.point[data-point=' + num + ']').addClass('active')
+		$('.point-detail[data-point='+num+']').show()
 
-	closeAllPointDetails()
-	# $('.points').hide();
-	$('.point[data-point=' + num + ']').addClass('active')
-	$('.point-detail[data-point='+num+']').show()
-
-	marker = markers[num]
-	marker.active = true
-	markers[num] = marker
-	hoverMarker(num)
+		marker = markers[num]
+		marker.active = true
+		markers[num] = marker
+		hoverMarker(num)
 
 closePointDetails = (num) ->
 	$('.point[data-point=' + num + ']').removeClass('active')
@@ -36,20 +34,23 @@ closePointDetails = (num) ->
 	blurMarker(num)
 
 closeAllPointDetails = ->
-	$('.point-detail:visible').each ->
+	$('.point-detail').each ->
 		num = parseInt($(@).attr('data-point'))
 		closePointDetails(num)
 
 $ ->
-	$('.contact-map .points a').on 'mouseenter', ->
+	$('.contact-map .etabs .item a').on 'click', (e) ->
+		closeAllPointDetails()
+
+	$('.contact-map .points .point').on 'mouseenter', ->
 		num = parseInt($(@).attr('data-point'))
 		hoverMarker(num)
 
-	$('.contact-map .points a').on 'mouseleave', ->
+	$('.contact-map .points .point').on 'mouseleave', ->
 		num = parseInt($(@).attr('data-point'))
 		blurMarker(num)
 
-	$('.contact-map .points a').on 'click', ->
+	$('.contact-map .points .point').on 'click', ->
 		if $(@).hasClass('active')
 			num = parseInt($(@).data('point'))
 			closePointDetails(num)

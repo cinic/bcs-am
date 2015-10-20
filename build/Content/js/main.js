@@ -287,16 +287,15 @@ blurMarker = function(num) {
 
 openPointDetails = function(num) {
   var marker;
-  if ($('.point-detail[data-point=' + num + ']').is(':visible')) {
-    false;
+  if (!$('.point-detail[data-point=' + num + ']').is(':visible')) {
+    closeAllPointDetails();
+    $('.point[data-point=' + num + ']').addClass('active');
+    $('.point-detail[data-point=' + num + ']').show();
+    marker = markers[num];
+    marker.active = true;
+    markers[num] = marker;
+    return hoverMarker(num);
   }
-  closeAllPointDetails();
-  $('.point[data-point=' + num + ']').addClass('active');
-  $('.point-detail[data-point=' + num + ']').show();
-  marker = markers[num];
-  marker.active = true;
-  markers[num] = marker;
-  return hoverMarker(num);
 };
 
 closePointDetails = function(num) {
@@ -310,7 +309,7 @@ closePointDetails = function(num) {
 };
 
 closeAllPointDetails = function() {
-  return $('.point-detail:visible').each(function() {
+  return $('.point-detail').each(function() {
     var num;
     num = parseInt($(this).attr('data-point'));
     return closePointDetails(num);
@@ -318,17 +317,20 @@ closeAllPointDetails = function() {
 };
 
 $(function() {
-  $('.contact-map .points a').on('mouseenter', function() {
+  $('.contact-map .etabs .item a').on('click', function(e) {
+    return closeAllPointDetails();
+  });
+  $('.contact-map .points .point').on('mouseenter', function() {
     var num;
     num = parseInt($(this).attr('data-point'));
     return hoverMarker(num);
   });
-  $('.contact-map .points a').on('mouseleave', function() {
+  $('.contact-map .points .point').on('mouseleave', function() {
     var num;
     num = parseInt($(this).attr('data-point'));
     return blurMarker(num);
   });
-  $('.contact-map .points a').on('click', function() {
+  $('.contact-map .points .point').on('click', function() {
     var num;
     if ($(this).hasClass('active')) {
       num = parseInt($(this).data('point'));

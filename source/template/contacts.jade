@@ -11,7 +11,7 @@ html(lang="ru")
 					|Выберите ваш город: 
 					span.select-city.offices-select Москва
 			.outer.clearfix
-				.col-md-6
+				.col-md-6.tab-container-wrapper
 					.tab-container
 						ul.etabs.offices-tabs.clearfix
 							li.item#offices_tab
@@ -21,7 +21,7 @@ html(lang="ru")
 						#tabs1-html
 							ol.offices-list.points
 								li
-									a.togglelable.point(href="#" data-point="1")
+									.point(href="#" data-point="1")
 										span.title «На Проспекте Мира»
 										span.close x
 									.point-detail(data-point="1")
@@ -45,7 +45,7 @@ html(lang="ru")
 											br
 											|вс: выходной
 								li
-									a.togglelable.point(href="#" data-point="2")
+									.point(href="#" data-point="2")
 										span.title Филиал «На Тульской»
 										span.close x
 									.point-detail(data-point="2")
@@ -69,7 +69,7 @@ html(lang="ru")
 											br
 											|вс: выходной
 								li
-									a.togglelable.point(href="#" data-point="3")
+									.point(href="#" data-point="3")
 										span.title Филиал «Кутузовский»
 										span.close x
 									.point-detail(data-point="3")
@@ -93,7 +93,7 @@ html(lang="ru")
 											br
 											|вс: выходной
 								li
-									a.togglelable.point(href="#" data-point="4")
+									.point(href="#" data-point="4")
 										span.title Филиал «Павелецкий»
 										span.close x
 									.point-detail(data-point="4")
@@ -117,7 +117,7 @@ html(lang="ru")
 											br
 											|вс: выходной
 								li
-									a.togglelable.point(href="#" data-point="5")
+									.point(href="#" data-point="5")
 										span.title Филиал «На Красной Пресне»
 										span.close x
 									.point-detail(data-point="5")
@@ -139,7 +139,7 @@ html(lang="ru")
 											br
 											|вс: выходной
 								li
-									a.togglelable.point(href="#" data-point="6")
+									.point(href="#" data-point="6")
 										span.title Филиал «На Марксистской»
 										span.close x
 									.point-detail(data-point="6")
@@ -159,7 +159,7 @@ html(lang="ru")
 											br
 											|вс: выходной
 								li
-									a.togglelable.point(href="#" data-point="7")
+									.point(href="#" data-point="7")
 										span.title Филиал «На Новослободской»
 										span.close x
 									.point-detail(data-point="7")
@@ -183,7 +183,7 @@ html(lang="ru")
 						#tabs2-html
 							ol.offices-list.partners-list.points(start="7")
 								li
-									a.togglelable.point(href="#" data-point="8")
+									.point(href="#" data-point="8")
 										span.title Филиал «Пресненский. Ультима»
 										span.close x
 									.point-detail(data-point="8")
@@ -199,7 +199,7 @@ html(lang="ru")
 
 				.col-md-14
 					.offices-map-container
-						#contact-map
+						#contact-map(style="width: 100%; height: 600px")
 
 		include ./partials/_footer.jade
 		include ./partials/_cities-choice.jade
@@ -210,7 +210,5 @@ html(lang="ru")
 		script.
 			var contactPoints = {1:[55.786495,37.634344],2:[55.709028,37.620761],3:[55.746573,37.559972],4:[55.731191,37.635309],5:[55.762085,37.570501],6:[55.738333,37.661635],7:[55.779859,37.599372],8:[55.75993727719997,37.578360499999995]};
 			var center_latitude = 55.786495, center_longitude = 37.634344;
-			var defaultTab = "li#offices_tab";
-			//var defaultTab = document.location.hash ? "li" + document.location.hash: "li#offices_tab";
 		script(src="//api-maps.yandex.ru/2.1/?lang=ru_RU")
 		

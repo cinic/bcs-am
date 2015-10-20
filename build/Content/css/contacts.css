@@ -25,10 +25,6 @@
 .contacts .offices-map-container {
   margin: 0 -10px;
 }
-.contacts .tab-container {
-  height: 642px;
-  background: #f5f7f9;
-}
 .contacts .tab-content {
   padding: 0;
   width: 100%;
@@ -59,6 +55,10 @@
 .contacts .offices-tabs .item a:hover, .contacts .offices-tabs .item a.active {
   background: #f5f7f9;
 }
+.contacts .tab-container-wrapper {
+  height: 642px;
+  background: #f5f7f9 !important;
+}
 .contacts .offices-list {
   padding-left: 2em;
   counter-reset: list;
@@ -71,6 +71,7 @@
   position: relative;
   display: block;
   text-decoration: none;
+  cursor: pointer;
 }
 .contacts .offices-list .point:before {
   counter-increment: list;
