@@ -37,36 +37,62 @@
   margin: 0 -10px;
   font-size: 16px;
   background-size: cover;
+  -webkit-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+}
+.institutional .services .item .description {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.4s ease;
+          transition: all 0.4s ease;
 }
 .institutional .services .item.item-1 {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/institutional/services-01.jpg', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/institutional/services-01.jpg', sizingMethod='scale')";
   background: #58616e url("../img/pages/institutional/services-01.jpg") no-repeat center top;
 }
+.institutional .services .item.item-1:hover .description {
+  height: 306px;
+}
 .institutional .services .item.item-2 {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/institutional/services-02.jpg', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/institutional/services-02.jpg', sizingMethod='scale')";
   background: #58616e url("../img/pages/institutional/services-02.jpg") no-repeat center top;
+}
+.institutional .services .item.item-2:hover .description {
+  height: 390px;
 }
 .institutional .services .item.item-3 {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/institutional/services-03.jpg', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/institutional/services-03.jpg', sizingMethod='scale')";
   background: #58616e url("../img/pages/institutional/services-03.jpg") no-repeat center top;
 }
+.institutional .services .item.item-3:hover .description {
+  height: 390px;
+}
 .institutional .services .item.item-4 {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/institutional/services-04.jpg', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/institutional/services-04.jpg', sizingMethod='scale')";
   background: #58616e url("../img/pages/institutional/services-04.jpg") no-repeat center top;
+}
+.institutional .services .item.item-4:hover .description {
+  height: 414px;
 }
 .institutional .services .item.item-5 {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/institutional/services-05.jpg', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/institutional/services-05.jpg', sizingMethod='scale')";
   background: #58616e url("../img/pages/institutional/services-05.jpg") no-repeat center top;
 }
+.institutional .services .item.item-5:hover .description {
+  height: 392px;
+}
 .institutional .services .item.item-6 {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/institutional/services-06.jpg', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/pages/institutional/services-06.jpg', sizingMethod='scale')";
   background: #58616e url("../img/pages/institutional/services-06.jpg") no-repeat center top;
+}
+.institutional .services .item.item-6:hover .description {
+  height: 218px;
 }
 .institutional .services .item .outer {
   display: table;
