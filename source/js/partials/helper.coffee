@@ -13,11 +13,12 @@ $(window).scroll ->
 
 # owl carousel
 $ ->
-	$('.owl-carousel').owlCarousel
-		navigation : false,
-		slideSpeed : 300,
-		paginationSpeed : 400,
-		singleItem:true
+	if typeof $.fn.owlCarousel == 'function'
+		$('.owl-carousel').owlCarousel
+			navigation : false,
+			slideSpeed : 300,
+			paginationSpeed : 400,
+			singleItem:true
 
 	$('.toggle-nav').on 'click', ->
 		$('nav.menu').toggleClass('active')

@@ -15,12 +15,14 @@ $(window).scroll(function() {
 });
 
 $(function() {
-  $('.owl-carousel').owlCarousel({
-    navigation: false,
-    slideSpeed: 300,
-    paginationSpeed: 400,
-    singleItem: true
-  });
+  if (typeof $.fn.owlCarousel === 'function') {
+    $('.owl-carousel').owlCarousel({
+      navigation: false,
+      slideSpeed: 300,
+      paginationSpeed: 400,
+      singleItem: true
+    });
+  }
   return $('.toggle-nav').on('click', function() {
     return $('nav.menu').toggleClass('active');
   });
